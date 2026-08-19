@@ -1,0 +1,12 @@
+[lint]
+select = ["E9", "F"]
+ignore = ["E501"]
+
+[lint.per-file-ignores]
+"**/__init__.py" = ["F401"]
+"apps/*/apps.py" = ["F401"]
+"apps/*/tests/**/*.py" = ["F401", "F841"]
+"apps/*/tests/__init__.py" = ["F401"]
+"apps/*/management/commands/**/*.py" = ["F401", "F841"]
+"config/settings/*.py" = ["F401", "F403", "F405"]
+"config/settings/components/*.py" = ["F403", "F405"]

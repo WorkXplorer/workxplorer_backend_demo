@@ -1,0 +1,2587 @@
+{
+  "phase1_quiz": {
+    "name": {
+      "en": "Find Your Field",
+      "uz": "O'z soha-ngizni toping",
+      "ru": "Найдите свою область"
+    },
+    "description": {
+      "en": "Answer 12 short questions to discover which career field suits you best.",
+      "uz": "Sizga qaysi kasbiy soha eng mos kelishini aniqlash uchun 12 ta qisqa savolga javob bering.",
+      "ru": "Ответьте на 12 коротких вопросов, чтобы узнать, какая сфера карьеры вам подходит."
+    },
+    "questions": [
+      {
+        "title": {
+          "en": "When you have free time, what do you usually end up doing?",
+          "uz": "Bo'sh vaqtingizda odatda nima qilasiz?",
+          "ru": "Что вы обычно делаете в свободное время?"
+        },
+        "answers": [
+          {
+            "text": {
+              "en": "Tinkering with apps, gadgets or code",
+              "uz": "Ilovalar, gadjetlar yoki kod bilan shug'ullanish",
+              "ru": "Разбираться с приложениями, гаджетами или кодом"
+            },
+            "domain_groups": ["tech"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Watching videos, drawing or making things",
+              "uz": "Video tomosha qilish, chizish yoki biror narsa yasash",
+              "ru": "Смотреть видео, рисовать или что-то мастерить"
+            },
+            "domain_groups": ["creative"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Hanging out with friends or helping someone with a problem",
+              "uz": "Do'stlar bilan vaqt o'tkazish yoki kimgadir muammosini hal qilishda yordam berish",
+              "ru": "Общаться с друзьями или помогать кому-то решить проблему"
+            },
+            "domain_groups": ["people"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Going to markets, exploring prices or thinking about deals",
+              "uz": "Bozorlarga borish, narxlarni o'rganish yoki kelishuvlar haqida o'ylash",
+              "ru": "Ходить по рынкам, изучать цены или думать о выгодных сделках"
+            },
+            "domain_groups": ["trade"],
+            "point": 10
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "Your friend has a small business idea. What's your first instinct?",
+          "uz": "Do'stingizda kichik biznes g'oyasi bor. Birinchi fikringiz nima?",
+          "ru": "У друга есть идея для небольшого бизнеса. Какова ваша первая реакция?"
+        },
+        "answers": [
+          {
+            "text": {
+              "en": "\"Let me build a website or app for it\"",
+              "uz": "\"Buning uchun veb-sayt yoki ilova yaratib beraman\"",
+              "ru": "«Давай сделаю сайт или приложение»"
+            },
+            "domain_groups": ["tech"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "\"Let's check the numbers — costs, margins, revenue\"",
+              "uz": "\"Raqamlarni tekshiramiz — xarajatlar, marjalar, daromad\"",
+              "ru": "«Давай проверим цифры — расходы, маржу, доходы»"
+            },
+            "domain_groups": ["business"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "\"I can design the logo and social media visuals\"",
+              "uz": "\"Men logotip va ijtimoiy tarmoqlar uchun vizuallarni yarata olaman\"",
+              "ru": "«Я могу сделать логотип и визуал для соцсетей»"
+            },
+            "domain_groups": ["creative"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "\"Who are the suppliers? How do we get customers?\"",
+              "uz": "\"Ta'minotchilar kim? Qanday qilib mijozlarni jalb qilamiz?\"",
+              "ru": "«Кто поставщики? Как привлечь клиентов?»"
+            },
+            "domain_groups": ["trade"],
+            "point": 10
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "Which school subject did you actually enjoy (or secretly wish you were better at)?",
+          "uz": "Qaysi maktab fanini haqiqatan ham yoqtirardingiz (yoki sir tutib yaxshiroq bilishni istar edingiz)?",
+          "ru": "Какой школьный предмет вам действительно нравился (или вы тайно хотели бы знать лучше)?"
+        },
+        "answers": [
+          {
+            "text": {
+              "en": "Maths or computer science",
+              "uz": "Matematika yoki informatika",
+              "ru": "Математика или информатика"
+            },
+            "domain_groups": ["tech", "business"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Physics or chemistry",
+              "uz": "Fizika yoki kimyo",
+              "ru": "Физика или химия"
+            },
+            "domain_groups": ["engineering"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Art, literature or languages",
+              "uz": "San'at, adabiyot yoki tillar",
+              "ru": "Искусство, литература или языки"
+            },
+            "domain_groups": ["creative", "people"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Biology or geography",
+              "uz": "Biologiya yoki geografiya",
+              "ru": "Биология или география"
+            },
+            "domain_groups": ["nature", "people"],
+            "point": 10
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "How do you prefer to solve a difficult problem?",
+          "uz": "Qiyin muammoni qanday hal qilishni afzal ko'rasiz?",
+          "ru": "Как вы предпочитаете решать сложную проблему?"
+        },
+        "answers": [
+          {
+            "text": {
+              "en": "Break it into steps and write it out logically",
+              "uz": "Uni qadamlarga bo'lib, mantiqiy yozib chiqish",
+              "ru": "Разбить на шаги и логически расписать"
+            },
+            "domain_groups": ["tech", "engineering"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Talk to people, gather opinions, then decide",
+              "uz": "Odamlar bilan gaplashish, fikrlarni to'plash, keyin qaror qabul qilish",
+              "ru": "Поговорить с людьми, собрать мнения, затем принять решение"
+            },
+            "domain_groups": ["people", "business"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Sketch ideas, try different angles, experiment",
+              "uz": "G'oyalarni eskiz qilish, turli burchaklarni sinab ko'rish, tajriba o'tkazish",
+              "ru": "Набросать идеи, попробовать разные подходы, поэкспериментировать"
+            },
+            "domain_groups": ["creative"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Look at what's available, negotiate and make it work",
+              "uz": "Mavjud narsalarga qarab, muzokaralar olib borish va hal qilish",
+              "ru": "Посмотреть, что есть, договориться и сделать так, чтобы сработало"
+            },
+            "domain_groups": ["trade", "nature"],
+            "point": 10
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "Imagine your ideal work environment. What sounds most like you?",
+          "uz": "Ideal ish muhitingizni tasavvur qiling. Qaysi biri sizga ko'proq mos keladi?",
+          "ru": "Представьте свою идеальную рабочую среду. Что больше всего вам подходит?"
+        },
+        "answers": [
+          {
+            "text": {
+              "en": "A quiet desk with multiple screens and headphones",
+              "uz": "Ko'p ekranlar va quloqchin bilan jim stol",
+              "ru": "Тихий стол с несколькими мониторами и наушниками"
+            },
+            "domain_groups": ["tech"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "A site, factory or field — somewhere real and physical",
+              "uz": "Qurilish maydoni, zavod yoki dala — haqiqiy va jismoniy joy",
+              "ru": "Стройка, завод или поле — что-то реальное и физическое"
+            },
+            "domain_groups": ["engineering", "nature"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "A busy office with meetings, calls and fast decisions",
+              "uz": "Uchrashuvlar, qo'ng'iroqlar va tezkor qarorlar bilan band ofis",
+              "ru": "Оживлённый офис с встречами, звонками и быстрыми решениями"
+            },
+            "domain_groups": ["business", "trade"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "A studio, open space or anywhere creative flows",
+              "uz": "Studiya, ochiq makon yoki ijodkorlik uchqunlaydigan istalgan joy",
+              "ru": "Студия, открытое пространство или любое место, где есть творческая свобода"
+            },
+            "domain_groups": ["creative"],
+            "point": 10
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "What kind of impact do you most want your work to have?",
+          "uz": "Ishingiz qanday ta'sir ko'rsatishini ko'proq xohlaysiz?",
+          "ru": "Какое влияние вы больше всего хотите оказывать своей работой?"
+        },
+        "answers": [
+          {
+            "text": {
+              "en": "Build something that millions of people use every day",
+              "uz": "Millionlab odamlar har kuni foydalanadigan narsani yaratish",
+              "ru": "Создать что-то, чем каждый день пользуются миллионы людей"
+            },
+            "domain_groups": ["tech"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Directly help individuals through tough moments in life",
+              "uz": "Hayotning qiyin davrlarida shaxslarga bevosita yordam berish",
+              "ru": "Напрямую помогать людям в трудные моменты жизни"
+            },
+            "domain_groups": ["people"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Create something beautiful that moves or inspires people",
+              "uz": "Odamlarni hayajonga soladigan yoki ilhomlantirgan chiroyli narsa yaratish",
+              "ru": "Создать что-то красивое, что трогает или вдохновляет людей"
+            },
+            "domain_groups": ["creative"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Build infrastructure or systems that last for decades",
+              "uz": "O'nlab yillar davom etadigan infratuzilma yoki tizimlarni qurish",
+              "ru": "Строить инфраструктуру или системы, которые служат десятилетиями"
+            },
+            "domain_groups": ["engineering"],
+            "point": 10
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "You're given a project. Which role do you naturally drift toward?",
+          "uz": "Sizga loyiha berildi. Qaysi rolga o'zingizni tabiiy his qilasiz?",
+          "ru": "Вам дали проект. К какой роли вы естественно тяготеете?"
+        },
+        "answers": [
+          {
+            "text": {
+              "en": "The one who manages the plan, timeline and team",
+              "uz": "Reja, muddat va jamoani boshqaradigan kishi",
+              "ru": "Тот, кто управляет планом, сроками и командой"
+            },
+            "domain_groups": ["business", "engineering"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "The one who talks to stakeholders and understands their needs",
+              "uz": "Manfaatdor tomonlar bilan gaplashadigan va ularning ehtiyojlarini tushunadigan kishi",
+              "ru": "Тот, кто общается с заинтересованными сторонами и понимает их потребности"
+            },
+            "domain_groups": ["people", "trade"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "The one who figures out the technical solution",
+              "uz": "Texnik yechimni topib chiqadigan kishi",
+              "ru": "Тот, кто разбирается в техническом решении"
+            },
+            "domain_groups": ["tech", "engineering"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "The one who handles the presentation, visuals and communication",
+              "uz": "Taqdimot, vizuallar va muloqotni boshqaradigan kishi",
+              "ru": "Тот, кто занимается презентацией, визуалом и коммуникацией"
+            },
+            "domain_groups": ["creative"],
+            "point": 10
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "Which of these activities sounds like a genuinely good day to you?",
+          "uz": "Quyidagi faoliyatlardan qaysi biri siz uchun chindan ham yaxshi kun bo'ladi?",
+          "ru": "Какое из этих занятий звучит для вас как по-настоящему хороший день?"
+        },
+        "answers": [
+          {
+            "text": {
+              "en": "Visiting a farm, food market or natural landscape",
+              "uz": "Ferma, oziq-ovqat bozori yoki tabiiy manzarani ziyorat qilish",
+              "ru": "Посетить ферму, продуктовый рынок или природный пейзаж"
+            },
+            "domain_groups": ["nature"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Filming, editing or publishing something online",
+              "uz": "Onlayn biror narsani suratga olish, tahrirlash yoki nashr etish",
+              "ru": "Снимать, монтировать или публиковать что-то в интернете"
+            },
+            "domain_groups": ["creative"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Studying a case, reading reports and forming a strong opinion",
+              "uz": "Ish holati o'rganish, hisobotlarni o'qish va kuchli fikr shakllantirish",
+              "ru": "Изучить кейс, читать отчёты и сформировать чёткое мнение"
+            },
+            "domain_groups": ["business", "people"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Buying something at a good price and reselling it for a profit",
+              "uz": "Arzon narxda biror narsa sotib olish va foydaga sotish",
+              "ru": "Купить что-то по хорошей цене и перепродать с прибылью"
+            },
+            "domain_groups": ["trade"],
+            "point": 10
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "When you watch the news or scroll through articles, what topics catch your eye most?",
+          "uz": "Yangiliklar ko'rganingizda yoki maqolalarni ko'rib chiqqaningizda, qaysi mavzular e'tiboringizni ko'proq tortadi?",
+          "ru": "Когда вы смотрите новости или просматриваете статьи, какие темы привлекают вас больше всего?"
+        },
+        "answers": [
+          {
+            "text": {
+              "en": "AI, startups, and new tech launches",
+              "uz": "AI, startaplar va yangi texnologiya taqdimotlari",
+              "ru": "ИИ, стартапы и новые технологические запуски"
+            },
+            "domain_groups": ["tech"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Markets, economy and business deals",
+              "uz": "Bozorlar, iqtisodiyot va biznes bitimlar",
+              "ru": "Рынки, экономика и бизнес-сделки"
+            },
+            "domain_groups": ["business", "trade"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Social issues, healthcare or education stories",
+              "uz": "Ijtimoiy muammolar, sog'liqni saqlash yoki ta'lim haqidagi hikoyalar",
+              "ru": "Социальные проблемы, здравоохранение или образование"
+            },
+            "domain_groups": ["people"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Climate, agriculture and what's happening in the environment",
+              "uz": "Iqlim, qishloq xo'jaligi va atrof-muhitdagi o'zgarishlar",
+              "ru": "Климат, сельское хозяйство и экология"
+            },
+            "domain_groups": ["nature", "engineering"],
+            "point": 10
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "Which skill would you most like to be known for?",
+          "uz": "Qaysi ko'nikma bilan mashhur bo'lishni ko'proq xohlaysiz?",
+          "ru": "За какой навык вы больше всего хотели бы быть известны?"
+        },
+        "answers": [
+          {
+            "text": {
+              "en": "Building and fixing complex systems",
+              "uz": "Murakkab tizimlarni yaratish va tuzatish",
+              "ru": "Создавать и чинить сложные системы"
+            },
+            "domain_groups": ["tech", "engineering"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Persuading and influencing people",
+              "uz": "Odamlarni ishontirish va ta'sir qilish",
+              "ru": "Убеждать и влиять на людей"
+            },
+            "domain_groups": ["trade", "creative"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Understanding human behaviour deeply",
+              "uz": "Insonning xulq-atvorini chuqur tushunish",
+              "ru": "Глубоко понимать поведение людей"
+            },
+            "domain_groups": ["people"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Making smart financial decisions",
+              "uz": "Aqlli moliyaviy qarorlar qabul qilish",
+              "ru": "Принимать грамотные финансовые решения"
+            },
+            "domain_groups": ["business"],
+            "point": 10
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "Your dream project is...",
+          "uz": "Sizning orzu loyihangiz...",
+          "ru": "Ваш мечтательный проект — это..."
+        },
+        "answers": [
+          {
+            "text": {
+              "en": "Designing and building a bridge, dam or skyscraper",
+              "uz": "Ko'prik, to'g'on yoki osmono'par bino loyihalash va qurish",
+              "ru": "Спроектировать и построить мост, плотину или небоскрёб"
+            },
+            "domain_groups": ["engineering"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Running a chain of restaurants or hospitality venues",
+              "uz": "Restoranlar yoki mehmonxonalar tarmog'ini boshqarish",
+              "ru": "Управлять сетью ресторанов или отелей"
+            },
+            "domain_groups": ["nature", "trade"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Creating a documentary or viral media campaign",
+              "uz": "Hujjatli film yoki viral media kampaniya yaratish",
+              "ru": "Создать документальный фильм или вирусную медиакампанию"
+            },
+            "domain_groups": ["creative"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "Launching a platform that connects people or solves a real problem",
+              "uz": "Odamlarni bog'laydigan yoki haqiqiy muammoni hal qiladigan platforma yaratish",
+              "ru": "Запустить платформу, которая соединяет людей или решает реальную проблему"
+            },
+            "domain_groups": ["tech", "business"],
+            "point": 10
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "How do you feel about working with numbers and data regularly?",
+          "uz": "Doimiy ravishda raqamlar va ma'lumotlar bilan ishlashga qanday qaraysiz?",
+          "ru": "Как вы относитесь к регулярной работе с числами и данными?"
+        },
+        "answers": [
+          {
+            "text": {
+              "en": "I love it — patterns and analysis excite me",
+              "uz": "Yaxshi ko'raman — naqshlar va tahlil meni quvontiradi",
+              "ru": "Обожаю — паттерны и анализ меня захватывают"
+            },
+            "domain_groups": ["tech", "business"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "It's fine for planning and measurements in real projects",
+              "uz": "Haqiqiy loyihalarda rejalashtirish va o'lchashlar uchun yaxshi",
+              "ru": "Нормально — для планирования и расчётов в реальных проектах"
+            },
+            "domain_groups": ["engineering", "nature"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "I prefer to focus on people, words and relationships",
+              "uz": "Odamlar, so'zlar va munosabatlarga e'tibor qaratishni afzal ko'raman",
+              "ru": "Я предпочитаю сосредоточиться на людях, словах и отношениях"
+            },
+            "domain_groups": ["people", "creative"],
+            "point": 10
+          },
+          {
+            "text": {
+              "en": "I use numbers to track sales, inventory and profits",
+              "uz": "Savdo, tovar zaxirasi va foydani kuzatish uchun raqamlardan foydalanaman",
+              "ru": "Использую цифры, чтобы отслеживать продажи, склад и прибыль"
+            },
+            "domain_groups": ["trade"],
+            "point": 10
+          }
+        ]
+      }
+    ]
+  },
+  "domain_groups": [
+    {
+      "key": "tech",
+      "name": {
+        "en": "Technology & Digital",
+        "uz": "Texnologiya va Raqamli soha",
+        "ru": "Технологии и цифровая среда"
+      },
+      "domains": [
+        "Information Technology & Software",
+        "Telecommunications",
+        "E-commerce & Digital Platforms",
+        "Cybersecurity",
+        "Data Analytics & Artificial Intelligence"
+      ],
+      "career_options": [
+        {
+          "title": { "en": "Software Developer", "uz": "Dasturchi", "ru": "Разработчик программного обеспечения" },
+          "description": { "en": "Builds applications and systems", "uz": "Ilovalar va tizimlar yaratadi", "ru": "Создаёт приложения и системы" }
+        },
+        {
+          "title": { "en": "Data Scientist", "uz": "Ma'lumotlar olimi", "ru": "Специалист по данным" },
+          "description": { "en": "Analyses data to extract insights", "uz": "Ma'lumotlardan xulosalar chiqaradi", "ru": "Анализирует данные для получения выводов" }
+        },
+        {
+          "title": { "en": "Cybersecurity Analyst", "uz": "Kiberxavfsizlik analitigi", "ru": "Аналитик кибербезопасности" },
+          "description": { "en": "Protects systems from threats", "uz": "Tizimlarni tahdidlardan himoya qiladi", "ru": "Защищает системы от угроз" }
+        },
+        {
+          "title": { "en": "Product Manager", "uz": "Mahsulot menejeri", "ru": "Продуктовый менеджер" },
+          "description": { "en": "Shapes digital products from idea to launch", "uz": "Raqamli mahsulotni g'oyadan ishga tushirishga olib boradi", "ru": "Ведёт цифровой продукт от идеи до запуска" }
+        },
+        {
+          "title": { "en": "UX/UI Designer", "uz": "UX/UI dizayner", "ru": "UX/UI дизайнер" },
+          "description": { "en": "Designs intuitive digital interfaces", "uz": "Intuitiv raqamli interfeyslar yaratadi", "ru": "Создаёт интуитивные цифровые интерфейсы" }
+        },
+        {
+          "title": { "en": "Network Engineer", "uz": "Tarmoq muhandisi", "ru": "Сетевой инженер" },
+          "description": { "en": "Builds and manages computer networks", "uz": "Kompyuter tarmoqlarini quradi va boshqaradi", "ru": "Строит и администрирует компьютерные сети" }
+        }
+      ],
+      "phase2_quiz": {
+        "name": {
+          "en": "Technology & Digital — Career Match",
+          "uz": "Texnologiya va Raqamli soha — Karyera tanlash",
+          "ru": "Технологии и цифровая среда — Подбор карьеры"
+        },
+        "description": {
+          "en": "Let's find the right tech career for you.",
+          "uz": "Sizga mos texnologiya karyerasini topamiz.",
+          "ru": "Найдём подходящую карьеру в технологиях."
+        },
+        "questions": [
+          {
+            "title": {
+              "en": "When you imagine yourself working in tech, what are you actually doing?",
+              "uz": "O'zingizni texnologiya sohasida ishlayotganingizni tasavvur qilsangiz, aslida nima qilyapsiz?",
+              "ru": "Когда вы представляете себя работающим в IT, что именно вы делаете?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Writing code and watching something come to life on screen", "uz": "Kod yozish va ekranda biror narsa paydo bo'lishini kuzatish", "ru": "Пишу код и вижу, как что-то оживает на экране" },
+                "career_option": "Software Developer",
+                "point": 15
+              },
+              {
+                "text": { "en": "Studying data patterns and turning them into useful insights", "uz": "Ma'lumotlar naqshlarini o'rganish va ularni foydali xulosalarga aylantirish", "ru": "Изучаю паттерны данных и превращаю их в полезные выводы" },
+                "career_option": "Data Scientist",
+                "point": 15
+              },
+              {
+                "text": { "en": "Testing systems for weaknesses and blocking threats before they hit", "uz": "Tizimlarni zaifliklar uchun sinash va tahdidlarni oldindan bloklash", "ru": "Тестирую системы на уязвимости и блокирую угрозы до их появления" },
+                "career_option": "Cybersecurity Analyst",
+                "point": 15
+              },
+              {
+                "text": { "en": "Deciding what features to build and why users will love them", "uz": "Qanday xususiyatlar yaratishni va foydalanuvchilar nima uchun ularni yaxshi ko'rishini hal qilish", "ru": "Решаю, какие функции создавать и почему они понравятся пользователям" },
+                "career_option": "Product Manager",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "Which of these tasks would you happily spend a whole afternoon on?",
+              "uz": "Quyidagi vazifalardan qaysi birini butun tushdan keyin mamnuniyat bilan bajara olardingiz?",
+              "ru": "За какую из этих задач вы с удовольствием провели бы весь день?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Debugging code until it finally runs perfectly", "uz": "Kod mukammal ishlagunicha xatolarni tuzatish", "ru": "Дебажить код, пока он наконец не заработает идеально" },
+                "career_option": "Software Developer",
+                "point": 15
+              },
+              {
+                "text": { "en": "Cleaning a messy dataset and finding surprising correlations", "uz": "Tartibsiz ma'lumotlar to'plamini tartibga solish va ajablanarli korrelyatsiyalarni topish", "ru": "Очищать грязный датасет и находить неожиданные корреляции" },
+                "career_option": "Data Scientist",
+                "point": 15
+              },
+              {
+                "text": { "en": "Sketching user flows and adjusting button layouts for better UX", "uz": "Foydalanuvchi oqimlarini eskiz qilish va yaxshiroq UX uchun tugmalar joylashuvini sozlash", "ru": "Рисовать пользовательские сценарии и настраивать интерфейс для лучшего UX" },
+                "career_option": "UX/UI Designer",
+                "point": 15
+              },
+              {
+                "text": { "en": "Setting up routers, cables and making sure the network stays stable", "uz": "Routerlar, kabellarni o'rnatish va tarmoq barqaror bo'lishini ta'minlash", "ru": "Настраивать роутеры, кабели и поддерживать стабильность сети" },
+                "career_option": "Network Engineer",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "A new app is getting popular but users keep complaining about it. What's your instinct?",
+              "uz": "Yangi ilova ommalashmoqda, lekin foydalanuvchilar doim shikoyat qilmoqda. Birinchi fikringiz nima?",
+              "ru": "Новое приложение набирает популярность, но пользователи постоянно жалуются. Какова ваша реакция?"
+            },
+            "answers": [
+              {
+                "text": { "en": "\"There must be a bug in the code — let me find it\"", "uz": "\"Kodda xato bo'lishi kerak — toping\"", "ru": "«Наверное, баг в коде — давайте найдём»" },
+                "career_option": "Software Developer",
+                "point": 15
+              },
+              {
+                "text": { "en": "\"The user research is missing — what do people actually need?\"", "uz": "\"Foydalanuvchilar tadqiqoti yetishmayapti — odamlar aslida nimaga muhtoj?\"", "ru": "«Нет пользовательского исследования — что людям на самом деле нужно?»" },
+                "career_option": "UX/UI Designer",
+                "point": 15
+              },
+              {
+                "text": { "en": "\"The product strategy is wrong — we're solving the wrong problem\"", "uz": "\"Mahsulot strategiyasi noto'g'ri — biz noto'g'ri muammoni hal qilyapmiz\"", "ru": "«Стратегия продукта неверная — мы решаем не ту проблему»" },
+                "career_option": "Product Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "\"It could be a security flaw — someone might be exploiting it\"", "uz": "\"Bu xavfsizlik kamchiligi bo'lishi mumkin — kimdir undan foydalanayotgan bo'lishi mumkin\"", "ru": "«Возможно, дыра в безопасности — кто-то может этим пользоваться»" },
+                "career_option": "Cybersecurity Analyst",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "What kind of outcome makes you feel most proud at work?",
+              "uz": "Ishda qanday natija siz uchun eng katta g'urur manbai bo'ladi?",
+              "ru": "Какой результат на работе вызывает у вас наибольшую гордость?"
+            },
+            "answers": [
+              {
+                "text": { "en": "A feature I built is now used by thousands of people", "uz": "Men yaratgan xususiyat endi minglab odamlar tomonidan qo'llanilmoqda", "ru": "Функция, которую я создал, теперь используется тысячами людей" },
+                "career_option": "Software Developer",
+                "point": 15
+              },
+              {
+                "text": { "en": "My analysis helped the company make a better decision", "uz": "Mening tahlilim kompaniyaga yaxshiroq qaror qabul qilishga yordam berdi", "ru": "Мой анализ помог компании принять более правильное решение" },
+                "career_option": "Data Scientist",
+                "point": 15
+              },
+              {
+                "text": { "en": "An attack was stopped because I spotted the vulnerability first", "uz": "Men zaiflikni birinchi bo'lib sezganimda hujum to'xtatildi", "ru": "Атака была предотвращена, потому что я первым заметил уязвимость" },
+                "career_option": "Cybersecurity Analyst",
+                "point": 15
+              },
+              {
+                "text": { "en": "A redesign I pushed for increased user satisfaction scores", "uz": "Men taklif qilgan qayta dizayn foydalanuvchilar qoniqish ko'rsatkichlarini oshirdi", "ru": "Редизайн, который я продвигал, повысил показатели удовлетворённости пользователей" },
+                "career_option": "UX/UI Designer",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "Which of these topics do you find yourself actually reading about for fun?",
+              "uz": "Quyidagi mavzulardan qaysi birini qiziqish bilan o'qiysiz?",
+              "ru": "Какие из этих тем вы читаете ради удовольствия?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Programming languages, frameworks and open source projects", "uz": "Dasturlash tillari, freymvorklar va ochiq manba loyihalari", "ru": "Языки программирования, фреймворки и open source проекты" },
+                "career_option": "Software Developer",
+                "point": 15
+              },
+              {
+                "text": { "en": "Machine learning models and how AI makes predictions", "uz": "Mashina o'rganish modellari va AI qanday qilib bashorat qilishi", "ru": "Модели машинного обучения и как ИИ делает предсказания" },
+                "career_option": "Data Scientist",
+                "point": 15
+              },
+              {
+                "text": { "en": "Hacking stories, data breaches and how companies got compromised", "uz": "Xakerlik hikoyalari, ma'lumotlar buzilishlari va kompaniyalar qanday zarar ko'rgan", "ru": "Истории о взломах, утечках данных и как были скомпрометированы компании" },
+                "career_option": "Cybersecurity Analyst",
+                "point": 15
+              },
+              {
+                "text": { "en": "How successful apps were built — strategy, pivots and user growth", "uz": "Muvaffaqiyatli ilovalar qanday yaratilgan — strategiya, o'zgarishlar va foydalanuvchilar o'sishi", "ru": "Как создавались успешные приложения — стратегия, пивоты и рост аудитории" },
+                "career_option": "Product Manager",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "When something on the internet goes wrong, what's your reaction?",
+              "uz": "Internetda biror narsa noto'g'ri ketganda, qanday munosabat bildirasiz?",
+              "ru": "Когда что-то в интернете идёт не так, какова ваша реакция?"
+            },
+            "answers": [
+              {
+                "text": { "en": "I immediately try to find what's broken and fix it", "uz": "Men darhol nimaning buzilganini topishga va tuzatishga harakat qilaman", "ru": "Я сразу пытаюсь найти, что сломалось, и починить это" },
+                "career_option": "Software Developer",
+                "point": 15
+              },
+              {
+                "text": { "en": "I wonder who's behind it and how they got in", "uz": "Bu ortida kim turganini va ular qanday kirib olganini o'ylayman", "ru": "Я думаю, кто за этим стоит и как они это сделали" },
+                "career_option": "Cybersecurity Analyst",
+                "point": 15
+              },
+              {
+                "text": { "en": "I look at the interface — was it confusing to use in the first place?", "uz": "Interfeysga qarayman — avvaldan foydalanish qiyin bo'lganmi?", "ru": "Смотрю на интерфейс — может, он изначально был неудобным?" },
+                "career_option": "UX/UI Designer",
+                "point": 15
+              },
+              {
+                "text": { "en": "I think about how this affects the users and what should change", "uz": "Bu foydalanuvchilarga qanday ta'sir qilishini va nima o'zgarishi kerakligini o'ylayman", "ru": "Думаю о том, как это влияет на пользователей и что нужно изменить" },
+                "career_option": "Product Manager",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "How do you like to collaborate with a team?",
+              "uz": "Jamoa bilan qanday ishlashni yoqtirasiz?",
+              "ru": "Как вам нравится работать в команде?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Give me clear tasks and let me focus alone — I'll deliver", "uz": "Menga aniq vazifalar bering va yolg'iz e'tibor berishimga ruxsat bering — bajaraman", "ru": "Дайте мне чёткие задачи и позвольте сосредоточиться — я сделаю" },
+                "career_option": "Software Developer",
+                "point": 15
+              },
+              {
+                "text": { "en": "I like working with data independently and then presenting findings", "uz": "Ma'lumotlar bilan mustaqil ishlash va keyin natijalarni taqdim etishni yoqtiraman", "ru": "Люблю работать с данными самостоятельно, а потом представлять результаты" },
+                "career_option": "Data Scientist",
+                "point": 15
+              },
+              {
+                "text": { "en": "I want to be in the middle — connecting business, design and tech", "uz": "O'rtada bo'lishni xohlayman — biznes, dizayn va texnologiyani bog'layman", "ru": "Хочу быть в центре — связывать бизнес, дизайн и технологии" },
+                "career_option": "Product Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "I collaborate closely with developers to make interfaces feel right", "uz": "Interfeyslar to'g'ri his etilishi uchun dasturchilar bilan yaqin hamkorlik qilaman", "ru": "Тесно сотрудничаю с разработчиками, чтобы интерфейс ощущался правильным" },
+                "career_option": "UX/UI Designer",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "Which tech role sounds the most exciting to you right now?",
+              "uz": "Hozir qaysi texnologiya roli sizga eng qiziqarli tuyuladi?",
+              "ru": "Какая технологическая роль кажется вам наиболее захватывающей прямо сейчас?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Building the next big app used by millions", "uz": "Millionlab odamlar foydalanadigan keyingi katta ilovani yaratish", "ru": "Создать следующее крупное приложение, которым пользуются миллионы" },
+                "career_option": "Software Developer",
+                "point": 15
+              },
+              {
+                "text": { "en": "Using data to predict trends before they happen", "uz": "Ma'lumotlardan foydalanib, tendentsiyalarni ular sodir bo'lishidan oldin bashorat qilish", "ru": "Использовать данные, чтобы предсказывать тренды до их появления" },
+                "career_option": "Data Scientist",
+                "point": 15
+              },
+              {
+                "text": { "en": "Being the person who keeps critical systems safe", "uz": "Muhim tizimlarni xavfsiz saqlaydigan kishi bo'lish", "ru": "Быть человеком, который защищает критически важные системы" },
+                "career_option": "Cybersecurity Analyst",
+                "point": 15
+              },
+              {
+                "text": { "en": "Managing the cables and infrastructure that the whole internet runs on", "uz": "Butun internet ishlaydigan kabellar va infratuzilmani boshqarish", "ru": "Управлять кабелями и инфраструктурой, на которой работает весь интернет" },
+                "career_option": "Network Engineer",
+                "point": 15
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "business",
+      "name": {
+        "en": "Business & Finance",
+        "uz": "Biznes va Moliya",
+        "ru": "Бизнес и финансы"
+      },
+      "domains": [
+        "Banking & Financial Institutions",
+        "Insurance",
+        "Accounting & Auditing",
+        "Investment & Securities",
+        "Microfinance",
+        "Consulting",
+        "Human Resources & Recruitment",
+        "Business Process Outsourcing"
+      ],
+      "career_options": [
+        {
+          "title": { "en": "Financial Analyst", "uz": "Moliyaviy tahlilchi", "ru": "Финансовый аналитик" },
+          "description": { "en": "Analyses financial data and investment opportunities", "uz": "Moliyaviy ma'lumotlar va investitsiya imkoniyatlarini tahlil qiladi", "ru": "Анализирует финансовые данные и инвестиционные возможности" }
+        },
+        {
+          "title": { "en": "Accountant", "uz": "Buxgalter", "ru": "Бухгалтер" },
+          "description": { "en": "Manages financial records and reporting", "uz": "Moliyaviy yozuvlar va hisobotlarni boshqaradi", "ru": "Ведёт финансовые записи и отчётность" }
+        },
+        {
+          "title": { "en": "Business Consultant", "uz": "Biznes konsultant", "ru": "Бизнес-консультант" },
+          "description": { "en": "Advises companies on strategy and efficiency", "uz": "Kompaniyalarga strategiya va samaradorlik bo'yicha maslahat beradi", "ru": "Консультирует компании по стратегии и эффективности" }
+        },
+        {
+          "title": { "en": "HR Manager", "uz": "HR menejer", "ru": "HR-менеджер" },
+          "description": { "en": "Manages talent acquisition and employee development", "uz": "Iste'dod jalb qilish va xodimlarni rivojlantirishni boshqaradi", "ru": "Управляет подбором персонала и развитием сотрудников" }
+        },
+        {
+          "title": { "en": "Investment Banker", "uz": "Investitsiya bankiri", "ru": "Инвестиционный банкир" },
+          "description": { "en": "Structures deals and raises capital for businesses", "uz": "Bitimlarni tuzadi va biznes uchun kapital jalb qiladi", "ru": "Структурирует сделки и привлекает капитал для бизнеса" }
+        },
+        {
+          "title": { "en": "Insurance Specialist", "uz": "Sug'urta mutaxassisi", "ru": "Специалист по страхованию" },
+          "description": { "en": "Assesses risk and manages insurance products", "uz": "Xavfni baholaydi va sug'urta mahsulotlarini boshqaradi", "ru": "Оценивает риски и управляет страховыми продуктами" }
+        }
+      ],
+      "phase2_quiz": {
+        "name": {
+          "en": "Business & Finance — Career Match",
+          "uz": "Biznes va Moliya — Karyera tanlash",
+          "ru": "Бизнес и финансы — Подбор карьеры"
+        },
+        "description": {
+          "en": "Let's find the right business or finance career for you.",
+          "uz": "Sizga mos biznes yoki moliya karyerasini topamiz.",
+          "ru": "Найдём подходящую карьеру в бизнесе или финансах."
+        },
+        "questions": [
+          {
+            "title": {
+              "en": "What part of business genuinely excites you?",
+              "uz": "Biznesning qaysi qismi sizni chindan ham hayajontiradi?",
+              "ru": "Какая часть бизнеса вас по-настоящему захватывает?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Tracking where money goes and making sure the numbers balance", "uz": "Pulning qayerga ketishini kuzatish va raqamlar muvozanatda ekanligini ta'minlash", "ru": "Отслеживать движение денег и следить за балансом цифр" },
+                "career_option": "Accountant",
+                "point": 15
+              },
+              {
+                "text": { "en": "Spotting which investments will grow and which are risky", "uz": "Qaysi investitsiyalar o'sishini va qaysilari xavfli ekanligini aniqlash", "ru": "Выявлять, какие инвестиции будут расти, а какие рискованны" },
+                "career_option": "Financial Analyst",
+                "point": 15
+              },
+              {
+                "text": { "en": "Walking into a struggling company and finding what's broken", "uz": "Qiyinchilik ichidagi kompaniyaga kirish va nimaning buzilganini topish", "ru": "Войти в проблемную компанию и найти, что сломано" },
+                "career_option": "Business Consultant",
+                "point": 15
+              },
+              {
+                "text": { "en": "Finding great people and helping them thrive in an organisation", "uz": "Ajoyib odamlarni topish va ularga tashkilotda rivojlanishiga yordam berish", "ru": "Находить талантливых людей и помогать им расти в организации" },
+                "career_option": "HR Manager",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "A big company wants to merge with a smaller one. What role do you imagine yourself in?",
+              "uz": "Katta kompaniya kichikroq biri bilan birlashmoqchi. O'zingizni qanday rolda tasavvur qilasiz?",
+              "ru": "Крупная компания хочет слиться с меньшей. Какую роль вы видите для себя?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Auditing both companies' books to make sure everything checks out", "uz": "Hamma narsa to'g'ri ekanligini ta'minlash uchun ikkala kompaniya kitoblarini tekshirish", "ru": "Проверять бухгалтерию обеих компаний, чтобы убедиться в порядке" },
+                "career_option": "Accountant",
+                "point": 15
+              },
+              {
+                "text": { "en": "Analysing whether the deal makes financial sense for investors", "uz": "Kelishuv investorlar uchun moliyaviy jihatdan mantiqli ekanligini tahlil qilish", "ru": "Анализировать, выгодна ли сделка финансово для инвесторов" },
+                "career_option": "Financial Analyst",
+                "point": 15
+              },
+              {
+                "text": { "en": "Structuring the deal terms and negotiating the best outcome", "uz": "Kelishuv shartlarini tuzish va eng yaxshi natijani muzokaralar orqali ta'minlash", "ru": "Структурировать условия сделки и договориться о наилучшем результате" },
+                "career_option": "Investment Banker",
+                "point": 15
+              },
+              {
+                "text": { "en": "Planning how to merge the two teams and retain the best talent", "uz": "Ikki jamoani qanday birlashtirish va eng yaxshi iste'dodlarni saqlab qolishni rejalashtirish", "ru": "Планировать объединение двух команд и удержание лучших специалистов" },
+                "career_option": "HR Manager",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "What kind of problems do you most want to solve at work?",
+              "uz": "Ishda qanday muammolarni hal qilishni ko'proq xohlaysiz?",
+              "ru": "Какие проблемы вы больше всего хотите решать на работе?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Why a company is losing money and how to fix it", "uz": "Nima uchun kompaniya pul yo'qotayotgani va buni qanday tuzatish", "ru": "Почему компания теряет деньги и как это исправить" },
+                "career_option": "Financial Analyst",
+                "point": 15
+              },
+              {
+                "text": { "en": "Making sure all financial records are accurate and tax-compliant", "uz": "Barcha moliyaviy yozuvlar aniq va soliqqa mos ekanligini ta'minlash", "ru": "Обеспечивать точность финансовых записей и соблюдение налоговых норм" },
+                "career_option": "Accountant",
+                "point": 15
+              },
+              {
+                "text": { "en": "Helping businesses grow faster with smarter strategy", "uz": "Aqlliroq strategiya bilan bizneslarni tezroq o'sishiga yordam berish", "ru": "Помогать бизнесам расти быстрее с умной стратегией" },
+                "career_option": "Business Consultant",
+                "point": 15
+              },
+              {
+                "text": { "en": "Evaluating risk and protecting people from financial losses", "uz": "Xavfni baholash va odamlarni moliyaviy yo'qotishlardan himoya qilish", "ru": "Оценивать риски и защищать людей от финансовых потерь" },
+                "career_option": "Insurance Specialist",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "Which of these sounds like your ideal day at the office?",
+              "uz": "Quyidagilardan qaysi biri ofisdagi ideal kuningizga o'xshaydi?",
+              "ru": "Какой из этих вариантов звучит как ваш идеальный рабочий день?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Reviewing spreadsheets, reconciling accounts and preparing monthly reports", "uz": "Elektron jadvallarni ko'rib chiqish, hisoblarni muvofiqlashtirish va oylik hisobotlar tayyorlash", "ru": "Просматривать таблицы, сверять счета и готовить ежемесячные отчёты" },
+                "career_option": "Accountant",
+                "point": 15
+              },
+              {
+                "text": { "en": "Presenting an investment thesis to senior leadership or clients", "uz": "Yuqori rahbariyat yoki mijozlarga investitsiya tezisini taqdim etish", "ru": "Представлять инвестиционный тезис руководству или клиентам" },
+                "career_option": "Investment Banker",
+                "point": 15
+              },
+              {
+                "text": { "en": "Running interviews, onboarding new hires and coaching managers", "uz": "Suhbatlar o'tkazish, yangi xodimlarni qabul qilish va menejerlarni murabbiylik qilish", "ru": "Проводить собеседования, адаптировать новых сотрудников и коучить менеджеров" },
+                "career_option": "HR Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "Meeting a new client and diagnosing what's holding their company back", "uz": "Yangi mijoz bilan uchrashish va kompaniyasini nima ushlab turganini aniqlash", "ru": "Встретиться с новым клиентом и выяснить, что тормозит его компанию" },
+                "career_option": "Business Consultant",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "How do you feel about high-pressure, high-reward situations?",
+              "uz": "Yuqori bosimli, yuqori mukofotli vaziyatlarga qanday qaraysiz?",
+              "ru": "Как вы относитесь к ситуациям с высоким давлением и высокой наградой?"
+            },
+            "answers": [
+              {
+                "text": { "en": "I thrive — big deals, tight deadlines and huge bonuses drive me", "uz": "Rivojlanaman — katta bitimlar, qattiq muddatlar va katta bonuslar meni harakatlantiradi", "ru": "Я расцветаю — крупные сделки, сжатые сроки и большие бонусы меня мотивируют" },
+                "career_option": "Investment Banker",
+                "point": 15
+              },
+              {
+                "text": { "en": "I prefer steady, detail-focused work with clear expectations", "uz": "Aniq kutishlar bilan barqaror, tafsilotlarga e'tibor qaratilgan ishni afzal ko'raman", "ru": "Предпочитаю стабильную, детальную работу с чёткими ожиданиями" },
+                "career_option": "Accountant",
+                "point": 15
+              },
+              {
+                "text": { "en": "I like pressure if it means helping a company through a crisis", "uz": "Agar kompaniyaga inqirozdan o'tishda yordam berish demak bo'lsa, bosimni yoqtiraman", "ru": "Люблю давление, если это означает помощь компании в кризисе" },
+                "career_option": "Business Consultant",
+                "point": 15
+              },
+              {
+                "text": { "en": "I can handle it — especially when protecting people from risk", "uz": "Buni uddalay olaman — ayniqsa odamlarni xavfdan himoya qilishda", "ru": "Справлюсь — особенно когда нужно защищать людей от рисков" },
+                "career_option": "Insurance Specialist",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "When you think about money, what's most interesting to you?",
+              "uz": "Pul haqida o'ylaganingizda, siz uchun eng qiziqarlisi nima?",
+              "ru": "Когда вы думаете о деньгах, что вас интересует больше всего?"
+            },
+            "answers": [
+              {
+                "text": { "en": "How companies grow their value and attract investors", "uz": "Kompaniyalar qanday qilib o'z qiymatini oshiradi va investorlarni jalb qiladi", "ru": "Как компании растут в стоимости и привлекают инвесторов" },
+                "career_option": "Financial Analyst",
+                "point": 15
+              },
+              {
+                "text": { "en": "Making sure every transaction is recorded and accounted for", "uz": "Har bir operatsiyani qayd etish va hisobga olishni ta'minlash", "ru": "Убедиться, что каждая транзакция записана и учтена" },
+                "career_option": "Accountant",
+                "point": 15
+              },
+              {
+                "text": { "en": "Big M&A deals, IPOs and the thrill of capital markets", "uz": "Yirik birlashuv va sotib olishlar, IPOlar va kapital bozorlarining hayajoni", "ru": "Крупные M&A сделки, IPO и азарт рынков капитала" },
+                "career_option": "Investment Banker",
+                "point": 15
+              },
+              {
+                "text": { "en": "How insurance protects families and businesses from disaster", "uz": "Sug'urta oilalar va bizneslarni falokatdan qanday himoya qilishi", "ru": "Как страхование защищает семьи и бизнес от катастроф" },
+                "career_option": "Insurance Specialist",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "What kind of relationship do you want with the people you work with?",
+              "uz": "Birga ishlaydigan odamlar bilan qanday munosabatda bo'lishni xohlaysiz?",
+              "ru": "Какие отношения вы хотите иметь с людьми, с которыми работаете?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Professional and structured — I'm here to get the numbers right", "uz": "Professional va tartibli — men bu yerda raqamlarni to'g'ri olish uchun turman", "ru": "Профессиональные и структурированные — я здесь, чтобы всё посчитать правильно" },
+                "career_option": "Accountant",
+                "point": 15
+              },
+              {
+                "text": { "en": "Collaborative — I work with teams across the company on strategy", "uz": "Hamkorlikka asoslangan — kompaniya bo'ylab jamoalar bilan strategiya ustida ishlayman", "ru": "Командные — работаю с командами по всей компании над стратегией" },
+                "career_option": "Business Consultant",
+                "point": 15
+              },
+              {
+                "text": { "en": "Mentoring and supportive — I genuinely care about people's growth", "uz": "Murabbiylik va qo'llab-quvvatlash — odamlarning o'sishini chindan ham g'amxo'rlik qilaman", "ru": "Наставнические и поддерживающие — мне важен рост людей" },
+                "career_option": "HR Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "High-trust client relationships built over years of big deals", "uz": "Yillar davomida katta bitimlar orqali qurilgan yuqori ishonchli mijoz munosabatlari", "ru": "Долгосрочные отношения с клиентами, построенные на крупных сделках" },
+                "career_option": "Investment Banker",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "Imagine you're advising a friend who just started a business. What's your go-to advice?",
+              "uz": "Biznesni endigina boshlagan do'stingizga maslahat berayotganingizni tasavvur qiling. Sizning asosiy maslahatingiz nima?",
+              "ru": "Представьте, что вы советуете другу, который только начал бизнес. Какой ваш главный совет?"
+            },
+            "answers": [
+              {
+                "text": { "en": "\"Keep clean books from day one — messy finances will kill you\"", "uz": "\"Birinchi kundan boshlab tartibli hisoblarni yurit — tartibsiz moliya seni yo'q qiladi\"", "ru": "«Веди чистую бухгалтерию с первого дня — беспорядок в финансах тебя погубит»" },
+                "career_option": "Accountant",
+                "point": 15
+              },
+              {
+                "text": { "en": "\"Understand your unit economics before you scale anything\"", "uz": "\"Biror narsani kengaytirishdan oldin birlik iqtisodiyotingizni tushuning\"", "ru": "«Разберись с юнит-экономикой, прежде чем что-то масштабировать»" },
+                "career_option": "Financial Analyst",
+                "point": 15
+              },
+              {
+                "text": { "en": "\"Get insurance early — one bad event can wipe out everything\"", "uz": "\"Erta sug'urtani oling — bitta yomon voqea hamma narsani yo'q qilishi mumkin\"", "ru": "«Оформи страховку заранее — одно плохое событие может уничтожить всё»" },
+                "career_option": "Insurance Specialist",
+                "point": 15
+              },
+              {
+                "text": { "en": "\"Hire slowly, fire fast — your team is your biggest asset\"", "uz": "\"Sekin yollaing, tez bo'shating — jamoangiz eng katta boyligingiz\"", "ru": "«Нанимай медленно, увольняй быстро — команда — твой главный актив»" },
+                "career_option": "HR Manager",
+                "point": 15
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "engineering",
+      "name": {
+        "en": "Engineering & Industry",
+        "uz": "Muhandislik va Sanoat",
+        "ru": "Инженерия и промышленность"
+      },
+      "domains": [
+        "Construction Materials",
+        "Pharmaceuticals & Medical Equipment",
+        "Chemical & Petrochemical",
+        "Construction & Engineering",
+        "Oil & Gas",
+        "Renewable Energy",
+        "Mining & Minerals",
+        "Utilities",
+        "Automotive"
+      ],
+      "career_options": [
+        {
+          "title": { "en": "Civil Engineer", "uz": "Qurilish muhandisi", "ru": "Инженер-строитель" },
+          "description": { "en": "Designs and oversees construction projects", "uz": "Qurilish loyihalarini loyihalaydi va nazorat qiladi", "ru": "Проектирует и контролирует строительные проекты" }
+        },
+        {
+          "title": { "en": "Chemical Engineer", "uz": "Kimyo muhandisi", "ru": "Химический инженер" },
+          "description": { "en": "Develops chemical processes and products", "uz": "Kimyoviy jarayonlar va mahsulotlarni ishlab chiqadi", "ru": "Разрабатывает химические процессы и продукты" }
+        },
+        {
+          "title": { "en": "Energy Engineer", "uz": "Energetika muhandisi", "ru": "Энергетический инженер" },
+          "description": { "en": "Works on power generation and renewable energy systems", "uz": "Elektr ishlab chiqarish va qayta tiklanadigan energiya tizimlari ustida ishlaydi", "ru": "Работает над системами производства и возобновляемой энергии" }
+        },
+        {
+          "title": { "en": "Mechanical Engineer", "uz": "Mexanik muhandis", "ru": "Инженер-механик" },
+          "description": { "en": "Designs machines, vehicles and mechanical systems", "uz": "Mashinalar, transport vositalari va mexanik tizimlarni loyihalaydi", "ru": "Проектирует машины, транспортные средства и механические системы" }
+        },
+        {
+          "title": { "en": "Mining Engineer", "uz": "Kon muhandisi", "ru": "Горный инженер" },
+          "description": { "en": "Manages extraction of minerals and resources", "uz": "Minerallar va resurslarni qazib olishni boshqaradi", "ru": "Управляет добычей полезных ископаемых и ресурсов" }
+        },
+        {
+          "title": { "en": "Project Manager (Industry)", "uz": "Loyiha menejeri (Sanoat)", "ru": "Руководитель проекта (Промышленность)" },
+          "description": { "en": "Coordinates large-scale industrial or construction projects", "uz": "Yirik sanoat yoki qurilish loyihalarini muvofiqlashtiradi", "ru": "Координирует крупные промышленные или строительные проекты" }
+        }
+      ],
+      "phase2_quiz": {
+        "name": {
+          "en": "Engineering & Industry — Career Match",
+          "uz": "Muhandislik va Sanoat — Karyera tanlash",
+          "ru": "Инженерия и промышленность — Подбор карьеры"
+        },
+        "description": {
+          "en": "Let's find the right engineering career for you.",
+          "uz": "Sizga mos muhandislik karyerasini topamiz.",
+          "ru": "Найдём подходящую инженерную карьеру для вас."
+        },
+        "questions": [
+          {
+            "title": {
+              "en": "Which engineering challenge sounds most exciting to you?",
+              "uz": "Qaysi muhandislik muammosi sizga eng qiziqarli tuyuladi?",
+              "ru": "Какая инженерная задача кажется вам наиболее захватывающей?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Designing a bridge that will stand for 100 years", "uz": "100 yil davom etadigan ko'prik loyihalash", "ru": "Проектировать мост, который простоит 100 лет" },
+                "career_option": "Civil Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "Developing a new process to produce cleaner fuel", "uz": "Toza yoqilg'i ishlab chiqarish uchun yangi jarayon ishlab chiqish", "ru": "Разработать новый процесс производства более чистого топлива" },
+                "career_option": "Chemical Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "Building a solar farm that powers an entire city", "uz": "Butun shaharni quvvat bilan ta'minlaydigan quyosh fermasi qurish", "ru": "Построить солнечную электростанцию, которая питает целый город" },
+                "career_option": "Energy Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "Designing a machine that automates a complex manufacturing task", "uz": "Murakkab ishlab chiqarish vazifasini avtomatlashtiruvchi mashina loyihalash", "ru": "Спроектировать машину, которая автоматизирует сложный производственный процесс" },
+                "career_option": "Mechanical Engineer",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "Where would you most love to work physically?",
+              "uz": "Jismonan qayerda ishlashni ko'proq yoqtirasiz?",
+              "ru": "Где вам больше всего хотелось бы работать физически?"
+            },
+            "answers": [
+              {
+                "text": { "en": "A construction site watching a building rise from the ground", "uz": "Binoning yerdan ko'tarilishini kuzatish uchun qurilish maydoni", "ru": "Стройплощадка, где здание поднимается из земли" },
+                "career_option": "Civil Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "A lab or refinery working on materials and chemical reactions", "uz": "Materiallar va kimyoviy reaktsiyalar ustida ishlaydigan laboratoriya yoki neftni qayta ishlash zavodi", "ru": "Лаборатория или нефтеперерабатывающий завод с материалами и реакциями" },
+                "career_option": "Chemical Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "A mine or remote site extracting valuable resources from the earth", "uz": "Yerdan qimmatli resurslarni qazib oladigan kon yoki uzoqdagi maydon", "ru": "Шахта или удалённый объект по добыче ценных ресурсов" },
+                "career_option": "Mining Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "Moving between sites, offices and teams to keep a big project on track", "uz": "Katta loyihani jadvalda saqlash uchun saytlar, ofislar va jamoalar o'rtasida harakatlanish", "ru": "Перемещаться между объектами, офисами и командами для управления крупным проектом" },
+                "career_option": "Project Manager (Industry)",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "What draws you most to engineering as a field?",
+              "uz": "Muhandislik sohasida sizni ko'proq nima jalb qiladi?",
+              "ru": "Что больше всего привлекает вас в инженерии как области?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Creating physical structures that change a city's landscape", "uz": "Shahar manzarasini o'zgartiruvchi jismoniy inshootlar yaratish", "ru": "Создавать физические объекты, изменяющие облик города" },
+                "career_option": "Civil Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "Working with energy systems that power modern life", "uz": "Zamonaviy hayotni quvvat bilan ta'minlaydigan energiya tizimlari bilan ishlash", "ru": "Работать с энергосистемами, которые питают современную жизнь" },
+                "career_option": "Energy Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "Designing machinery that moves, lifts and produces things", "uz": "Narsalarni harakatlantiradigan, ko'taradigan va ishlab chiqaradigan mexanizmlarni loyihalash", "ru": "Проектировать механизмы, которые двигают, поднимают и производят вещи" },
+                "career_option": "Mechanical Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "Understanding what's underground and figuring out how to extract it safely", "uz": "Yerosti nimaligini tushunish va uni xavfsiz qazib olishni aniqlash", "ru": "Понимать, что под землёй, и безопасно это добывать" },
+                "career_option": "Mining Engineer",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "In a big engineering project, what role fits you best?",
+              "uz": "Katta muhandislik loyihasida qaysi rol sizga ko'proq mos keladi?",
+              "ru": "В крупном инженерном проекте какая роль подходит вам лучше всего?"
+            },
+            "answers": [
+              {
+                "text": { "en": "The structural designer — making sure everything is safe and solid", "uz": "Konstruktiv loyihalovchi — hamma narsa xavfsiz va mustahkam bo'lishini ta'minlash", "ru": "Конструктивный проектировщик — обеспечивать безопасность и прочность" },
+                "career_option": "Civil Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "The process specialist — optimising reactions and chemical outputs", "uz": "Jarayon mutaxassisi — reaktsiyalar va kimyoviy chiqishlarni optimallashtirish", "ru": "Специалист по процессам — оптимизировать реакции и химические выходы" },
+                "career_option": "Chemical Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "The coordinator — managing budgets, timelines and multiple teams", "uz": "Koordinator — byudjetlar, muddatlar va bir nechta jamoalarni boshqarish", "ru": "Координатор — управлять бюджетами, сроками и несколькими командами" },
+                "career_option": "Project Manager (Industry)",
+                "point": 15
+              },
+              {
+                "text": { "en": "The mechanical designer — specifying parts and testing prototypes", "uz": "Mexanik loyihalovchi — qismlarni belgilash va prototiplarni sinovdan o'tkazish", "ru": "Механический проектировщик — задавать детали и тестировать прототипы" },
+                "career_option": "Mechanical Engineer",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "Which global challenge would you most like your career to help with?",
+              "uz": "Karyerangiz qaysi global muammoni hal qilishga ko'proq yordam berishini xohlaysiz?",
+              "ru": "С какой глобальной проблемой вы больше всего хотели бы помочь через свою карьеру?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Building cities and infrastructure in developing countries", "uz": "Rivojlanayotgan mamlakatlarda shaharlar va infratuzilma qurish", "ru": "Строить города и инфраструктуру в развивающихся странах" },
+                "career_option": "Civil Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "Reducing pollution through cleaner industrial processes", "uz": "Toza sanoat jarayonlari orqali ifloslanishni kamaytirish", "ru": "Снижать загрязнение через более чистые промышленные процессы" },
+                "career_option": "Chemical Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "Transitioning the world from fossil fuels to renewables", "uz": "Dunyoni fossil yoqilg'idan qayta tiklanadigan energiyaga o'tkazish", "ru": "Переводить мир с ископаемого топлива на возобновляемые источники" },
+                "career_option": "Energy Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "Safely extracting materials critical to tech and batteries", "uz": "Texnologiya va batareyalar uchun muhim materiallarni xavfsiz qazib olish", "ru": "Безопасно добывать материалы, критически важные для технологий и батарей" },
+                "career_option": "Mining Engineer",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "How do you feel about managing people and deadlines versus doing the technical work yourself?",
+              "uz": "Odamlar va muddatlarni boshqarishga texnik ishni o'zingiz bajarishga nisbatan qanday qaraysiz?",
+              "ru": "Как вы относитесь к управлению людьми и сроками в сравнении с самостоятельной технической работой?"
+            },
+            "answers": [
+              {
+                "text": { "en": "I prefer hands-on technical work — give me blueprints and calculations", "uz": "Amaliy texnik ishni afzal ko'raman — menga chizmalar va hisoblarni bering", "ru": "Предпочитаю практическую техническую работу — давайте чертежи и расчёты" },
+                "career_option": "Civil Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "I love lab and process work — the detail and precision excite me", "uz": "Laboratoriya va jarayon ishini yaxshi ko'raman — tafsilotlar va aniqlik meni quvontiradi", "ru": "Люблю лабораторную и процессную работу — детали и точность меня захватывают" },
+                "career_option": "Chemical Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "Managing people and timelines is where I'm strongest", "uz": "Odamlar va muddatlarni boshqarish mening eng kuchli tomonim", "ru": "Управление людьми и сроками — моя сильная сторона" },
+                "career_option": "Project Manager (Industry)",
+                "point": 15
+              },
+              {
+                "text": { "en": "I like the blend — field work, calculations and team decisions", "uz": "Aralashmani yoqtiraman — dala ishi, hisoblar va jamoa qarorlari", "ru": "Люблю сочетание — полевая работа, расчёты и командные решения" },
+                "career_option": "Energy Engineer",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "What do people usually say about you when it comes to work?",
+              "uz": "Ish haqida gap ketganda odamlar odatda siz haqingizda nima deyishadi?",
+              "ru": "Что обычно говорят о вас люди, когда речь заходит о работе?"
+            },
+            "answers": [
+              {
+                "text": { "en": "\"You're meticulous — you never miss a structural detail\"", "uz": "\"Siz puxta ishlaysiz — hech qachon konstruktiv tafsilotni qoldirmaysiz\"", "ru": "«Ты педантичен — никогда не пропустишь конструктивную деталь»" },
+                "career_option": "Civil Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "\"You understand complex systems and explain them clearly\"", "uz": "\"Siz murakkab tizimlarni tushunasiz va ularni aniq tushuntirasiz\"", "ru": "«Ты понимаешь сложные системы и чётко их объясняешь»" },
+                "career_option": "Chemical Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "\"You keep everything organised even when chaos happens\"", "uz": "\"Xaos bo'lganda ham hamma narsani tartibli saqlaysiz\"", "ru": "«Ты держишь всё организованно, даже когда хаос»" },
+                "career_option": "Project Manager (Industry)",
+                "point": 15
+              },
+              {
+                "text": { "en": "\"You're not afraid of tough conditions and remote locations\"", "uz": "\"Siz qiyin sharoitlardan va uzoq joylardan qo'rqmaysiz\"", "ru": "«Ты не боишься тяжёлых условий и отдалённых мест»" },
+                "career_option": "Mining Engineer",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "If you could leave behind one thing from your career, what would it be?",
+              "uz": "Agar karyerangizdan bitta narsa qoldirsangiz, bu nima bo'lar edi?",
+              "ru": "Если бы вы могли оставить после себя одно достижение карьеры, что бы это было?"
+            },
+            "answers": [
+              {
+                "text": { "en": "A building, road or dam I designed that's still standing in 50 years", "uz": "50 yildan keyin ham tik turgan bino, yo'l yoki to'g'on loyihalashtirganim", "ru": "Здание, дорога или дамба, которую я спроектировал и которая стоит 50 лет спустя" },
+                "career_option": "Civil Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "A cleaner industrial process that reduced pollution for an entire region", "uz": "Butun hudud uchun ifloslanishni kamaytirgan toza sanoat jarayoni", "ru": "Более чистый промышленный процесс, снизивший загрязнение целого региона" },
+                "career_option": "Chemical Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "A renewable energy project that brought power to a remote community", "uz": "Uzoq jamoaga elektr energiyasi olib kelgan qayta tiklanadigan energiya loyihasi", "ru": "Проект возобновляемой энергии, который принёс свет в отдалённое сообщество" },
+                "career_option": "Energy Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "A massive project I delivered on time, on budget with a great team", "uz": "Ajoyib jamoa bilan o'z vaqtida va byudjetda yetkazilgan ulkan loyiha", "ru": "Масштабный проект, сданный в срок и в бюджет с отличной командой" },
+                "career_option": "Project Manager (Industry)",
+                "point": 15
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "creative",
+      "name": {
+        "en": "Creative & Media",
+        "uz": "Kreativ va Media",
+        "ru": "Творчество и медиа"
+      },
+      "domains": [
+        "Architecture & Design",
+        "Marketing & Advertising",
+        "Media & Broadcasting",
+        "Publishing & Printing",
+        "Creative Agencies",
+        "Entertainment"
+      ],
+      "career_options": [
+        {
+          "title": { "en": "Graphic Designer", "uz": "Grafik dizayner", "ru": "Графический дизайнер" },
+          "description": { "en": "Creates visual content for brands and media", "uz": "Brendlar va media uchun vizual kontent yaratadi", "ru": "Создаёт визуальный контент для брендов и медиа" }
+        },
+        {
+          "title": { "en": "Journalist", "uz": "Jurnalist", "ru": "Журналист" },
+          "description": { "en": "Researches and reports on news and stories", "uz": "Yangiliklar va voqealar bo'yicha tadqiqot o'tkazadi va xabar beradi", "ru": "Исследует и освещает новости и истории" }
+        },
+        {
+          "title": { "en": "Content Creator", "uz": "Kontent yaratuvchi", "ru": "Контент-мейкер" },
+          "description": { "en": "Produces engaging digital content for audiences", "uz": "Auditoriya uchun qiziqarli raqamli kontent ishlab chiqaradi", "ru": "Создаёт привлекательный цифровой контент для аудитории" }
+        },
+        {
+          "title": { "en": "Architect", "uz": "Arxitektor", "ru": "Архитектор" },
+          "description": { "en": "Designs buildings and spaces with form and function", "uz": "Shakl va funksiya bilan binolar va bo'shliqlarni loyihalaydi", "ru": "Проектирует здания и пространства с учётом формы и функции" }
+        },
+        {
+          "title": { "en": "Marketing Specialist", "uz": "Marketing mutaxassisi", "ru": "Специалист по маркетингу" },
+          "description": { "en": "Develops campaigns to promote brands and products", "uz": "Brendlar va mahsulotlarni targ'ib qilish uchun kampaniyalar ishlab chiqadi", "ru": "Разрабатывает кампании для продвижения брендов и продуктов" }
+        },
+        {
+          "title": { "en": "Film & Video Producer", "uz": "Kino va video prodyuser", "ru": "Кино- и видеопродюсер" },
+          "description": { "en": "Oversees production of films, series and video content", "uz": "Filmlar, seriallar va video kontent ishlab chiqarishni nazorat qiladi", "ru": "Руководит производством фильмов, сериалов и видеоконтента" }
+        }
+      ],
+      "phase2_quiz": {
+        "name": {
+          "en": "Creative & Media — Career Match",
+          "uz": "Kreativ va Media — Karyera tanlash",
+          "ru": "Творчество и медиа — Подбор карьеры"
+        },
+        "description": {
+          "en": "Let's find the right creative career for you.",
+          "uz": "Sizga mos kreativ karyerani topamiz.",
+          "ru": "Найдём подходящую творческую карьеру для вас."
+        },
+        "questions": [
+          {
+            "title": {
+              "en": "When you consume content, what kind of work makes you think \"I want to do that\"?",
+              "uz": "Kontentni iste'mol qilganingizda, qaysi ish turi \"Men ham shuni qilmoqchiman\" deb o'ylatingizni beradi?",
+              "ru": "Когда вы потребляете контент, какой вид работы заставляет думать «Хочу так же»?"
+            },
+            "answers": [
+              {
+                "text": { "en": "A beautifully designed poster, packaging or brand identity", "uz": "Chiroyli loyihalangan plakat, qadoqlash yoki brend identifikatsiyasi", "ru": "Красиво оформленный постер, упаковка или фирменный стиль" },
+                "career_option": "Graphic Designer",
+                "point": 15
+              },
+              {
+                "text": { "en": "A powerful investigative article that exposes something important", "uz": "Muhim narsani ochib beradigan kuchli tergov maqolasi", "ru": "Мощная расследовательская статья, раскрывающая что-то важное" },
+                "career_option": "Journalist",
+                "point": 15
+              },
+              {
+                "text": { "en": "A viral video or a creator with an authentic, engaged community", "uz": "Viral video yoki haqiqiy, faol jamiyatga ega ijodkor", "ru": "Вирусное видео или блогер с живым и активным сообществом" },
+                "career_option": "Content Creator",
+                "point": 15
+              },
+              {
+                "text": { "en": "A stunning building that blends form, function and culture", "uz": "Shakl, funksiya va madaniyatni uyg'unlashtirgan ajoyib bino", "ru": "Впечатляющее здание, сочетающее форму, функцию и культуру" },
+                "career_option": "Architect",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "What's your main creative strength?",
+              "uz": "Sizning asosiy ijodiy kuchingiz nima?",
+              "ru": "В чём ваша главная творческая сила?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Turning complex ideas into clean, visual communication", "uz": "Murakkab g'oyalarni toza vizual muloqotga aylantirish", "ru": "Превращать сложные идеи в чистую визуальную коммуникацию" },
+                "career_option": "Graphic Designer",
+                "point": 15
+              },
+              {
+                "text": { "en": "Writing clearly, asking the right questions and finding the story", "uz": "Aniq yozish, to'g'ri savollar berish va hikoyani topish", "ru": "Писать чётко, задавать правильные вопросы и находить историю" },
+                "career_option": "Journalist",
+                "point": 15
+              },
+              {
+                "text": { "en": "Knowing what an audience wants and delivering it in an addictive format", "uz": "Auditoriya nima istayotganini bilish va uni qiziqarli formatda yetkazish", "ru": "Знать, чего хочет аудитория, и давать это в захватывающем формате" },
+                "career_option": "Content Creator",
+                "point": 15
+              },
+              {
+                "text": { "en": "Spatial thinking — imagining how people will move through a space", "uz": "Fazoviy fikrlash — odamlar fazoda qanday harakatlanishini tasavvur qilish", "ru": "Пространственное мышление — представлять, как люди будут двигаться в пространстве" },
+                "career_option": "Architect",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "What part of a creative project do you most enjoy?",
+              "uz": "Ijodiy loyihaning qaysi qismidan ko'proq zavq olasiz?",
+              "ru": "Какая часть творческого проекта вам нравится больше всего?"
+            },
+            "answers": [
+              {
+                "text": { "en": "The concept phase — picking fonts, colours and visual direction", "uz": "Kontseptsiya bosqichi — shriftlar, ranglar va vizual yo'nalishni tanlash", "ru": "Концептуальная фаза — выбор шрифтов, цветов и визуального направления" },
+                "career_option": "Graphic Designer",
+                "point": 15
+              },
+              {
+                "text": { "en": "The research and interview phase — finding the real story", "uz": "Tadqiqot va suhbat bosqichi — haqiqiy hikoyani topish", "ru": "Фаза исследования и интервью — найти настоящую историю" },
+                "career_option": "Journalist",
+                "point": 15
+              },
+              {
+                "text": { "en": "Planning the campaign — targeting the right people at the right time", "uz": "Kampaniyani rejalashtirish — to'g'ri vaqtda to'g'ri odamlarni nishonlash", "ru": "Планирование кампании — охватить нужных людей в нужное время" },
+                "career_option": "Marketing Specialist",
+                "point": 15
+              },
+              {
+                "text": { "en": "Filming day — orchestrating the crew, lighting and shot list", "uz": "Suratga olish kuni — ekipaj, yoritish va kadrlar ro'yxatini boshqarish", "ru": "День съёмок — управлять командой, светом и раскадровкой" },
+                "career_option": "Film & Video Producer",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "A brand comes to you with a problem. What do you most want to help them with?",
+              "uz": "Brend sizga muammo bilan keladi. Ularga nimada yordam berishni ko'proq xohlaysiz?",
+              "ru": "Бренд приходит к вам с проблемой. С чем вы больше всего хотите им помочь?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Their logo and visual identity look outdated — redesign it", "uz": "Ularning logotipi va vizual identifikatsiyasi eskirgan ko'rinadi — qayta loyihalash", "ru": "Логотип и айдентика выглядят устаревшими — нужен редизайн" },
+                "career_option": "Graphic Designer",
+                "point": 15
+              },
+              {
+                "text": { "en": "No one knows their story — write and publish content that gets attention", "uz": "Hech kim ularning hikoyasini bilmaydi — e'tiborni tortadigan kontent yozing va nashr eting", "ru": "Никто не знает их историю — написать и опубликовать контент, который привлечёт внимание" },
+                "career_option": "Journalist",
+                "point": 15
+              },
+              {
+                "text": { "en": "Their social presence is dead — build an audience that actually engages", "uz": "Ularning ijtimoiy mavjudligi o'lik — chindan ham jalb qiladigan auditoriya yaratish", "ru": "Их соцсети мертвы — создать аудиторию, которая реально вовлечена" },
+                "career_option": "Content Creator",
+                "point": 15
+              },
+              {
+                "text": { "en": "Their campaigns don't convert — fix the strategy and messaging", "uz": "Ularning kampaniyalari konvertatsiya qilmaydi — strategiya va xabarni tuzatish", "ru": "Кампании не конвертируют — исправить стратегию и месседжинг" },
+                "career_option": "Marketing Specialist",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "How do you feel about deadlines and structure in creative work?",
+              "uz": "Ijodiy ishda muddatlar va tuzilishga qanday qaraysiz?",
+              "ru": "Как вы относитесь к дедлайнам и структуре в творческой работе?"
+            },
+            "answers": [
+              {
+                "text": { "en": "I work best with tight briefs and client revisions — it sharpens my work", "uz": "Qattiq ko'rsatmalar va mijoz tuzatishlari bilan yaxshiroq ishlaman — bu ishimni keskinlashtiradi", "ru": "Лучше всего работаю с чёткими брифами и правками — это оттачивает работу" },
+                "career_option": "Graphic Designer",
+                "point": 15
+              },
+              {
+                "text": { "en": "I love the pressure of a breaking story with a two-hour deadline", "uz": "Ikki soatlik muddat bilan yangi yangilik bosimini yaxshi ko'raman", "ru": "Люблю давление срочного материала с двухчасовым дедлайном" },
+                "career_option": "Journalist",
+                "point": 15
+              },
+              {
+                "text": { "en": "I set my own schedule and create when inspiration hits", "uz": "O'z jadvalimni o'rnataman va ilhom kelganda yarataman", "ru": "Сам устанавливаю расписание и создаю, когда приходит вдохновение" },
+                "career_option": "Content Creator",
+                "point": 15
+              },
+              {
+                "text": { "en": "Production has fixed timelines — I thrive when the whole crew is in sync", "uz": "Ishlab chiqarish belgilangan muddatlarga ega — butun ekipaj muvofiqlashtirilganda rivojlanaman", "ru": "Производство имеет фиксированные сроки — лучше всего, когда вся команда синхронизирована" },
+                "career_option": "Film & Video Producer",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "What would make you feel like you've truly succeeded in your creative career?",
+              "uz": "Ijodiy karyerangizda chindan ham muvaffaqiyatga erishganingizni nimadan bilib olasiz?",
+              "ru": "Что заставило бы вас почувствовать, что в творческой карьере вы действительно преуспели?"
+            },
+            "answers": [
+              {
+                "text": { "en": "My designs are recognised and used by a well-known brand", "uz": "Mening dizaynlarim taniqli brend tomonidan tan olingan va ishlatilgan", "ru": "Мои дизайны узнаются и используются известным брендом" },
+                "career_option": "Graphic Designer",
+                "point": 15
+              },
+              {
+                "text": { "en": "A story I wrote changed public opinion or sparked real action", "uz": "Men yozgan hikoya jamoatchilik fikrini o'zgartirdi yoki haqiqiy harakatni qo'zg'adi", "ru": "История, которую я написал, изменила общественное мнение или вызвала реальные действия" },
+                "career_option": "Journalist",
+                "point": 15
+              },
+              {
+                "text": { "en": "I have a loyal audience that follows everything I make", "uz": "Menda men yasaydigan hamma narsaga ergashadigan sadoqatli auditoriya bor", "ru": "У меня есть преданная аудитория, которая следит за всем, что я делаю" },
+                "career_option": "Content Creator",
+                "point": 15
+              },
+              {
+                "text": { "en": "A building I designed becomes part of a city's identity", "uz": "Men loyihalagan bino shahar identifikatsiyasining bir qismiga aylanadi", "ru": "Здание, которое я спроектировал, становится частью идентичности города" },
+                "career_option": "Architect",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "Which tool or skill are you most eager to master?",
+              "uz": "Qaysi asbob yoki ko'nikmani o'zlashtirish uchun eng ko'p ishtiyoqingiz bor?",
+              "ru": "Какой инструмент или навык вы больше всего хотите освоить?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Figma, Illustrator and advanced typography", "uz": "Figma, Illustrator va ilg'or tipografiya", "ru": "Figma, Illustrator и продвинутая типографика" },
+                "career_option": "Graphic Designer",
+                "point": 15
+              },
+              {
+                "text": { "en": "Investigative research, source-building and long-form writing", "uz": "Tergov tadqiqoti, manba yaratish va uzoq shaklli yozuv", "ru": "Исследовательская журналистика, работа с источниками и лонгриды" },
+                "career_option": "Journalist",
+                "point": 15
+              },
+              {
+                "text": { "en": "SEO, growth analytics and audience retention strategies", "uz": "SEO, o'sish tahlili va auditoriyani ushlab qolish strategiyalari", "ru": "SEO, аналитика роста и стратегии удержания аудитории" },
+                "career_option": "Marketing Specialist",
+                "point": 15
+              },
+              {
+                "text": { "en": "Cinematography, directing and post-production editing", "uz": "Kinomatografiya, rejissyorlik va post-ishlab chiqarish tahrirlash", "ru": "Кинематография, режиссура и постпродакшн" },
+                "career_option": "Film & Video Producer",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "When you share something you've created online, what reaction do you hope for most?",
+              "uz": "Onlayn yaratgan narsangizni ulashganingizda, qanday munosabatni ko'proq kutasiz?",
+              "ru": "Когда вы делитесь созданным онлайн, какой реакции больше всего ждёте?"
+            },
+            "answers": [
+              {
+                "text": { "en": "\"This design is clean, professional and exactly on brand\"", "uz": "\"Bu dizayn toza, professional va brendga to'liq mos\"", "ru": "«Этот дизайн чистый, профессиональный и точно в бренде»" },
+                "career_option": "Graphic Designer",
+                "point": 15
+              },
+              {
+                "text": { "en": "\"This article made me think differently about an issue\"", "uz": "\"Bu maqola meni muammoni boshqacha o'ylashga majbur qildi\"", "ru": "«Эта статья заставила меня иначе взглянуть на проблему»" },
+                "career_option": "Journalist",
+                "point": 15
+              },
+              {
+                "text": { "en": "Thousands of views, saves and new followers overnight", "uz": "Bir kechada minglab ko'rishlar, saqlashlar va yangi obunachiar", "ru": "Тысячи просмотров, сохранений и новых подписчиков за ночь" },
+                "career_option": "Content Creator",
+                "point": 15
+              },
+              {
+                "text": { "en": "\"This campaign drove real results — leads, conversions, sales\"", "uz": "\"Bu kampaniya haqiqiy natijalar berdi — lidlar, konversiyalar, savdo\"", "ru": "«Кампания дала реальные результаты — лиды, конверсии, продажи»" },
+                "career_option": "Marketing Specialist",
+                "point": 15
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "people",
+      "name": {
+        "en": "People & Society",
+        "uz": "Jamiyat va Inson",
+        "ru": "Люди и общество"
+      },
+      "domains": [
+        "Healthcare & Medical Services",
+        "Wellness & Fitness",
+        "Education",
+        "Corporate Training & Development",
+        "EdTech & E-learning",
+        "Research Institutions",
+        "Legal Services",
+        "Government Agencies",
+        "Non-Governmental Organizations",
+        "International Organizations"
+      ],
+      "career_options": [
+        {
+          "title": { "en": "Doctor", "uz": "Shifokor", "ru": "Врач" },
+          "description": { "en": "Diagnoses and treats patients", "uz": "Bemorlarni tashxislaydi va davolaydi", "ru": "Диагностирует и лечит пациентов" }
+        },
+        {
+          "title": { "en": "Teacher", "uz": "O'qituvchi", "ru": "Учитель" },
+          "description": { "en": "Educates and mentors students", "uz": "O'quvchilarni o'qitadi va yo'l-yo'riq ko'rsatadi", "ru": "Обучает и наставляет учеников" }
+        },
+        {
+          "title": { "en": "Lawyer", "uz": "Advokat", "ru": "Юрист" },
+          "description": { "en": "Provides legal advice and represents clients", "uz": "Yuridik maslahat beradi va mijozlarni ifodalaydi", "ru": "Предоставляет юридические консультации и представляет клиентов" }
+        },
+        {
+          "title": { "en": "Psychologist", "uz": "Psixolog", "ru": "Психолог" },
+          "description": { "en": "Supports mental health and behavioural wellbeing", "uz": "Ruhiy sog'liq va xulq-atvor farovonligini qo'llab-quvvatlaydi", "ru": "Поддерживает психическое здоровье и поведенческое благополучие" }
+        },
+        {
+          "title": { "en": "Social Worker", "uz": "Ijtimoiy xodim", "ru": "Социальный работник" },
+          "description": { "en": "Supports vulnerable individuals and communities", "uz": "Himoyasiz shaxslar va jamoalarga yordam beradi", "ru": "Поддерживает уязвимых людей и сообщества" }
+        },
+        {
+          "title": { "en": "Researcher", "uz": "Tadqiqotchi", "ru": "Исследователь" },
+          "description": { "en": "Conducts studies and generates new knowledge", "uz": "Tadqiqotlar olib boradi va yangi bilimlar yaratadi", "ru": "Проводит исследования и создаёт новые знания" }
+        }
+      ],
+      "phase2_quiz": {
+        "name": {
+          "en": "People & Society — Career Match",
+          "uz": "Jamiyat va Inson — Karyera tanlash",
+          "ru": "Люди и общество — Подбор карьеры"
+        },
+        "description": {
+          "en": "Let's find the right people-focused career for you.",
+          "uz": "Sizga mos jamiyatga yo'naltirilgan karyerani topamiz.",
+          "ru": "Найдём подходящую карьеру, связанную с людьми."
+        },
+        "questions": [
+          {
+            "title": {
+              "en": "When a friend is going through something difficult, what do you naturally do?",
+              "uz": "Do'stingiz qiyin narsadan o'tayotganida, siz tabiiy ravishda nima qilasiz?",
+              "ru": "Когда друг переживает трудности, что вы делаете естественно?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Try to understand exactly what they're feeling and why", "uz": "Ular aynan nima his qilayotganini va nima uchun ekanligini tushunishga harakat qilish", "ru": "Пытаться понять, что именно они чувствуют и почему" },
+                "career_option": "Psychologist",
+                "point": 15
+              },
+              {
+                "text": { "en": "Think practically — what are their options, what's the best move?", "uz": "Amaliy o'ylash — qanday imkoniyatlari bor, eng yaxshi harakat nima?", "ru": "Думать практически — какие у них варианты, какой лучший шаг?" },
+                "career_option": "Lawyer",
+                "point": 15
+              },
+              {
+                "text": { "en": "Connect them with the right people or resources that can help", "uz": "Ularga yordam bera oladigan to'g'ri odamlar yoki resurslar bilan bog'lash", "ru": "Связать их с нужными людьми или ресурсами, которые могут помочь" },
+                "career_option": "Social Worker",
+                "point": 15
+              },
+              {
+                "text": { "en": "Sit with them, listen deeply and ask thoughtful questions", "uz": "Ular bilan o'tirib, chuqur tinglash va o'ylangan savollar berish", "ru": "Сидеть рядом, внимательно слушать и задавать вдумчивые вопросы" },
+                "career_option": "Teacher",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "Which of these situations would make you feel most useful?",
+              "uz": "Quyidagi vaziyatlardan qaysi biri sizni eng foydali his qilishingizga olib keladi?",
+              "ru": "В какой из этих ситуаций вы бы почувствовали себя наиболее полезным?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Diagnosing a patient and finding the right treatment plan", "uz": "Bemorni tashxislash va to'g'ri davolash rejasini topish", "ru": "Диагностировать пациента и найти правильный план лечения" },
+                "career_option": "Doctor",
+                "point": 15
+              },
+              {
+                "text": { "en": "Helping a student suddenly understand a concept they'd been stuck on", "uz": "O'quvchiga qotib qolgan kontseptsiyani to'satdan tushunishiga yordam berish", "ru": "Помочь студенту вдруг понять концепцию, которая ему не давалась" },
+                "career_option": "Teacher",
+                "point": 15
+              },
+              {
+                "text": { "en": "Winning a case that protects someone from an unfair outcome", "uz": "Kimnidir nohaq natijadan himoya qiladigan ishni yutish", "ru": "Выиграть дело, защищающее кого-то от несправедливого исхода" },
+                "career_option": "Lawyer",
+                "point": 15
+              },
+              {
+                "text": { "en": "Publishing research that changes how a problem is understood", "uz": "Muammoning qanday tushunilishini o'zgartiruvchi tadqiqotni nashr etish", "ru": "Опубликовать исследование, меняющее понимание проблемы" },
+                "career_option": "Researcher",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "What kind of knowledge excites you most?",
+              "uz": "Qanday bilim sizni eng ko'p hayajontiradi?",
+              "ru": "Какие знания вас больше всего захватывают?"
+            },
+            "answers": [
+              {
+                "text": { "en": "How the human body works and what goes wrong when it doesn't", "uz": "Inson tanasi qanday ishlashi va noto'g'ri ketganda nima bo'lishi", "ru": "Как работает тело человека и что происходит, когда что-то идёт не так" },
+                "career_option": "Doctor",
+                "point": 15
+              },
+              {
+                "text": { "en": "Why people think and behave the way they do", "uz": "Odamlar nima uchun shunday fikrlaydi va harakat qiladi", "ru": "Почему люди думают и ведут себя так, как они это делают" },
+                "career_option": "Psychologist",
+                "point": 15
+              },
+              {
+                "text": { "en": "How laws are made, interpreted and used to protect people", "uz": "Qonunlar qanday yaratiladi, talqin qilinadi va odamlarni himoya qilish uchun ishlatiladi", "ru": "Как создаются, толкуются и применяются законы для защиты людей" },
+                "career_option": "Lawyer",
+                "point": 15
+              },
+              {
+                "text": { "en": "How society, systems and policies affect people's lives", "uz": "Jamiyat, tizimlar va siyosatlar odamlar hayotiga qanday ta'sir qiladi", "ru": "Как общество, системы и политика влияют на жизнь людей" },
+                "career_option": "Social Worker",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "What does \"making a difference\" mean to you personally?",
+              "uz": "\"Farq yaratish\" siz uchun shaxsan nima degani?",
+              "ru": "Что для вас лично означает «изменить что-то к лучшему»?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Saving or extending someone's life with the right medical care", "uz": "To'g'ri tibbiy yordam bilan kimningdir hayotini qutqarish yoki uzaytirish", "ru": "Спасти или продлить жизнь человека правильной медицинской помощью" },
+                "career_option": "Doctor",
+                "point": 15
+              },
+              {
+                "text": { "en": "Watching a student go from struggling to thriving", "uz": "O'quvchining qiynalishdan gullab-yashnashga o'tishini kuzatish", "ru": "Наблюдать, как студент переходит от трудностей к успеху" },
+                "career_option": "Teacher",
+                "point": 15
+              },
+              {
+                "text": { "en": "Helping someone navigate a mental health crisis and recover", "uz": "Kimgadir ruhiy sog'liq inqirozini boshqarish va tuzalishida yordam berish", "ru": "Помочь человеку пережить психологический кризис и восстановиться" },
+                "career_option": "Psychologist",
+                "point": 15
+              },
+              {
+                "text": { "en": "Producing a study that influences policy and improves real lives", "uz": "Siyosatga ta'sir qiladigan va haqiqiy hayotni yaxshilaydigan tadqiqot yaratish", "ru": "Провести исследование, влияющее на политику и улучшающее реальные жизни" },
+                "career_option": "Researcher",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "How do you handle emotionally heavy situations?",
+              "uz": "Hissiy jihatdan og'ir vaziyatlarni qanday boshqarasiz?",
+              "ru": "Как вы справляетесь с эмоционально тяжёлыми ситуациями?"
+            },
+            "answers": [
+              {
+                "text": { "en": "I stay calm and focused — staying composed is what helps most in a crisis", "uz": "Sakin va diqqatli bo'laman — inqirozda sakin turishning o'zi ko'proq yordam beradi", "ru": "Остаюсь спокойным и сосредоточенным — хладнокровие в кризисе помогает больше всего" },
+                "career_option": "Doctor",
+                "point": 15
+              },
+              {
+                "text": { "en": "I feel it deeply but use it as fuel to fight harder for the person", "uz": "Chuqur his qilaman, lekin uni odam uchun qattiqroq kurashish uchun yoqilg'i sifatida ishlataman", "ru": "Переживаю глубоко, но использую это как топливо, чтобы сражаться сильнее" },
+                "career_option": "Lawyer",
+                "point": 15
+              },
+              {
+                "text": { "en": "I create a safe space and let people feel heard and understood", "uz": "Xavfsiz makon yarataman va odamlarga eshitilgan va tushunilgan his ettirishga ruxsat beraman", "ru": "Создаю безопасное пространство, где люди чувствуют себя услышанными" },
+                "career_option": "Psychologist",
+                "point": 15
+              },
+              {
+                "text": { "en": "I take practical action — get resources, make calls, find solutions", "uz": "Amaliy harakat qilaman — resurslarni topish, qo'ng'iroqlar, yechimlarni topish", "ru": "Действую практически — нахожу ресурсы, звоню, ищу решения" },
+                "career_option": "Social Worker",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "What kind of environment do you see yourself working in long-term?",
+              "uz": "Uzoq muddatda qanday muhitda ishlayotganingizni tasavvur qilasiz?",
+              "ru": "Какую среду работы вы видите для себя в долгосрочной перспективе?"
+            },
+            "answers": [
+              {
+                "text": { "en": "A clinic or hospital — fast-paced, high-stakes and always learning", "uz": "Klinika yoki kasalxona — tez sur'atli, yuqori riskli va doim o'rganish", "ru": "Клиника или больница — динамичная, ответственная и постоянно развивающаяся" },
+                "career_option": "Doctor",
+                "point": 15
+              },
+              {
+                "text": { "en": "A school or university — shaping minds and watching people grow", "uz": "Maktab yoki universitet — onglarni shakllantirish va odamlarning o'sishini kuzatish", "ru": "Школа или университет — формировать умы и наблюдать, как люди растут" },
+                "career_option": "Teacher",
+                "point": 15
+              },
+              {
+                "text": { "en": "A courtroom or law firm — arguments, precision and high stakes", "uz": "Sud zali yoki huquqiy firma — argumentlar, aniqlik va yuqori risklar", "ru": "Зал суда или юридическая фирма — аргументы, точность и высокие ставки" },
+                "career_option": "Lawyer",
+                "point": 15
+              },
+              {
+                "text": { "en": "A university lab or research institute — deep focus and discovery", "uz": "Universitet laboratoriyasi yoki tadqiqot instituti — chuqur diqqat va kashfiyot", "ru": "Университетская лаборатория или научный институт — глубокое погружение и открытия" },
+                "career_option": "Researcher",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "What motivates you to keep going on a tough day?",
+              "uz": "Qiyin kunda davom etishingizga nima undaydi?",
+              "ru": "Что мотивирует вас продолжать в трудный день?"
+            },
+            "answers": [
+              {
+                "text": { "en": "A patient recovering — that's the whole reason I'm here", "uz": "Bemorning tuzalishi — bu men bu yerda bo'lishimning asosiy sababi", "ru": "Выздоравливающий пациент — ради этого я здесь" },
+                "career_option": "Doctor",
+                "point": 15
+              },
+              {
+                "text": { "en": "A student who messaged me years later to say I changed their life", "uz": "Yillar keyin hayotimni o'zgartirdingiz deb xabar yuborgan o'quvchi", "ru": "Студент, который написал спустя годы, что я изменил его жизнь" },
+                "career_option": "Teacher",
+                "point": 15
+              },
+              {
+                "text": { "en": "Knowing my research might fix a problem for millions of people", "uz": "Tadqiqotim millionlab odamlar uchun muammoni hal qilishi mumkinligini bilish", "ru": "Осознание, что моё исследование может решить проблему для миллионов" },
+                "career_option": "Researcher",
+                "point": 15
+              },
+              {
+                "text": { "en": "Seeing a vulnerable family get the support they desperately needed", "uz": "Zaif oilaning juda kerak bo'lgan yordamni olishini ko'rish", "ru": "Видеть, как уязвимая семья получает давно нужную поддержку" },
+                "career_option": "Social Worker",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "If you could only be known for one thing in your career, what would it be?",
+              "uz": "Karyerangizda faqat bitta narsa bilan tanilsangiz, bu nima bo'lar edi?",
+              "ru": "Если бы вас в карьере знали только за одно — что бы это было?"
+            },
+            "answers": [
+              {
+                "text": { "en": "The doctor who saved lives that others gave up on", "uz": "Boshqalar voz kechgan hayotlarni qutqargan shifokor", "ru": "Врач, который спасал жизни там, где другие опустили руки" },
+                "career_option": "Doctor",
+                "point": 15
+              },
+              {
+                "text": { "en": "The teacher whose students went on to achieve great things", "uz": "O'quvchilari buyuk narsalarga erishgan o'qituvchi", "ru": "Учитель, чьи ученики достигли больших успехов" },
+                "career_option": "Teacher",
+                "point": 15
+              },
+              {
+                "text": { "en": "The lawyer who never backed down from a just cause", "uz": "Adolatli maqsaddan hech qachon qaytmagan advokat", "ru": "Юрист, который никогда не отступал от правого дела" },
+                "career_option": "Lawyer",
+                "point": 15
+              },
+              {
+                "text": { "en": "The psychologist who helped people finally understand themselves", "uz": "Odamlarga nihoyat o'zlarini tushunishlariga yordam bergan psixolog", "ru": "Психолог, который помогал людям наконец понять самих себя" },
+                "career_option": "Psychologist",
+                "point": 15
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "trade",
+      "name": {
+        "en": "Trade & Commerce",
+        "uz": "Savdo va Tijorat",
+        "ru": "Торговля и коммерция"
+      },
+      "domains": [
+        "Food & Beverage Production",
+        "Textile & Apparel Manufacturing",
+        "Real Estate Development",
+        "Property Management",
+        "Retail & Trade",
+        "Consumer Goods Manufacturing",
+        "Wholesale Distribution"
+      ],
+      "career_options": [
+        {
+          "title": { "en": "Sales Manager", "uz": "Savdo menejeri", "ru": "Менеджер по продажам" },
+          "description": { "en": "Leads sales teams and drives revenue growth", "uz": "Savdo jamoalarini boshqaradi va daromad o'sishini ta'minlaydi", "ru": "Руководит отделом продаж и обеспечивает рост выручки" }
+        },
+        {
+          "title": { "en": "Supply Chain Manager", "uz": "Ta'minot zanjiri menejeri", "ru": "Менеджер цепочки поставок" },
+          "description": { "en": "Optimises the flow of goods from production to customer", "uz": "Tovarlarning ishlab chiqarishdan mijozgacha oqimini optimallashtiradi", "ru": "Оптимизирует поток товаров от производства до покупателя" }
+        },
+        {
+          "title": { "en": "Real Estate Agent", "uz": "Ko'chmas mulk agenti", "ru": "Агент по недвижимости" },
+          "description": { "en": "Facilitates buying, selling and renting of properties", "uz": "Ko'chmas mulkni sotib olish, sotish va ijaraga berishni osonlashtiradi", "ru": "Содействует покупке, продаже и аренде недвижимости" }
+        },
+        {
+          "title": { "en": "Retail Manager", "uz": "Chakana savdo menejeri", "ru": "Менеджер розничной торговли" },
+          "description": { "en": "Manages day-to-day retail store operations", "uz": "Chakana savdo do'konining kundalik operatsiyalarini boshqaradi", "ru": "Управляет повседневными операциями розничного магазина" }
+        },
+        {
+          "title": { "en": "Buyer / Merchandiser", "uz": "Xaridor / Merchandayzer", "ru": "Байер / Мерчандайзер" },
+          "description": { "en": "Selects and sources products for retail or wholesale", "uz": "Chakana yoki ulgurji savdo uchun mahsulotlarni tanlaydi va ta'minlaydi", "ru": "Подбирает и закупает товары для розничной или оптовой торговли" }
+        },
+        {
+          "title": { "en": "Textile & Production Specialist", "uz": "To'qimachilik va ishlab chiqarish mutaxassisi", "ru": "Специалист по текстилю и производству" },
+          "description": { "en": "Manages textile production processes and quality", "uz": "To'qimachilik ishlab chiqarish jarayonlari va sifatini boshqaradi", "ru": "Управляет процессами текстильного производства и качеством" }
+        }
+      ],
+      "phase2_quiz": {
+        "name": {
+          "en": "Trade & Commerce — Career Match",
+          "uz": "Savdo va Tijorat — Karyera tanlash",
+          "ru": "Торговля и коммерция — Подбор карьеры"
+        },
+        "description": {
+          "en": "Let's find the right trade or commerce career for you.",
+          "uz": "Sizga mos savdo yoki tijorat karyerasini topamiz.",
+          "ru": "Найдём подходящую карьеру в торговле или коммерции."
+        },
+        "questions": [
+          {
+            "title": {
+              "en": "What excites you most about commerce and trade?",
+              "uz": "Tijorat va savdoda sizni eng ko'p nima hayajontiradi?",
+              "ru": "Что вас больше всего привлекает в торговле и коммерции?"
+            },
+            "answers": [
+              {
+                "text": { "en": "The thrill of closing a deal and beating targets", "uz": "Kelishuv tuzish va maqsadlarni oshib o'tishning hayajoni", "ru": "Азарт от закрытия сделки и превышения планов" },
+                "career_option": "Sales Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "Making sure goods move efficiently from point A to point B", "uz": "Tovarlarning A nuqtasidan B nuqtasiga samarali harakatlanishini ta'minlash", "ru": "Обеспечивать эффективное перемещение товаров из точки А в точку Б" },
+                "career_option": "Supply Chain Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "Helping people find the perfect property for their lives", "uz": "Odamlarga hayotlari uchun mukammal mulkni topishga yordam berish", "ru": "Помогать людям найти идеальную недвижимость для их жизни" },
+                "career_option": "Real Estate Agent",
+                "point": 15
+              },
+              {
+                "text": { "en": "Running a store where everything works and customers are happy", "uz": "Hamma narsa ishlaydi va mijozlar mamnun bo'lgan do'konni boshqarish", "ru": "Управлять магазином, где всё работает и клиенты довольны" },
+                "career_option": "Retail Manager",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "You're given a budget to spend on goods. What's your approach?",
+              "uz": "Sizga tovarlar uchun byudjet berildi. Yondashuvingiz qanday?",
+              "ru": "Вам дают бюджет на закупку товаров. Каков ваш подход?"
+            },
+            "answers": [
+              {
+                "text": { "en": "I'd negotiate hard with suppliers to get the best deal possible", "uz": "Eng yaxshi kelishuvni olish uchun ta'minotchilar bilan qattiq muzokaralar olib boraman", "ru": "Буду жёстко торговаться с поставщиками ради лучших условий" },
+                "career_option": "Sales Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "Map the full supply chain — who makes it, how it arrives, at what cost", "uz": "To'liq ta'minot zanjirini xaritalash — kim yasaydi, qanday keladi, qancha turadi", "ru": "Составить полную цепочку — кто производит, как доставляется, по какой цене" },
+                "career_option": "Supply Chain Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "Research what's trending and pick items customers will actually want", "uz": "Nima trend ekanligini tadqiq qilish va mijozlar xohlaydigan narsalarni tanlash", "ru": "Исследовать тренды и выбрать товары, которые реально захотят покупатели" },
+                "career_option": "Buyer / Merchandiser",
+                "point": 15
+              },
+              {
+                "text": { "en": "Focus on quality and consistency of raw materials for production", "uz": "Ishlab chiqarish uchun xom ashyoning sifati va izchilligiga e'tibor qaratish", "ru": "Сосредоточиться на качестве и стабильности сырья для производства" },
+                "career_option": "Textile & Production Specialist",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "Which daily work sounds most like you?",
+              "uz": "Qaysi kundalik ish sizga ko'proq mos keladi?",
+              "ru": "Какая ежедневная работа больше всего похожа на вас?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Calling leads, pitching products and pushing the team to hit numbers", "uz": "Potentsial mijozlarga qo'ng'iroq qilish, mahsulotlarni taqdim etish va jamoani raqamlarga yetkazish", "ru": "Обзванивать лиды, презентовать продукты и подталкивать команду к плану" },
+                "career_option": "Sales Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "Tracking shipments, coordinating suppliers and solving delays", "uz": "Yuk tashishlarni kuzatish, ta'minotchilarni muvofiqlashtirish va kechikishlarni hal qilish", "ru": "Отслеживать поставки, координировать поставщиков и устранять задержки" },
+                "career_option": "Supply Chain Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "Showing properties, reading client needs and matching them perfectly", "uz": "Ko'chmas mulkni ko'rsatish, mijoz ehtiyojlarini o'qish va ularga to'liq mos kelish", "ru": "Показывать объекты, считывать потребности клиентов и идеально им подбирать" },
+                "career_option": "Real Estate Agent",
+                "point": 15
+              },
+              {
+                "text": { "en": "Opening the store, managing staff shifts and solving customer issues", "uz": "Do'konni ochish, xodimlar navbatini boshqarish va mijoz muammolarini hal qilish", "ru": "Открывать магазин, управлять сменами и решать вопросы покупателей" },
+                "career_option": "Retail Manager",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "What kind of products or goods do you find most interesting to work with?",
+              "uz": "Qanday mahsulotlar yoki tovarlar bilan ishlash sizga eng qiziqarli?",
+              "ru": "С какими продуктами или товарами вам интереснее всего работать?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Any product — as long as I can sell it better than anyone else", "uz": "Istalgan mahsulot — agar uni boshqalardan yaxshiroq sota olsam", "ru": "Любой продукт — лишь бы продавать лучше всех" },
+                "career_option": "Sales Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "Fabrics, garments and apparel — fashion and manufacturing intrigue me", "uz": "Matolar, kiyimlar va kiyim-kechak — moda va ishlab chiqarish meni qiziqtiradi", "ru": "Ткани, одежда и текстиль — мода и производство меня привлекают" },
+                "career_option": "Textile & Production Specialist",
+                "point": 15
+              },
+              {
+                "text": { "en": "Property — land, apartments and commercial buildings have real value", "uz": "Ko'chmas mulk — yer, kvartiralar va tijorat binolari haqiqiy qiymatga ega", "ru": "Недвижимость — земля, квартиры и коммерческие здания имеют реальную ценность" },
+                "career_option": "Real Estate Agent",
+                "point": 15
+              },
+              {
+                "text": { "en": "Consumer goods — I love spotting what's trendy and what sells", "uz": "Iste'mol tovarlari — nima trend ekanligi va nima sotilishini aniqlashni yaxshi ko'raman", "ru": "Потребительские товары — люблю угадывать тренды и то, что будет продаваться" },
+                "career_option": "Buyer / Merchandiser",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "What's your relationship with numbers and logistics?",
+              "uz": "Raqamlar va logistika bilan munosabatingiz qanday?",
+              "ru": "Как у вас складываются отношения с цифрами и логистикой?"
+            },
+            "answers": [
+              {
+                "text": { "en": "I focus on revenue numbers — the rest is someone else's job", "uz": "Daromad raqamlariga e'tibor qarataman — qolganlari boshqalarning ishi", "ru": "Сосредоточен на цифрах выручки — остальное чужая работа" },
+                "career_option": "Sales Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "I live in spreadsheets — inventory, lead times, cost per unit", "uz": "Elektron jadvallarda yashiyman — inventar, etkazib berish muddatlari, birlik narxi", "ru": "Живу в таблицах — запасы, сроки поставок, стоимость единицы" },
+                "career_option": "Supply Chain Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "I track market prices and property valuations very carefully", "uz": "Bozor narxlari va mulk baholashlarini juda diqqat bilan kuzataman", "ru": "Тщательно отслеживаю рыночные цены и оценки недвижимости" },
+                "career_option": "Real Estate Agent",
+                "point": 15
+              },
+              {
+                "text": { "en": "I use data to plan which products to stock and how much", "uz": "Qaysi mahsulotlarni va qancha miqdorda omborda saqlashni rejalashtirish uchun ma'lumotlardan foydalanaman", "ru": "Использую данные для планирования ассортимента и объёмов запасов" },
+                "career_option": "Buyer / Merchandiser",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "How do you feel about working with physical goods and production?",
+              "uz": "Jismoniy tovarlar va ishlab chiqarish bilan ishlashga qanday qaraysiz?",
+              "ru": "Как вы относитесь к работе с физическими товарами и производством?"
+            },
+            "answers": [
+              {
+                "text": { "en": "I'd rather be selling than touching the product itself", "uz": "Mahsulotni o'zim bilan shug'ullanishdan ko'ra, sotishni afzal ko'raman", "ru": "Лучше продавать, чем работать с самим продуктом" },
+                "career_option": "Sales Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "I love seeing how something moves from factory to customer's hands", "uz": "Bir narsa zavoddan mijoz qo'liga qanday o'tishini ko'rishni yaxshi ko'raman", "ru": "Люблю видеть, как товар движется от завода до рук покупателя" },
+                "career_option": "Supply Chain Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "I understand fabric quality and production standards deeply", "uz": "Mato sifati va ishlab chiqarish standartlarini chuqur tushunaman", "ru": "Хорошо разбираюсь в качестве тканей и производственных стандартах" },
+                "career_option": "Textile & Production Specialist",
+                "point": 15
+              },
+              {
+                "text": { "en": "I love seeing a store floor that's visually appealing and well-stocked", "uz": "Vizual jihatdan jozibali va yaxshi ta'minlangan do'kon polini ko'rishni yaxshi ko'raman", "ru": "Люблю видеть торговый зал, который красиво оформлен и хорошо заполнен" },
+                "career_option": "Retail Manager",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "What's your approach when something goes wrong in a commercial deal?",
+              "uz": "Tijorat bitimida biror narsa noto'g'ri ketganda yondashuvingiz qanday?",
+              "ru": "Каков ваш подход, когда в коммерческой сделке что-то идёт не так?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Get on the phone immediately and negotiate a solution", "uz": "Darhol telefonga o'tiring va yechimni muzokaralar orqali topish", "ru": "Сразу берусь за телефон и договариваюсь о решении" },
+                "career_option": "Sales Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "Trace the issue back through the chain and fix the root cause", "uz": "Muammoni zanjir orqali qaytarib kuzatish va asosiy sababni tuzatish", "ru": "Прослеживаю проблему по цепочке и устраняю первопричину" },
+                "career_option": "Supply Chain Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "Reassure all parties and guide everyone to the best outcome", "uz": "Barcha tomonlarni tinchlantirish va hammani eng yaxshi natijaga yo'naltirish", "ru": "Успокоить все стороны и направить всех к лучшему результату" },
+                "career_option": "Real Estate Agent",
+                "point": 15
+              },
+              {
+                "text": { "en": "Inspect the production line — the problem is usually in the process", "uz": "Ishlab chiqarish liniyasini tekshirish — muammo odatda jarayonda bo'ladi", "ru": "Проверить производственную линию — проблема обычно в процессе" },
+                "career_option": "Textile & Production Specialist",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "How would people who know you best describe your work style?",
+              "uz": "Sizni yaxshi biladigan odamlar ish uslubingizni qanday tavsiflaydi?",
+              "ru": "Как бы описали ваш рабочий стиль люди, которые знают вас лучше всего?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Competitive, persuasive and motivated by results", "uz": "Raqobatbardosh, ishontiruvchi va natijalar bilan rag'batlantirilgan", "ru": "Конкурентный, убедительный и мотивированный результатами" },
+                "career_option": "Sales Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "Systematic, reliable and great at coordinating moving parts", "uz": "Tizimli, ishonchli va harakatlanuvchi qismlarni muvofiqlashtirish bo'yicha ajoyib", "ru": "Системный, надёжный и отлично координирующий движущиеся части" },
+                "career_option": "Supply Chain Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "Charming, trustworthy and great with long-term client relationships", "uz": "Jozibali, ishonchli va uzoq muddatli mijoz munosabatlarida ajoyib", "ru": "Обаятельный, надёжный и отличный в долгосрочных отношениях с клиентами" },
+                "career_option": "Real Estate Agent",
+                "point": 15
+              },
+              {
+                "text": { "en": "Detail-oriented, quality-focused and deeply knowledgeable about materials", "uz": "Tafsilotlarga e'tibor qaratuvchi, sifatga yo'naltirilgan va materiallar haqida chuqur bilimga ega", "ru": "Внимательный к деталям, ориентированный на качество и глубоко знающий материалы" },
+                "career_option": "Textile & Production Specialist",
+                "point": 15
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "nature",
+      "name": {
+        "en": "Nature, Food & Movement",
+        "uz": "Tabiat, Oziq-ovqat va Harakat",
+        "ru": "Природа, еда и движение"
+      },
+      "domains": [
+        "Agriculture & Farming",
+        "Food Processing",
+        "Agricultural Technology",
+        "Hotels & Hospitality",
+        "Tourism & Travel Agencies",
+        "Restaurants & Food Service",
+        "Event Management",
+        "Transportation Services",
+        "Logistics & Warehousing",
+        "Freight & Cargo"
+      ],
+      "career_options": [
+        {
+          "title": { "en": "Agronomist", "uz": "Agronom", "ru": "Агроном" },
+          "description": { "en": "Manages crops and soil to improve agricultural yield", "uz": "Qishloq xo'jaligini yaxshilash uchun ekinlar va tuproqni boshqaradi", "ru": "Управляет посевами и почвой для повышения урожайности" }
+        },
+        {
+          "title": { "en": "Chef", "uz": "Oshpaz", "ru": "Шеф-повар" },
+          "description": { "en": "Creates and leads food preparation in professional kitchens", "uz": "Professional oshxonalarda ovqat tayyorlashni yaratadi va boshqaradi", "ru": "Создаёт блюда и руководит приготовлением пищи на профессиональной кухне" }
+        },
+        {
+          "title": { "en": "Hotel Manager", "uz": "Mehmonxona menejeri", "ru": "Менеджер гостиницы" },
+          "description": { "en": "Oversees all operations and guest experience in a hotel", "uz": "Mehmonxonadagi barcha operatsiyalar va mehmon tajribasini nazorat qiladi", "ru": "Контролирует все операции и опыт гостей в отеле" }
+        },
+        {
+          "title": { "en": "Tour Guide & Travel Specialist", "uz": "Gid va sayohat mutaxassisi", "ru": "Гид и специалист по туризму" },
+          "description": { "en": "Organises travel experiences and leads tourist groups", "uz": "Sayohat tajribalarini tashkil qiladi va turist guruhlarini boshqaradi", "ru": "Организует туристические мероприятия и руководит группами туристов" }
+        },
+        {
+          "title": { "en": "Logistics Coordinator", "uz": "Logistika koordinatori", "ru": "Координатор логистики" },
+          "description": { "en": "Plans and tracks movement of goods and freight", "uz": "Tovarlar va yuklarning harakatini rejalashtiradi va kuzatadi", "ru": "Планирует и отслеживает движение товаров и грузов" }
+        },
+        {
+          "title": { "en": "Agricultural Engineer", "uz": "Qishloq xo'jaligi muhandisi", "ru": "Инженер-агроном" },
+          "description": { "en": "Applies technology to improve farming systems", "uz": "Dehqonchilik tizimlarini yaxshilash uchun texnologiyani qo'llaydi", "ru": "Применяет технологии для улучшения сельскохозяйственных систем" }
+        }
+      ],
+      "phase2_quiz": {
+        "name": {
+          "en": "Nature, Food & Movement — Career Match",
+          "uz": "Tabiat, Oziq-ovqat va Harakat — Karyera tanlash",
+          "ru": "Природа, еда и движение — Подбор карьеры"
+        },
+        "description": {
+          "en": "Let's find the right career in this field for you.",
+          "uz": "Bu sohada sizga mos karyerani topamiz.",
+          "ru": "Найдём подходящую карьеру в этой сфере для вас."
+        },
+        "questions": [
+          {
+            "title": {
+              "en": "What draws you to this field?",
+              "uz": "Sizni bu sohaga nima jalb qiladi?",
+              "ru": "Что привлекает вас в этой сфере?"
+            },
+            "answers": [
+              {
+                "text": { "en": "I love the land — working outdoors and growing things", "uz": "Erni yaxshi ko'raman — tashqarida ishlash va narsa o'stirish", "ru": "Люблю землю — работать на свежем воздухе и выращивать" },
+                "career_option": "Agronomist",
+                "point": 15
+              },
+              {
+                "text": { "en": "Food is my passion — creating dishes that make people happy", "uz": "Ovqat mening ishtiyoqim — odamlarni baxtli qiladigan taomlar yaratish", "ru": "Еда — моя страсть — создавать блюда, которые делают людей счастливыми" },
+                "career_option": "Chef",
+                "point": 15
+              },
+              {
+                "text": { "en": "I love travel and showing people incredible places and cultures", "uz": "Sayohatlashni va odamlarga ajoyib joylar va madaniyatlarni ko'rsatishni yaxshi ko'raman", "ru": "Люблю путешествия и показывать людям невероятные места и культуры" },
+                "career_option": "Tour Guide & Travel Specialist",
+                "point": 15
+              },
+              {
+                "text": { "en": "Moving things efficiently — routes, timing and cargo coordination", "uz": "Narsalarni samarali harakatlantirish — marshrutlar, vaqt va yuk muvofiqlashtirish", "ru": "Эффективно перемещать вещи — маршруты, сроки, координация грузов" },
+                "career_option": "Logistics Coordinator",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "Which environment would make you happiest at work?",
+              "uz": "Qaysi muhit ishda sizni baxtliroq qiladi?",
+              "ru": "Какая среда сделает вас счастливее всего на работе?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Fields, farms and open land — far from a city office", "uz": "Dalalar, fermalar va ochiq yer — shahar ofisidan uzoq", "ru": "Поля, фермы и открытые угодья — далеко от городского офиса" },
+                "career_option": "Agronomist",
+                "point": 15
+              },
+              {
+                "text": { "en": "A professional kitchen — fast, hot and full of creativity", "uz": "Professional oshxona — tez, issiq va ijodkorlikka to'la", "ru": "Профессиональная кухня — быстрая, жаркая и полная творчества" },
+                "career_option": "Chef",
+                "point": 15
+              },
+              {
+                "text": { "en": "A hotel — managing staff, guests and the whole experience", "uz": "Mehmonxona — xodimlarni, mehmonlarni va butun tajribani boshqarish", "ru": "Отель — управлять персоналом, гостями и всем процессом" },
+                "career_option": "Hotel Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "A warehouse, logistics hub or always on the move between locations", "uz": "Ombor, logistika markazi yoki doim joylar o'rtasida harakatda", "ru": "Склад, логистический хаб или постоянное движение между объектами" },
+                "career_option": "Logistics Coordinator",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "What kind of problem-solving appeals to you most in this sector?",
+              "uz": "Bu sektorda muammo hal qilishning qaysi turi sizga ko'proq yoqadi?",
+              "ru": "Какой вид решения проблем в этом секторе вам больше всего нравится?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Diagnosing why crops aren't growing and fixing the soil or irrigation", "uz": "Ekinlar nima uchun o'smayotganini aniqlash va tuproq yoki sug'orishni tuzatish", "ru": "Диагностировать, почему не растут культуры, и исправить почву или полив" },
+                "career_option": "Agronomist",
+                "point": 15
+              },
+              {
+                "text": { "en": "Using machines and sensors to make farming smarter and more efficient", "uz": "Dehqonchilikni aqlliroq va samaraliroq qilish uchun mashinalar va sensorlardan foydalanish", "ru": "Использовать машины и датчики, чтобы сделать фермерство умнее и эффективнее" },
+                "career_option": "Agricultural Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "Making sure a guest's stay is absolutely perfect from check-in to checkout", "uz": "Ro'yxatga olishdan chiqishgacha mehmonning qolishi mutlaqo mukammal bo'lishini ta'minlash", "ru": "Убедиться, что пребывание гостя идеально от заезда до отъезда" },
+                "career_option": "Hotel Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "Planning a travel itinerary that fits a group's budget and interests perfectly", "uz": "Guruh byudjetiga va qiziqishlariga to'liq mos keladigan sayohat marshrutini rejalashtirish", "ru": "Составить маршрут, идеально соответствующий бюджету и интересам группы" },
+                "career_option": "Tour Guide & Travel Specialist",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "What's your relationship with food?",
+              "uz": "Ovqat bilan munosabatingiz qanday?",
+              "ru": "Каковы ваши отношения с едой?"
+            },
+            "answers": [
+              {
+                "text": { "en": "I understand where food comes from and how it's grown", "uz": "Ovqat qayerdan kelib chiqishini va qanday o'stirilishini tushunaman", "ru": "Понимаю, откуда берётся еда и как она выращивается" },
+                "career_option": "Agronomist",
+                "point": 15
+              },
+              {
+                "text": { "en": "Cooking is my art — flavours, textures and presentation excite me", "uz": "Pishirish mening san'atim — ta'mlar, to'qimalar va taqdimot meni hayajontiradi", "ru": "Готовка — моё искусство — вкусы, текстуры и подача меня захватывают" },
+                "career_option": "Chef",
+                "point": 15
+              },
+              {
+                "text": { "en": "Food is a big part of travel — I love discovering local cuisine", "uz": "Ovqat sayohatning muhim qismi — mahalliy taomlarni kashf etishni yaxshi ko'raman", "ru": "Еда — важная часть путешествий — люблю открывать местную кухню" },
+                "career_option": "Tour Guide & Travel Specialist",
+                "point": 15
+              },
+              {
+                "text": { "en": "I think about food as a logistics and supply chain challenge", "uz": "Ovqatni logistika va ta'minot zanjiri muammosi sifatida ko'raman", "ru": "Воспринимаю еду как логистическую и цепочечную задачу" },
+                "career_option": "Logistics Coordinator",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "How do you feel about using technology in your work?",
+              "uz": "Ishingizda texnologiyadan foydalanishga qanday qaraysiz?",
+              "ru": "Как вы относитесь к использованию технологий в работе?"
+            },
+            "answers": [
+              {
+                "text": { "en": "I want to apply technology directly to improve agricultural productivity", "uz": "Qishloq xo'jaligi unumdorligini yaxshilash uchun texnologiyani bevosita qo'llamoqchiman", "ru": "Хочу напрямую применять технологии для повышения сельскохозяйственной производительности" },
+                "career_option": "Agricultural Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "I use it to track delivery routes, shipments and schedules", "uz": "Yetkazib berish marshrutlari, jo'natmalar va jadvallarni kuzatish uchun undan foydalanaman", "ru": "Использую для отслеживания маршрутов доставки, отправлений и расписаний" },
+                "career_option": "Logistics Coordinator",
+                "point": 15
+              },
+              {
+                "text": { "en": "Tech helps me manage hotel bookings, staff and guest feedback", "uz": "Texnologiya mehmonxona band qilishlarini, xodimlarni va mehmon fikrlarini boshqarishga yordam beradi", "ru": "Технологии помогают управлять бронированиями, персоналом и отзывами гостей" },
+                "career_option": "Hotel Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "I prefer hands-on skills — my craft doesn't depend on screens", "uz": "Amaliy ko'nikmalarni afzal ko'raman — mening mahoratim ekranlarga bog'liq emas", "ru": "Предпочитаю ручной труд — моё мастерство не зависит от экранов" },
+                "career_option": "Chef",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "What would you most love to be proud of in 10 years?",
+              "uz": "10 yil ichida nima bilan eng ko'p g'ururlanishni xohlaysiz?",
+              "ru": "Чем вам больше всего хотелось бы гордиться через 10 лет?"
+            },
+            "answers": [
+              {
+                "text": { "en": "A farm or region where my methods significantly increased crop yields", "uz": "Mening usullarim hosilni sezilarli darajada oshirgan ferma yoki mintaqa", "ru": "Ферма или регион, где мои методы значительно повысили урожайность" },
+                "career_option": "Agronomist",
+                "point": 15
+              },
+              {
+                "text": { "en": "My own restaurant or having trained a generation of talented chefs", "uz": "O'z restoranim yoki iste'dodli oshpazlar avlodini tayyorlaganimlik", "ru": "Собственный ресторан или обучение целого поколения талантливых поваров" },
+                "career_option": "Chef",
+                "point": 15
+              },
+              {
+                "text": { "en": "A smart farming system I helped design that's used across multiple regions", "uz": "Bir nechta mintaqalarda qo'llaniladigan, men loyihalashga yordam bergan aqlli dehqonchilik tizimi", "ru": "Система умного фермерства, которую я помог разработать и которая используется в нескольких регионах" },
+                "career_option": "Agricultural Engineer",
+                "point": 15
+              },
+              {
+                "text": { "en": "A travel brand I built that takes thousands of people on unforgettable trips", "uz": "Minglab odamlarni unutilmas sayohatlarga olib boradigan men qurilgan sayohat brendi", "ru": "Туристический бренд, который я создал и который организует незабываемые путешествия тысячам людей" },
+                "career_option": "Tour Guide & Travel Specialist",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "Which of these best describes how you interact with people at work?",
+              "uz": "Quyidagilardan qaysi biri ishda odamlar bilan muloqot qilish usulini eng yaxshi tavsiflaydi?",
+              "ru": "Что из следующего лучше всего описывает ваше взаимодействие с людьми на работе?"
+            },
+            "answers": [
+              {
+                "text": { "en": "I guide visitors and make them feel welcome in an unfamiliar place", "uz": "Mehmonlarni yo'naltiraman va ularni notanish joyda xush his qilishlariga yordam beraman", "ru": "Я направляю гостей и помогаю им чувствовать себя комфортно в незнакомом месте" },
+                "career_option": "Tour Guide & Travel Specialist",
+                "point": 15
+              },
+              {
+                "text": { "en": "I manage a team to deliver flawless service every single day", "uz": "Har kuni nuqsonsiz xizmat ko'rsatish uchun jamoani boshqaraman", "ru": "Управляю командой для безупречного сервиса каждый день" },
+                "career_option": "Hotel Manager",
+                "point": 15
+              },
+              {
+                "text": { "en": "I mostly work with land, animals and equipment rather than customers", "uz": "Asosan mijozlar emas, yer, hayvonlar va uskunalar bilan ishlayman", "ru": "В основном работаю с землёй, животными и оборудованием, а не с клиентами" },
+                "career_option": "Agronomist",
+                "point": 15
+              },
+              {
+                "text": { "en": "I coordinate with drivers, warehouses and suppliers all day", "uz": "Kun bo'yi haydovchilar, omborlar va ta'minotchilar bilan muvofiqlashtiraman", "ru": "Весь день координирую с водителями, складами и поставщиками" },
+                "career_option": "Logistics Coordinator",
+                "point": 15
+              }
+            ]
+          },
+          {
+            "title": {
+              "en": "What's your idea of a career well lived?",
+              "uz": "Yaxshi yashalgan karyera haqidagi fikringiz qanday?",
+              "ru": "Как вы представляете себе карьеру, прожитую с смыслом?"
+            },
+            "answers": [
+              {
+                "text": { "en": "Feeding people — knowing the food on their table came from work I did", "uz": "Odamlarni ovqatlantirish — dasturxonlaridagi ovqat mening mehnatim natijasi ekanligini bilish", "ru": "Кормить людей — знать, что еда на их столе — результат моего труда" },
+                "career_option": "Agronomist",
+                "point": 15
+              },
+              {
+                "text": { "en": "Creating dishes that bring people together around a table", "uz": "Odamlarni dasturxon atrofida birlashtiruvchi taomlar yaratish", "ru": "Создавать блюда, которые собирают людей за столом" },
+                "career_option": "Chef",
+                "point": 15
+              },
+              {
+                "text": { "en": "Making sure that wherever goods need to go, they arrive on time", "uz": "Tovarlar qayerga borishi kerak bo'lsa, ular o'z vaqtida yetib borishi ta'minlash", "ru": "Обеспечивать, чтобы товары всегда прибывали вовремя, куда бы они ни направлялись" },
+                "career_option": "Logistics Coordinator",
+                "point": 15
+              },
+              {
+                "text": { "en": "Building systems that make farming sustainable for future generations", "uz": "Kelgusi avlodlar uchun dehqonchilikni barqaror qiladigan tizimlarni yaratish", "ru": "Создавать системы, которые делают сельское хозяйство устойчивым для будущих поколений" },
+                "career_option": "Agricultural Engineer",
+                "point": 15
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

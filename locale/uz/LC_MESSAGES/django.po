@@ -1,0 +1,4395 @@
+# WorkXplorer Platform - UZ Translations
+# Copyright (C) 2025 WorkXplorer
+# This file is distributed under the same license as the workxplorer package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WorkXplorer 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-18 11:52+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: WorkXplorer Team\n"
+"Language-Team: UZ\n"
+"Language: uz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps/ai/serializers/ai_action.py:32
+msgid "The 'status' field is required."
+msgstr "'status' maydoni majburiy."
+
+#: apps/ai/serializers/ai_action.py:34
+#, python-brace-format
+msgid "Invalid status. Supported values: {choices}"
+msgstr "Noto'g'ri status. Qo'llab-quvvatlanadigan qiymatlar: {choices}"
+
+#: apps/ai/serializers/ai_action.py:42
+msgid "The 'ai_model' field is required."
+msgstr "'ai_model' maydoni majburiy."
+
+#: apps/ai/serializers/ai_action.py:44
+#, python-brace-format
+msgid "Invalid ai_model. Supported values: {choices}"
+msgstr "Noto'g'ri ai_model. Qo'llab-quvvatlanadigan qiymatlar: {choices}"
+
+#: apps/ai/serializers/ai_action.py:53
+msgid "URL of an external vacancy page to fetch and parse (e.g. hh.uz)."
+msgstr "Tashqi vakansiya sahifasi URL manzili (masalan, hh.uz)."
+
+#: apps/ai/serializers/ai_action.py:60
+msgid "Raw vacancy description text when not using a URL."
+msgstr "URL ishlatilmaganda vakansiya tavsifi matni."
+
+#: apps/ai/serializers/ai_action.py:68
+msgid ""
+"Either 'vacancy_url' or 'vacancy_body' is required when status is "
+"'create_vacancy'."
+msgstr ""
+"Status 'create_vacancy' bo'lganda 'vacancy_url' yoki 'vacancy_body' majburiy."
+
+#: apps/ai/views/ai_action.py:59
+msgid "Only administrators can list passive skills."
+msgstr "Faqat administratorlar passiv ko'nikmalarni ko'rishlari mumkin"
+
+#: apps/ai/views/ai_action.py:66
+msgid "The 'status' query parameter is required."
+msgstr "'status' so'rov parametri majburiy."
+
+#: apps/ai/views/ai_action.py:69
+msgid "This parameter is mandatory. Supported value: 'passive_skills'."
+msgstr "Bu parametr majburiy. Qo'llab-quvvatlanadigan qiymat: 'passive_skills'."
+
+#: apps/ai/views/ai_action.py:83
+msgid "Passive skills retrieved successfully."
+msgstr "Passiv ko'nikmalar muvaffaqiyatli olindi"
+
+#: apps/ai/views/ai_action.py:87
+msgid "Invalid status parameter."
+msgstr "Noto'g'ri status parametri"
+
+#: apps/ai/views/ai_action.py:89
+msgid "Only 'passive_skills' is currently supported."
+msgstr "Hozirda faqat 'passive_skills' qo'llab-quvvatlanadi."
+
+#: apps/ai/views/ai_action.py:110
+msgid "Only administrators can validate skills."
+msgstr "Faqat administratorlar ko'nikmalarni tasdiqlashi mumkin."
+
+#: apps/ai/views/ai_action.py:115
+msgid "Only recruiters can create vacancies."
+msgstr "Faqat rekruterlar vakansiyalar yaratishi mumkin"
+
+#: apps/ai/views/ai_action.py:125
+msgid ""
+"The selected AI provider is not properly configured. Please check the API "
+"key in settings."
+msgstr ""
+"Tanlangan AI provayder to'g'ri sozlanmagan. Iltimos, sozlamalardan API "
+"kalitini tekshiring."
+
+#: apps/ai/views/ai_action.py:146
+msgid "AI validation failed."
+msgstr "AI tekshiruvi muvaffaqiyatsiz"
+
+#: apps/ai/views/ai_action.py:152
+msgid "Validation completed."
+msgstr "Tekshirish yakunlandi"
+
+#: apps/ai/views/ai_action.py:174
+msgid "Failed to fetch vacancy from the provided URL."
+msgstr "Berilgan URL manzilidan vakansiyani yuklab bo'lmadi."
+
+#: apps/ai/views/ai_action.py:186
+msgid "Vacancy creation failed."
+msgstr "Vakansiya yaratish muvaffaqiyatsiz"
+
+#: apps/ai/views/ai_action.py:192
+msgid "Vacancy created successfully via AI."
+msgstr "Vakansiya AI orqali muvaffaqiyatli yaratildi."
+
+#: apps/ai/views/ai_action.py:218
+msgid "Recruiter must be associated with a company to create vacancies"
+msgstr "Rekruter vakansiya yaratish uchun kompaniyaga bog'langan bo'lishi kerak"
+
+#: apps/ai/views/ai_action.py:223 apps/vacancies/views/crud.py:76
+msgid "Your company account is not active. Please contact support."
+msgstr "Kompaniya hisobingiz faol emas. Iltimos, yordam xizmatiga murojaat qiling."
+
+#: apps/ai/views/ai_action.py:236
+#, python-format
+msgid "Unknown AI model: %s"
+msgstr "Noma'lum AI modeli: %s"
+
+#: apps/applications/management/commands/reset_application_statuses.py:9
+msgid "Reset application statuses for a company to default template values"
+msgstr "Kompaniya uchun ariza statuslarini standart shablon qiymatlariga qaytarish"
+
+#: apps/applications/management/commands/reset_application_statuses.py:15
+msgid "The UUID of the company to reset statuses for"
+msgstr "Statuslar qayta tiklanadigan kompaniyaning UUIDsi"
+
+#: apps/applications/management/commands/reset_application_statuses.py:20
+msgid "Show what would be deleted/created without making changes"
+msgstr "O'zgartirishlarsiz nima o'chirilishi/yaratilishini ko'rsatish"
+
+#: apps/applications/management/commands/reset_application_statuses.py:36
+msgid "Company with ID {} not found."
+msgstr "ID {} bo'lgan kompaniya topilmadi."
+
+#: apps/applications/management/commands/reset_application_statuses.py:45
+msgid "Company {} has no existing statuses."
+msgstr "{} kompaniyasida mavjud statuslar yo'q."
+
+#: apps/applications/management/commands/reset_application_statuses.py:52
+msgid "No default status template found. Please create one first."
+msgstr "Standart status shabloni topilmadi. Iltimos, avval birini yarating."
+
+#: apps/applications/management/commands/reset_application_statuses.py:56
+msgid "Found default template: {}"
+msgstr "Standart shablon topildi: {}"
+
+#: apps/applications/management/commands/reset_application_statuses.py:59
+msgid "Existing statuses to delete: {}"
+msgstr "O'chiriladigan mavjud statuslar: {}"
+
+#: apps/applications/management/commands/reset_application_statuses.py:62
+msgid "Statuses to create from template: {}"
+msgstr "Shablondan yaratiladigan statuslar: {}"
+
+#: apps/applications/management/commands/reset_application_statuses.py:68
+msgid ""
+"\n"
+"Dry run mode - no changes will be made."
+msgstr ""
+"\n"
+"Sinov rejimi - hech qanday o'zgartirish kiritilmaydi."
+
+#: apps/applications/management/commands/reset_application_statuses.py:77
+msgid "Deleted {} existing statuses."
+msgstr "{} ta mavjud status o'chirildi."
+
+#: apps/applications/management/commands/reset_application_statuses.py:84
+msgid "Created {} new statuses from template."
+msgstr "Shablondan {} ta yangi status yaratildi."
+
+#: apps/applications/management/commands/reset_application_statuses.py:92
+msgid ""
+"\n"
+"Status reset complete for company {}!"
+msgstr ""
+"\n"
+"{} kompaniyasi uchun statuslarni qayta tiklash yakunlandi!"
+
+#: apps/applications/models/ai_evaluation.py:12 apps/general/models.py:26
+msgid "Pending"
+msgstr "Kutilmoqda"
+
+#: apps/applications/models/ai_evaluation.py:13 apps/general/models.py:27
+msgid "Processing"
+msgstr "Qayta ishlanmoqda"
+
+#: apps/applications/models/ai_evaluation.py:14 apps/general/models.py:28
+#: apps/skill_tests/models/tests.py:147
+msgid "Completed"
+msgstr "Bajarilgan"
+
+#: apps/applications/models/ai_evaluation.py:15 apps/general/models.py:29
+msgid "Failed"
+msgstr "Muvaffaqiyatsiz"
+
+#: apps/applications/models/ai_evaluation.py:31
+msgid "The job application this evaluation belongs to"
+msgstr "Ushbu baholash tegishli bo'lgan ish arizasi"
+
+#: apps/applications/models/ai_evaluation.py:38
+msgid "Current evaluation status"
+msgstr "Joriy baholash holati"
+
+#: apps/applications/models/ai_evaluation.py:43
+msgid "0-100 match score from AI evaluation"
+msgstr "AI baholashidan 0-100 moslik balli"
+
+#: apps/applications/models/ai_evaluation.py:48
+msgid "Full AI evaluation JSON result with uz/ru/en translations"
+msgstr "uz/ru/en tarjimalari bilan to'liq AI baholash JSON natijasi"
+
+#: apps/applications/models/ai_evaluation.py:53
+msgid "Language code detected from the candidate for this evaluation"
+msgstr "Ushbu baholash uchun nomzoddan aniqlangan til kodi"
+
+#: apps/applications/models/ai_evaluation.py:58
+msgid "Number of input/prompt tokens used for the AI request"
+msgstr "AI so'rovi uchun ishlatilgan kirish/prompt tokenlar soni"
+
+#: apps/applications/models/ai_evaluation.py:63
+msgid "Number of output/completion tokens returned by the AI"
+msgstr "AI tomonidan qaytarilgan chiqish/completion tokenlar soni"
+
+#: apps/applications/models/ai_evaluation.py:68
+msgid "Number of thinking/reasoning tokens used by the AI"
+msgstr "AI tomonidan ishlatilgan fikrlash/reasoning tokenlar soni"
+
+#: apps/applications/models/ai_evaluation.py:73
+msgid "Reference to the JobQueue entry tracking this evaluation task"
+msgstr "Ushbu baholash vazifasini kuzatuvchi JobQueue yozuviga havola"
+
+#: apps/applications/models/ai_evaluation.py:78
+msgid "Error details if evaluation failed"
+msgstr "Baholash muvaffaqiyatsiz bo'lsa xatolik tafsilotlari"
+
+#: apps/applications/models/ai_evaluation.py:83
+msgid "Timestamp when evaluation was completed"
+msgstr "Baholash yakunlangan vaqt"
+
+#: apps/applications/models/ai_evaluation.py:87
+msgid "Application AI Evaluation"
+msgstr "Ariza AI baholashi"
+
+#: apps/applications/models/ai_evaluation.py:88
+msgid "Application AI Evaluations"
+msgstr "Ariza AI baholashlari"
+
+#: apps/applications/models/applications.py:541
+#, python-brace-format
+msgid "Application is already in status '{status}'."
+msgstr "Ariza allaqachon '{status}' holatida."
+
+#: apps/applications/models/applications.py:550
+#, python-brace-format
+msgid ""
+"Candidates can only withdraw an application, not change it to '{target}'."
+msgstr ""
+"Nomzodlar arizani faqat qaytarib olishlari mumkin, uni '{target}' holatiga "
+"o‘zgartira olmaydi."
+
+#: apps/applications/models/applications.py:561
+msgid ""
+"Cannot change status of a withdrawn application. Only the candidate can "
+"reapply."
+msgstr ""
+"Qaytarib olingan arizaning holatini o'zgartirib bo'lmaydi. Faqat nomzod "
+"qayta topshirishi mumkin."
+
+#: apps/applications/models/applications.py:568
+#, python-brace-format
+msgid ""
+"Cannot manually move to '{target}' — this status is set only by AI "
+"evaluation."
+msgstr ""
+"'{target}' holatiga qo'lda o'zgartirib bo'lmaydi — bu holat faqat AI "
+"baholashi orqali o'rnatiladi."
+
+#: apps/applications/models/applications.py:576
+#, python-brace-format
+msgid ""
+"Cannot manually move from '{current}' — revaluation is done via the AI re-"
+"evaluation endpoint."
+msgstr ""
+"'{current}' dan qo'lda o'zgartirib bo'lmaydi — qayta baholash AI re-"
+"evaluation endpointi orqali amalga oshiriladi."
+
+#: apps/applications/models/applications.py:585
+#, python-brace-format
+msgid "Cannot reject from '{current}' — this is a terminal status."
+msgstr "'{current}' holatidan rad etib bo'lmaydi — bu yakuniy holat."
+
+#: apps/applications/models/applications.py:674
+msgid "None"
+msgstr "Yo'q"
+
+#: apps/applications/models/applications.py:677
+#, python-brace-format
+msgid ""
+"{user_type} cannot change status from '{current}' to '{new_status}'. Allowed "
+"transitions: {allowed}"
+msgstr ""
+"{user_type} holat '{current}' dan '{new_status}' ga o'zgartirib bo'lmaydi. "
+"Ruxsat etilgan o'tishlar: {allowed}"
+
+#: apps/applications/models/status.py:65
+msgid "Applied"
+msgstr "Vakansiyaga ariza topshirildi"
+
+#: apps/applications/models/status.py:66
+msgid "Screening"
+msgstr "Tekshirish"
+
+#: apps/applications/models/status.py:67
+msgid "Interviewing"
+msgstr "Suhbat o‘tkazilmoqda"
+
+#: apps/applications/models/status.py:68
+msgid "Assessment"
+msgstr "Sinov"
+
+#: apps/applications/models/status.py:69
+msgid "Training"
+msgstr "O'qitish"
+
+#: apps/applications/models/status.py:70 apps/hr_templates/models.py:19
+msgid "Offered"
+msgstr "Taklif etildi"
+
+#: apps/applications/models/status.py:71
+msgid "Hired"
+msgstr "Ishga qabul qilindi"
+
+#: apps/applications/models/status.py:72
+msgid "Offer Rejected"
+msgstr "Taklif rad etildi"
+
+#: apps/applications/models/status.py:73 apps/hr_templates/models.py:18
+msgid "Rejected"
+msgstr "Rad etilgan"
+
+#: apps/applications/models/status.py:74
+msgid "Withdrawn"
+msgstr "Qaytarib olindi"
+
+#: apps/applications/models/status.py:75
+msgid "On Hold"
+msgstr "Kutilmoqda"
+
+#: apps/applications/models/status.py:76
+msgid "AI Rejected"
+msgstr "AI rad etdi"
+
+#: apps/applications/models/status.py:83
+msgid "Unique identifier for the category (e.g., 'HIRED', 'REJECTED')"
+msgstr "Kategoriya uchun yagona identifikator (masalan, 'HIRED', 'REJECTED')"
+
+#: apps/applications/models/status.py:88
+msgid "Default display name in English"
+msgstr "Ingliz tilida standart ko'rsatish nomi"
+
+#: apps/applications/models/status.py:93
+msgid "Description of what this category represents"
+msgstr "Ushbu kategoriya nimani anglatishini tavsifi"
+
+#: apps/applications/models/status.py:99
+msgid "If true, statuses in this category end the application process"
+msgstr "Agar true bo'lsa, bu kategoriyadagi statuslar ariza jarayonini yakunlaydi"
+
+#: apps/applications/models/status.py:104
+msgid "If true, this is a positive outcome (hired, accepted)"
+msgstr "Agar true bo'lsa, bu ijobiy natija (ishga qabul qilingan, qabul qilingan)"
+
+#: apps/applications/models/status.py:109
+msgid ""
+"If true, HR cannot create multiple status columns under this category. If "
+"false, HR can create unlimited sub-columns."
+msgstr ""
+"Agar to'g'ri bo'lsa, HR ushbu kategoriya ostida bir nechta status "
+"ustunlarini yarata olmaydi. Agar noto'g'ri bo'lsa, HR cheksiz quyi ustunlar "
+"yarata oladi."
+
+#: apps/applications/models/status.py:116
+msgid "Default order position for display"
+msgstr "Ko'rsatish uchun standart o'rin pozitsiyasi"
+
+#: apps/applications/models/status.py:120
+msgid "Status Category"
+msgstr "Status kategoriyasi"
+
+#: apps/applications/models/status.py:121
+msgid "Status Categories"
+msgstr "Status kategoriyalari"
+
+#: apps/applications/models/status.py:173
+msgid "Unique identifier for this status"
+msgstr "Ushbu status uchun yagona identifikator"
+
+#: apps/applications/models/status.py:178
+msgid "Unique key within the company (e.g., 'APPLIED', 'TECH_SCREEN')"
+msgstr "Kompaniya ichida noyob kalit (masalan, 'APPLIED', 'TECH_SCREEN')"
+
+#: apps/applications/models/status.py:183
+msgid "Display name for this status"
+msgstr "Ushbu holat uchun ko'rsatish nomi"
+
+#: apps/applications/models/status.py:189
+msgid "Translations: {'ru': 'Подано', 'uz': 'Topshirildi'}"
+msgstr "Tarjimalar: {'ru': 'Подано', 'uz': 'Topshirildi'}"
+
+#: apps/applications/models/status.py:196
+msgid "Company that owns this status"
+msgstr "Bu holatga ega kompaniya"
+
+#: apps/applications/models/status.py:203
+msgid "Analytics category this status maps to"
+msgstr "Bu holat o'tkazilgan analitika kategoriyasi"
+
+#: apps/applications/models/status.py:209
+msgid "Hex color for Kanban column (e.g., '#3B82F6')"
+msgstr "Kanban ustuni uchun Hex rang (masalan, '#3B82F6')"
+
+#: apps/applications/models/status.py:215
+msgid "Order position in Kanban board (lower = first)"
+msgstr "Kanban doskasidagi tartib pozitsiyasi (kichikroq = oldinroq)"
+
+#: apps/applications/models/status.py:221
+msgid "If false, status is archived and hidden from selection"
+msgstr "Agar false bo'lsa, holat arxivlanadi va tanlovdan yashirinadi"
+
+#: apps/applications/models/status.py:226
+msgid "If true, this status was created from the default template"
+msgstr "Agar to'g'ri bo'lsa, bu holat standart shablondan yaratilgan"
+
+#: apps/applications/models/status.py:232
+msgid "If false, status column is hidden from Kanban board"
+msgstr "Agar false bo'lsa, holat ustuni Kanban taxtasidan yashirinadi"
+
+#: apps/applications/models/status.py:236 apps/hr_templates/models.py:92
+msgid "Application Status"
+msgstr "Ariza holati"
+
+#: apps/applications/models/status.py:237
+msgid "Application Statuses"
+msgstr "Ariza statuslari"
+
+#: apps/applications/models/status.py:330
+msgid "Unique identifier for this template"
+msgstr "Ushbu shablon uchun yagona identifikator"
+
+#: apps/applications/models/status.py:336
+msgid "Template name (e.g., 'Standard Hiring', 'Tech Recruiting')"
+msgstr "Shablon nomi (masalan, 'Standart yollash', 'Texnik yollash')"
+
+#: apps/applications/models/status.py:341
+msgid "Description of this template's workflow"
+msgstr "Ushbu shablon ish jarayonining tavsifi"
+
+#: apps/applications/models/status.py:346
+msgid "If true, this template is used for new companies"
+msgstr "Agar to'g'ri bo'lsa, bu shablon yangi kompaniyalar uchun ishlatiladi"
+
+#: apps/applications/models/status.py:351
+msgid "If false, this template cannot be selected"
+msgstr "Agar false bo'lsa, bu shablonni tanlash mumkin emas"
+
+#: apps/applications/models/status.py:357
+msgid ""
+"\n"
+"            List of status definitions:\n"
+"            [\n"
+"                {\n"
+"                    \"key\": \"APPLIED\",\n"
+"                    \"label\": \"Applied\",\n"
+"                    \"category\": \"APPLIED\",\n"
+"                    \"color\": \"#3B82F6\",\n"
+"                    \"position\": 1,\n"
+"                    \"show_in_kanban\": true,\n"
+"                    \"translations\": {\"ru\": \"Подано\", \"uz\": "
+"\"Topshirildi\"}\n"
+"                }\n"
+"            ]\n"
+"        "
+msgstr ""
+"\n"
+"            Status ta'riflari ro‘yxati:\n"
+"            [\n"
+"                {\n"
+"                    \"key\": \"APPLIED\",\n"
+"                    \"label\": \"Topshirildi\",\n"
+"                    \"category\": \"APPLIED\",\n"
+"                    \"color\": \"#3B82F6\",\n"
+"                    \"position\": 1,\n"
+"                    \"show_in_kanban\": true,\n"
+"                    \"translations\": {\"ru\": \"Подано\", \"uz\": "
+"\"Topshirildi\"}\n"
+"                }\n"
+"            ]\n"
+"        "
+
+#: apps/applications/models/status.py:375
+msgid ""
+"\n"
+"            List of transition rules:\n"
+"            [\n"
+"                {\n"
+"                    \"from\": \"APPLIED\",\n"
+"                    \"to\": \"INTERVIEW_SCHEDULED\",\n"
+"                    \"recruiter\": true,\n"
+"                    \"candidate\": false\n"
+"                }\n"
+"            ]\n"
+"        "
+msgstr ""
+"\n"
+"            O‘tish qoidalari ro‘yxati:\n"
+"            [\n"
+"                {\n"
+"                    \"from\": \"APPLIED\",\n"
+"                    \"to\": \"INTERVIEW_SCHEDULED\",\n"
+"                    \"recruiter\": true,\n"
+"                    \"candidate\": false\n"
+"                }\n"
+"            ]\n"
+"        "
+
+#: apps/applications/models/status.py:389
+msgid "Status Template"
+msgstr "Status shabloni"
+
+#: apps/applications/models/status.py:390
+msgid "Status Templates"
+msgstr "Status shablonlari"
+
+#: apps/applications/models/status.py:409
+msgid "Another template is already set as default. Please unset it first."
+msgstr "Boshqa shablon allaqachon standart qilib belgilangan. Avval uni bekor qiling."
+
+#: apps/applications/serializers/application.py:68
+#: apps/applications/serializers/application.py:118
+#: apps/applications/views/candidate.py:64
+#: apps/conversations/serializers/headhunting.py:211
+#: apps/conversations/views/headhunting.py:193
+#: apps/vacancies/views/favourite.py:138
+msgid "Vacancy not found"
+msgstr "Vakansiya topilmadi"
+
+#: apps/applications/serializers/application.py:72
+#: apps/applications/views/candidate.py:71
+msgid "This vacancy is no longer accepting applications"
+msgstr "Bu vakansiya endi arizalarni qabul qilmaydi"
+
+#: apps/applications/serializers/application.py:82
+msgid "Invalid URL scheme"
+msgstr "Noto'g'ri URL sxemasi"
+
+#: apps/applications/serializers/application.py:87
+msgid "Start date cannot be in the past"
+msgstr "Boshlanish sanasi o'tgan vaqtda bo'lishi mumkin emas"
+
+#: apps/applications/serializers/application.py:104
+#: apps/applications/views/candidate.py:46 apps/resumes/views/resume.py:131
+msgid "Candidate profile not found"
+msgstr "Nomzod profili topilmadi"
+
+#: apps/applications/serializers/application.py:734
+msgid "Please provide a reason when rejecting an application."
+msgstr "Arizani rad etishda sababni kiriting."
+
+#: apps/applications/serializers/status.py:58
+msgid "Category key for analytics (e.g., 'HIRED', 'SCREENING')"
+msgstr "Analitika uchun kategoriya kaliti (masalan, 'HIRED', 'SCREENING')"
+
+#: apps/applications/serializers/status.py:68
+msgid "Whether this status ends the application process"
+msgstr "Bu status ariza jarayonini yakunlaydimi"
+
+#: apps/applications/serializers/status.py:111
+msgid "Key must contain only letters, numbers, and underscores."
+msgstr "Kalit faqat harflar, raqamlar va pastki chiziqdan iborat bo'lishi kerak."
+
+#: apps/applications/serializers/status.py:123
+msgid "Color must be a 6-character hex code (e.g., '#3B82F6')."
+msgstr "Rang 6 belgili heks kod bo'lishi kerak (masalan, '#3B82F6')."
+
+#: apps/applications/serializers/status.py:131
+msgid "Invalid hex color code."
+msgstr "Noto‘g‘ri HEX rang kodi."
+
+#: apps/applications/serializers/status.py:143
+#, python-brace-format
+msgid "Invalid category '{value}'. Valid categories: {valid}"
+msgstr "Noto'g'ri kategoriya '{value}'. Amal qiladigan kategoriyalar: {valid}"
+
+#: apps/applications/serializers/status.py:155
+msgid "This field is required when creating a status."
+msgstr "Status yaratishda bu maydon majburiy."
+
+#: apps/applications/serializers/status.py:177
+#: apps/applications/services/status_service.py:181
+#, python-brace-format
+msgid ""
+"Category '{category}' only allows one status column. A status already exists "
+"for this category."
+msgstr ""
+"'{category}' kategoriyasi faqat bitta status ustuniga ruxsat beradi. Ushbu "
+"kategoriya uchun status allaqachon mavjud."
+
+#: apps/applications/serializers/status.py:290
+msgid "List of status IDs in the desired display order"
+msgstr "Kerakli ko'rsatish tartibidagi holat IDlari ro'yxati"
+
+#: apps/applications/serializers/status.py:298
+msgid "Company context is required."
+msgstr "Kompaniya konteksti talab qilinadi."
+
+#: apps/applications/serializers/status.py:315
+#, python-brace-format
+msgid "Invalid status IDs: {ids}"
+msgstr "Yaroqsiz holat IDlari: {ids}"
+
+#: apps/applications/serializers/v2/application.py:118
+msgid "UUID of the target ApplicationStatusModel."
+msgstr "Maqsadli ApplicationStatusModel UUIDsi."
+
+#: apps/applications/serializers/v2/application.py:135
+#: apps/applications/views/v2/recruiter.py:55
+#: apps/applications/views/v2/status.py:218
+msgid "Status not found."
+msgstr "Status topilmadi."
+
+#: apps/applications/serializers/v2/application.py:138
+msgid "Status does not belong to your company."
+msgstr "Status sizning kompaniyangizga tegishli emas."
+
+#: apps/applications/serializers/v2/status.py:68
+msgid ""
+"Optional unique key (e.g. 'TECH_INTERVIEW'). Auto-generated from label when "
+"omitted."
+msgstr ""
+"Ixtiyoriy yagona kalit (masalan, 'TECH_INTERVIEW'). Kiritilmasa, label "
+"asosida avtomatik yaratiladi."
+
+#: apps/applications/serializers/v2/status.py:80
+msgid "Label is required to auto-generate the key."
+msgstr "Kalitni avtomatik yaratish uchun label kerak."
+
+#: apps/applications/serializers/v2/status.py:102
+msgid ""
+"UUID of the status to move existing applications to before archiving. If "
+"omitted and the status has applications a 409 is returned."
+msgstr ""
+"Arxivlashdan oldin mavjud arizalarni ko‘chirish kerak bo‘lgan status UUIDsi. "
+"Agar ko‘rsatilmasa va statusda arizalar bo‘lsa, 409 qaytariladi."
+
+#: apps/applications/serializers/v2/status.py:114
+#: apps/applications/views/v2/status.py:236
+msgid "Target status not found."
+msgstr "Maqsadli status topilmadi."
+
+#: apps/applications/serializers/v2/status.py:117
+msgid "Target status does not belong to your company."
+msgstr "Maqsadli status sizning kompaniyangizga tegishli emas."
+
+#: apps/applications/services/status_service.py:139
+msgid ""
+"Company already has statuses initialized. Use reset_statuses() first if you "
+"want to reinitialize."
+msgstr ""
+"Kompaniya uchun statuslar allaqachon yaratilgan. Qayta boshlashni "
+"istasangiz, avval reset_statuses() dan foydalaning."
+
+#: apps/applications/services/status_service.py:147
+msgid "No default template found."
+msgstr "Standart shablon topilmadi."
+
+#: apps/applications/services/status_service.py:233
+msgid "Status does not belong to this company."
+msgstr "Status ushbu kompaniyaga tegishli emas."
+
+#: apps/applications/services/status_service.py:237
+#, python-brace-format
+msgid "Cannot archive protected status '{label}'."
+msgstr "Himoyalangan '{label}' holatini arxivlab bo'lmadi."
+
+#: apps/applications/services/status_service.py:253
+#, python-brace-format
+msgid ""
+"Cannot archive status '{label}' — it has {count} active application(s). "
+"Provide move_to_status_id to relocate them."
+msgstr ""
+"'{label}' statusini arxivlab bo‘lmaydi — unda {count} ta faol ariza bor. "
+"Ularni ko‘chirish uchun move_to_status_id kiriting."
+
+#: apps/applications/services/status_service.py:262
+msgid "Target status does not belong to this company."
+msgstr "Maqsadli status ushbu kompaniyaga tegishli emas."
+
+#: apps/applications/services/status_service.py:266
+msgid "Cannot move applications to the same status being archived."
+msgstr "Arizalarni arxivlanayotgan ayni statusga ko‘chirib bo‘lmaydi."
+
+#: apps/applications/views/candidate.py:47
+msgid "No candidate profile exists for this user"
+msgstr "Bu foydalanuvchi uchun nomzod profili mavjud emas"
+
+#: apps/applications/views/candidate.py:53
+msgid "Vacancy ID is required"
+msgstr "Vakansiya IDsi talab qilinadi"
+
+#: apps/applications/views/candidate.py:70
+msgid "Vacancy is no longer active"
+msgstr "Vakansiya endi faol emas"
+
+#: apps/applications/views/candidate.py:81
+msgid "Application already exists"
+msgstr "Ariza allaqachon mavjud"
+
+#: apps/applications/views/candidate.py:82
+#: apps/authentication/exceptions.py:216
+msgid "You have already applied to this vacancy"
+msgstr "Siz ushbu vakansiyaga allaqachon ariza bergansiz"
+
+#: apps/applications/views/candidate.py:175
+msgid "Application submitted successfully"
+msgstr "Ariza muvaffaqiyatli yuborildi"
+
+#: apps/applications/views/candidate.py:192
+#: apps/authentication/exceptions.py:92 apps/authentication/exceptions.py:138
+#: apps/authentication/views/reset_password.py:126
+#: apps/authentication/views/reset_password.py:332
+#: apps/authentication/views/reset_password.py:444
+#: apps/authentication/views/reset_password.py:482
+#: apps/profiles/views/registration.py:62
+#: apps/profiles/views/registration.py:125
+#: apps/resumes/views/resume_generation.py:147 core/responses.py:111
+#: utils/middleware/error_handling.py:130
+msgid "Validation failed"
+msgstr "Tekshirish muvaffaqiyatsiz"
+
+#: apps/applications/views/candidate.py:207
+msgid "Failed to submit application"
+msgstr "Arizani yuborishda xatolik"
+
+#: apps/applications/views/candidate.py:208
+msgid "An unexpected error occurred while processing your application"
+msgstr "Arizangizni qayta ishlashda kutilmagan xatolik yuz berdi"
+
+#: apps/applications/views/candidate.py:404
+#, python-format
+msgid "Cannot withdraw application with status: %(status_display)s"
+msgstr "Arizani %(status_display)s holatida qaytarib olib bo‘lmaydi."
+
+#: apps/applications/views/candidate.py:433
+msgid "Application withdrawn successfully"
+msgstr "Ariza muvaffaqiyatli qaytarib olindi"
+
+#: apps/applications/views/candidate.py:434
+msgid "Withdrawal failed"
+msgstr "Qaytarib olish muvaffaqiyatsiz"
+
+#: apps/applications/views/candidate.py:461
+#, python-format
+msgid "Cannot reapply to vacancy with status: %(status)s"
+msgstr "Holati %(status)s bo'lgan vakansiyaga qayta topshirib bo'lmaydi."
+
+#: apps/applications/views/candidate.py:478
+msgid "Reapplication successful"
+msgstr "Qayta ariza berish muvaffaqiyatli"
+
+#: apps/applications/views/candidate.py:479
+msgid "Reapplication failed"
+msgstr "Qayta ariza berish muvaffaqiyatsiz"
+
+#: apps/applications/views/candidate.py:521
+#, python-format
+msgid "Can only accept applications with %(status)s status"
+msgstr "Faqat %(status)s holatidagi arizalarni qabul qilish mumkin"
+
+#: apps/applications/views/candidate.py:552
+msgid "Offer accepted successfully"
+msgstr "Taklif muvaffaqiyatli qabul qilindi"
+
+#: apps/applications/views/candidate.py:553
+msgid "Failed to accept offer"
+msgstr "Taklifni qabul qilishda xatolik"
+
+#: apps/applications/views/candidate.py:603
+msgid "Can only reject applications with OFFERED status"
+msgstr "Faqat OFFERED holatidagi arizalarni rad etish mumkin"
+
+#: apps/applications/views/candidate.py:620
+msgid "Offer rejected successfully"
+msgstr "Taklif muvaffaqiyatli rad etildi"
+
+#: apps/applications/views/candidate.py:621
+msgid "Failed to reject offer"
+msgstr "Taklifni rad etishda xatolik"
+
+#: apps/applications/views/recruiter.py:215
+#: apps/applications/views/v2/kanban.py:240
+msgid "Invalid salary_min format. Expected a numeric value."
+msgstr "salary_min formati noto‘g‘ri. Son qiymat kutilgan."
+
+#: apps/applications/views/recruiter.py:221
+#: apps/applications/views/v2/kanban.py:246
+msgid "Invalid salary_max format. Expected a numeric value."
+msgstr "salary_max formati noto‘g‘ri. Son qiymat kutilgan."
+
+#: apps/applications/views/recruiter.py:239
+#: apps/applications/views/v2/kanban.py:258
+msgid "Invalid vacancy_id format. Expected a valid UUID."
+msgstr "Noto'g'ri vacancy_id formati. Yaroqli UUID kutilmoqda."
+
+#: apps/applications/views/recruiter.py:273
+#: apps/applications/views/v2/kanban.py:265
+msgid "Invalid recruiter_id format. Expected a valid UUID."
+msgstr "Noto'g'ri recruiter_id formati. Yaroqli UUID kutilmoqda."
+
+#: apps/applications/views/recruiter.py:281
+#: apps/applications/views/v2/kanban.py:272
+msgid "Invalid applied_from format. Use YYYY-MM-DD."
+msgstr "applied_from formati noto'g'ri. YYYY-MM-DD formatidan foydalaning."
+
+#: apps/applications/views/recruiter.py:288
+#: apps/applications/views/v2/kanban.py:279
+msgid "Invalid applied_to format. Use YYYY-MM-DD."
+msgstr "applied_to formati noto'g'ri. YYYY-MM-DD formatidan foydalaning."
+
+#: apps/applications/views/v2/ai_revaluation.py:50
+msgid "Invalid UUID format."
+msgstr "Noto'g'ri UUID formati."
+
+#: apps/applications/views/v2/ai_revaluation.py:116
+msgid "A non-empty list of application IDs is required."
+msgstr "Ariza IDlarining bo'sh bo'lmagan ro'yxati talab qilinadi."
+
+#: apps/applications/views/v2/ai_revaluation.py:121
+#, python-brace-format
+msgid "A maximum of {max} applications can be revalued at once."
+msgstr "Bir vaqtning o'zida maksimum {max} ta arizani qayta baholash mumkin."
+
+#: apps/applications/views/v2/ai_revaluation.py:127
+msgid "Must be a boolean value."
+msgstr "Mantiqiy qiymat bo'lishi kerak."
+
+#: apps/applications/views/v2/ai_revaluation.py:139
+msgid "AI Failed status is not configured for this company."
+msgstr "AI_FAILED statusi ushbu kompaniya uchun sozlanmagan."
+
+#: apps/applications/views/v2/ai_revaluation.py:150
+#, python-brace-format
+msgid "Target status '{status}' is not configured for this company."
+msgstr "Maqsadli status '{status}' ushbu kompaniya uchun sozlanmagan."
+
+#: apps/applications/views/v2/ai_revaluation.py:168
+msgid "One or more applications were not found or are not in AI_FAILED status."
+msgstr "Bir yoki bir nechta ariza topilmadi yoki AI_FAILED statusida emas."
+
+#: apps/applications/views/v2/ai_revaluation.py:221
+#, python-brace-format
+msgid "{count} application(s) moved to {status}."
+msgstr "{count} ta ariza {status} holatiga o'tkazildi."
+
+#: apps/applications/views/v2/status.py:134
+#, python-brace-format
+msgid "Status '{label}' created successfully."
+msgstr "'{label}' statusi muvaffaqiyatli yaratildi."
+
+#: apps/applications/views/v2/status.py:180
+msgid "Status updated successfully."
+msgstr "Status muvaffaqiyatli yangilandi."
+
+#: apps/applications/views/v2/status.py:244
+#, python-brace-format
+msgid "Status '{label}' archived."
+msgstr "'{label}' statusi arxivlandi."
+
+#: apps/applications/views/v2/status.py:264
+msgid "An unexpected error occurred while archiving the status."
+msgstr "Statusni arxivlashda kutilmagan xatolik yuz berdi."
+
+#: apps/applications/views/v2/status.py:294
+#, python-brace-format
+msgid "{count} statuses reordered successfully."
+msgstr "{count} ta status muvaffaqiyatli qayta tartiblandi."
+
+#: apps/authentication/admin.py:197
+msgid "Companies processed successfully. Confirmation emails have been sent."
+msgstr "Kompaniyalar muvaffaqiyatli qayta ishlandi. Tasdiqlash xatlari yuborildi."
+
+#: apps/authentication/admin.py:199
+msgid "No response content"
+msgstr "Javob mazmuni yo'q"
+
+#: apps/authentication/admin.py:207
+#, python-format
+msgid "HTTP status %(status_code)s"
+msgstr "HTTP holati %(status_code)s"
+
+#: apps/authentication/admin.py:211
+#, python-format
+msgid "API error: %(error)s"
+msgstr "API xatosi: %(error)s"
+
+#: apps/authentication/admin.py:215
+#, python-format
+msgid "Failed to connect to API: %(error)s"
+msgstr "API ga ulanib bo'lmadi: %(error)s"
+
+#: apps/authentication/admin.py:220
+#, python-format
+msgid "Unexpected error: %(error)s"
+msgstr "Kutilmagan xatolik: %(error)s"
+
+#: apps/authentication/admin.py:233
+msgid ""
+"No inactive companies selected. All selected companies are already active."
+msgstr ""
+"Tanlangan kompaniyalardan hech biri nofaol emas. Barchasi allaqachon faol."
+
+#: apps/authentication/admin.py:252
+msgid "✓ Activate selected companies and send confirmation emails"
+msgstr "✓ Tanlangan kompaniyalarni faollashtirish va tasdiqlash xatlarini yuborish"
+
+#: apps/authentication/exceptions.py:46 apps/authentication/exceptions.py:162
+#: core/responses.py:137
+msgid "Authentication required"
+msgstr "Autentifikatsiya talab qilinadi"
+
+#: apps/authentication/exceptions.py:47
+msgid "Authentication credentials were not provided"
+msgstr "Autentifikatsiya ma'lumotlari taqdim etilmagan"
+
+#: apps/authentication/exceptions.py:56 core/responses.py:150
+#: utils/middleware/error_handling.py:74
+msgid "Access denied"
+msgstr "Kirish taqiqlangan"
+
+#: apps/authentication/exceptions.py:60 core/responses.py:152
+#: utils/middleware/error_handling.py:75
+msgid "You do not have permission to perform this action"
+msgstr "Sizda ushbu amalni bajarish uchun ruxsat yo'q"
+
+#: apps/authentication/exceptions.py:66 core/responses.py:124
+#: utils/middleware/error_handling.py:82
+msgid "Resource not found"
+msgstr "Resurs topilmadi"
+
+#: apps/authentication/exceptions.py:66
+msgid "Requested resource"
+msgstr "So'ralgan resurs"
+
+#: apps/authentication/exceptions.py:71
+msgid "Method not allowed"
+msgstr "Metod ruxsat etilmagan"
+
+#: apps/authentication/exceptions.py:73
+#, python-format
+msgid "Method %(method)s is not allowed for this endpoint"
+msgstr "%(method)s metodi ushbu endpoint uchun ruxsat etilmagan"
+
+#: apps/authentication/exceptions.py:80
+msgid "Too many requests"
+msgstr "Juda ko'p so'rovlar"
+
+#: apps/authentication/exceptions.py:82
+#, python-format
+msgid "Rate limit exceeded. Try again in %(seconds)s seconds"
+msgstr ""
+"So'rovlar chegarasidan oshib ketdi. %(seconds)s soniyadan so'ng qayta urinib "
+"ko'ring."
+
+#: apps/authentication/exceptions.py:107 core/renderers.py:128
+#: core/renderers.py:141 core/responses.py:87
+msgid "An error occurred"
+msgstr "Xatolik yuz berdi"
+
+#: apps/authentication/exceptions.py:115 apps/profiles/views/recruiter.py:249
+#: utils/middleware/error_handling.py:179
+msgid "An unexpected error occurred"
+msgstr "Kutilmagan xatolik yuz berdi"
+
+#: apps/authentication/exceptions.py:116 utils/middleware/error_handling.py:180
+msgid "Please contact support if this issue persists"
+msgstr "Muammo davom etsa, qo'llab-quvvatlash xizmatiga murojaat qiling"
+
+#: apps/authentication/exceptions.py:150 apps/authentication/exceptions.py:181
+msgid "Authentication failed"
+msgstr "Autentifikatsiya muvaffaqiyatsiz"
+
+#: apps/authentication/exceptions.py:164
+msgid "Please provide valid authentication credentials"
+msgstr "Iltimos, to'g'ri autentifikatsiya ma'lumotlarini taqdim eting"
+
+#: apps/authentication/exceptions.py:167
+msgid "Invalid authentication token"
+msgstr "Noto'g'ri autentifikatsiya tokeni"
+
+#: apps/authentication/exceptions.py:169
+msgid "The provided token is invalid or malformed"
+msgstr "Taqdim etilgan token noto'g'ri yoki buzilgan"
+
+#: apps/authentication/exceptions.py:172
+msgid "Authentication token expired"
+msgstr "Autentifikatsiya tokeni muddati tugagan"
+
+#: apps/authentication/exceptions.py:174
+msgid "Your session has expired. Please log in again"
+msgstr "Sessiyangiz muddati tugadi. Iltimos, qayta tizimga kiring"
+
+#: apps/authentication/exceptions.py:227
+msgid "This vacancy is no longer active"
+msgstr "Bu vakansiya endi faol emas"
+
+#: apps/authentication/exceptions.py:238
+msgid "A resume is required to apply for this position"
+msgstr "Bu lavozimga ariza berish uchun rezyume talab qilinadi"
+
+#: apps/authentication/models/user.py:96
+msgid "user"
+msgstr "foydalanuvchi"
+
+#: apps/authentication/models/user.py:97
+msgid "users"
+msgstr "foydalanuvchilar"
+
+#: apps/authentication/serializers/recruiter.py:47
+msgid "Company with this TIN already exists or TIN length is invalid."
+msgstr "Bu STIR bilan kompaniya allaqachon mavjud yoki STIR uzunligi noto'g'ri."
+
+#: apps/authentication/serializers/recruiter.py:58
+msgid "Invalid file format. Only PDF, DOC, DOCX, and ZIP files are allowed."
+msgstr ""
+"Noto'g'ri fayl formati. Faqat PDF, DOC, DOCX va ZIP fayllariga ruxsat "
+"beriladi."
+
+#: apps/authentication/serializers/recruiter.py:67
+#, python-format
+msgid "File size should not exceed %(limit)sMB"
+msgstr "Fayl hajmi %(limit)s MB dan oshmasligi kerak."
+
+#: apps/authentication/serializers/recruiter.py:81
+msgid "recruiter_emails must be a list."
+msgstr "recruiter_emails ro'yxat bo'lishi kerak."
+
+#: apps/authentication/serializers/recruiter.py:115
+msgid "Each item must be an object with 'email' field."
+msgstr "Har bir element 'email' maydoni bilan obyekt bo'lishi kerak."
+
+#: apps/authentication/serializers/recruiter.py:140
+msgid "Duplicate emails in recruiter list."
+msgstr "Rekruterlar ro'yxatida takroriy email manzillar mavjud."
+
+#: apps/authentication/serializers/recruiter.py:154
+#, python-format
+msgid "'%(email)s' is already taken. Please use a different email."
+msgstr "'%(email)s' allaqachon band. Iltimos, boshqa email dan foydalaning."
+
+#: apps/authentication/serializers/recruiter.py:368
+#: apps/authentication/serializers/recruiter.py:372
+#: apps/authentication/serializers/recruiter.py:373
+msgid "Invalid file format. Only JPG, JPEG, and PNG images are allowed."
+msgstr "Noto'g'ri fayl formati. Faqat JPG, JPEG va PNG rasmlariga ruxsat beriladi."
+
+#: apps/authentication/serializers/recruiter.py:385
+#: apps/profiles/serializers/company.py:77
+#, python-format
+msgid "Photo size should not exceed %(limit)sMB"
+msgstr "Rasm hajmi %(limit)s MB dan oshmasligi kerak."
+
+#: apps/authentication/serializers/user.py:91
+#: apps/authentication/serializers/user.py:121
+msgid "Passwords do not match."
+msgstr "Parollar mos kelmaydi."
+
+#: apps/authentication/serializers/user.py:114
+msgid ""
+"Required for recruiters. Must agree to all policies to activate account."
+msgstr ""
+"Rekruterlar uchun majburiy. Akkauntni faollashtirish uchun barcha "
+"siyosatlarga rozilik bildirish kerak."
+
+#: apps/authentication/transitions.py:13
+msgid "Email registration"
+msgstr "Email orqali ro‘yxatdan o‘tish"
+
+#: apps/authentication/transitions.py:14
+msgid "Create profile"
+msgstr "Profil yaratish"
+
+#: apps/authentication/transitions.py:15
+msgid "Create resume"
+msgstr "Rezyume yaratish"
+
+#: apps/authentication/transitions.py:16
+msgid "Apply for vacancy"
+msgstr "Vakansiyaga ariza topshirish"
+
+#: apps/authentication/transitions.py:17
+msgid "Connect LMS"
+msgstr "LMS ga ulash"
+
+#: apps/authentication/views/candidate.py:112
+msgid "Only candidates can access this endpoint"
+msgstr "Faqat nomzodlar ushbu sahifaga kirish huquqiga ega"
+
+#: apps/authentication/views/candidate.py:124
+msgid "Candidate status retrieved successfully"
+msgstr "Nomzod statusi muvaffaqiyatli olindi"
+
+#: apps/authentication/views/company.py:71
+msgid "A recruiter with this email already exists."
+msgstr "Bu email bilan rekruter allaqachon mavjud."
+
+#: apps/authentication/views/company.py:72
+msgid "Please use a different email address for each recruiter."
+msgstr "Har bir rekruter uchun boshqa email manzilidan foydalaning."
+
+#: apps/authentication/views/company.py:77
+msgid ""
+"Company registered successfully. Activation emails will be sent to all "
+"recruiters."
+msgstr ""
+"Kompaniya muvaffaqiyatli ro'yxatdan o'tdi. Barcha rekruterlarga "
+"aktivlashtirish xatlari yuboriladi."
+
+#: apps/authentication/views/company.py:311
+msgid "Authenticated user has no associated company."
+msgstr "Autentifikatsiyalangan foydalanuvchining kompaniyasi yo'q."
+
+#: apps/authentication/views/company.py:312
+msgid "Your account is not linked to any company."
+msgstr "Sizning hisobingiz hech qanday kompaniyaga bog'lanmagan."
+
+#: apps/authentication/views/company.py:331
+msgid "Company profile created successfully."
+msgstr "Kompaniya profili muvaffaqiyatli yaratildi."
+
+#: apps/authentication/views/cookie_auth.py:50
+msgid "Invalid credentials"
+msgstr "Noto‘g‘ri ma‘lumotlar"
+
+#: apps/authentication/views/cookie_auth.py:64
+msgid "Invalid credentials for student login"
+msgstr "Talaba tizimga kirish uchun noto'g'ri ma'lumotlar"
+
+#: apps/authentication/views/cookie_auth.py:70
+msgid "Invalid credentials for recruiter login"
+msgstr "Rekruter tizimga kirish uchun noto'g'ri ma'lumotlar"
+
+#: apps/authentication/views/cookie_auth.py:126
+#: apps/authentication/views/oauth_views.py:155
+msgid "Login successful"
+msgstr "Tizimga kirish muvaffaqiyatli"
+
+#: apps/authentication/views/cookie_auth.py:206
+msgid "Refresh token not found in cookies"
+msgstr "Cookie-larda yangilash tokeni topilmadi"
+
+#: apps/authentication/views/cookie_auth.py:221
+msgid "Token refreshed successfully"
+msgstr "Token muvaffaqiyatli yangilandi"
+
+#: apps/authentication/views/cookie_auth.py:231
+msgid "Invalid refresh token"
+msgstr "Noto'g'ri yangilash tokeni"
+
+#: apps/authentication/views/cookie_auth.py:320
+msgid "Access token not found in cookies"
+msgstr "Cookie-larda kirish tokeni topilmadi"
+
+#: apps/authentication/views/cookie_auth.py:327
+msgid "Token is valid"
+msgstr "Token yaroqli"
+
+#: apps/authentication/views/cookie_auth.py:330
+msgid "Invalid access token"
+msgstr "Noto'g'ri kirish tokeni"
+
+#: apps/authentication/views/cookie_auth.py:355
+msgid "Successfully logged out"
+msgstr "Tizimdan muvaffaqiyatli chiqildi"
+
+#: apps/authentication/views/language.py:44
+msgid "preferred_language is required."
+msgstr "preferred_language talab qilinadi."
+
+#: apps/authentication/views/language.py:49 apps/general/serializers.py:65
+msgid "Unsupported language. Allowed values: uz, ru, en."
+msgstr "Qo‘llab-quvvatlanmaydigan til. Ruxsat etilgan qiymatlar: uz, ru, en."
+
+#: apps/authentication/views/language.py:59
+msgid "Language preference updated successfully."
+msgstr "Til sozlamasi muvaffaqiyatli yangilandi."
+
+#: apps/authentication/views/oauth_views.py:57
+msgid "Google credential is required."
+msgstr "Google hisobi ma'lumoti talab qilinadi."
+
+#: apps/authentication/views/oauth_views.py:72
+msgid "Invalid or expired Google credential."
+msgstr "Google hisobi ma'lumoti noto'g'ri yoki muddati tugagan."
+
+#: apps/authentication/views/oauth_views.py:79
+msgid "Google account email is not verified."
+msgstr "Google hisobining elektron pochta manzili tasdiqlanmagan."
+
+#: apps/authentication/views/oauth_views.py:94
+msgid ""
+"This Google account is linked to a non-candidate account. Please log in with "
+"your email and password."
+msgstr ""
+"Bu Google hisob qaydnomasi nomzod bo'lmagan hisobga ulangan. Iltimos, "
+"elektron pochta manzilingiz va parolingiz bilan tizimga kiring."
+
+#: apps/authentication/views/oauth_views.py:102
+msgid "This account has been deactivated."
+msgstr "Bu akkaunt o'chirilgan."
+
+#: apps/authentication/views/oauth_views.py:138
+msgid "Failed to create account. Please try again later."
+msgstr "Hisob yaratilmadi. Iltimos, keyinroq qayta urinib ko'ring."
+
+#: apps/authentication/views/registration.py:66
+#: apps/authentication/views/registration.py:72
+#: apps/authentication/views/registration.py:79
+#: apps/authentication/views/registration.py:88
+#: apps/authentication/views/registration.py:109
+#: apps/authentication/views/registration.py:180
+#: apps/general/views/campaign.py:29
+msgid "Input validation failed"
+msgstr "Kiritilgan ma'lumotlar tekshiruvi muvaffaqiyatsiz"
+
+#: apps/authentication/views/registration.py:67
+#: apps/authentication/views/registration.py:73
+#: apps/authentication/views/registration.py:80
+#: apps/authentication/views/registration.py:89
+msgid "User with this email already exists."
+msgstr "Bu email bilan foydalanuvchi allaqachon mavjud."
+
+#: apps/authentication/views/registration.py:97
+#: apps/authentication/views/registration.py:121
+msgid ""
+"Candidate registered successfully. Please check your email to set your "
+"password."
+msgstr ""
+"Nomzod muvaffaqiyatli ro'yxatdan o'tdi. Parolingizni o'rnatish uchun "
+"elektron pochtangizni tekshiring."
+
+#: apps/authentication/views/registration.py:191
+#: apps/profiles/views/registration.py:69
+msgid "Recruiter registered successfully"
+msgstr "Rekruter muvaffaqiyatli ro'yxatdan o'tdi"
+
+#: apps/authentication/views/registration.py:225
+#: apps/authentication/views/registration.py:256
+#: apps/authentication/views/registration.py:401
+msgid "Admin has no associated company."
+msgstr "Administratorning kompaniyasi yo'q."
+
+#: apps/authentication/views/registration.py:240
+msgid "Recruiters retrieved successfully"
+msgstr "Rekruterlar muvaffaqiyatli olindi"
+
+#: apps/authentication/views/registration.py:265
+#: apps/authentication/views/registration.py:410
+msgid "A list of recruiter UUIDs is required."
+msgstr "Rekruterlar UUID ro'yxati talab qilinadi."
+
+#: apps/authentication/views/registration.py:271
+#: apps/authentication/views/registration.py:416
+msgid "approve must be a boolean value."
+msgstr "approve mantiqiy qiymat bo'lishi kerak."
+
+#: apps/authentication/views/registration.py:277
+msgid "This API is for approval only. Use rejection API for rejections."
+msgstr ""
+"Bu API faqat tasdiqlash uchun. Rad etish uchun rad etish API sidan "
+"foydalaning."
+
+#: apps/authentication/views/registration.py:293
+#: apps/authentication/views/registration.py:438
+msgid "Some IDs are not valid UUIDs."
+msgstr "Ba'zi IDlar yaroqli UUID emas."
+
+#: apps/authentication/views/registration.py:309
+msgid "No recruiters found to approve."
+msgstr "Tasdiqlash uchun rekruterlar topilmadi."
+
+#: apps/authentication/views/registration.py:362
+#, python-format
+msgid "%(count)s recruiter(s) approved successfully."
+msgstr "%(count)s ta rekruter muvaffaqiyatli tasdiqlandi."
+
+#: apps/authentication/views/registration.py:422
+msgid "This API is for rejection only. Use approval API for approvals."
+msgstr ""
+"Bu API faqat rad etish uchun. Tasdiqlash uchun tasdiqlash API sidan "
+"foydalaning."
+
+#: apps/authentication/views/registration.py:454
+msgid "No recruiters found to reject."
+msgstr "Rad etish uchun rekruterlar topilmadi."
+
+#: apps/authentication/views/registration.py:513
+#, python-format
+msgid "%(count)s recruiter(s) rejected successfully."
+msgstr "%(count)s ta rekruter muvaffaqiyatli rad etildi."
+
+#: apps/authentication/views/reset_password.py:89
+msgid "Email is required."
+msgstr "Elektron pochta manzili talab qilinadi."
+
+#: apps/authentication/views/reset_password.py:118
+msgid "Password reset link has been sent to your email."
+msgstr "Parolni tiklash havolasi elektron pochtangizga yuborildi."
+
+#: apps/authentication/views/reset_password.py:122
+msgid "This user does not exist."
+msgstr "Bu foydalanuvchi mavjud emas."
+
+#: apps/authentication/views/reset_password.py:263
+#: apps/authentication/views/reset_password.py:271
+#: apps/authentication/views/reset_password.py:328
+msgid "Invalid reset link."
+msgstr "Noto'g'ri tiklash havolasi."
+
+#: apps/authentication/views/reset_password.py:284
+msgid "Invalid or expired reset link."
+msgstr "Noto'g'ri yoki muddati o'tgan tiklash havolasi."
+
+#: apps/authentication/views/reset_password.py:303
+msgid "Password is required."
+msgstr "Parol talab qilinadi."
+
+#: apps/authentication/views/reset_password.py:304
+msgid "This field is required."
+msgstr "Bu maydon majburiy."
+
+#: apps/authentication/views/reset_password.py:318
+msgid "Password has been reset successfully."
+msgstr "Parol muvaffaqiyatli tiklandi."
+
+#: apps/authentication/views/reset_password.py:452
+#: apps/authentication/views/reset_password.py:460
+#: apps/authentication/views/reset_password.py:467
+#: apps/authentication/views/reset_password.py:539
+msgid "Invalid set-password link."
+msgstr "Parol o'rnatish uchun yaroqsiz havola."
+
+#: apps/authentication/views/reset_password.py:474
+msgid "Invalid or expired set-password link."
+msgstr "Yaroqsiz yoki muddati o'tgan parol o'rnatish havolasi."
+
+#: apps/authentication/views/reset_password.py:485
+msgid "You must agree to all required policies to activate your account"
+msgstr ""
+"Hisobingizni faollashtirish uchun barcha majburiy siyosatlarga rozi "
+"bo'lishingiz kerak"
+
+#: apps/authentication/views/reset_password.py:532
+msgid "Password has been set successfully."
+msgstr "Parol muvaffaqiyatli o'rnatildi."
+
+#: apps/authentication/views/validate_token.py:30
+msgid "Token is required"
+msgstr "Token talab qilinadi"
+
+#: apps/authentication/views/validate_token.py:38
+msgid "Invalid or expired token"
+msgstr "Yaroqsiz yoki muddati o'tgan token"
+
+#: apps/authentication/views/validate_token.py:49
+msgid "Token issued for a different environment - please log in again"
+msgstr "Token boshqa muhit uchun berilgan - iltimos, qaytadan kiriting"
+
+#: apps/authentication/views/validate_token.py:55
+msgid "Invalid token payload"
+msgstr "Yaroqsiz token ma'lumotlari"
+
+#: apps/authentication/views/validate_token.py:70
+msgid "User not found"
+msgstr "Foydalanuvchi topilmadi"
+
+#: apps/authentication/views/validate_token.py:75
+#: apps/authentication/views/validate_token.py:105
+msgid "Internal error"
+msgstr "Ichki xatolik"
+
+#: apps/authentication/views/validate_token.py:84
+#: apps/profiles/views/recruiter.py:59
+msgid "User is not a recruiter"
+msgstr "Foydalanuvchi rekruter emas"
+
+#: apps/authentication/views/validate_token.py:98
+msgid "Recruiter profile incomplete — contact support"
+msgstr "Rekruter profili toliq emas — yordam bilan bog'laning"
+
+#: apps/authentication/views/validate_token.py:136
+msgid "Token validated successfully"
+msgstr "Token muvaffaqiyatli tasdiqlandi"
+
+#: apps/banners/models.py:22 apps/conversations/views/headhunting.py:194
+#: apps/vacancies/views/favourite.py:139
+msgid "Vacancy"
+msgstr "Vakansiya"
+
+#: apps/banners/models.py:23
+msgid "News"
+msgstr "Yangiliklar"
+
+#: apps/banners/models.py:24
+msgid "Advertisement"
+msgstr "Reklama"
+
+#: apps/banners/models.py:33
+msgid "Position in the carousel among manual slides (lower = first)."
+msgstr "Karuselda qo'lda qo'shilgan slaydlar orasidagi o'rin (kichikroq = oldinroq)."
+
+#: apps/banners/models.py:37
+msgid "How many seconds this slide stays visible before auto-advancing."
+msgstr "Avtomatik o'tishdan oldin slayd ko'rinib turadigan soniyalar soni."
+
+#: apps/banners/models.py:42
+msgid "If set, slide is hidden before this datetime."
+msgstr "Belgilansa, slayd ushbu sanagacha yashirin bo'ladi."
+
+#: apps/banners/models.py:46
+msgid "If set, slide is hidden after this datetime."
+msgstr "Belgilansa, slayd ushbu sanadan keyin yashirin bo'ladi."
+
+#: apps/banners/models.py:56
+msgid "Required when slide_type=VACANCY."
+msgstr "slide_type=VACANCY bo'lganda majburiy."
+
+#: apps/banners/models.py:66
+msgid "Inline content image shown inside the slide body."
+msgstr "Slayd ichida ko'rsatiladigan ichki kontent rasmi."
+
+#: apps/banners/models.py:72
+msgid "Full-cover background image for desktop (≥768 px). NEWS/AD only."
+msgstr "Desktop uchun to'liq fon rasmi (≥768 px). Faqat NEWS/AD uchun."
+
+#: apps/banners/models.py:78
+msgid ""
+"Full-cover background image for mobile (<768 px). Falls back to desktop "
+"image if not set."
+msgstr "Mobil uchun to'liq fon rasmi (<768 px). Bo'sh bo'lsa, desktop rasmi ishlatiladi."
+
+#: apps/banners/models.py:86
+msgid ""
+"Desktop background image for Uzbek locale. Falls back to image_desktop if "
+"not set."
+msgstr "O'zbek tili uchun desktop fon rasmi. Bo'sh bo'lsa, image_desktop ishlatiladi."
+
+#: apps/banners/models.py:92
+msgid ""
+"Desktop background image for Russian locale. Falls back to image_desktop if "
+"not set."
+msgstr "Rus tili uchun desktop fon rasmi. Bo'sh bo'lsa, image_desktop ishlatiladi."
+
+#: apps/banners/models.py:98
+msgid ""
+"Desktop background image for English locale. Falls back to image_desktop if "
+"not set."
+msgstr "Ingliz tili uchun desktop fon rasmi. Bo'sh bo'lsa, image_desktop ishlatiladi."
+
+#: apps/banners/models.py:106
+msgid ""
+"Mobile background image for Uzbek locale. Falls back to image_mobile if not "
+"set."
+msgstr "O'zbek tili uchun mobil fon rasmi. Bo'sh bo'lsa, image_mobile ishlatiladi."
+
+#: apps/banners/models.py:112
+msgid ""
+"Mobile background image for Russian locale. Falls back to image_mobile if "
+"not set."
+msgstr "Rus tili uchun mobil fon rasmi. Bo'sh bo'lsa, image_mobile ishlatiladi."
+
+#: apps/banners/models.py:118
+msgid ""
+"Mobile background image for English locale. Falls back to image_mobile if "
+"not set."
+msgstr "Ingliz tili uchun mobil fon rasmi. Bo'sh bo'lsa, image_mobile ishlatiladi."
+
+#: apps/banners/models.py:136
+msgid ""
+"Upload an .html file. Rendered in a sandboxed iframe. Leave blank to use "
+"image/structured layout."
+msgstr ".html fayl yuklang. Izolyatsiyalangan iframe da ko'rsatiladi. Rasm/tuzilgan maket ishlatish uchun bo'sh qoldiring."
+
+#: apps/banners/models.py:138
+msgid "HTML file for Uzbek locale. Falls back to html_file."
+msgstr "O'zbek tili uchun HTML fayl. Bo'sh bo'lsa, html_file ishlatiladi."
+
+#: apps/banners/models.py:139
+msgid "HTML file for Russian locale. Falls back to html_file."
+msgstr "Rus tili uchun HTML fayl. Bo'sh bo'lsa, html_file ishlatiladi."
+
+#: apps/banners/models.py:140
+msgid "HTML file for English locale. Falls back to html_file."
+msgstr "Ingliz tili uchun HTML fayl. Bo'sh bo'lsa, html_file ishlatiladi."
+
+#: apps/banners/models.py:146
+msgid "Banner Slide"
+msgstr "Banner slayd"
+
+#: apps/banners/models.py:147
+msgid "Banner Slides"
+msgstr "Banner slaydlar"
+
+#: apps/banners/models.py:180
+msgid "Banner Click"
+msgstr "Banner bosilishi"
+
+#: apps/banners/models.py:181
+msgid "Banner Clicks"
+msgstr "Banner bosilishlari"
+
+#: apps/conversations/models.py:22
+msgid "Unique identifier for this conversation"
+msgstr "Ushbu suhbatning noyob identifikatori"
+
+#: apps/conversations/models.py:31
+msgid "The job application this conversation is about (null for headhunting)"
+msgstr "Ushbu suhbat tegishli bo'lgan ish arizasi (headhunting uchun null)"
+
+#: apps/conversations/models.py:38
+msgid "The candidate participating in this conversation"
+msgstr "Ushbu suhbatda qatnashayotgan nomzod"
+
+#: apps/conversations/models.py:45
+msgid "The recruiter participating in this conversation"
+msgstr "Ushbu suhbatda qatnashayotgan rekruter"
+
+#: apps/conversations/models.py:54
+msgid ""
+"The vacancy this headhunting invitation is for (null for application "
+"conversations)"
+msgstr ""
+"Ushbu headhunting taklifi tegishli bo'lgan vakansiya (ariza suhbatlari uchun "
+"null)"
+
+#: apps/conversations/models.py:59
+msgid "Whether the recruiter has read the messages"
+msgstr "Rekruter xabarlarni o'qiganmi"
+
+#: apps/conversations/models.py:64
+msgid "Whether the candidate has read the messages"
+msgstr "Nomzod xabarlarni o'qiganmi"
+
+#: apps/conversations/models.py:68
+msgid "Conversation"
+msgstr "Suhbat"
+
+#: apps/conversations/models.py:69
+msgid "Conversations"
+msgstr "Suhbatlar"
+
+#: apps/conversations/models.py:112
+msgid "Cover Letter"
+msgstr "Motivatsion xat"
+
+#: apps/conversations/models.py:113
+msgid "Text Message"
+msgstr "Matnli xabar"
+
+#: apps/conversations/models.py:114
+msgid "System Message"
+msgstr "Tizim xabari"
+
+#: apps/conversations/models.py:115
+msgid "Status Change"
+msgstr "Holat o'zgarishi"
+
+#: apps/conversations/models.py:116
+msgid "Document"
+msgstr "Hujjat"
+
+#: apps/conversations/models.py:117
+msgid "Headhunting Invitation"
+msgstr "Headhunting taklifi"
+
+#: apps/conversations/models.py:133
+msgid "Unique identifier for this message"
+msgstr "Ushbu xabarning noyob identifikatori"
+
+#: apps/conversations/models.py:140
+msgid "The conversation this message belongs to"
+msgstr "Ushbu xabar tegishli bo'lgan suhbat"
+
+#: apps/conversations/models.py:146 apps/subscriptions/models/plans.py:28
+#: apps/subscriptions/models/plans.py:167 apps/vacancies/views/favourite.py:129
+msgid "Candidate"
+msgstr "Nomzod"
+
+#: apps/conversations/models.py:147
+#: apps/subscriptions/models/company_subscription.py:143
+#: apps/vacancies/admin.py:36
+msgid "Recruiter"
+msgstr "Rekruter"
+
+#: apps/conversations/models.py:148
+msgid "System"
+msgstr "Tizim"
+
+#: apps/conversations/models.py:150
+msgid "Type of the sender"
+msgstr "Jo'natuvchi turi"
+
+#: apps/conversations/models.py:157
+msgid "Type of the message"
+msgstr "Xabar turi"
+
+#: apps/conversations/models.py:161
+msgid "The message content"
+msgstr "Xabar matni"
+
+#: apps/conversations/models.py:168
+msgid ""
+"Optional title for the message (e.g., recruiter note title for status "
+"changes)"
+msgstr ""
+"Ixtiyoriy xabar uchun sarlavha (masalan, holat o'zgarishlari uchun rekruter "
+"eslatma sarlavhasi)"
+
+#: apps/conversations/models.py:175
+msgid ""
+"Additional structured data for special message types. For STATUS_CHANGE: "
+"{old_status, new_status, old_status_display, new_status_display, "
+"recruiter_note}. For DOCUMENT: {title, file_url, file_size, document_type}."
+msgstr ""
+"Maxsus xabar turlari uchun qo'shimcha tuzilgan ma'lumotlar. STATUS_CHANGE "
+"uchun: {old_status, new_status, old_status_display, new_status_display, "
+"recruiter_note}. DOCUMENT uchun: {title, file_url, file_size, document_type}."
+
+#: apps/conversations/models.py:183
+msgid "Whether the message has been read by the recipient"
+msgstr "Xabar qabul qiluvchi tomonidan o'qilganmi"
+
+#: apps/conversations/models.py:187
+msgid "Message"
+msgstr "Xabar"
+
+#: apps/conversations/models.py:188
+msgid "Messages"
+msgstr "Xabarlar"
+
+#: apps/conversations/models.py:215
+msgid "Unique identifier for this discussion"
+msgstr "Ushbu muhokamaning noyob identifikatori"
+
+#: apps/conversations/models.py:222
+msgid "The job application this discussion is about"
+msgstr "Ushbu muhokama tegishli bo'lgan ish arizasi"
+
+#: apps/conversations/models.py:229
+msgid "The recruiter who wrote this discussion"
+msgstr "Ushbu muhokamani yozgan rekruter"
+
+#: apps/conversations/models.py:233
+msgid "The discussion message content"
+msgstr "Muhokama xabari matni"
+
+#: apps/conversations/models.py:238
+msgid "Whether this discussion has been edited"
+msgstr "Ushbu muhokama tahrirlanganmi"
+
+#: apps/conversations/models.py:245
+msgid "Application status key at the time this discussion was created"
+msgstr "Muhokama yaratilgan paytdagi ariza status kaliti"
+
+#: apps/conversations/models.py:249
+msgid "Application Discussion"
+msgstr "Ariza muhokamasi"
+
+#: apps/conversations/models.py:250
+msgid "Application Discussions"
+msgstr "Ariza muhokamalari"
+
+#: apps/conversations/serializers/headhunting.py:144
+msgid "List of candidate IDs to send invitation to (max 50)"
+msgstr "Taklif yuborish uchun nomzodlar ID ro'yxati (maksimal 50 ta)"
+
+#: apps/conversations/serializers/headhunting.py:149
+msgid "The invitation letter content (10-5000 characters)"
+msgstr "Taklif xati tarkibi (10-5000 belgi)"
+
+#: apps/conversations/serializers/headhunting.py:153
+msgid "The vacancy to invite candidates for"
+msgstr "Nomzodlar taklif qilinadigan vakansiya"
+
+#: apps/conversations/serializers/headhunting.py:204
+#: apps/conversations/views/headhunting.py:345
+msgid "Authenticated user is not a recruiter"
+msgstr "Autentifikatsiya qilingan foydalanuvchi rekruter emas"
+
+#: apps/conversations/serializers/headhunting.py:208
+#: apps/conversations/views/headhunting.py:199
+msgid "This vacancy does not belong to your company"
+msgstr "Bu vakansiya sizning kompaniyangizga tegishli emas"
+
+#: apps/conversations/services.py:19
+msgid "The candidate has accepted the offer"
+msgstr "Nomzod taklifni qabul qildi"
+
+#: apps/conversations/services.py:20
+msgid "The candidate has rejected the offer"
+msgstr "Nomzod taklifni rad etdi"
+
+#: apps/conversations/services.py:21
+msgid "The candidate has withdrawn the application"
+msgstr "Nomzod arizani qaytarib oldi"
+
+#: apps/conversations/services.py:29
+#, python-format
+msgid "Candidate has applied to the vacancy: %(vacancy_title)s"
+msgstr "Nomzod vakansiyaga murojaat qildi: %(vacancy_title)s"
+
+#: apps/conversations/views/conversations.py:185
+#: apps/conversations/views/conversations.py:354
+msgid "Conversation retrieved"
+msgstr "Suhbat olindi"
+
+#: apps/conversations/views/discussions.py:48
+#: apps/conversations/views/discussions.py:123
+msgid "You are not authorized to access discussions for this application"
+msgstr "Siz ushbu ariza muhokamalariga kirish huquqiga ega emassiz"
+
+#: apps/conversations/views/discussions.py:65
+msgid "You are not authorized to discuss this application"
+msgstr "Siz ushbu arizani muhokama qilish huquqiga ega emassiz"
+
+#: apps/conversations/views/discussions.py:81
+msgid "Discussion created successfully"
+msgstr "Muhokama muvaffaqiyatli yaratildi"
+
+#: apps/conversations/views/discussions.py:136
+msgid "You can only edit your own discussions"
+msgstr "Siz faqat o'zingizning muhokamalaringizni tahrirlashingiz mumkin"
+
+#: apps/conversations/views/discussions.py:143
+msgid "You can only delete your own discussions"
+msgstr "Siz faqat o'zingizning muhokamalaringizni o'chirishingiz mumkin"
+
+#: apps/conversations/views/discussions.py:160
+msgid "Discussion updated successfully"
+msgstr "Muhokama muvaffaqiyatli yangilandi"
+
+#: apps/conversations/views/discussions.py:167
+msgid "Discussion deleted successfully"
+msgstr "Muhokama muvaffaqiyatli o'chirildi"
+
+#: apps/conversations/views/headhunting.py:88
+msgid ""
+"Optional vacancy UUID to find matching candidates using embedding "
+"similarity. When provided, candidates are filtered and sorted by how well "
+"their resume matches the vacancy requirements. The vacancy must be active "
+"and belong to your company."
+msgstr ""
+"Embedding o'xshashligidan foydalanib mos nomzodlarni topish uchun ixtiyoriy "
+"vakansiya UUID. Berilganda, nomzodlar vakansiya talablariga mos kelish "
+"darajasiga qarab filtrlanadi va saralanadi. Vakansiya faol bo'lishi va "
+"sizning kompaniyangizga tegishli bo'lishi kerak."
+
+#: apps/conversations/views/headhunting.py:95
+msgid "List candidates for headhunting with various filters."
+msgstr "Turli filtrlar bilan headhunting uchun nomzodlar ro'yxatini olish."
+
+#: apps/conversations/views/headhunting.py:186
+msgid "Invalid vacancy_id format. Expected UUID"
+msgstr "Noto'g'ri vacancy_id formati. UUID kutilmoqda."
+
+#: apps/conversations/views/headhunting.py:204
+msgid "Cannot use inactive vacancy for candidate matching"
+msgstr "Nofaol vakansiya uchun nomzodlarni moslash mumkin emas"
+
+#: apps/conversations/views/headhunting.py:255
+#, python-format
+msgid ""
+"Vacancy matching skipped - vacancy %(vacancy_id)s has no embedding: %(error)s"
+msgstr ""
+"Vakansiya moslashtirish o'tkazib yuborildi - %(vacancy_id)s vakansiyasida "
+"embedding yo'q: %(error)s"
+
+#: apps/conversations/views/headhunting.py:264
+#, python-format
+msgid "Vacancy matching failed for vacancy %(vacancy_id)s: %(error)s"
+msgstr "Vakansiya %(vacancy_id)s uchun moslashtirish muvaffaqiyatsiz: %(error)s"
+
+#: apps/conversations/views/headhunting.py:373
+#: apps/conversations/views/headhunting.py:380
+msgid "Candidates matched and listed successfully"
+msgstr "Nomzodlar muvaffaqiyatli moslashtirildi va ro'yxat qilindi"
+
+#: apps/conversations/views/headhunting.py:389
+#: apps/conversations/views/headhunting.py:396
+msgid "Candidates listed successfully"
+msgstr "Nomzodlar muvaffaqiyatli ro'yxat qilindi"
+
+#: apps/conversations/views/headhunting.py:540
+msgid "Authenticated user is not a recruiter."
+msgstr "Autentifikatsiyalangan foydalanuvchi rekruter emas."
+
+#: apps/conversations/views/headhunting.py:638
+#, python-format
+msgid "Invitation sent to %(count)d candidate(s)"
+msgstr "Taklif %(count)d nomzodga yuborildi"
+
+#: apps/domain/models.py:15
+msgid "Name"
+msgstr "Nom"
+
+#: apps/domain/models.py:16
+msgid "Domain name (e.g., IT, Healthcare, Finance)"
+msgstr "Soha nomi (masalan, IT, Sog'liqni saqlash, Moliya)"
+
+#: apps/domain/models.py:20 apps/domain/models.py:53
+#: apps/edupartners/models/edupartner.py:70
+#: apps/edupartners/models/edupartner.py:155 apps/hr_templates/models.py:79
+msgid "Description"
+msgstr "Tavsif"
+
+#: apps/domain/models.py:21
+msgid "Detailed description of the domain"
+msgstr "Sohaning batafsil tavsifi"
+
+#: apps/domain/models.py:25 apps/edupartners/models/edupartner.py:86
+msgid "Domain"
+msgstr "Soha"
+
+#: apps/domain/models.py:26
+msgid "Domains"
+msgstr "Sohalar"
+
+#: apps/domain/models.py:42 apps/hr_templates/models.py:86
+#: apps/subscriptions/models/plans.py:27 apps/subscriptions/models/plans.py:166
+#: apps/vacancies/admin.py:32
+msgid "Company"
+msgstr "Kompaniya"
+
+#: apps/domain/models.py:43
+msgid "The company that created this profession"
+msgstr "Ushbu kasbni yaratgan kompaniya"
+
+#: apps/domain/models.py:47
+msgid "Profession Name"
+msgstr "Kasb nomi"
+
+#: apps/domain/models.py:48
+msgid "Name of the profession created by HR"
+msgstr "HR tomonidan yaratilgan kasb nomi"
+
+#: apps/domain/models.py:54
+msgid "Description of the profession"
+msgstr "Kasb tavsifi"
+
+#: apps/domain/models.py:61
+msgid "Created By"
+msgstr "Yaratuvchi"
+
+#: apps/domain/models.py:62
+msgid "The recruiter who created this profession"
+msgstr "Ushbu kasbni yaratgan rekruter"
+
+#: apps/domain/models.py:69
+msgid "HR Created Profession"
+msgstr "HR yaratgan kasb"
+
+#: apps/domain/models.py:70
+msgid "HR Created Professions"
+msgstr "HR yaratgan kasblar"
+
+#: apps/domain/serializers.py:24
+msgid "Name cannot be empty."
+msgstr "Nom bo'sh bo'lishi mumkin emas."
+
+#: apps/domain/serializers.py:65
+msgid "Profession name cannot be empty."
+msgstr "Kasb nomi bo'sh bo'lishi mumkin emas."
+
+#: apps/domain/serializers.py:69
+msgid "Name contains invalid characters or sequences."
+msgstr "Nom yaroqsiz belgilar yoki ketma-ketliklarni o'z ichiga oladi."
+
+#: apps/domain/serializers.py:77
+msgid "created_by contains invalid characters or sequences."
+msgstr "created_by da noto'g'ri belgilar yoki ketma-ketliklar mavjud."
+
+#: apps/domain/serializers.py:85
+msgid "Description cannot exceed 500 characters."
+msgstr "Tavsif 500 belgidan oshmasligi kerak."
+
+#: apps/edupartners/models/edupartner.py:41
+msgid "Address"
+msgstr "Manzil"
+
+#: apps/edupartners/models/edupartner.py:42
+msgid "Full address of the educational partner"
+msgstr "Ta'lim hamkorining to'liq manzili"
+
+#: apps/edupartners/models/edupartner.py:65
+msgid "Faculty Name"
+msgstr "Fakultet nomi"
+
+#: apps/edupartners/models/edupartner.py:66
+msgid "Name of the faculty (e.g., Computer Science, Business)"
+msgstr "Fakultet nomi (masalan, Kompyuter fanlari, Biznes)"
+
+#: apps/edupartners/models/edupartner.py:71
+msgid "Detailed description of the faculty"
+msgstr "Fakultetning batafsil tavsifi"
+
+#: apps/edupartners/models/edupartner.py:77
+msgid "Educational Partner"
+msgstr "Ta'lim hamkori"
+
+#: apps/edupartners/models/edupartner.py:78
+msgid "The educational partner this faculty belongs to"
+msgstr "Ushbu fakultet tegishli bo'lgan ta'lim hamkori"
+
+#: apps/edupartners/models/edupartner.py:87
+msgid "The domain associated with this faculty"
+msgstr "Ushbu fakultet bilan bog'langan soha"
+
+#: apps/edupartners/models/edupartner.py:91
+#: apps/edupartners/models/edupartner.py:175
+msgid "Is Active"
+msgstr "Faol"
+
+#: apps/edupartners/models/edupartner.py:92
+msgid "Indicates whether the faculty is active"
+msgstr "Fakultet faol yoki faol emasligini ko'rsatadi"
+
+#: apps/edupartners/models/edupartner.py:99
+#: apps/edupartners/models/edupartner.py:162
+msgid "Faculty"
+msgstr "Fakultet"
+
+#: apps/edupartners/models/edupartner.py:100
+msgid "Faculties"
+msgstr "Fakultetlar"
+
+#: apps/edupartners/models/edupartner.py:113
+#: apps/edupartners/models/edupartner.py:183
+msgid "Subject"
+msgstr "Fan"
+
+#: apps/edupartners/models/edupartner.py:119
+msgid "Skill"
+msgstr "Ko'nikma"
+
+#: apps/edupartners/models/edupartner.py:125
+msgid "Proficiency Level"
+msgstr "Malaka darajasi"
+
+#: apps/edupartners/models/edupartner.py:126
+msgid "Expected proficiency level acquired after studying this subject"
+msgstr "Ushbu fanni o'rganganidan keyin kutiladigan malaka darajasi"
+
+#: apps/edupartners/models/edupartner.py:135
+msgid "Subject Skill"
+msgstr "Fan ko'nikmasi"
+
+#: apps/edupartners/models/edupartner.py:136
+msgid "Subject Skills"
+msgstr "Fan ko'nikmalari"
+
+#: apps/edupartners/models/edupartner.py:150
+msgid "Subject Name"
+msgstr "Fan nomi"
+
+#: apps/edupartners/models/edupartner.py:151
+msgid "Name of the subject (e.g., Data Structures, Marketing)"
+msgstr "Fan nomi (masalan, Ma'lumotlar tuzilmalari, Marketing)"
+
+#: apps/edupartners/models/edupartner.py:156
+msgid "Detailed description of the subject"
+msgstr "Fanning batafsil tavsifi"
+
+#: apps/edupartners/models/edupartner.py:163
+msgid "The faculty this subject belongs to"
+msgstr "Ushbu fan tegishli bo'lgan fakultet"
+
+#: apps/edupartners/models/edupartner.py:170
+msgid "Acquired Skills"
+msgstr "Egallangan ko'nikmalar"
+
+#: apps/edupartners/models/edupartner.py:171
+msgid "Skills that can be acquired by studying this subject"
+msgstr "Ushbu fanni o'rganish orqali egallash mumkin bo'lgan ko'nikmalar"
+
+#: apps/edupartners/models/edupartner.py:176
+msgid "Indicates whether the subject is active"
+msgstr "Fan faol yoki faol emasligini ko'rsatadi"
+
+#: apps/edupartners/models/edupartner.py:184
+msgid "Subjects"
+msgstr "Fanlar"
+
+#: apps/edupartners/services/vault.py:151
+msgid "The selected university is not supported for LMS verification."
+msgstr "Tanlangan universitet LMS tasdiqlash uchun qo'llab-quvvatlanmaydi."
+
+#: apps/edupartners/views/edupartners.py:178
+msgid "This query parameter is required."
+msgstr "Bu so'rov parametri majburiydir."
+
+#: apps/edupartners/views/edupartners.py:183
+msgid "Must be a valid UUID."
+msgstr "Yaroqli UUID bo'lishi kerak."
+
+#: apps/edupartners/views/vault.py:65 apps/vacancies/views/favourite.py:128
+msgid "Candidate not found"
+msgstr "Nomzod topilmadi"
+
+#: apps/edupartners/views/vault.py:72
+msgid ""
+"You must have an associated educational partner (university) to register "
+"with LMS."
+msgstr ""
+"LMS'da ro'yxatdan o'tish uchun sizda bog'langan ta'lim hamkori (universitet) "
+"bo'lishi kerak."
+
+#: apps/edupartners/views/vault.py:79
+msgid "You are already verified through LMS."
+msgstr "Siz allaqachon LMS orqali tasdiqlangansiz."
+
+#: apps/edupartners/views/vault.py:151
+msgid "Universities retrieved successfully"
+msgstr "Universitetlar muvaffaqiyatli olindi"
+
+#: apps/general/models.py:19
+msgid "EduPartner Analytics"
+msgstr "EduPartner tahlillari"
+
+#: apps/general/models.py:20
+msgid "HR Analytics"
+msgstr "HR tahlillari"
+
+#: apps/general/models.py:21
+msgid "Email Notification"
+msgstr "Elektron pochta bildirishnomasi"
+
+#: apps/general/models.py:22
+msgid "Resume Generation"
+msgstr "Rezyume generatsiyasi"
+
+#: apps/general/models.py:23
+msgid "Candidate AI Evaluation"
+msgstr "Nomzod AI baholashi"
+
+#: apps/general/models.py:35
+msgid "Unique identifier for the job"
+msgstr "Vazifaning noyob identifikatori"
+
+#: apps/general/models.py:40
+msgid "Type of the job (edu_analytics, hr_analytics, etc.)"
+msgstr "Vazifa turi (edu_analytics, hr_analytics va boshqalar)"
+
+#: apps/general/models.py:43
+msgid "The date the data is for"
+msgstr "Ma'lumotlar tegishli bo'lgan sana"
+
+#: apps/general/models.py:49
+msgid "ID of the target entity (faculty_id, company_id, etc.)"
+msgstr "Maqsadli ob'ekt IDsi (faculty_id, company_id va boshqalar)"
+
+#: apps/general/models.py:55
+msgid "Name of the target entity for easier identification"
+msgstr "Oson aniqlash uchun maqsadli ob'ekt nomi"
+
+#: apps/general/models.py:62
+msgid "Current status of the job"
+msgstr "Ishning joriy holati"
+
+#: apps/general/models.py:66
+msgid "Number of retry attempts"
+msgstr "Qayta urinishlar soni"
+
+#: apps/general/models.py:70
+msgid "Maximum number of retries before alerting"
+msgstr "Ogohlantirish oldidan maksimal qayta urinishlar soni"
+
+#: apps/general/models.py:75
+msgid "Timestamp of the last attempt"
+msgstr "Oxirgi urinish vaqti"
+
+#: apps/general/models.py:80
+msgid "Error message from the last failed attempt"
+msgstr "Oxirgi muvaffaqiyatsiz urinishdan xato xabari"
+
+#: apps/general/models.py:86
+msgid "RQ job ID for tracking"
+msgstr "Kuzatish uchun RQ vazifa IDsi"
+
+#: apps/general/models.py:92
+msgid "Hash of the payload to detect duplicates"
+msgstr "Dublikatlarni aniqlash uchun foydali yuk xeshi"
+
+#: apps/general/models.py:96
+msgid "Whether an alert was sent for exceeded retries"
+msgstr "Qayta urinishlar oshirilganligi haqida ogohlantirish yuborilganmi"
+
+#: apps/general/models.py:100
+msgid "Job Queue"
+msgstr "Vazifalar navbati"
+
+#: apps/general/models.py:101
+msgid "Job Queues"
+msgstr "Vazifalar navbatlari"
+
+#: apps/general/models.py:165
+msgid "UUID of the vacancy being tracked"
+msgstr "Kuzatilayotgan vakansiyaning UUID"
+
+#: apps/general/models.py:171
+msgid ""
+"Timestamp when is_active=False was successfully sent to HR Analytics. NULL "
+"means the final send has not yet been delivered."
+msgstr ""
+"is_active=False HR Analytics-ga muvaffaqiyatli yuborilgan vaqt. NULL oxirgi "
+"yuborish hali yetkazilmaganligini bildiradi."
+
+#: apps/general/models.py:179
+msgid "Vacancy Analytics Sync"
+msgstr "Vakansiya tahlillari sinxronizatsiyasi"
+
+#: apps/general/models.py:180
+msgid "Vacancy Analytics Syncs"
+msgstr "Vakansiya tahlillari sinxronizatsiyalari"
+
+#: apps/general/models.py:220
+msgid "Domain Market Skill"
+msgstr "Domen bozor ko'nikmasi"
+
+#: apps/general/models.py:221
+msgid "Domain Market Skills"
+msgstr "Domen bozor ko'nikmalari"
+
+#: apps/general/models.py:312
+msgid "Unique identifier for this notification record"
+msgstr "Ushbu bildirishnoma yozuvi uchun noyob identifikator"
+
+#: apps/general/models.py:318
+msgid "The job application that was included in a summary email"
+msgstr "Xulosaviy elektron pochtaga kiritilgan ish arizasi"
+
+#: apps/general/models.py:324
+msgid "The recruiter who received the notification"
+msgstr "Bildirishnomani olgan rekruter"
+
+#: apps/general/models.py:328
+msgid "When the notification was sent"
+msgstr "Bildirishnoma yuborilgan vaqt"
+
+#: apps/general/models.py:332
+msgid "Application Summary Notification"
+msgstr "Arizalar bo'yicha umumiy bildirishnoma"
+
+#: apps/general/models.py:333
+msgid "Application Summary Notifications"
+msgstr "Arizalar bo'yicha umumiy bildirishnomalar"
+
+#: apps/general/models.py:355
+msgid "Target role / search query, e.g. 'Python Developer'"
+msgstr "Maqsadli rol / qidiruv so'rovi, masalan 'Python Developer'"
+
+#: apps/general/models.py:360
+msgid "Data source: hh, platform, both"
+msgstr "Ma'lumot manbai: hh, platforma, ikkalasi"
+
+#: apps/general/models.py:365
+msgid "Market median salary in UZS"
+msgstr "UZS da bozor o'rtacha ish haqi"
+
+#: apps/general/models.py:372
+msgid "Minimum of collected salary_from values"
+msgstr "Yig'ilgan salary_from qiymatlarining minimali"
+
+#: apps/general/models.py:379
+msgid "Maximum of collected salary_to values"
+msgstr "Yig'ilgan salary_to qiymatlarining maksimali"
+
+#: apps/general/models.py:383
+msgid "Number of salary data points used"
+msgstr "Ishlatilgan maosh ma'lumot nuqtalari soni"
+
+#: apps/general/models.py:387
+msgid "Market Salary Cache"
+msgstr "Bozor ish haqi keshi"
+
+#: apps/general/models.py:388
+msgid "Market Salary Caches"
+msgstr "Bozor ish haqi keshlari"
+
+#: apps/general/serializers.py:50
+msgid "audience must be candidates or recruiters."
+msgstr "audience candidates yoki recruiters bo'lishi kerak."
+
+#: apps/general/serializers.py:56
+msgid "EmailTemplate with this template_type does not exist."
+msgstr "Bunday template_type qiymatiga ega EmailTemplate mavjud emas."
+
+#: apps/general/serializers.py:74
+msgid "Provide at least one recipient email."
+msgstr "Kamida bitta qabul qiluvchining elektron pochta manzilini kiriting."
+
+#: apps/general/services/campaign_email_service.py:283
+#, python-format
+msgid "No active %(audience_label)s found for this email."
+msgstr "Bu email uchun faol %(audience_label)s topilmadi."
+
+#: apps/general/services/campaign_email_service.py:292
+msgid "No active vacancies found for this recruiter's company domain."
+msgstr "Bu rekruter kompaniyasi domeni uchun faol vakansiyalar topilmadi."
+
+#: apps/general/services/campaign_email_service.py:293
+msgid "No active vacancies found for this candidate's domains."
+msgstr "Nomzodning sohalari bo'yicha faol vakansiyalar topilmadi."
+
+#: apps/general/services/campaign_email_service.py:383
+#, python-format
+msgid "up to %(amount)s %(currency)s"
+msgstr "%(amount)s %(currency)s gacha"
+
+#: apps/general/views/campaign.py:40
+#, python-format
+msgid "Missing required configuration: %(field)s"
+msgstr "Majburiy konfiguratsiya yetishmayapti: %(field)s"
+
+#: apps/general/views/campaign.py:46
+msgid "Failed to connect to email service. Please try again later."
+msgstr ""
+"Email xizmatiga ulanish muvaffaqiyatsiz. Iltimos, keyinroq qayta urinib "
+"ko'ring."
+
+#: apps/general/views/campaign.py:51
+msgid "Failed to process manual email campaign. Please try again later."
+msgstr ""
+"Qo'lda email kampaniyasini qayta ishlash muvaffaqiyatsiz. Iltimos, keyinroq "
+"qayta urinib ko'ring."
+
+#: apps/general/views/campaign.py:56
+msgid "Manual email campaign processed."
+msgstr "Qo‘lda e-mail yuborish muvaffaqiyatli bo‘ldi."
+
+#: apps/general/views/company.py:41
+msgid "company_ids must be a list of company id strings."
+msgstr "company_ids kompaniya id qatorlar ro'yxati bo'lishi kerak."
+
+#: apps/general/views/company.py:46
+msgid "is_active field is required and must be boolean."
+msgstr "is_active maydoni talab qilinadi va mantiqiy bo'lishi kerak."
+
+#: apps/general/views/company.py:60 apps/general/views/company.py:66
+msgid "is_active must be a boolean."
+msgstr "is_active mantiqiy bo'lishi kerak."
+
+#: apps/general/views/company.py:77
+msgid "Company confirmation emails processed"
+msgstr "Kompaniya tasdiqlash xatlari qayta ishlandi"
+
+#: apps/general/views/company.py:83
+msgid "An internal error occurred while processing the request."
+msgstr "So'rovni qayta ishlashda ichki xatolik yuz berdi."
+
+#: apps/hr_templates/models.py:20
+msgid "Interview Scheduled"
+msgstr "Suhbat belgilandi"
+
+#: apps/hr_templates/models.py:73
+msgid "Title"
+msgstr "Sarlavha"
+
+#: apps/hr_templates/models.py:74
+msgid "Short title for the reason template"
+msgstr "Sabab shablonining qisqa sarlavhasi"
+
+#: apps/hr_templates/models.py:80
+msgid "Detailed description or template text for recruiter notes"
+msgstr "Recruiter eslatmalari uchun batafsil tavsif yoki shablon matni"
+
+#: apps/hr_templates/models.py:87
+msgid "The company this reason template belongs to"
+msgstr "Ushbu sabab shabloni tegishli kompaniya"
+
+#: apps/hr_templates/models.py:93
+msgid "The application status this reason is associated with"
+msgstr "Ushbu sabab bog'langan ariza holati"
+
+#: apps/hr_templates/models.py:97
+msgid "Reason"
+msgstr "Sabab"
+
+#: apps/hr_templates/models.py:98
+msgid "Reasons"
+msgstr "Sabablar"
+
+#: apps/hr_templates/serializers.py:22
+msgid "Title cannot be empty."
+msgstr "Sarlavha bo'sh bo'lishi mumkin emas."
+
+#: apps/hr_templates/views.py:34
+msgid "Reason statuses retrieved successfully"
+msgstr "Sabab holatlari muvaffaqiyatli olindi"
+
+#: apps/hr_templates/views.py:90
+msgid "Reason template deleted successfully"
+msgstr "Sabab shabloni muvaffaqiyatli o'chirildi"
+
+#: apps/matching/views.py:51 apps/matching/views.py:169
+msgid "Invalid top_k parameter"
+msgstr "Noto'g'ri top_k parametri"
+
+#: apps/matching/views.py:59 apps/matching/views.py:177
+msgid "Invalid min_similarity parameter"
+msgstr "Noto'g'ri min_similarity parametri"
+
+#: apps/matching/views.py:66 apps/matching/views.py:184
+msgid "min_similarity must be between 0 and 1"
+msgstr "min_similarity 0 va 1 orasida bo'lishi kerak"
+
+#: apps/matching/views.py:76
+msgid "Resume embedding not generated yet"
+msgstr "Rezyume embeddingsi hali yaratilmagan"
+
+#: apps/matching/views.py:77 apps/matching/views.py:197
+msgid "Please wait a moment and try again. Embeddings are being processed."
+msgstr ""
+"Iltimos, biroz kuting va qayta urinib ko'ring. Embeddinglar qayta "
+"ishlanmoqda."
+
+#: apps/matching/views.py:88 apps/matching/views.py:208
+msgid "Matching failed"
+msgstr "Moslik muvaffaqiyatsiz"
+
+#: apps/matching/views.py:89 apps/matching/views.py:209
+msgid "An error occurred while processing the match request."
+msgstr "Moslik so'rovini qayta ishlashda xatolik yuz berdi."
+
+#: apps/matching/views.py:112 apps/matching/views.py:233
+msgid "Matching completed successfully"
+msgstr "Moslik muvaffaqiyatli yakunlandi"
+
+#: apps/matching/views.py:196
+msgid "Vacancy embedding not generated yet"
+msgstr "Vakansiya embeddingsi hali yaratilmagan"
+
+#: apps/notifications/services/application_notification_service.py:180
+msgid "New application"
+msgstr "Yangi ariza"
+
+#: apps/notifications/services/application_notification_service.py:181
+#, python-format
+msgid "%(candidate_name)s applied to %(vacancy_title)s."
+msgstr "%(candidate_name)s %(vacancy_title)s uchun ariza yubordi."
+
+#: apps/notifications/services/application_notification_service.py:224
+msgid "Application status updated"
+msgstr "Ariza holati yangilandi"
+
+#: apps/notifications/services/application_notification_service.py:225
+#, python-format
+msgid "%(vacancy_title)s status changed to %(status)s."
+msgstr "%(vacancy_title)s holati %(status)s ga o'zgartirildi."
+
+#: apps/notifications/services/application_notification_service.py:252
+msgid "Offer accepted"
+msgstr "Taklif qabul qilindi"
+
+#: apps/notifications/services/application_notification_service.py:253
+#, python-format
+msgid "%(candidate_name)s accepted the offer for %(vacancy_title)s."
+msgstr "%(candidate_name)s %(vacancy_title)s uchun taklifni qabul qildi."
+
+#: apps/notifications/services/application_notification_service.py:259
+msgid "Offer rejected"
+msgstr "Taklif rad etildi"
+
+#: apps/notifications/services/application_notification_service.py:260
+#, python-format
+msgid "%(candidate_name)s rejected the offer for %(vacancy_title)s."
+msgstr "%(candidate_name)s %(vacancy_title)s uchun taklifni rad etdi."
+
+#: apps/notifications/views/admin.py:132
+msgid "Title, message, and sent_to_all are required."
+msgstr "Sarlavha, xabar va sent_to_all talab qilinadi."
+
+#: apps/notifications/views/admin.py:145
+msgid "No active devices found."
+msgstr "Faol qurilmalar topilmadi."
+
+#: apps/notifications/views/admin.py:175
+msgid "Notification dispatched to devices."
+msgstr "Bildirishnoma qurilmalarga yuborildi."
+
+#: apps/notifications/views/admin.py:279
+msgid "user_ids (array), title, and message are required."
+msgstr "user_ids (massiv), sarlavha va xabar talab qilinadi."
+
+#: apps/notifications/views/admin.py:285
+msgid "user_ids must be a non-empty array of UUIDs."
+msgstr "user_ids bo'sh bo'lmagan UUID massivi bo'lishi kerak."
+
+#: apps/notifications/views/admin.py:323
+msgid "No valid active users found."
+msgstr "Yaroqli faol foydalanuvchilar topilmadi."
+
+#: apps/notifications/views/admin.py:376
+msgid "Notifications sent successfully."
+msgstr "Bildirishnomalar muvaffaqiyatli yuborildi."
+
+#: apps/notifications/views/admin.py:382
+msgid "Failed to send notifications. Please try again."
+msgstr "Bildirishnomalarni yuborishda xatolik. Iltimos, qayta urinib ko'ring."
+
+#: apps/notifications/views/admin.py:498
+msgid "job_application_id is required"
+msgstr "job_application_id talab qilinadi"
+
+#: apps/notifications/views/admin.py:506
+msgid "Invalid job_application_id format. Must be a valid UUID."
+msgstr "Noto'g'ri job_application_id formati. Yaroqli UUID bo'lishi kerak."
+
+#: apps/notifications/views/admin.py:525
+msgid "Notification sent successfully to recruiters"
+msgstr "Bildirishnoma rekruterlarga muvaffaqiyatli yuborildi"
+
+#: apps/notifications/views/admin.py:535 core/responses.py:175
+msgid "Internal server error"
+msgstr "Ichki server xatosi"
+
+#: apps/notifications/views/device.py:107
+msgid "registration_id is required."
+msgstr "registration_id talab qilinadi."
+
+#: apps/notifications/views/user.py:228
+msgid "Failed to fetch notifications"
+msgstr "Bildirishnomalarni olishda xatolik"
+
+#: apps/notifications/views/user.py:319
+msgid "Notification marked as read"
+msgstr "Bildirishnoma o'qilgan deb belgilandi"
+
+#: apps/notifications/views/user.py:322
+msgid "Notification not found"
+msgstr "Bildirishnoma topilmadi"
+
+#: apps/notifications/views/user.py:427
+msgid "Failed to mark notifications as read"
+msgstr "Bildirishnomalarni o'qilgan deb belgilashda xatolik"
+
+#: apps/notifications/views/user.py:566
+msgid "user_id, title, and message are required."
+msgstr "user_id, sarlavha va xabar talab qilinadi."
+
+#: apps/notifications/views/user.py:574
+msgid "Invalid user_id format. Must be a valid UUID."
+msgstr "Noto'g'ri user_id formati. Yaroqli UUID bo'lishi kerak."
+
+#: apps/notifications/views/user.py:601
+msgid "User not found or inactive."
+msgstr "Foydalanuvchi topilmadi yoki faol emas."
+
+#: apps/notifications/views/user.py:607
+msgid "No active devices found for user."
+msgstr "Foydalanuvchi uchun faol qurilmalar topilmadi."
+
+#: apps/notifications/views/user.py:651
+msgid "Notification sent successfully."
+msgstr "Bildirishnoma muvaffaqiyatli yuborildi."
+
+#: apps/notifications/views/user.py:657
+msgid "Failed to send notification. Please try again."
+msgstr "Bildirishnoma yuborishda xatolik. Iltimos, qayta urinib ko'ring."
+
+#: apps/profiles/admin.py:28 apps/profiles/admin.py:71
+msgid "Date Joined"
+msgstr "Qo'shilgan sana"
+
+#: apps/profiles/admin.py:33
+msgid "Today"
+msgstr "Bugun"
+
+#: apps/profiles/admin.py:34
+msgid "Last 7 days"
+msgstr "So'nggi 7 kun"
+
+#: apps/profiles/admin.py:35
+msgid "Last 30 days"
+msgstr "So'nggi 30 kun"
+
+#: apps/profiles/models/candidate_profile.py:60
+msgid "Enter a valid GitHub profile URL (e.g., github.com/username)."
+msgstr "Yaroqli GitHub profili URLini kiriting (masalan, github.com/username)."
+
+#: apps/profiles/models/candidate_profile.py:64
+msgid "GitHub profile URL (e.g., github.com/username)."
+msgstr "GitHub profili URLi (e.g., github.com/username)."
+
+#: apps/profiles/models/candidate_profile.py:73
+msgid "Enter a valid LinkedIn profile URL (e.g., linkedin.com/in/username)."
+msgstr ""
+"To'g'ri LinkedIn profil URL sini kiriting (masalan, "
+"linkedin.com/in/username)."
+
+#: apps/profiles/models/candidate_profile.py:77
+msgid "LinkedIn profile URL (e.g., linkedin.com/in/username)."
+msgstr "LinkedIn profili URLi (e.g., linkedin.com/in/username)."
+
+#: apps/profiles/models/candidate_profile.py:86
+msgid "Enter a valid portfolio or personal website URL."
+msgstr "Yaroqli portfoli yoki shaxsiy veb-sayt URLini kiriting."
+
+#: apps/profiles/models/candidate_profile.py:90
+msgid "Portfolio or personal website URL."
+msgstr "Portfoli yoki shaxsiy veb-sayt URLi."
+
+#: apps/profiles/models/candidate_profile.py:99
+msgid "Enter a valid Telegram URL (e.g., https://t.me/username)."
+msgstr "Yaroqli Telegram URLini kiriting (masalan, https://t.me/username)."
+
+#: apps/profiles/models/candidate_profile.py:103
+msgid "Telegram profile URL (e.g., https://t.me/username)."
+msgstr "Telegram profili URLi (masalan, https://t.me/username)."
+
+#: apps/profiles/models/citizenship.py:17
+msgid "Citizenship name"
+msgstr "Fuqarolik nomi"
+
+#: apps/profiles/models/citizenship.py:18
+msgid "Name of the citizenship/country"
+msgstr "Fuqarolik/davlat nomi"
+
+#: apps/profiles/models/citizenship.py:25
+msgid "Citizenship"
+msgstr "Fuqarolik"
+
+#: apps/profiles/models/citizenship.py:26
+msgid "Citizenships"
+msgstr "Fuqaroliklar"
+
+#: apps/profiles/serializers/candidate.py:110
+msgid "Citizenship with this ID does not exist"
+msgstr "Bunday ID bilan fuqarolik mavjud emas."
+
+#: apps/profiles/serializers/candidate.py:126
+msgid "Authenticated user is not a candidate"
+msgstr "Autentifikatsiya qilingan foydalanuvchi nomzod emas"
+
+#: apps/profiles/serializers/candidate.py:134
+msgid "No candidate found with this email"
+msgstr "Bu email bilan nomzod topilmadi"
+
+#: apps/profiles/serializers/candidate.py:140
+msgid "Profile already exists for this candidate"
+msgstr "Bu nomzod uchun profil allaqachon mavjud"
+
+#: apps/profiles/serializers/candidate.py:162
+#: apps/profiles/serializers/candidate.py:215
+msgid "EduPartner with this ID does not exist"
+msgstr "Bunday ID bilan EduPartner mavjud emas"
+
+#: apps/profiles/serializers/candidate.py:177
+#: apps/profiles/serializers/candidate.py:231
+msgid "Faculty does not belong to selected EduPartner"
+msgstr "Fakultet tanlangan EduPartner'ga tegishli emas"
+
+#: apps/profiles/serializers/candidate.py:181
+#: apps/profiles/serializers/candidate.py:235
+msgid "Faculty with this ID does not exist"
+msgstr "Bunday ID bilan fakultet mavjud emas"
+
+#: apps/profiles/serializers/recruiter.py:176
+#: apps/profiles/serializers/recruiter.py:179
+msgid "This email is already registered."
+msgstr "Bu elektron pochta manzili allaqachon ro'yxatdan o'tgan."
+
+#: apps/profiles/views/company.py:159
+msgid "Get Company Information"
+msgstr "Kompaniya ma'lumotlarini olish"
+
+#: apps/profiles/views/company.py:160
+msgid ""
+"Retrieve basic company information. Publicly accessible without "
+"authentication."
+msgstr "Kompaniya haqida asosiy ma'lumotlarni olish. Autentifikatsiyasiz ochiq kirish mumkin."
+
+#: apps/profiles/views/company.py:163
+msgid "Company not found."
+msgstr "Kompaniya topilmadi."
+
+#: apps/profiles/views/recruiter.py:65 apps/profiles/views/recruiter.py:241
+#: apps/profiles/views/recruiter.py:352
+msgid "Recruiter not found"
+msgstr "Rekruter topilmadi"
+
+#: apps/profiles/views/recruiter.py:69
+msgid "Recruiter does not belong to any company"
+msgstr "Rekruter hech qanday kompaniyaga tegishli emas"
+
+#: apps/profiles/views/recruiter.py:217
+msgid "Cannot downgrade the last admin recruiter"
+msgstr "Oxirgi administrator rekruterning darajasini tushirish mumkin emas"
+
+#: apps/profiles/views/recruiter.py:232
+msgid "Recruiter role successfully updated"
+msgstr "Rekruter roli muvaffaqiyatli yangilandi"
+
+#: apps/profiles/views/recruiter.py:237
+msgid "Invalid data"
+msgstr "Noto'g'ri ma'lumot"
+
+#: apps/profiles/views/recruiter.py:348
+msgid "Recruiter information retrieved successfully"
+msgstr "Rekruter ma'lumotlari muvaffaqiyatli olindi"
+
+#: apps/profiles/views/registration.py:74
+msgid "Failed to register recruiter"
+msgstr "Rekruterni ro'yxatdan o'tkazishda xatolik"
+
+#: apps/profiles/views/registration.py:99
+msgid "Recruiter ID is required for update"
+msgstr "Yangilash uchun rekruter ID talab qilinadi"
+
+#: apps/profiles/views/registration.py:113
+msgid "Recruiter not found or not in your company"
+msgstr "Rekruter topilmadi yoki sizning kompaniyangizda emas"
+
+#: apps/profiles/views/registration.py:132
+msgid "Recruiter updated successfully"
+msgstr "Rekruter muvaffaqiyatli yangilandi"
+
+#: apps/profiles/views/registration.py:137
+msgid "Failed to update recruiter"
+msgstr "Rekruterni yangilashda xatolik"
+
+#: apps/quiz/views/calculate_quiz.py:127
+#: apps/quiz/views/determine_domain.py:247
+msgid "quiz_id is required"
+msgstr "quiz_id talab qilinadi"
+
+#: apps/quiz/views/calculate_quiz.py:132
+#: apps/quiz/views/determine_domain.py:261
+msgid "Quiz not found"
+msgstr "Test topilmadi"
+
+#: apps/quiz/views/calculate_quiz.py:136 apps/quiz/views/calculate_quiz.py:139
+#: apps/quiz/views/calculate_quiz.py:147
+#: apps/quiz/views/determine_domain.py:251
+#: apps/quiz/views/determine_domain.py:253
+msgid "Responses are required"
+msgstr "Javoblar talab qilinadi"
+
+#: apps/quiz/views/calculate_quiz.py:148
+#: apps/quiz/views/determine_domain.py:271
+msgid "Each response must be an object."
+msgstr "Har bir javob obyekt bo'lishi kerak."
+
+#: apps/quiz/views/calculate_quiz.py:154 apps/quiz/views/calculate_quiz.py:162
+#: apps/quiz/views/calculate_quiz.py:171 apps/quiz/views/calculate_quiz.py:184
+#: apps/quiz/views/calculate_quiz.py:269
+#: apps/quiz/views/determine_domain.py:270
+#: apps/quiz/views/determine_domain.py:278
+#: apps/quiz/views/determine_domain.py:294
+msgid "No valid answers provided"
+msgstr "Yaroqli javoblar taqdim etilmadi"
+
+#: apps/quiz/views/calculate_quiz.py:155
+#, python-format
+msgid "question_id must be a valid integer at index %(index)s."
+msgstr "%(index)s-indeksdagi question_id yaroqli butun son bo'lishi kerak."
+
+#: apps/quiz/views/calculate_quiz.py:163
+#, python-format
+msgid "answer must be a non-empty list at index %(index)s."
+msgstr "%(index)s-indeksdagi answer bo'sh bo'lmagan ro'yxat bo'lishi kerak."
+
+#: apps/quiz/views/calculate_quiz.py:172
+msgid "Answer IDs must be valid integers."
+msgstr "Javob identifikatorlari yaroqli butun son bo'lishi kerak."
+
+#: apps/quiz/views/calculate_quiz.py:209 apps/quiz/views/calculate_quiz.py:240
+msgid "No valid answers provided for this quiz"
+msgstr "Bu test uchun yaroqli javoblar taqdim etilmadi"
+
+#: apps/quiz/views/calculate_quiz.py:297
+msgid "domain_id must be a valid integer"
+msgstr "domain_id yaroqli butun son bo'lishi kerak"
+
+#: apps/quiz/views/calculate_quiz.py:301
+msgid "Invalid domain_id"
+msgstr "Noto'g'ri domain_id"
+
+#: apps/quiz/views/calculate_quiz.py:339
+msgid "Quiz results calculated successfully"
+msgstr "Test natijalari muvaffaqiyatli hisoblandi"
+
+#: apps/quiz/views/calculate_quiz.py:346
+msgid "email is required for anonymous users"
+msgstr "Anonim foydalanuvchilar uchun elektron pochta manzili majburiy"
+
+#: apps/quiz/views/calculate_quiz.py:353
+msgid "Enter a valid email address."
+msgstr "To'g'ri elektron pochta manzilini kiriting."
+
+#: apps/quiz/views/calculate_quiz.py:379 apps/quiz/views/calculate_quiz.py:398
+msgid "Your quiz results have been sent to your email."
+msgstr "Test natijalari elektron pochtangizga yuborildi."
+
+#: apps/quiz/views/calculate_quiz.py:411
+msgid "Quiz completed successfully. Log in to see your quiz result."
+msgstr "Viktorina muvaffaqiyatli yakunlandi. Natijani ko'rish uchun tizimga kiring."
+
+#: apps/quiz/views/determine_domain.py:280
+#, python-format
+msgid "question_id and answer_id must be valid integers at index %(index)s."
+msgstr "question_id va answer_id %(index)s indeksida butun son bo'lishi kerak."
+
+#: apps/quiz/views/determine_domain.py:327
+#: apps/quiz/views/determine_domain.py:341
+msgid "No valid answers with domain mapping found for this quiz"
+msgstr "Bu test uchun soha xaritasi bilan yaroqli javoblar topilmadi"
+
+#: apps/quiz/views/determine_domain.py:366
+msgid "Could not determine domain from provided answers"
+msgstr "Berilgan javoblardan sohani aniqlab bo'lmadi"
+
+#: apps/quiz/views/determine_domain.py:456
+msgid "Domain determined successfully"
+msgstr "Soha muvaffaqiyatli aniqlandi"
+
+#: apps/quiz/views/quiz_result_view.py:24
+msgid "No quiz results found"
+msgstr "Test natijalari topilmadi"
+
+#: apps/quiz/views/quiz_result_view.py:52
+msgid "Latest quiz result retrieved successfully"
+msgstr "So'nggi test natijasi muvaffaqiyatli olindi"
+
+#: apps/quiz/views/quiz_views.py:58
+msgid "Quiz types retrieved"
+msgstr "Test turlari olindi"
+
+#: apps/quiz/views/quiz_views.py:103
+msgid "Questions retrieved"
+msgstr "Savollar olindi"
+
+#: apps/resumes/models/resume.py:254
+msgid "AI Generated"
+msgstr "AI tomonidan yaratilgan"
+
+#: apps/resumes/models/resume.py:255
+msgid "Candidate Created"
+msgstr "Nomzod tomonidan yaratilgan"
+
+#: apps/resumes/models/resume.py:267
+msgid "Whether the resume was created by AI or by the candidate"
+msgstr "Rezyume AI yoki nomzod tomonidan yaratilganmi"
+
+#: apps/resumes/serializers/resume.py:175
+msgid "Invalid JSON format."
+msgstr "Noto'g'ri JSON formati."
+
+#: apps/resumes/serializers/resume.py:177
+msgid "Expected a JSON string or object."
+msgstr "JSON satr yoki obyekt kutilmoqda."
+
+#: apps/resumes/serializers/resume.py:534
+#: apps/vacancies/serializers/vacancy.py:618
+msgid "Domain with this name does not exist."
+msgstr "Bunday nomdagi soha mavjud emas."
+
+#: apps/resumes/serializers/resume.py:562
+msgid "Domain is required."
+msgstr "Soha talab qilinadi."
+
+#: apps/resumes/serializers/resume.py:575
+msgid "Expected a list of skill objects."
+msgstr "Ko'nikma obyektlari ro'yxati kutilmoqda."
+
+#: apps/resumes/serializers/resume.py:581
+msgid "Each skill must be a dictionary."
+msgstr "Har bir ko'nikma lug'at bo'lishi kerak."
+
+#: apps/resumes/serializers/resume.py:585
+msgid "Each skill must have a 'skill_id' field."
+msgstr "Har bir ko'nikmada 'skill_id' maydoni bo'lishi kerak."
+
+#: apps/resumes/serializers/resume.py:592
+#, python-brace-format
+msgid "Skill with ID {skill_id} does not exist."
+msgstr "IDsi {skill_id} bo'lgan ko'nikma mavjud emas."
+
+#: apps/resumes/serializers/resume.py:599
+#, python-brace-format
+msgid "Skill with ID {skill_id} has an empty name."
+msgstr "ID {skill_id} bo'lgan ko'nikma nomi bo'sh."
+
+#: apps/resumes/serializers/resume.py:610
+msgid "Invalid proficiency_level."
+msgstr "Noto'g'ri proficiency_level."
+
+#: apps/resumes/serializers/resume.py:636
+msgid "Expected a list of experience objects."
+msgstr "Tajriba obyektlari ro'yxati kutilmoqda."
+
+#: apps/resumes/serializers/resume.py:738
+msgid "Expected a list of language certificate objects."
+msgstr "Til sertifikatlari obyektlarining ro'yxati kutilmoqda."
+
+#: apps/resumes/serializers/resume.py:750
+#, python-format
+msgid "Each language certificate must be a dictionary at index %(idx)s."
+msgstr "Har bir til sertifikati %(idx)s indeksida lug'at bo'lishi kerak."
+
+#: apps/resumes/serializers/resume.py:757
+#, python-format
+msgid "'language_id' is required for language certificate at index %(idx)s."
+msgstr "%(idx)s indeksidagi til sertifikati uchun 'language_id' talab qilinadi."
+
+#: apps/resumes/serializers/resume.py:767
+#, python-format
+msgid "'language_id' must be a valid integer at index %(idx)s."
+msgstr "'%(idx)s' indeksida 'language_id' yaroqli butun son bo'lishi kerak."
+
+#: apps/resumes/serializers/resume.py:782
+#, python-format
+msgid ""
+"Duplicate language certificate: language_id %(language_id)s appears more "
+"than once."
+msgstr ""
+"Takroriy til sertifikati: language_id %(language_id)s bir martadan ko'p "
+"uchraydi."
+
+#: apps/resumes/serializers/resume.py:791
+#, python-format
+msgid "Language with ID %(language_id)s does not exist."
+msgstr "ID %(language_id)s bilan til mavjud emas."
+
+#: apps/resumes/serializers/resume.py:798
+#, python-format
+msgid ""
+"Invalid proficiency level '%(level)s' at index %(idx)s. Valid levels: "
+"%(valid)s"
+msgstr ""
+"%(idx)s indeksida noto'g'ri malaka darajasi '%(level)s'. Amal qiladigan "
+"darajalar: %(valid)s"
+
+#: apps/resumes/serializers/resume.py:809
+#, python-format
+msgid "File '%(name)s' exceeds 5MB limit at index %(idx)s."
+msgstr "Fayl '%(name)s' %(idx)s indeksida 5MB cheklovidan oshib ketdi."
+
+#: apps/resumes/serializers/resume.py:816
+#, python-format
+msgid "File '%(name)s' has invalid type at index %(idx)s. Allowed: %(allowed)s"
+msgstr ""
+"Fayl '%(name)s' %(idx)s indeksida noto'g'ri tipga ega. Ruxsat etilgan: "
+"%(allowed)s"
+
+#: apps/resumes/serializers/resume.py:827
+#, python-format
+msgid "'id' must be a valid integer at index %(idx)s."
+msgstr "'%(idx)s' indeksida 'id' yaroqli butun son bo'lishi kerak."
+
+#: apps/resumes/serializers/resume_generation.py:20
+msgid "Free-form text description or instructions for resume generation."
+msgstr "Rezyume generatsiyasi uchun erkin matn tavsifi yoki ko'rsatmalar."
+
+#: apps/resumes/serializers/resume_generation.py:25
+msgid "Resume file (PDF or DOCX format)."
+msgstr "Rezyume fayli (PDF yoki DOCX formati)."
+
+#: apps/resumes/serializers/resume_generation.py:40
+msgid "At least one of 'prompt' or 'file' must be provided."
+msgstr "'prompt' yoki 'file' dan kamida bittasi ko'rsatilishi kerak."
+
+#: apps/resumes/serializers/resume_generation.py:51
+#, python-format
+msgid "File size exceeds 10MB limit. Current size: %(size)s MB"
+msgstr "Fayl hajmi 10MB cheklovidan oshadi. Joriy hajm: %(size)s MB"
+
+#: apps/resumes/serializers/resume_generation.py:130
+msgid "Successfully matched skills with confidence scores."
+msgstr "Ko'nikmalar ishonch ballari bilan muvaffaqiyatli moslashtirildi."
+
+#: apps/resumes/serializers/resume_generation.py:134
+msgid "Skills that couldn't be matched to database."
+msgstr "Ma'lumotlar bazasi bilan moslashtirilmaydigan ko'nikmalar."
+
+#: apps/resumes/serializers/resume_generation.py:138
+msgid "Matched domain information."
+msgstr "Soha ma'lumotlari moslashtirildi."
+
+#: apps/resumes/serializers/resume_generation.py:142
+msgid "Successfully matched languages."
+msgstr "Tillar muvaffaqiyatli moslashtirildi."
+
+#: apps/resumes/serializers/resume_generation.py:146
+msgid "Languages that couldn't be matched to database."
+msgstr "Ma'lumotlar bazasi bilan moslashtirilmaydigan tillar."
+
+#: apps/resumes/services/certificate_service.py:85
+msgid "Expected a list of certificate objects."
+msgstr "Sertifikat obyektlari ro'yxati kutilmoqda."
+
+#: apps/resumes/services/experience.py:99
+#: apps/resumes/services/experience.py:121
+#: apps/resumes/services/experience.py:128
+#, python-format
+msgid "%(count)d month"
+msgid_plural "%(count)d months"
+msgstr[0] "%(count)d oy"
+msgstr[1] "%(count)d oy"
+
+#: apps/resumes/services/experience.py:111
+#, python-format
+msgid "%(count)d year"
+msgid_plural "%(count)d years"
+msgstr[0] "%(count)d yil"
+msgstr[1] "%(count)d yil"
+
+#: apps/resumes/tasks.py:173
+msgid "Failed to connect to AI service. Please try again later."
+msgstr "AI xizmatiga ulanish muvaffaqiyatsiz. Iltimos, keyinroq qayta urinib ko'ring."
+
+#: apps/resumes/tasks.py:233
+msgid "An unexpected error occurred during resume generation."
+msgstr "Rezyumeni yaratishda kutilmagan xatolik yuz berdi."
+
+#: apps/resumes/views/resume.py:177
+msgid "Resume created successfully"
+msgstr "Rezyume muvaffaqiyatli yaratildi"
+
+#: apps/resumes/views/resume.py:344
+msgid "Resume updated successfully"
+msgstr "Rezyume muvaffaqiyatli yangilandi"
+
+#: apps/resumes/views/resume.py:408
+msgid "Resume deleted successfully"
+msgstr "Rezyume muvaffaqiyatli o'chirildi"
+
+#: apps/resumes/views/resume.py:494
+msgid "Only candidates can set main resumes"
+msgstr "Faqat nomzodlar asosiy rezyumeni belgilashi mumkin"
+
+#: apps/resumes/views/resume.py:502
+msgid "Resume not found or you don't have permission"
+msgstr "Rezyume topilmadi yoki ruxsatingiz yo'q"
+
+#: apps/resumes/views/resume.py:514
+msgid "Resume set as main"
+msgstr "Rezyume asosiy sifatida belgilandi"
+
+#: apps/resumes/views/resume_generation.py:230
+msgid "Resume generation job queued successfully"
+msgstr "Rezyumeni yaratish topshirig'i navbatga muvaffaqiyatli qo'shildi."
+
+#: apps/resumes/views/resume_generation.py:237
+msgid "Failed to queue resume generation job"
+msgstr "Rezyumeni yaratish topshirig'ini navbatga qo'shishda xatolik."
+
+#: apps/resumes/views/resume_generation.py:297
+msgid "Job not found"
+msgstr "Topshiriq topilmadi."
+
+#: apps/resumes/views/resume_generation.py:298
+msgid "Resume generation job"
+msgstr "Rezyumeni yaratish topshirig'i"
+
+#: apps/resumes/views/resume_generation.py:317
+msgid "Unknown error"
+msgstr "Noma'lum xatolik."
+
+#: apps/resumes/views/resume_generation.py:330
+msgid "Failed to retrieve job status"
+msgstr "Topshiriq holatini olishda xatolik."
+
+#: apps/resumes/views/resume_generation.py:387
+#: apps/resumes/views/resume_generation.py:390
+msgid "Job failed"
+msgstr "Topshiriq bajarilmadi."
+
+#: apps/skill_tests/models/tests.py:23
+msgid "Candidate who generated this test"
+msgstr "Ushbu testni yaratgan nomzod"
+
+#: apps/skill_tests/models/tests.py:28
+msgid "Target proficiency level for this test"
+msgstr "Ushbu test uchun maqsadli malaka darajasi"
+
+#: apps/skill_tests/models/tests.py:34
+msgid "AI-generated test title"
+msgstr "AI tomonidan yaratilgan test nomi"
+
+#: apps/skill_tests/models/tests.py:38
+msgid "Time limit in minutes"
+msgstr "Daqiqalardagi vaqt chegarasi"
+
+#: apps/skill_tests/models/tests.py:42
+msgid "Total number of questions"
+msgstr "Savollarning umumiy soni"
+
+#: apps/skill_tests/models/tests.py:48
+msgid "Minimum score percentage to pass"
+msgstr "O'tish uchun minimal ball foizi"
+
+#: apps/skill_tests/models/tests.py:53
+msgid "AI model used to generate this test"
+msgstr "Ushbu testni yaratish uchun ishlatilgan AI model"
+
+#: apps/skill_tests/models/tests.py:57
+msgid "AI input tokens used for test generation"
+msgstr "Test yaratish uchun ishlatilgan AI kirish tokenlari"
+
+#: apps/skill_tests/models/tests.py:61
+msgid "AI output tokens used for test generation"
+msgstr "Test yaratish uchun ishlatilgan AI chiqish tokenlari"
+
+#: apps/skill_tests/models/tests.py:65
+msgid "AI thinking/reasoning tokens used for test generation"
+msgstr "Test yaratish uchun ishlatilgan AI fikrlash tokenlari"
+
+#: apps/skill_tests/models/tests.py:70
+msgid "Skill Test"
+msgstr "Ko'nikma testi"
+
+#: apps/skill_tests/models/tests.py:71
+msgid "Skill Tests"
+msgstr "Ko'nikma testlari"
+
+#: apps/skill_tests/models/tests.py:85
+msgid "Multiple Choice"
+msgstr "Ko'p tanlovli"
+
+#: apps/skill_tests/models/tests.py:86
+msgid "Open-ended"
+msgstr "Ochiq savol"
+
+#: apps/skill_tests/models/tests.py:95
+msgid "Question order within the test"
+msgstr "Test ichidagi savol tartibi"
+
+#: apps/skill_tests/models/tests.py:103
+msgid "The question text"
+msgstr "Savol matni"
+
+#: apps/skill_tests/models/tests.py:108
+msgid "Array of options for MC questions: [{id, text}, ...]"
+msgstr "MC savollari uchun variantlar massivi: [{id, text}, ...]"
+
+#: apps/skill_tests/models/tests.py:112
+msgid ""
+"Correct answer: {option_id} for MC, {keywords, rubric, sample_answer} for "
+"open-ended"
+msgstr "To'g'ri javob: MC uchun {option_id}, ochiq savollar uchun {keywords, rubric, sample_answer}"
+
+#: apps/skill_tests/models/tests.py:116
+msgid "Points for this question"
+msgstr "Ushbu savol uchun ballar"
+
+#: apps/skill_tests/models/tests.py:122
+msgid "Sub-competency category"
+msgstr "Kompetensiya kichik kategoriyasi"
+
+#: apps/skill_tests/models/tests.py:127
+msgid "Explanation of the correct answer"
+msgstr "To'g'ri javob izohi"
+
+#: apps/skill_tests/models/tests.py:131
+msgid "Test Question"
+msgstr "Test savoli"
+
+#: apps/skill_tests/models/tests.py:132
+msgid "Test Questions"
+msgstr "Test savollari"
+
+#: apps/skill_tests/models/tests.py:146
+msgid "In Progress"
+msgstr "Jarayonda"
+
+#: apps/skill_tests/models/tests.py:148
+#: apps/subscriptions/models/candidate_subscription.py:28
+#: apps/subscriptions/models/company_subscription.py:28
+msgid "Expired"
+msgstr "Muddati tugagan"
+
+#: apps/skill_tests/models/tests.py:184
+msgid "Final score percentage"
+msgstr "Yakuniy ball foizi"
+
+#: apps/skill_tests/models/tests.py:195
+msgid "Total AI input tokens used for this attempt"
+msgstr "Ushbu urinish uchun ishlatilgan jami AI kirish tokenlari"
+
+#: apps/skill_tests/models/tests.py:199
+msgid "Total AI output tokens used for this attempt"
+msgstr "Ushbu urinish uchun ishlatilgan jami AI chiqish tokenlari"
+
+#: apps/skill_tests/models/tests.py:203
+msgid "Total AI thinking/reasoning tokens used for this attempt"
+msgstr "Ushbu urinish uchun ishlatilgan jami AI fikrlash tokenlari"
+
+#: apps/skill_tests/models/tests.py:208
+msgid "AI-generated result message"
+msgstr "AI tomonidan yaratilgan natija xabari"
+
+#: apps/skill_tests/models/tests.py:213
+msgid "AI-analyzed strengths: [{category, description}]"
+msgstr "AI tahlil qilgan kuchli tomonlar: [{category, description}]"
+
+#: apps/skill_tests/models/tests.py:218
+msgid "AI-analyzed weaknesses: [{category, description}]"
+msgstr "AI tahlil qilgan zaif tomonlar: [{category, description}]"
+
+#: apps/skill_tests/models/tests.py:222
+msgid "Test Attempt"
+msgstr "Test urinishi"
+
+#: apps/skill_tests/models/tests.py:223
+msgid "Test Attempts"
+msgstr "Test urinishlari"
+
+#: apps/skill_tests/models/tests.py:251
+msgid "Selected option ID for MC questions"
+msgstr "MC savollari uchun tanlangan variant IDsi"
+
+#: apps/skill_tests/models/tests.py:256
+msgid "Candidate's text answer for open-ended questions"
+msgstr "Ochiq savollarga nomzodning matnli javobi"
+
+#: apps/skill_tests/models/tests.py:267
+msgid ""
+"AI evaluation result for open-ended: {score, feedback, matched_keywords, "
+"missing_keywords}"
+msgstr "Ochiq savollar uchun AI baholash natijasi: {score, feedback, matched_keywords, missing_keywords}"
+
+#: apps/skill_tests/models/tests.py:272
+msgid "Test Answer"
+msgstr "Test javobi"
+
+#: apps/skill_tests/models/tests.py:273
+msgid "Test Answers"
+msgstr "Test javoblari"
+
+#: apps/skill_tests/services/test_evaluator.py:39
+#, python-format
+msgid ""
+"You have reached the maximum of %(max)d attempts in %(hours)d hours. Please "
+"try again later."
+msgstr "Siz %(hours)d soatda %(max)d ta urinish chegarasiga yetdingiz. Iltimos, keyinroq qayta urinib ko'ring."
+
+#: apps/skill_tests/views/tests.py:41
+msgid "Only candidates can generate tests."
+msgstr "Faqat nomzodlar test yaratishi mumkin."
+
+#: apps/skill_tests/views/tests.py:51
+#: apps/skills/views/learning_materials.py:22
+msgid "Skill not found."
+msgstr "Ko'nikma topilmadi."
+
+#: apps/skill_tests/views/tests.py:55
+#: apps/student_analytics/views/dashboard.py:51
+#: apps/student_analytics/views/roadmap.py:50
+msgid "ai_model must be 'groq'."
+msgstr "ai_model 'groq' bo'lishi kerak."
+
+#: apps/skill_tests/views/tests.py:72
+msgid "You already generated a test for this skill today."
+msgstr "Siz bugun ushbu ko'nikma uchun test yaratgansiz."
+
+#: apps/skill_tests/views/tests.py:84
+msgid "Test generated successfully."
+msgstr "Test muvaffaqiyatli yaratildi."
+
+#: apps/skill_tests/views/tests.py:95
+msgid "Only candidates can start tests."
+msgstr "Faqat nomzodlar testni boshlashi mumkin."
+
+#: apps/skill_tests/views/tests.py:100
+msgid "Test not found."
+msgstr "Test topilmadi."
+
+#: apps/skill_tests/views/tests.py:116
+#: apps/student_analytics/views/dashboard.py:33
+#: apps/student_analytics/views/dashboard.py:62
+#: apps/student_analytics/views/roadmap.py:63
+msgid "Resume not found."
+msgstr "Rezyume topilmadi."
+
+#: apps/skill_tests/views/tests.py:127
+#: apps/student_analytics/views/roadmap.py:87
+msgid "Roadmap item not found."
+msgstr "Rivojlanish rejasi elementi topilmadi."
+
+#: apps/skill_tests/views/tests.py:129
+msgid "Invalid roadmap_item_id."
+msgstr "Noto'g'ri roadmap_item_id."
+
+#: apps/skill_tests/views/tests.py:149
+msgid "Resuming existing attempt."
+msgstr "Mavjud urinish davom ettirilmoqda."
+
+#: apps/skill_tests/views/tests.py:158
+msgid "Test attempt started."
+msgstr "Test urinishi boshlandi."
+
+#: apps/skill_tests/views/tests.py:169
+msgid "Only candidates can submit attempts."
+msgstr "Faqat nomzodlar urinishlarni yuborishi mumkin."
+
+#: apps/skill_tests/views/tests.py:177 apps/skill_tests/views/tests.py:224
+msgid "Attempt not found."
+msgstr "Urinish topilmadi."
+
+#: apps/skill_tests/views/tests.py:180 apps/skill_tests/views/tests.py:189
+msgid "This attempt has already been submitted."
+msgstr "Bu urinish allaqachon yuborilgan."
+
+#: apps/skill_tests/views/tests.py:203
+msgid "Failed to evaluate test."
+msgstr "Testni baholashda xatolik."
+
+#: apps/skill_tests/views/tests.py:207
+msgid "Test submitted successfully."
+msgstr "Test muvaffaqiyatli yuborildi."
+
+#: apps/skill_tests/views/tests.py:217
+msgid "Only candidates can view results."
+msgstr "Faqat nomzodlar natijalarni ko'rishi mumkin."
+
+#: apps/skill_tests/views/tests.py:236
+msgid "Only candidates can view attempts."
+msgstr "Faqat nomzodlar urinishlarni ko'rishi mumkin."
+
+#: apps/skills/models/learning_material.py:12
+msgid "Course"
+msgstr "Kurs"
+
+#: apps/skills/models/learning_material.py:13
+msgid "Video"
+msgstr "Video"
+
+#: apps/skills/models/learning_material.py:14
+msgid "Article"
+msgstr "Maqola"
+
+#: apps/skills/models/learning_material.py:15
+msgid "Documentation"
+msgstr "Hujjatlar"
+
+#: apps/skills/models/learning_material.py:30
+msgid "Source platform, e.g. Coursera, YouTube"
+msgstr "Manba platforma, masalan Coursera, YouTube"
+
+#: apps/skills/models/learning_material.py:41
+msgid "Duration in hours"
+msgstr "Soatlardagi davomiylik"
+
+#: apps/skills/models/learning_material.py:46
+msgid "Content language"
+msgstr "Kontent tili"
+
+#: apps/skills/models/learning_material.py:52
+msgid "Average rating (0-5)"
+msgstr "O'rtacha reyting (0-5)"
+
+#: apps/skills/models/learning_material.py:58
+msgid "Learning Material"
+msgstr "O'quv materiali"
+
+#: apps/skills/models/learning_material.py:59
+msgid "Learning Materials"
+msgstr "O'quv materiallari"
+
+#: apps/skills/models/learning_material.py:93
+msgid "AI-computed relevance score (0-100)"
+msgstr "AI hisoblagan moslik balli (0-100)"
+
+#: apps/skills/models/learning_material.py:97
+msgid "Whether this is a top match for the skill"
+msgstr "Bu ko'nikma uchun eng mos variant ekanligi"
+
+#: apps/skills/models/learning_material.py:102
+msgid "AI-generated reason for the relevance ranking"
+msgstr "AI tomonidan yaratilgan moslik darajasi sababi"
+
+#: apps/skills/models/learning_material.py:108
+msgid "Percentage of vacancies this material covers"
+msgstr "Ushbu material qamrab olgan vakansiyalar foizi"
+
+#: apps/skills/models/learning_material.py:112
+msgid "Skill Learning Material"
+msgstr "Ko'nikma bo'yicha o'quv materiali"
+
+#: apps/skills/models/learning_material.py:113
+msgid "Skill Learning Materials"
+msgstr "Ko'nikma bo'yicha o'quv materiallari"
+
+#: apps/skills/models/skills.py:29 apps/skills/serializers/skill.py:35
+msgid "This category already exists (case-insensitive check)."
+msgstr "Bu kategoriya allaqachon mavjud (katta-kichik harf sezgir emas)."
+
+#: apps/skills/serializers/skill.py:25
+msgid "Category name must be at least 3 characters long."
+msgstr "Kategoriya nomi kamida 3 belgidan iborat bo'lishi kerak."
+
+#: apps/skills/serializers/skill.py:47
+msgid "Description is required for generic categories like 'Other'."
+msgstr "'Boshqa' kabi umumiy kategoriyalar uchun tavsif majburiy."
+
+#: apps/skills/serializers/skill.py:66
+#, python-brace-format
+msgid "'{synonym}' already exists for this skill"
+msgstr "'{synonym}' bu ko'nikma uchun allaqachon mavjud"
+
+#: apps/skills/serializers/skill.py:126 apps/skills/serializers/skill.py:160
+msgid "A skill with this name already exists."
+msgstr "Bunday nomli ko'nikma allaqachon mavjud."
+
+#: apps/skills/serializers/skill.py:153
+msgid "Skill name must not be empty."
+msgstr "Ko'nikma nomi bo'sh bo'lishi mumkin emas."
+
+#: apps/skills/templates/admin/skills/skill_changelist.html:7
+msgid "Import Multi-Sheet XLSX"
+msgstr "Multi-Sheet XLSX'ni import qilish"
+
+#: apps/skills/views/learning_materials.py:17
+msgid "Only candidates can access learning materials."
+msgstr "Faqat nomzodlar o'quv materiallariga kirish huquqiga ega."
+
+#: apps/skills/views/skills.py:131
+msgid "Invalid category_id format. Expected an integer."
+msgstr "Noto'g'ri category_id formati. Butun son kutilmoqda."
+
+#: apps/skills/views/skills.py:154
+msgid "Skill created successfully and is pending approval."
+msgstr "Ko'nikma muvaffaqiyatli yaratildi va tasdiqlash kutilmoqda."
+
+#: apps/student_analytics/models/analytics.py:25
+msgid "Target role for analytics, e.g. 'Product Designer'"
+msgstr "Analitika uchun maqsadli rol, masalan 'Product Designer'"
+
+#: apps/student_analytics/models/analytics.py:31
+msgid "Percentage match against market requirements"
+msgstr "Bozor talablariga moslik foizi"
+
+#: apps/student_analytics/models/analytics.py:36
+msgid "AI-generated insight text explaining the match percentage"
+msgstr "Moslik foizini tushuntiruvchi AI tomonidan yaratilgan tahlil matni"
+
+#: apps/student_analytics/models/analytics.py:42
+msgid "Overall roadmap completion percentage"
+msgstr "Rivojlanish rejasining umumiy bajarilish foizi"
+
+#: apps/student_analytics/models/analytics.py:46
+msgid "Number of skills verified via tests"
+msgstr "Testlar orqali tasdiqlangan ko'nikmalar soni"
+
+#: apps/student_analytics/models/analytics.py:50
+msgid "Total skills in the roadmap"
+msgstr "Rivojlanish rejasidagi jami ko'nikmalar"
+
+#: apps/student_analytics/models/analytics.py:55
+msgid "Skills the candidate already has that match market demand"
+msgstr "Nomzodda mavjud bo'lgan va bozor talabiga mos keladigan ko'nikmalar"
+
+#: apps/student_analytics/models/analytics.py:60
+msgid "Skills the candidate needs to learn or improve"
+msgstr "Nomzod o'rganishi yoki yaxshilashi kerak bo'lgan ko'nikmalar"
+
+#: apps/student_analytics/models/analytics.py:64
+msgid "AI input tokens used for market match insight"
+msgstr "Bozor mosligi tahlili uchun ishlatilgan AI kirish tokenlari"
+
+#: apps/student_analytics/models/analytics.py:68
+msgid "AI output tokens used for market match insight"
+msgstr "Bozor mosligi tahlili uchun ishlatilgan AI chiqish tokenlari"
+
+#: apps/student_analytics/models/analytics.py:72
+msgid "AI thinking/reasoning tokens used for market match insight"
+msgstr "Bozor mosligi tahlili uchun ishlatilgan AI fikrlash tokenlari"
+
+#: apps/student_analytics/models/analytics.py:77
+msgid "When analytics were last recomputed"
+msgstr "Analitika oxirgi marta qachon qayta hisoblangan"
+
+#: apps/student_analytics/models/analytics.py:81
+#: apps/student_analytics/models/analytics.py:82
+msgid "Student Analytics"
+msgstr "Talaba analitikasi"
+
+#: apps/student_analytics/models/analytics.py:104
+msgid "AI model used to generate this roadmap"
+msgstr "Ushbu rivojlanish rejasini yaratish uchun ishlatilgan AI model"
+
+#: apps/student_analytics/models/analytics.py:108
+msgid "AI input tokens used for roadmap generation"
+msgstr "Rivojlanish rejasini yaratish uchun ishlatilgan AI kirish tokenlari"
+
+#: apps/student_analytics/models/analytics.py:112
+msgid "AI output tokens used for roadmap generation"
+msgstr "Rivojlanish rejasini yaratish uchun ishlatilgan AI chiqish tokenlari"
+
+#: apps/student_analytics/models/analytics.py:116
+msgid "AI thinking/reasoning tokens used for roadmap generation"
+msgstr "Rivojlanish rejasini yaratish uchun ishlatilgan AI fikrlash tokenlari"
+
+#: apps/student_analytics/models/analytics.py:120
+msgid "When the roadmap was generated"
+msgstr "Rivojlanish rejasi yaratilgan vaqt"
+
+#: apps/student_analytics/models/analytics.py:124
+msgid "Skill Roadmap"
+msgstr "Ko'nikma rivojlanish rejasi"
+
+#: apps/student_analytics/models/analytics.py:125
+msgid "Skill Roadmaps"
+msgstr "Ko'nikma rivojlanish rejalari"
+
+#: apps/student_analytics/models/analytics.py:136
+msgid "Not started"
+msgstr "Boshlanmagan"
+
+#: apps/student_analytics/models/analytics.py:137
+msgid "In progress"
+msgstr "Jarayonda"
+
+#: apps/student_analytics/models/analytics.py:138
+msgid "Verified"
+msgstr "Tasdiqlangan"
+
+#: apps/student_analytics/models/analytics.py:155
+msgid "Position in the roadmap sequence"
+msgstr "Rivojlanish rejasi ketma-ketligidagi o'rin"
+
+#: apps/student_analytics/models/analytics.py:160
+msgid "Target proficiency level"
+msgstr "Maqsadli malaka darajasi"
+
+#: apps/student_analytics/models/analytics.py:165
+msgid "Candidate's current proficiency level"
+msgstr "Nomzodning joriy malaka darajasi"
+
+#: apps/student_analytics/models/analytics.py:175
+msgid "Whether this skill is critical for the target role"
+msgstr "Bu ko'nikma maqsadli rol uchun muhim yoki yo'qligi"
+
+#: apps/student_analytics/models/analytics.py:181
+msgid "AI-estimated impact on hire chances"
+msgstr "Ishga qabul qilish imkoniyatiga AI tomonidan baholangan ta'sir"
+
+#: apps/student_analytics/models/analytics.py:185
+msgid "Number of vacancies requiring this skill"
+msgstr "Ushbu ko'nikmani talab qiladigan vakansiyalar soni"
+
+#: apps/student_analytics/models/analytics.py:191
+msgid "Estimated salary impact percentage"
+msgstr "Ish haqiga taxminiy ta'sir foizi"
+
+#: apps/student_analytics/models/analytics.py:195
+msgid "AI-estimated hours to learn this skill"
+msgstr "Ushbu ko'nikmani o'rganish uchun AI baholagan soatlar"
+
+#: apps/student_analytics/models/analytics.py:199
+msgid "AI-estimated weeks to learn this skill"
+msgstr "Ushbu ko'nikmani o'rganish uchun AI baholagan haftalar"
+
+#: apps/student_analytics/models/analytics.py:204
+msgid "AI-generated context message for the skill detail page"
+msgstr "Ko'nikma tafsilotlari sahifasi uchun AI tomonidan yaratilgan kontekst xabari"
+
+#: apps/student_analytics/models/analytics.py:208
+msgid "Roadmap Item"
+msgstr "Rivojlanish rejasi elementi"
+
+#: apps/student_analytics/models/analytics.py:209
+msgid "Roadmap Items"
+msgstr "Rivojlanish rejasi elementlari"
+
+#: apps/student_analytics/views/dashboard.py:24
+msgid "Only candidates can access analytics."
+msgstr "Faqat nomzodlar tahlilga kirish huquqiga ega."
+
+#: apps/student_analytics/views/dashboard.py:47
+msgid "Only candidates can regenerate analytics."
+msgstr "Faqat nomzodlar tahlilni qayta yaratishi mumkin."
+
+#: apps/student_analytics/views/dashboard.py:59
+msgid "Failed to compute analytics."
+msgstr "Tahlilni hisoblashda xatolik."
+
+#: apps/student_analytics/views/dashboard.py:68
+msgid "Analytics regenerated successfully."
+msgstr "Tahlil muvaffaqiyatli qayta yaratildi."
+
+#: apps/student_analytics/views/dashboard.py:78
+msgid "Only candidates can update target role."
+msgstr "Faqat nomzodlar maqsadli rolni yangilashi mumkin."
+
+#: apps/student_analytics/views/dashboard.py:86
+msgid "target_role is required."
+msgstr "target_role maydoni talab qilinadi."
+
+#: apps/student_analytics/views/dashboard.py:91
+#: apps/student_analytics/views/dashboard.py:118
+msgid "Analytics not found. Generate analytics first."
+msgstr "Analitika topilmadi. Avval analitikani yarating."
+
+#: apps/student_analytics/views/dashboard.py:100
+msgid "Target role updated successfully."
+msgstr "Maqsadli rol muvaffaqiyatli yangilandi."
+
+#: apps/student_analytics/views/dashboard.py:111
+msgid "Only candidates can access salary calculator."
+msgstr "Faqat nomzodlar maosh kalkulyatoriga kirish huquqiga ega."
+
+#: apps/student_analytics/views/dashboard.py:122
+msgid "Target role is required. Set it first."
+msgstr "Maqsadli rol talab qilinadi. Avval uni belgilang."
+
+#: apps/student_analytics/views/dashboard.py:126
+msgid "Insufficient data to calculate salary for this role."
+msgstr "Bu rol uchun maosh hisoblash uchun ma'lumot yetarli emas."
+
+#: apps/student_analytics/views/roadmap.py:23
+msgid "Only candidates can access roadmaps."
+msgstr "Faqat nomzodlar rivojlanish rejalariga kirish huquqiga ega."
+
+#: apps/student_analytics/views/roadmap.py:32
+msgid "No roadmap found. Generate one first."
+msgstr "Rivojlanish rejasi topilmadi. Avval uni yarating."
+
+#: apps/student_analytics/views/roadmap.py:46
+msgid "Only candidates can generate roadmaps."
+msgstr "Faqat nomzodlar rivojlanish rejasini yaratishi mumkin."
+
+#: apps/student_analytics/views/roadmap.py:57
+msgid "Failed to generate roadmap via AI. Please try again."
+msgstr ""
+"AI orqali rivojlanish rejasini yaratishda xatolik. Iltimos, qayta urinib "
+"ko'ring."
+
+#: apps/student_analytics/views/roadmap.py:60
+msgid "Failed to generate roadmap."
+msgstr "Rivojlanish rejasini yaratishda xatolik."
+
+#: apps/student_analytics/views/roadmap.py:69
+msgid "Roadmap generated successfully."
+msgstr "Rivojlanish rejasi muvaffaqiyatli yaratildi."
+
+#: apps/student_analytics/views/roadmap.py:79
+msgid "Only candidates can access roadmap items."
+msgstr "Faqat nomzodlar rivojlanish rejasi elementlariga kirish huquqiga ega."
+
+#: apps/subscriptions/models/candidate_subscription.py:27
+#: apps/subscriptions/models/company_subscription.py:27
+msgid "Active"
+msgstr "Faol"
+
+#: apps/subscriptions/models/candidate_subscription.py:29
+#: apps/subscriptions/models/company_subscription.py:29
+msgid "Cancelled"
+msgstr "Bekor qilingan"
+
+#: apps/subscriptions/models/candidate_subscription.py:30
+#: apps/subscriptions/models/company_subscription.py:30
+msgid "Pending Payment"
+msgstr "To'lov kutilmoqda"
+
+#: apps/subscriptions/models/candidate_subscription.py:36
+#: apps/subscriptions/models/company_subscription.py:36
+msgid "Unique identifier for this subscription"
+msgstr "Ushbu obuna uchun noyob identifikator"
+
+#: apps/subscriptions/models/candidate_subscription.py:42
+msgid "The candidate this subscription belongs to"
+msgstr "Ushbu obuna tegishli nomzod"
+
+#: apps/subscriptions/models/candidate_subscription.py:48
+#: apps/subscriptions/models/company_subscription.py:48
+#: apps/subscriptions/models/plans.py:238
+msgid "The subscription plan"
+msgstr "Obuna rejasi"
+
+#: apps/subscriptions/models/candidate_subscription.py:54
+#: apps/subscriptions/models/company_subscription.py:54
+msgid "Current status of the subscription"
+msgstr "Obunaning joriy holati"
+
+#: apps/subscriptions/models/candidate_subscription.py:58
+#: apps/subscriptions/models/company_subscription.py:58
+msgid "When the subscription period starts"
+msgstr "Obuna davri qachon boshlanadi"
+
+#: apps/subscriptions/models/candidate_subscription.py:63
+#: apps/subscriptions/models/company_subscription.py:63
+msgid "When the subscription expires. Null = no expiry (free plans)."
+msgstr "Obuna qachon tugaydi. Null = muddatsiz (bepul rejalar)."
+
+#: apps/subscriptions/models/candidate_subscription.py:71
+#: apps/subscriptions/models/company_subscription.py:75
+msgid "Reference to payment transaction (for future payment integration)"
+msgstr "To'lov tranzaksiyasiga havola (kelajakdagi to'lov integratsiyasi uchun)"
+
+#: apps/subscriptions/models/candidate_subscription.py:75
+msgid "Candidate Subscription"
+msgstr "Nomzod obunasi"
+
+#: apps/subscriptions/models/candidate_subscription.py:76
+msgid "Candidate Subscriptions"
+msgstr "Nomzod obunalari"
+
+#: apps/subscriptions/models/company_subscription.py:42
+msgid "The company this subscription belongs to"
+msgstr "Ushbu obuna tegishli kompaniya"
+
+#: apps/subscriptions/models/company_subscription.py:67
+msgid ""
+"Enable branded design for this company's vacancies (banner + styled cards)."
+msgstr "Ushbu kompaniya vakansiyalari uchun brendlashtirilgan dizaynni yoqish (banner + stillashtirilgan kartochkalar)."
+
+#: apps/subscriptions/models/company_subscription.py:79
+msgid "Company Subscription"
+msgstr "Kompaniya obunasi"
+
+#: apps/subscriptions/models/company_subscription.py:80
+msgid "Company Subscriptions"
+msgstr "Kompaniya obunalari"
+
+#: apps/subscriptions/models/company_subscription.py:142
+msgid "Admin"
+msgstr "Administrator"
+
+#: apps/subscriptions/models/company_subscription.py:149
+msgid "Unique identifier for this seat assignment"
+msgstr "Ushbu o'rin tayinlash uchun noyob identifikator"
+
+#: apps/subscriptions/models/company_subscription.py:155
+msgid "The subscription this seat belongs to"
+msgstr "Ushbu o'rin tegishli obuna"
+
+#: apps/subscriptions/models/company_subscription.py:161
+msgid "The recruiter assigned to this seat"
+msgstr "Ushbu o'ringa tayinlangan recruiter"
+
+#: apps/subscriptions/models/company_subscription.py:166
+msgid "Whether this is an admin or recruiter seat"
+msgstr "Bu administrator yoki recruiter o'rini ekanligini bildiradi"
+
+#: apps/subscriptions/models/company_subscription.py:170
+msgid "Whether this seat assignment is currently active"
+msgstr "Ushbu o'rin tayinlash hozirda faol ekanligini bildiradi"
+
+#: apps/subscriptions/models/company_subscription.py:174
+msgid "Seat Assignment"
+msgstr "O'rin tayinlash"
+
+#: apps/subscriptions/models/company_subscription.py:175
+msgid "Seat Assignments"
+msgstr "O'rin tayinlashlar"
+
+#: apps/subscriptions/models/feature_usage.py:22
+msgid "Unique identifier for this usage record"
+msgstr "Ushbu foydalanish yozuvi uchun noyob identifikator"
+
+#: apps/subscriptions/models/feature_usage.py:28
+msgid "The candidate whose usage is being tracked"
+msgstr "Foydalanishi kuzatilayotgan nomzod"
+
+#: apps/subscriptions/models/feature_usage.py:34
+msgid "The feature being tracked (e.g. ai_resume_generation)"
+msgstr "Kuzatilayotgan xususiyat (masalan, ai_resume_generation)"
+
+#: apps/subscriptions/models/feature_usage.py:37
+msgid "First day of the calendar month this usage belongs to"
+msgstr "Ushbu foydalanish tegishli bo'lgan kalendar oyining birinchi kuni"
+
+#: apps/subscriptions/models/feature_usage.py:41
+msgid "Number of times this feature was used in this month"
+msgstr "Bu xususiyat shu oyda necha marta ishlatilganligi"
+
+#: apps/subscriptions/models/feature_usage.py:45
+#: apps/subscriptions/models/feature_usage.py:46
+msgid "Candidate Feature Usage"
+msgstr "Nomzod Xususiyatidan Foydalanish"
+
+#: apps/subscriptions/models/plans.py:31
+msgid "Monthly"
+msgstr "Oylik"
+
+#: apps/subscriptions/models/plans.py:32
+msgid "Yearly"
+msgstr "Yillik"
+
+#: apps/subscriptions/models/plans.py:33
+msgid "Lifetime"
+msgstr "Umrbod"
+
+#: apps/subscriptions/models/plans.py:39
+msgid "Unique identifier for this plan"
+msgstr "Ushbu reja uchun noyob identifikator"
+
+#: apps/subscriptions/models/plans.py:43
+msgid "Display name of the plan (e.g., 'Free', 'Basic', 'Pro')"
+msgstr "Rejaning ko'rsatiladigan nomi (masalan, 'Bepul', 'Asosiy', 'Pro')"
+
+#: apps/subscriptions/models/plans.py:49
+msgid ""
+"URL-friendly identifier (e.g., 'company-free', 'company-basic'). Used in "
+"code to reference specific plans."
+msgstr ""
+"URL-ga mos identifikator (masalan, 'company-free', 'company-basic'). Kodda "
+"ma'lum rejalarga murojaat qilish uchun ishlatiladi."
+
+#: apps/subscriptions/models/plans.py:56
+msgid "Whether this plan is for companies or candidates"
+msgstr "Bu reja kompaniyalar yoki nomzodlar uchun ekanligini bildiradi"
+
+#: apps/subscriptions/models/plans.py:61
+msgid "Detailed description of what this plan offers"
+msgstr "Ushbu reja nimalarni taklif qilishi haqida batafsil tavsif"
+
+#: apps/subscriptions/models/plans.py:65
+msgid "Whether this plan is currently available for purchase/assignment"
+msgstr "Bu tarif hozirda sotib olish/biriktirish uchun mavjud yoki yo'qligi"
+
+#: apps/subscriptions/models/plans.py:72
+msgid ""
+"Maximum number of admin-level recruiters allowed. Only relevant for company "
+"plans."
+msgstr ""
+"Ruxsat etilgan administrator darajasidagi recruiterlarning maksimal soni. "
+"Faqat kompaniya rejalari uchun tegishli."
+
+#: apps/subscriptions/models/plans.py:79
+msgid ""
+"Maximum number of recruiter-level users allowed. Only relevant for company "
+"plans."
+msgstr ""
+"Ruxsat etilgan recruiter darajasidagi foydalanuvchilarning maksimal soni. "
+"Faqat kompaniya rejalari uchun tegishli."
+
+#: apps/subscriptions/models/plans.py:89
+msgid "Price of this plan (0 for free plans)"
+msgstr "Ushbu rejaning narxi (bepul rejalar uchun 0)"
+
+#: apps/subscriptions/models/plans.py:96
+msgid "Billing cycle for paid plans. Null for free plans."
+msgstr "Pullik rejalar uchun to'lov davri. Bepul rejalar uchun Null."
+
+#: apps/subscriptions/models/plans.py:105
+msgid "Features included in this plan"
+msgstr "Ushbu rejaga kiritilgan xususiyatlar"
+
+#: apps/subscriptions/models/plans.py:111
+msgid "Order in which plans are displayed (lower = first)"
+msgstr "Rejalar ko'rsatilish tartibi (kichik = birinchi)"
+
+#: apps/subscriptions/models/plans.py:115
+msgid "Subscription Plan"
+msgstr "Obuna rejasi"
+
+#: apps/subscriptions/models/plans.py:116
+msgid "Subscription Plans"
+msgstr "Obuna rejalari"
+
+#: apps/subscriptions/models/plans.py:173
+msgid "Unique identifier for this feature"
+msgstr "Ushbu xususiyat uchun noyob identifikator"
+
+#: apps/subscriptions/models/plans.py:179
+msgid ""
+"Unique code identifier used in permission checks (e.g., "
+"'headhunting_access', 'company_analytics')"
+msgstr ""
+"Ruxsat tekshiruvlarida ishlatiladigan noyob kod identifikatori (masalan, "
+"'headhunting_access', 'company_analytics')"
+
+#: apps/subscriptions/models/plans.py:185
+msgid "Human-readable name of the feature"
+msgstr "Xususiyatning o'qilishi oson nomi"
+
+#: apps/subscriptions/models/plans.py:190
+msgid "Description of what this feature provides"
+msgstr "Ushbu xususiyat nimani taqdim etishi haqida tavsif"
+
+#: apps/subscriptions/models/plans.py:195
+msgid "Whether this feature applies to company or candidate plans"
+msgstr "Bu xususiyat kompaniya yoki nomzod tariflariga tegishli yoki yo'qligi"
+
+#: apps/subscriptions/models/plans.py:199
+msgid "Whether this feature is currently in use"
+msgstr "Bu xususiyat hozirda ishlatilmoqda ekanligini bildiradi"
+
+#: apps/subscriptions/models/plans.py:203
+msgid "Subscription Feature"
+msgstr "Obuna xususiyati"
+
+#: apps/subscriptions/models/plans.py:204
+msgid "Subscription Features"
+msgstr "Obuna xususiyatlari"
+
+#: apps/subscriptions/models/plans.py:232
+msgid "Unique identifier for this plan-feature link"
+msgstr "Ushbu reja-xususiyat bog'lanishi uchun noyob identifikator"
+
+#: apps/subscriptions/models/plans.py:244
+msgid "The feature included in this plan"
+msgstr "Ushbu rejaga kiritilgan xususiyat"
+
+#: apps/subscriptions/models/plans.py:248
+msgid "Whether this feature is enabled for this plan"
+msgstr "Ushbu reja uchun bu xususiyat yoqilgan ekanligini bildiradi"
+
+#: apps/subscriptions/models/plans.py:254
+msgid ""
+"Optional JSON configuration for this feature within the plan. e.g., "
+"{'max_invitations_per_day': 50}"
+msgstr ""
+"Reja doirasida ushbu xususiyat uchun ixtiyoriy JSON konfiguratsiya. Masalan, "
+"{'max_invitations_per_day': 50}"
+
+#: apps/subscriptions/models/plans.py:260
+msgid "Plan Feature"
+msgstr "Reja xususiyati"
+
+#: apps/subscriptions/models/plans.py:261
+msgid "Plan Features"
+msgstr "Reja xususiyatlari"
+
+#: apps/subscriptions/permissions.py:170
+msgid "Your current subscription plan does not include this feature."
+msgstr "Joriy obuna rejangiz bu funksiyani o'z ichiga olmaydi."
+
+#: apps/subscriptions/permissions.py:204
+msgid ""
+"Your subscription plan does not include access to unresponded candidates. "
+"Upgrade to Basic or Pro to send offers and invitations."
+msgstr ""
+"Obuna rejangiz javob bermagan nomzodlarga kirishni o'z ichiga olmaydi. "
+"Takliflar va taklifnomalar yuborish uchun Basic yoki Pro tarifiga o'ting."
+
+#: apps/subscriptions/permissions.py:246
+#, python-format
+msgid ""
+"Active vacancy limit reached (%(max)d). Your current plan is '%(plan)s'. "
+"Upgrade your subscription to create more vacancies."
+msgstr ""
+"Faol vakansiyalar limiti tugadi (%(max)d). Sizning hozirgi rejangiz — "
+"«%(plan)s». Ko'proq vakansiya yaratish uchun obunani yangilang."
+
+#: apps/subscriptions/permissions.py:290
+#, python-format
+msgid ""
+"Vacancy expiration cannot exceed %(max)d days on the '%(plan)s' plan. "
+"Upgrade your subscription for a longer expiration period."
+msgstr ""
+"Vakansiya muddati «%(plan)s» rejasida %(max)d kundan oshmasligi kerak. "
+"Muddatni uzaytirish uchun obunani yangilang."
+
+#: apps/subscriptions/permissions.py:325
+#, python-format
+msgid ""
+"Reason template limit reached (%(max)d). Your current plan is '%(plan)s'. "
+"Upgrade your subscription to create more templates."
+msgstr ""
+"Sabab shablonlari limiti tugadi (%(max)d). Sizning hozirgi rejangiz — "
+"«%(plan)s». Ko'proq shablon yaratish uchun obunani yangilang."
+
+#: apps/subscriptions/serializers/subscriptions.py:176
+#: apps/subscriptions/serializers/subscriptions.py:200
+msgid "This recruiter does not belong to your company."
+msgstr "Bu rekruter sizning kompaniyangizga tegishli emas."
+
+#: apps/subscriptions/services.py:326
+msgid ""
+"Default company subscription plan is not configured. Please contact support."
+msgstr ""
+"Standart kompaniya obuna rejasi sozlanmagan. Iltimos, qo'llab-quvvatlash "
+"xizmatiga murojaat qiling."
+
+#: apps/subscriptions/services.py:336
+#, python-format
+msgid ""
+"The %(plan)s plan allows a maximum of %(max)d admin(s). You requested "
+"%(requested)d."
+msgstr ""
+"%(plan)s tarifi maksimal %(max)d administrator(lar)ga ruxsat beradi. Siz "
+"%(requested)d so'radingiz."
+
+#: apps/subscriptions/services.py:347
+#, python-format
+msgid ""
+"The %(plan)s plan allows a maximum of %(max)d recruiter(s). You requested "
+"%(requested)d."
+msgstr ""
+"%(plan)s tarifi maksimal %(max)d rekruter(lar)ga ruxsat beradi. Siz "
+"%(requested)d so'radingiz."
+
+#: apps/subscriptions/services.py:528
+#, python-format
+msgid ""
+"AI resume generation limit reached (%(current)d/%(max)d). Upgrade your plan "
+"for more generations."
+msgstr ""
+"AI rezyume yaratish limiti tugadi (%(current)d/%(max)d). Ko'proq yaratish "
+"uchun tarifni yangilang."
+
+#: apps/subscriptions/services.py:642
+#, python-format
+msgid ""
+"Analytics regeneration limit reached (%(current)d/%(max)d). Upgrade your "
+"plan for more regenerations."
+msgstr ""
+"Tahlilni qayta yaratish limiti tugadi (%(current)d/%(max)d). Ko'proq qayta "
+"yaratish uchun tarifni yangilang."
+
+#: apps/subscriptions/services.py:828
+#, python-format
+msgid ""
+"Active vacancy limit reached (%(max)d). Upgrade your plan to create more "
+"vacancies."
+msgstr ""
+"Faol vakansiyalar limiti tugadi (%(max)d). Ko'proq vakansiyalar yaratish "
+"uchun tarifni yangilang."
+
+#: apps/subscriptions/services.py:872
+#, python-format
+msgid "Vacancy expire cannot exceed %(max)d days on the %(plan)s plan."
+msgstr "%(plan)s tarifida vakansiya muddati %(max)d kundan oshmasligi kerak."
+
+#: apps/subscriptions/services.py:942
+#, python-format
+msgid ""
+"Reason template limit reached (%(max)d). Upgrade your plan to create more "
+"templates."
+msgstr ""
+"Sabab shablonlari limiti tugadi (%(max)d). Ko'proq shablonlar yaratish uchun "
+"tarifni yangilang."
+
+#: apps/subscriptions/services.py:1034 apps/subscriptions/services.py:1061
+msgid "This recruiter already has an active seat assignment."
+msgstr "Bu rekruterda allaqachon faol o'rin mavjud."
+
+#: apps/subscriptions/services.py:1041
+#, python-format
+msgid ""
+"Admin seat limit reached (%(max)d). Upgrade your plan to add more admins."
+msgstr ""
+"Administrator o'rinlari limiti tugadi (%(max)d). Ko'proq administratorlar "
+"qo'shish uchun tarifni yangilang."
+
+#: apps/subscriptions/services.py:1047
+#, python-format
+msgid ""
+"Recruiter seat limit reached (%(max)d). Upgrade your plan to add more "
+"recruiters."
+msgstr ""
+"Rekruter o'rinlari limiti tugadi (%(max)d). Ko'proq rekruterlar qo'shish "
+"uchun tarifni yangilang."
+
+#: apps/subscriptions/services.py:1051
+#, python-format
+msgid "Invalid seat type: %(type)s"
+msgstr "Yaroqsiz o'rin turi: %(type)s"
+
+#: apps/subscriptions/services.py:1093
+msgid "This recruiter does not have an active seat assignment."
+msgstr "Bu rekruterda faol o'rin mavjud emas."
+
+#: apps/subscriptions/views/subscriptions.py:113
+msgid "Unable to determine user type."
+msgstr "Foydalanuvchi turini aniqlab bo'lmadi."
+
+#: apps/subscriptions/views/subscriptions.py:120
+#: apps/subscriptions/views/subscriptions.py:236
+#: apps/subscriptions/views/subscriptions.py:289
+msgid "No company associated with this recruiter."
+msgstr "Bu rekruter bilan bog'langan kompaniya yo'q."
+
+#: apps/subscriptions/views/subscriptions.py:135
+#: apps/subscriptions/views/subscriptions.py:240
+#: apps/subscriptions/views/subscriptions.py:293
+msgid "No active subscription found for your company."
+msgstr "Kompaniyangiz uchun faol obuna topilmadi."
+
+#: apps/subscriptions/views/subscriptions.py:150
+msgid "Candidate profile not found."
+msgstr "Nomzod profili topilmadi."
+
+#: apps/subscriptions/views/subscriptions.py:163
+msgid "No active subscription found."
+msgstr "Faol obuna topilmadi."
+
+#: apps/subscriptions/views/subscriptions.py:261
+msgid "Seat assigned successfully."
+msgstr "O'rin muvaffaqiyatli biriktirildi."
+
+#: apps/subscriptions/views/subscriptions.py:308
+msgid "Seat revoked successfully."
+msgstr "O'rin muvaffaqiyatli bekor qilindi."
+
+#: apps/vacancies/admin.py:39
+msgid "Vacancies file"
+msgstr "Vakansiyalar fayli"
+
+#: apps/vacancies/admin.py:41
+msgid ""
+"Upload a .txt file containing a JSON object or a JSON array of vacancy "
+"objects."
+msgstr ""
+"Ichida JSON obyekt yoki vakansiya obyektlari JSON massivi bo‘lgan .txt "
+"faylni yuklang."
+
+#: apps/vacancies/admin.py:61
+msgid "Only .txt files are supported."
+msgstr "Faqat .txt fayllar qo‘llab-quvvatlanadi."
+
+#: apps/vacancies/admin.py:71
+msgid "The selected recruiter is not associated with the selected company."
+msgstr "Tanlangan rekruter tanlangan kompaniyaga biriktirilmagan."
+
+#: apps/vacancies/admin.py:194
+#, python-format
+msgid "Vacancy import failed: %(error)s"
+msgstr "Vakansiyalarni import qilish muvaffaqiyatsiz tugadi: %(error)s"
+
+#: apps/vacancies/admin.py:201
+#, python-format
+msgid "Successfully imported %(count)s vacancies."
+msgstr "%(count)s ta vakansiya muvaffaqiyatli import qilindi."
+
+#: apps/vacancies/admin.py:209
+#, python-format
+msgid ""
+"Imported vacancies, but failed to enqueue embedding generation for %(count)s "
+"vacancies."
+msgstr ""
+"Vakansiyalar import qilindi, ammo %(count)s ta vakansiya uchun embedding "
+"yaratishni navbatga qo‘shib bo‘lmadi."
+
+#: apps/vacancies/admin.py:221
+msgid "Import vacancies from TXT"
+msgstr "Vakansiyalarni TXT dan import qilish"
+
+#: apps/vacancies/admin.py:235
+msgid "The uploaded file must be UTF-8 encoded text."
+msgstr "Yuklangan fayl UTF-8 kodlangan matn bo‘lishi kerak."
+
+#: apps/vacancies/admin.py:242
+#, python-format
+msgid "Invalid JSON in uploaded file: %(error)s"
+msgstr "Yuklangan fayldagi JSON noto‘g‘ri: %(error)s"
+
+#: apps/vacancies/admin.py:251
+msgid "The uploaded file must contain a JSON object or an array of objects."
+msgstr "Yuklangan faylda JSON obyekt yoki obyektlar massivi bo‘lishi kerak."
+
+#: apps/vacancies/admin.py:255
+msgid "The uploaded file does not contain any vacancies."
+msgstr "Yuklangan faylda hech qanday vakansiya yo‘q."
+
+#: apps/vacancies/admin.py:260
+#, python-format
+msgid "Vacancy entry %(index)s must be a JSON object."
+msgstr "Vakansiya elementi %(index)s JSON obyekt bo‘lishi kerak."
+
+#: apps/vacancies/admin.py:279
+#, python-format
+msgid "Vacancy %(index)s could not be saved: %(error)s"
+msgstr "Vakansiya %(index)s saqlanmadi: %(error)s"
+
+#: apps/vacancies/admin.py:283
+msgid "Untitled vacancy"
+msgstr "Nomsiz vakansiya"
+
+#: apps/vacancies/admin.py:285
+#, python-format
+msgid "Vacancy %(index)s (%(title)s) is invalid: %(error)s"
+msgstr "Vakansiya %(index)s (%(title)s) yaroqsiz: %(error)s"
+
+#: apps/vacancies/admin.py:297
+#, python-format
+msgid "Vacancy %(index)s contains duplicate skill IDs: %(ids)s"
+msgstr "Vakansiya %(index)s ichida takrorlangan skill IDlari bor: %(ids)s"
+
+#: apps/vacancies/admin.py:307
+#, python-format
+msgid "Vacancy %(index)s contains duplicate language IDs: %(ids)s"
+msgstr "Vakansiya %(index)s ichida takrorlangan til IDlari bor: %(ids)s"
+
+#: apps/vacancies/serializers/vacancy.py:623
+msgid "Minimum AI score must be between 0 and 100."
+msgstr "Minimal AI ball 0 va 100 orasida bo'lishi kerak."
+
+#: apps/vacancies/serializers/vacancy.py:683
+#, python-format
+msgid "Skill with ID %(skill_id)s has an empty name"
+msgstr "ID %(skill_id)s bo'lgan ko'nikma nomi bo'sh"
+
+#: apps/vacancies/serializers/vacancy.py:702
+msgid "minimum_years cannot be negative"
+msgstr "minimum_years manfiy bo'lishi mumkin emas"
+
+#: apps/vacancies/serializers/vacancy.py:774
+msgid "Each language entry must have a 'language_id' field."
+msgstr "Har bir til yozuvida 'language_id' maydoni bo‘lishi kerak."
+
+#: apps/vacancies/serializers/vacancy.py:781
+#, python-format
+msgid "Language with ID %(id)s does not exist."
+msgstr "IDsi %(id)s bo‘lgan til mavjud emas."
+
+#: apps/vacancies/serializers/vacancy.py:787
+msgid "Each language entry must have a 'level' field."
+msgstr "Har bir til yozuvida 'level' maydoni bo‘lishi kerak."
+
+#: apps/vacancies/serializers/vacancy.py:791
+#, python-format
+msgid "Invalid proficiency level '%(level)s'. Valid levels: %(valid)s."
+msgstr "Noto'g'ri bilish darajasi '%(level)s'. To'g'ri darajalar: %(valid)s."
+
+#: apps/vacancies/templates/admin/vacancies/import_txt.html:8
+msgid "Home"
+msgstr "Bosh sahifa"
+
+#: apps/vacancies/templates/admin/vacancies/import_txt.html:27
+msgid "Import"
+msgstr "Import qilish"
+
+#: apps/vacancies/templates/admin/vacancies/import_txt.html:28
+msgid "Cancel"
+msgstr "Bekor qilish"
+
+#: apps/vacancies/templates/admin/vacancies/vacancy_changelist.html:7
+msgid "Import Vacancies TXT"
+msgstr "TXT vakansiyalarini import qilish"
+
+#: apps/vacancies/views/crud.py:96
+msgid ""
+"Vacancy created successfully. Embedding generation started in background."
+msgstr ""
+"Vakansiya muvaffaqiyatli yaratildi. Embedding yaratish fonda boshlandi."
+
+#: apps/vacancies/views/crud.py:108
+msgid "Failed to create vacancy"
+msgstr "Vakansiya yaratishda xatolik"
+
+#: apps/vacancies/views/crud.py:109
+msgid "An unexpected error occurred while creating your vacancy."
+msgstr "Vakansiyangizni yaratishda kutilmagan xatolik yuz berdi."
+
+#: apps/vacancies/views/crud.py:180
+msgid "Vacancy updated successfully"
+msgstr "Vakansiya muvaffaqiyatli yangilandi"
+
+#: apps/vacancies/views/crud.py:212
+msgid "No fields provided"
+msgstr "Maydonlar taqdim etilmadi"
+
+#: apps/vacancies/views/crud.py:218
+msgid "Only `is_active` may be updated"
+msgstr "Faqat `is_active` yangilanishi mumkin"
+
+#: apps/vacancies/views/crud.py:224
+msgid "`is_active` is required"
+msgstr "`is_active` talab qilinadi"
+
+#: apps/vacancies/views/crud.py:238
+msgid "Invalid boolean value for `is_active`"
+msgstr "`is_active` uchun noto'g'ri mantiqiy qiymat"
+
+#: apps/vacancies/views/crud.py:249
+msgid "Recruiter is not associated with a company"
+msgstr "Rekruter kompaniyaga biriktirilmagan"
+
+#: apps/vacancies/views/crud.py:269
+msgid "Vacancy `is_active` updated successfully"
+msgstr "Vakansiya `is_active` muvaffaqiyatli yangilandi"
+
+#: apps/vacancies/views/crud.py:296
+msgid "Vacancy deleted successfully"
+msgstr "Vakansiya muvaffaqiyatli o'chirildi"
+
+#: apps/vacancies/views/detail.py:131
+msgid "Vacancy retrieved successfully"
+msgstr "Vakansiya muvaffaqiyatli olindi."
+
+#: apps/vacancies/views/favourite.py:109
+msgid "Favourite vacancies listed successfully"
+msgstr "Sevimli vakansiyalar muvaffaqiyatli ro'yxat qilindi."
+
+#: apps/vacancies/views/favourite.py:156
+msgid "Vacancy added to favourites"
+msgstr "Vakansiya sevimlilar ro'yxatiga qo'shildi."
+
+#: apps/vacancies/views/favourite.py:161
+msgid "Vacancy removed from favourites"
+msgstr "Vakansiya sevimlilar ro'yxatidan olib tashlandi."
+
+#: apps/vacancies/views/list.py:174
+msgid "Vacancies matched and listed successfully."
+msgstr "Vakansiyalar muvaffaqiyatli moslashtirildi va ro'yxat qilindi."
+
+#: apps/vacancies/views/list.py:196
+msgid "Vacancies listed successfully"
+msgstr "Vakansiyalar muvaffaqiyatli ro'yxat qilindi."
+
+#: apps/vacancies/views/list.py:281
+msgid "Only recruiters can access this view"
+msgstr "Faqat rekruterlar ushbu bo'limga kirish huquqiga ega"
+
+#: apps/vacancies/views/session.py:33
+msgid "Session ended successfully"
+msgstr "Sessiya muvaffaqiyatli tugadi"
+
+#: apps/vacancies/views/session.py:36
+msgid "Session already ended"
+msgstr "Sessiya allaqachon tugagan"
+
+#: core/renderers.py:88 core/responses.py:236
+msgid "Data retrieved successfully"
+msgstr "Ma'lumotlar muvaffaqiyatli olindi"
+
+#: core/renderers.py:95 core/renderers.py:110 core/responses.py:57
+#: core/responses.py:209
+msgid "Operation completed successfully"
+msgstr "Operatsiya muvaffaqiyatli bajarildi"
+
+#: core/renderers.py:113 core/responses.py:202
+msgid "Resource created successfully"
+msgstr "Resurs muvaffaqiyatli yaratildi"
+
+#: core/renderers.py:114
+msgid "Request accepted"
+msgstr "So'rov qabul qilindi"
+
+#: core/responses.py:126
+#, python-format
+msgid "%(resource)s does not exist or has been deleted"
+msgstr "%(resource)s mavjud emas yoki o'chirilgan"
+
+#: core/responses.py:126
+msgid "Resource"
+msgstr "Resurs"
+
+#: core/responses.py:139
+msgid "Valid authentication credentials must be provided"
+msgstr "To'g'ri autentifikatsiya ma'lumotlari taqdim etilishi kerak"
+
+#: core/responses.py:162
+msgid "Resource conflict"
+msgstr "Resurs ziddiyati"
+
+#: core/responses.py:165
+msgid "The resource already exists or conflicts with existing data"
+msgstr "Resurs allaqachon mavjud yoki mavjud ma'lumotlar bilan ziddiyatda"
+
+#: core/responses.py:177
+msgid "An unexpected error occurred on the server"
+msgstr "Serverda kutilmagan xatolik yuz berdi"
+
+#: core/responses.py:189
+msgid "Bad request"
+msgstr "Noto'g'ri so'rov"
+
+#: utils/abstract_model.py:11
+msgid "Created at"
+msgstr "Yaratilgan sana"
+
+#: utils/abstract_model.py:12
+msgid "Updated at"
+msgstr "Yangilangan sana"
+
+#: utils/fields/certificate.py:26 utils/upload_validation.py:48
+msgid "Malicious content was detected in the uploaded file"
+msgstr "Yuklangan faylda xavfli kontent aniqlandi"
+
+#: utils/fields/certificate.py:27
+#, python-brace-format
+msgid "Virus detected: {threat}"
+msgstr "Virus aniqlandi: {threat}"
+
+#: utils/fields/certificate.py:28
+msgid "The file failed the security check."
+msgstr "Fayl xavfsizlik tekshiruvidan o'tmadi."
+
+#: utils/fields/certificate.py:34
+msgid "The file security scan could not be completed"
+msgstr "Fayl xavfsizlik tekshiruvini yakunlab bo'lmadi"
+
+#: utils/fields/certificate.py:35 utils/upload_validation.py:53
+msgid ""
+"The antivirus service is temporarily unavailable. Please try again later."
+msgstr ""
+"Antivirus tekshiruvi vaqtincha mavjud emas. Iltimos, keyinroq urinib ko'ring."
+
+#: utils/fields/certificate.py:36
+msgid "The file did not pass the antivirus check."
+msgstr "Fayl antivirus tekshiruvidan o'tmadi."
+
+#: utils/fields/certificate.py:42
+msgid "The file size exceeds the allowed limit"
+msgstr "Fayl hajmi ruxsat etilgan limitdan oshgan"
+
+#: utils/fields/certificate.py:43
+msgid "The file size must not exceed 5MB."
+msgstr "Fayl hajmi 5MB dan oshmasligi kerak."
+
+#: utils/fields/certificate.py:44
+msgid "The uploaded file is too large."
+msgstr "Yuklangan fayl juda katta."
+
+#: utils/fields/certificate.py:50
+msgid "The file type is not supported"
+msgstr "Fayl turi qo'llab-quvvatlanmaydi"
+
+#: utils/fields/certificate.py:51
+#, python-brace-format
+msgid "Allowed formats: {allowed}."
+msgstr "Ruxsat etilgan formatlar: {allowed}."
+
+#: utils/fields/certificate.py:54
+msgid "The uploaded file type is invalid."
+msgstr "Yuklangan fayl turi noto'g'ri."
+
+#: utils/fields/certificate.py:59
+msgid "An error occurred while validating the certificate file"
+msgstr "Sertifikat faylini tekshirishda xatolik yuz berdi"
+
+#: utils/fields/certificate.py:60
+msgid "Please verify the uploaded file and try again."
+msgstr "Yuklangan faylni qayta tekshirib, yana urinib ko'ring."
+
+#: utils/fields/certificate.py:61
+msgid "The certificate file is invalid."
+msgstr "Sertifikat fayli yaroqsiz."
+
+#: utils/middleware/error_handling.py:83
+msgid "The requested resource does not exist or has been deleted"
+msgstr "So'ralgan resurs mavjud emas yoki o'chirilgan"
+
+#: utils/middleware/error_handling.py:90
+msgid "Invalid value provided"
+msgstr "Noto'g'ri qiymat kiritilgan"
+
+#: utils/middleware/error_handling.py:98
+msgid "Required field missing"
+msgstr "Majburiy maydon yetishmayapti"
+
+#: utils/middleware/error_handling.py:99
+#, python-format
+msgid "Missing field: %(field)s"
+msgstr "Yetishmayotgan maydon: %(field)s"
+
+#: utils/middleware/error_handling.py:110
+msgid "Database operation failed"
+msgstr "Ma'lumotlar bazasi operatsiyasi muvaffaqiyatsiz"
+
+#: utils/upload_validation.py:40
+msgid "String values are not allowed for this field."
+msgstr "Bu maydon uchun satr qiymatlariga ruxsat berilmaydi."
+
+#: utils/upload_validation.py:58
+msgid "Malicious content was detected in the uploaded file."
+msgstr "Yuklangan faylda zararli kontent aniqlandi."
+
+#: utils/company_permission.py:19
+msgid ""
+"Your company is pending approval. This action will be available once your "
+"company is approved by the platform admin."
+msgstr ""
+"Sizning kompaniyangiz tasdiqlanish kutilmoqda. Bu amal kompaniyangiz "
+"platforma administratori tomonidan tasdiqlangandan so'ng mavjud bo'ladi."
+
+#: apps/applications/serializers/application.py:76
+msgid "This vacancy is not accepting applications"
+msgstr "Bu vakansiya arizalarni qabul qilmayapti"
+#~ msgid "No companies to process"
+#~ msgstr "Qayta ishlash uchun kompaniyalar yo'q"
+
+#: apps/conversations/services.py:32
+#, python-format
+msgid "Attached document: %(title)s"
+msgstr "Biriktirilgan hujjat: %(title)s"
