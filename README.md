@@ -55,6 +55,29 @@ workxplorer_backend/
 - **Skills**: Find jobs requiring specific skills
 - **Sorting**: Newest first, highest/lowest salary, alphabetical by title
 
+## 🛠️ How to Launch
+
+WorkXplorer is a commercial project, so the frontend and the rest of the backing services are kept in a **private repository** and are not published here. This repo is a public-facing overview only.
+
+The general shape of running the full platform (in the private repos) is:
+
+1. **Backend (Django REST API)**
+   - Requires Python 3.11+, PostgreSQL 15+ (with `pgvector`), and Redis.
+   - Install dependencies: `pip install -r requirements.txt`
+   - Configure environment variables (database, Redis, JWT secrets, AI provider keys, Firebase credentials).
+   - Run migrations: `python manage.py migrate`
+   - Start the API: `python manage.py runserver` (or via Gunicorn/Docker in production)
+   - Background jobs run through RQ workers: `python manage.py rqworker default high low --with-scheduler`
+
+2. **Frontend**
+   - Lives in a separate private repository and consumes the backend REST API.
+   - Not published here for commercial/IP reasons.
+
+3. **Supporting services** (embeddings, notifications, etc.)
+   - Also live in private repositories and are deployed alongside the backend.
+
+To try the product itself without setting anything up locally, use the live MVP: **[app.workxplorer.uz](https://app.workxplorer.uz)**.
+
 ## 🔒 What's not included in this demo
 
 Some parts of the platform are intentionally left out of this public repository, as they contain proprietary business logic and algorithms (e.g. matching/scoring internals, AI evaluation pipelines, and analytics). This repo focuses on giving reviewers a clear picture of the product without exposing that IP.
