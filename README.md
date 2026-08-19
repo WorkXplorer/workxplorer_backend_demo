@@ -58,7 +58,26 @@ utils/              # Abstract models, fields, upload validation, currency
 
 This repository is the Django REST API by itself. WorkXplorer is a commercial project, so the **frontend and some supporting services live in a private repository** and are not published here — this backend alone won't give you the full product experience. To try the actual product, use the live MVP: **[app.workxplorer.uz](https://app.workxplorer.uz)**.
 
-To run the backend locally:
+### Option A: Docker (recommended)
+
+This spins up Postgres (with `pgvector` pre-installed), Redis, the API, and an RQ worker/scheduler — no local Python/Postgres setup needed.
+
+```bash
+cp .env.example .env.development
+# edit .env.development — at minimum set SECRET_KEY and JWT_SECRET_KEY
+docker compose -f docker-compose.dev.yml up --build
+```
+
+The API is now available at `http://localhost:8000/`. Run one-off management commands (migrations happen automatically via the container's entrypoint, but to create a superuser):
+
+```bash
+docker compose -f docker-compose.dev.yml exec workxplorer-backend python manage.py migrate
+docker compose -f docker-compose.dev.yml exec workxplorer-backend python manage.py createsuperuser
+```
+
+The `chat` service in the compose file talks to a separate private repository (WORKXPLORER-CHAT) and is not required to run the backend — it's opt-in via `docker compose -f docker-compose.dev.yml --profile chat up`.
+
+### Option B: Local Python
 
 1. **Prerequisites**: Python 3.11+, PostgreSQL 15+ with the `pgvector` extension enabled, and Redis.
 

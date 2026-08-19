@@ -1,4 +1,23 @@
 services:
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: workxplorer_db_dev
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      - POSTGRES_DB=workxplorer_demo
+      - POSTGRES_USER=workxplorer_demo
+      - POSTGRES_PASSWORD=workxplorer_demo
+      - PGPORT=5432
+    volumes:
+      - postgres_data_dev:/var/lib/postgresql/data
+      - ./docker/init-pgvector.sql:/docker-entrypoint-initdb.d/init-pgvector.sql:ro
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U workxplorer_demo -d workxplorer_demo" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
   redis:
     image: redis:7-alpine
     container_name: workxplorer_redis_dev
@@ -25,6 +44,9 @@ services:
       - DEBUG=True
       - CLAMAV_SCAN_ENABLED=false
       - PORT=8000
+      - DB_NAME=workxplorer_demo
+      - DB_USER=workxplorer_demo
+      - DB_PASSWORD=workxplorer_demo
       - DB_HOST=127.0.0.1
       - DB_PORT=5432
       - REDIS_URL=redis://127.0.0.1:6380/0
@@ -35,15 +57,20 @@ services:
       - media_volume_dev:/app/mediafiles
       - ./logs:/app/logs
     depends_on:
+      db:
+        condition: service_healthy
       redis:
         condition: service_healthy
     command: python manage.py runserver 0.0.0.0:8000
 
-  # Realtime chat gateway (WORKXPLORER-CHAT). Clone it next to this repo:
+  # Realtime chat gateway (WORKXPLORER-CHAT) — private repo, not required to
+  # run the backend itself. Only started with `--profile chat`. To use it,
+  # clone it next to this repo:
   #   git clone git@github.com:WorkXplorer/WORKXPLORER-CHAT.git ../../WORKXPLORER-CHAT
   # CHAT_JWT_SECRET and CHAT_SERVICE_KEY must match the values in
   # .env.development — see .env.chat.example.
   chat:
+    profiles: [ "chat" ]
     build:
       context: ../../WORKXPLORER-CHAT
       dockerfile: Dockerfile
@@ -84,6 +111,9 @@ services:
       - DJANGO_ENVIRONMENT=development
       - DEBUG=True
       - CLAMAV_SCAN_ENABLED=false
+      - DB_NAME=workxplorer_demo
+      - DB_USER=workxplorer_demo
+      - DB_PASSWORD=workxplorer_demo
       - DB_HOST=127.0.0.1
       - DB_PORT=5432
       - REDIS_URL=redis://127.0.0.1:6380/0
@@ -94,6 +124,8 @@ services:
       - ./logs:/app/logs
     command: python manage.py rqworker default high low --with-scheduler
     depends_on:
+      db:
+        condition: service_healthy
       redis:
         condition: service_healthy
       workxplorer-backend:
@@ -112,6 +144,9 @@ services:
       - DJANGO_ENVIRONMENT=development
       - DEBUG=True
       - CLAMAV_SCAN_ENABLED=false
+      - DB_NAME=workxplorer_demo
+      - DB_USER=workxplorer_demo
+      - DB_PASSWORD=workxplorer_demo
       - DB_HOST=127.0.0.1
       - DB_PORT=5432
       - REDIS_URL=redis://127.0.0.1:6380/0
@@ -122,11 +157,14 @@ services:
       - ./logs:/app/logs
     command: python manage.py rqscheduler --interval 5
     depends_on:
+      db:
+        condition: service_healthy
       redis:
         condition: service_healthy
       workxplorer-backend:
         condition: service_started
 
 volumes:
+  postgres_data_dev:
   static_volume_dev:
   media_volume_dev:
