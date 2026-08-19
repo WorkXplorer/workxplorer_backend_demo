@@ -1,0 +1,153 @@
+syntax = "proto3";
+
+package hr.analytics;
+
+// Main HR Analytics data message sent to external service
+message HRAnalyticsData {
+    // Source and metadata
+    string source = 1;
+    string timestamp = 2;
+    Meta meta = 3;
+    
+    // Company information
+    Company company = 4;
+    
+    // Dashboard cards (5 main metrics)
+    Cards cards = 5;
+    
+    // Detailed analytics for charts
+    Analytics analytics = 6;
+    
+    // Final timestamp
+    string analytics_timestamp = 7;
+}
+
+// Metadata about the request
+message Meta {
+    string env = 1;
+    string company_id = 2;
+}
+
+// Company information (vacancy data is now sent via a separate webhook)
+message Company {
+    string id = 1;
+    string name = 2;
+    string domain = 3;
+    string tin = 4;
+    bool is_active = 5;
+    string description = 6;
+    string address = 7;
+    string website = 8;
+    string photo = 9;
+}
+
+// Dashboard cards containing 5 main metrics
+message Cards {
+    AverageViewTime average_view_time = 1;
+    OpenVacancies open_vacancies = 2;
+    ApplicationsCount applications_count = 3;
+    VacancyViews vacancy_views = 4;
+    AverageCandidateAge average_candidate_age = 5;
+}
+
+// Card 1: Average vacancy view time
+message AverageViewTime {
+    double value = 1;
+    string unit = 2;
+    string label = 3;
+    int32 total_views = 4;
+}
+
+// Card 2: Open vacancies count
+message OpenVacancies {
+    int32 value = 1;
+    string label = 2;
+    optional double percentage_change = 3;
+}
+
+// Card 3: Applications count
+message ApplicationsCount {
+    int32 value = 1;
+    string label = 2;
+    optional double percentage_change = 3;
+}
+
+// Card 4: Vacancy views
+message VacancyViews {
+    int32 value = 1;
+    string label = 2;
+    optional double percentage_change = 3;
+    int32 unique_viewers = 4;
+}
+
+// Card 5: Average candidate age
+message AverageCandidateAge {
+    optional double value = 1;
+    string unit = 2;
+    string label = 3;
+    optional double age_change = 4;
+}
+
+// Detailed analytics for charts
+message Analytics {
+    TopIndustries top_industries = 1;
+    HiringDynamics hiring_dynamics = 2;
+    ApplicationResponseDynamicsYearly application_response_dynamics_yearly = 3;
+}
+
+// Top industries by application count
+message TopIndustries {
+    string metric_name = 1;
+    string period_start = 2;
+    string period_end = 3;
+    int32 period_days = 4;
+    int32 total_applications = 5;
+    repeated Industry industries = 6;
+}
+
+message Industry {
+    string industry_id = 1;
+    string industry_name = 2;
+    int32 applications_count = 3;
+    double percentage = 4;
+}
+
+// Hiring dynamics metrics
+message HiringDynamics {
+    string metric_name = 1;
+    string current_period_start = 2;
+    string current_period_end = 3;
+    string previous_period_start = 4;
+    string previous_period_end = 5;
+    repeated HiringDataPoint current_period = 6;
+    repeated HiringDataPoint previous_period = 7;
+}
+
+message HiringDataPoint {
+    string date = 1;
+    int32 hires = 2;
+    string interval = 3;
+}
+
+// Application response dynamics yearly
+message ApplicationResponseDynamicsYearly {
+    string metric_name = 1;
+    YearlyData current_year = 2;
+    YearlyData previous_year = 3;
+}
+
+message YearlyData {
+    int32 year = 1;
+    string start_date = 2;
+    string end_date = 3;
+    int32 total_applications = 4;
+    repeated MonthlyApplicationData monthly_data = 5;
+}
+
+message MonthlyApplicationData {
+    int32 month = 1;
+    string month_name = 2;
+    int32 year = 3;
+    string date = 4;
+    int32 applications_count = 5;
+}

@@ -1,0 +1,107 @@
+syntax = "proto3";
+
+package edupartners.analytics;
+
+// Main analytics data message
+message AnalyticsData {
+    string edupartner_id = 1;
+    string edupartner_name = 2;
+    string faculty_id = 3;
+    string faculty_name = 4;
+    string faculty_domain = 5;
+    string faculty_domain_id = 12;
+    
+    // Statistics cards
+    Cards cards = 6;
+    
+    // Chart data - using map for period-based data
+    PopularIndustries popular_industries = 7;
+    EmployedGraduates employed_graduates = 8;
+    HiringFunnel hiring_funnel = 9;
+    repeated TopCompany top_companies_by_placements = 10;
+    
+    // Metadata
+    string timestamp = 11;
+}
+
+// Statistics cards data - 9 cards for the dashboard
+message Cards {
+    MetricCard source_students = 1;
+    MetricCard registered = 2;
+    MetricCard active_30_days = 3;
+    MetricCard resume_uploaded = 4;
+    MetricCard profile_filled = 5;
+    MetricCard assessment_passed = 6;
+    GraduateSalary graduate_salary = 7;
+    MetricCard students_on_internships = 8;
+    MetricCard total_vacancies = 9;
+}
+
+message MetricCard {
+    string label = 1;
+    double value = 2;
+}
+
+message GraduateSalary {
+    string label = 1;
+    double value = 2;
+    string currency = 3;
+}
+
+// Popular industries - organized by period
+message PopularIndustries {
+    repeated IndustryData seven_days = 1;    // 7_days period
+    repeated IndustryData thirty_days = 2;   // 30_days period  
+    repeated IndustryData twelve_months = 3; // 12_months period
+}
+
+message IndustryData {
+    string domain_id = 1;
+    string domain_name = 2;
+    repeated DailyData daily_data = 3;
+    repeated MonthlyData monthly_data = 4;
+}
+
+message DailyData {
+    string date = 1;
+    int32 positions = 2;
+}
+
+message MonthlyData {
+    string month = 1;
+    string month_name = 2;
+    int32 positions = 3;
+}
+
+// Employed graduates data
+message EmployedGraduates {
+    int32 total_graduates = 1;
+    int32 employed_count = 2;
+    double employment_rate_percentage = 3;
+    map<string, int32> by_status = 4;
+}
+
+// Hiring funnel data
+message HiringFunnel {
+    int32 resumes_created = 1;
+    int32 interviewed = 2;
+    int32 offered = 3;
+    int32 hired = 4;
+    
+    ConversionRates conversion_rates = 5;
+}
+
+message ConversionRates {
+    double resume_to_interview = 1;
+    double interview_to_offer = 2;
+    double offer_to_hire = 3;
+    double overall_conversion = 4;
+}
+
+// Top companies by placements
+message TopCompany {
+    string company_id = 1;
+    string company_name = 2;
+    int32 hired_count = 3;
+    int32 rank = 4;
+}

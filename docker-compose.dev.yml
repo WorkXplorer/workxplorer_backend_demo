@@ -1,0 +1,132 @@
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: workxplorer_redis_dev
+    restart: unless-stopped
+    network_mode: host
+    command: redis-server --port 6380 --maxmemory 256mb --maxmemory-policy allkeys-lru
+    healthcheck:
+      test: [ "CMD", "redis-cli", "-p", "6380", "ping" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  workxplorer-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: workxplorer_backend_dev
+    restart: unless-stopped
+    network_mode: host
+    env_file:
+      - .env.development
+    environment:
+      - DJANGO_ENVIRONMENT=development
+      - DEBUG=True
+      - CLAMAV_SCAN_ENABLED=false
+      - PORT=8000
+      - DB_HOST=127.0.0.1
+      - DB_PORT=5432
+      - REDIS_URL=redis://127.0.0.1:6380/0
+      - EMBEDDING_SERVICE_URL=http://127.0.0.1:8000
+    volumes:
+      - ./:/app # Mount current directory for hot reload
+      - static_volume_dev:/app/staticfiles
+      - media_volume_dev:/app/mediafiles
+      - ./logs:/app/logs
+    depends_on:
+      redis:
+        condition: service_healthy
+    command: python manage.py runserver 0.0.0.0:8000
+
+  # Realtime chat gateway (WORKXPLORER-CHAT). Clone it next to this repo:
+  #   git clone git@github.com:WorkXplorer/WORKXPLORER-CHAT.git ../../WORKXPLORER-CHAT
+  # CHAT_JWT_SECRET and CHAT_SERVICE_KEY must match the values in
+  # .env.development — see .env.chat.example.
+  chat:
+    build:
+      context: ../../WORKXPLORER-CHAT
+      dockerfile: Dockerfile
+    container_name: workxplorer_chat_dev
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      - CHAT_ENV=development
+      - CHAT_ADDR=:8080
+      # Same split as production — public :8080, internal :8081 on loopback —
+      # so CHAT_INTERNAL_URL means the same thing in both environments.
+      - CHAT_INTERNAL_ADDR=127.0.0.1:8081
+      - CHAT_PLATFORM_BASE_URL=http://127.0.0.1:8000/api/v1
+      - CHAT_ALLOWED_ORIGINS=http://localhost:3000,https://localhost:3000
+      - CHAT_LOG_LEVEL=debug
+    healthcheck:
+      test: [ "CMD", "wget", "-qO-", "http://127.0.0.1:8080/healthz" ]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    env_file:
+      - .env.development
+    depends_on:
+      workxplorer-backend:
+        condition: service_started
+
+  rq-worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: workxplorer_rq_worker_dev
+    restart: unless-stopped
+    network_mode: host
+    env_file:
+      - .env.development
+    environment:
+      - DJANGO_ENVIRONMENT=development
+      - DEBUG=True
+      - CLAMAV_SCAN_ENABLED=false
+      - DB_HOST=127.0.0.1
+      - DB_PORT=5432
+      - REDIS_URL=redis://127.0.0.1:6380/0
+      - EMBEDDING_SERVICE_URL=http://127.0.0.1:8000
+    volumes:
+      - ./:/app # Mount current directory for hot reload
+      - media_volume_dev:/app/mediafiles
+      - ./logs:/app/logs
+    command: python manage.py rqworker default high low --with-scheduler
+    depends_on:
+      redis:
+        condition: service_healthy
+      workxplorer-backend:
+        condition: service_started
+
+  rq-scheduler:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: workxplorer_rq_scheduler_dev
+    restart: unless-stopped
+    network_mode: host
+    env_file:
+      - .env.development
+    environment:
+      - DJANGO_ENVIRONMENT=development
+      - DEBUG=True
+      - CLAMAV_SCAN_ENABLED=false
+      - DB_HOST=127.0.0.1
+      - DB_PORT=5432
+      - REDIS_URL=redis://127.0.0.1:6380/0
+      - EMBEDDING_SERVICE_URL=http://127.0.0.1:8000
+    volumes:
+      - ./:/app # Mount current directory for hot reload
+      - media_volume_dev:/app/mediafiles
+      - ./logs:/app/logs
+    command: python manage.py rqscheduler --interval 5
+    depends_on:
+      redis:
+        condition: service_healthy
+      workxplorer-backend:
+        condition: service_started
+
+volumes:
+  static_volume_dev:
+  media_volume_dev:

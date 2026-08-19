@@ -4,7 +4,7 @@ This is a demo overview of the WorkXplorer backend, prepared for the President T
 
 The live MVP is available at **[app.workxplorer.uz](https://app.workxplorer.uz)**.
 
-> Note: this repository is a high-level showcase, not the full production codebase. Several features and internal implementation details are not shown here because they are proprietary.
+> Note: this repository contains the WorkXplorer Django backend, adapted for public sharing. The frontend and several supporting services are proprietary and live in a private repository (see "How to Launch" below).
 
 ## 🚀 Overview
 
@@ -34,16 +34,15 @@ WorkXplorer is built on Django REST Framework with a modular component-based arc
 - **Auth**: Cookie-based JWT authentication (httpOnly cookies)
 - **Push**: Firebase Cloud Messaging (FCM)
 
-### Project Structure (production codebase)
+### Project Structure
 
 ```
-workxplorer_backend/
-├── apps/              # Django apps (authentication, profiles, vacancies,
-│                      #   resumes, applications, matching, ...)
-├── config/
-│   └── settings/      # Modular settings
-├── core/               # Shared utilities (APIResponse, pagination, test runner)
-└── utils/              # Abstract models, fields, upload validation, currency
+apps/              # Django apps (authentication, profiles, vacancies,
+                    #   resumes, applications, matching, ...)
+config/
+└── settings/       # Modular settings
+core/               # Shared utilities (APIResponse, pagination, test runner)
+utils/              # Abstract models, fields, upload validation, currency
 ```
 
 ## 🔍 Job Search Features
@@ -57,27 +56,49 @@ workxplorer_backend/
 
 ## 🛠️ How to Launch
 
-WorkXplorer is a commercial project, so the frontend and the rest of the backing services are kept in a **private repository** and are not published here. This repo is a public-facing overview only.
+This repository is the Django REST API by itself. WorkXplorer is a commercial project, so the **frontend and some supporting services live in a private repository** and are not published here — this backend alone won't give you the full product experience. To try the actual product, use the live MVP: **[app.workxplorer.uz](https://app.workxplorer.uz)**.
 
-The general shape of running the full platform (in the private repos) is:
+To run the backend locally:
 
-1. **Backend (Django REST API)**
-   - Requires Python 3.11+, PostgreSQL 15+ (with `pgvector`), and Redis.
-   - Install dependencies: `pip install -r requirements.txt`
-   - Configure environment variables (database, Redis, JWT secrets, AI provider keys, Firebase credentials).
-   - Run migrations: `python manage.py migrate`
-   - Start the API: `python manage.py runserver` (or via Gunicorn/Docker in production)
-   - Background jobs run through RQ workers: `python manage.py rqworker default high low --with-scheduler`
+1. **Prerequisites**: Python 3.11+, PostgreSQL 15+ with the `pgvector` extension enabled, and Redis.
 
-2. **Frontend**
-   - Lives in a separate private repository and consumes the backend REST API.
-   - Not published here for commercial/IP reasons.
+2. **Install dependencies**
+   ```bash
+   python -m venv .venv && source .venv/bin/activate
+   pip install -r requirements.txt
+   ```
 
-3. **Supporting services** (embeddings, notifications, etc.)
-   - Also live in private repositories and are deployed alongside the backend.
+3. **Configure environment**
+   ```bash
+   cp .env.example .env.development
+   # edit .env.development with your local DB/Redis credentials and secrets
+   ```
 
-To try the product itself without setting anything up locally, use the live MVP: **[app.workxplorer.uz](https://app.workxplorer.uz)**.
+4. **Create the database** (with the pgvector extension)
+   ```bash
+   createdb workxplorer_demo
+   psql -d workxplorer_demo -c "CREATE EXTENSION IF NOT EXISTS vector;"
+   ```
 
-## 🔒 What's not included in this demo
+5. **Run migrations and start the server**
+   ```bash
+   export DJANGO_ENVIRONMENT=development
+   python manage.py migrate
+   python manage.py createsuperuser
+   python manage.py runserver
+   ```
 
-Some parts of the platform are intentionally left out of this public repository, as they contain proprietary business logic and algorithms (e.g. matching/scoring internals, AI evaluation pipelines, and analytics). This repo focuses on giving reviewers a clear picture of the product without exposing that IP.
+   The API is now available at `http://localhost:8000/`, e.g. `GET /api/v1/vacancies/`. Django admin lives at a non-default path (see `config/urls/base.py`).
+
+6. **Background jobs** (optional, for AI-powered features, notifications, etc.)
+   ```bash
+   python manage.py rqworker default high low --with-scheduler
+   ```
+
+AI-powered features (resume generation, skill validation, evaluation) use Groq as the AI provider and require a `GROQ_API_KEY`; without one they simply no-op. Firebase push notifications are optional and degrade gracefully without credentials.
+
+## 🔒 What's different from the production codebase
+
+This repo is adapted from the production backend for public sharing:
+- Deployment scripts and production/staging Docker configs are excluded.
+- The frontend and a few supporting services remain in a private repository.

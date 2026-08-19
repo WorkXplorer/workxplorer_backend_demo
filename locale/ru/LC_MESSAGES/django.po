@@ -1,0 +1,4381 @@
+# WorkXplorer Platform - RU Translations.
+# Copyright (C) 2025 WorkXplorer Inc.
+# This file is distributed under the same license as the PACKAGE package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WorkXplorer 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-18 11:52+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: WorkXplorer Team\n"
+"Language-Team: RU\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+
+#: apps/ai/serializers/ai_action.py:32
+msgid "The 'status' field is required."
+msgstr "Поле 'status' обязательно."
+
+#: apps/ai/serializers/ai_action.py:34
+#, python-brace-format
+msgid "Invalid status. Supported values: {choices}"
+msgstr "Недопустимый статус. Поддерживаемые значения: {choices}"
+
+#: apps/ai/serializers/ai_action.py:42
+msgid "The 'ai_model' field is required."
+msgstr "Поле 'ai_model' обязательно."
+
+#: apps/ai/serializers/ai_action.py:44
+#, python-brace-format
+msgid "Invalid ai_model. Supported values: {choices}"
+msgstr "Недопустимый ai_model. Поддерживаемые значения: {choices}"
+
+#: apps/ai/serializers/ai_action.py:53
+msgid "URL of an external vacancy page to fetch and parse (e.g. hh.uz)."
+msgstr "URL внешней страницы вакансии для загрузки и парсинга (напр. hh.uz)."
+
+#: apps/ai/serializers/ai_action.py:60
+msgid "Raw vacancy description text when not using a URL."
+msgstr "Текст описания вакансии без использования URL."
+
+#: apps/ai/serializers/ai_action.py:68
+msgid ""
+"Either 'vacancy_url' or 'vacancy_body' is required when status is "
+"'create_vacancy'."
+msgstr ""
+"При статусе 'create_vacancy' требуется либо 'vacancy_url', либо "
+"'vacancy_body'."
+
+#: apps/ai/views/ai_action.py:59
+msgid "Only administrators can list passive skills."
+msgstr "Только администраторы могут просматривать пассивные навыки."
+
+#: apps/ai/views/ai_action.py:66
+msgid "The 'status' query parameter is required."
+msgstr "Параметр запроса 'status' обязателен."
+
+#: apps/ai/views/ai_action.py:69
+msgid "This parameter is mandatory. Supported value: 'passive_skills'."
+msgstr "Этот параметр обязателен. Поддерживаемое значение: 'passive_skills'."
+
+#: apps/ai/views/ai_action.py:83
+msgid "Passive skills retrieved successfully."
+msgstr "Пассивные навыки успешно получены"
+
+#: apps/ai/views/ai_action.py:87
+msgid "Invalid status parameter."
+msgstr "Неверный параметр статуса."
+
+#: apps/ai/views/ai_action.py:89
+msgid "Only 'passive_skills' is currently supported."
+msgstr "В настоящее время поддерживается только 'passive_skills'."
+
+#: apps/ai/views/ai_action.py:110
+msgid "Only administrators can validate skills."
+msgstr "Только администраторы могут проверять навыки."
+
+#: apps/ai/views/ai_action.py:115
+msgid "Only recruiters can create vacancies."
+msgstr "Только рекрутеры могут создавать вакансии."
+
+#: apps/ai/views/ai_action.py:125
+msgid ""
+"The selected AI provider is not properly configured. Please check the API "
+"key in settings."
+msgstr ""
+"Выбранный AI-провайдер неправильно настроен. Пожалуйста, проверьте API-ключ "
+"в настройках."
+
+#: apps/ai/views/ai_action.py:146
+msgid "AI validation failed."
+msgstr "Ошибка AI-валидации."
+
+#: apps/ai/views/ai_action.py:152
+msgid "Validation completed."
+msgstr "Валидация завершена."
+
+#: apps/ai/views/ai_action.py:174
+msgid "Failed to fetch vacancy from the provided URL."
+msgstr "Не удалось загрузить вакансию по указанному URL."
+
+#: apps/ai/views/ai_action.py:186
+msgid "Vacancy creation failed."
+msgstr "Не удалось создать вакансию."
+
+#: apps/ai/views/ai_action.py:192
+msgid "Vacancy created successfully via AI."
+msgstr "Вакансия успешно создана через AI."
+
+#: apps/ai/views/ai_action.py:218
+msgid "Recruiter must be associated with a company to create vacancies"
+msgstr "Рекрутер должен быть привязан к компании для создания вакансий"
+
+#: apps/ai/views/ai_action.py:223 apps/vacancies/views/crud.py:76
+msgid "Your company account is not active. Please contact support."
+msgstr "Ваш аккаунт компании неактивен. Пожалуйста, свяжитесь с поддержкой."
+
+#: apps/ai/views/ai_action.py:236
+#, python-format
+msgid "Unknown AI model: %s"
+msgstr "Неизвестная модель AI: %s"
+
+#: apps/applications/management/commands/reset_application_statuses.py:9
+msgid "Reset application statuses for a company to default template values"
+msgstr "Сбросить статусы заявок для компании до значений шаблона по умолчанию"
+
+#: apps/applications/management/commands/reset_application_statuses.py:15
+msgid "The UUID of the company to reset statuses for"
+msgstr "UUID компании, для которой нужно сбросить статусы"
+
+#: apps/applications/management/commands/reset_application_statuses.py:20
+msgid "Show what would be deleted/created without making changes"
+msgstr "Показать, что будет удалено/создано без внесения изменений"
+
+#: apps/applications/management/commands/reset_application_statuses.py:36
+msgid "Company with ID {} not found."
+msgstr "Компания с ID {} не найдена."
+
+#: apps/applications/management/commands/reset_application_statuses.py:45
+msgid "Company {} has no existing statuses."
+msgstr "У компании {} нет существующих статусов."
+
+#: apps/applications/management/commands/reset_application_statuses.py:52
+msgid "No default status template found. Please create one first."
+msgstr "Шаблон статуса по умолчанию не найден. Сначала создайте его."
+
+#: apps/applications/management/commands/reset_application_statuses.py:56
+msgid "Found default template: {}"
+msgstr "Найден шаблон по умолчанию: {}"
+
+#: apps/applications/management/commands/reset_application_statuses.py:59
+msgid "Existing statuses to delete: {}"
+msgstr "Существующие статусы для удаления: {}"
+
+#: apps/applications/management/commands/reset_application_statuses.py:62
+msgid "Statuses to create from template: {}"
+msgstr "Статусы для создания из шаблона: {}"
+
+#: apps/applications/management/commands/reset_application_statuses.py:68
+msgid ""
+"\n"
+"Dry run mode - no changes will be made."
+msgstr ""
+"\n"
+"Режим холостого прогона - никакие изменения не будут внесены."
+
+#: apps/applications/management/commands/reset_application_statuses.py:77
+msgid "Deleted {} existing statuses."
+msgstr "Удалено {} существующих статусов."
+
+#: apps/applications/management/commands/reset_application_statuses.py:84
+msgid "Created {} new statuses from template."
+msgstr "Создано {} новых статусов из шаблона."
+
+#: apps/applications/management/commands/reset_application_statuses.py:92
+msgid ""
+"\n"
+"Status reset complete for company {}!"
+msgstr ""
+"\n"
+"Сброс статусов для компании {} завершён!"
+
+#: apps/applications/models/ai_evaluation.py:12 apps/general/models.py:26
+msgid "Pending"
+msgstr "В ожидании"
+
+#: apps/applications/models/ai_evaluation.py:13 apps/general/models.py:27
+msgid "Processing"
+msgstr "В обработке"
+
+#: apps/applications/models/ai_evaluation.py:14 apps/general/models.py:28
+#: apps/skill_tests/models/tests.py:147
+msgid "Completed"
+msgstr "Завершено"
+
+#: apps/applications/models/ai_evaluation.py:15 apps/general/models.py:29
+msgid "Failed"
+msgstr "Неудачно"
+
+#: apps/applications/models/ai_evaluation.py:31
+msgid "The job application this evaluation belongs to"
+msgstr "Заявка на работу, к которой относится эта оценка"
+
+#: apps/applications/models/ai_evaluation.py:38
+msgid "Current evaluation status"
+msgstr "Текущий статус оценки"
+
+#: apps/applications/models/ai_evaluation.py:43
+msgid "0-100 match score from AI evaluation"
+msgstr "Балл соответствия 0-100 от оценки AI"
+
+#: apps/applications/models/ai_evaluation.py:48
+msgid "Full AI evaluation JSON result with uz/ru/en translations"
+msgstr "Полный результат оценки AI в формате JSON с переводами uz/ru/en"
+
+#: apps/applications/models/ai_evaluation.py:53
+msgid "Language code detected from the candidate for this evaluation"
+msgstr "Код языка, определённый у кандидата для этой оценки"
+
+#: apps/applications/models/ai_evaluation.py:58
+msgid "Number of input/prompt tokens used for the AI request"
+msgstr "Количество входных/prompt токенов, использованных для AI-запроса"
+
+#: apps/applications/models/ai_evaluation.py:63
+msgid "Number of output/completion tokens returned by the AI"
+msgstr "Количество выходных/completion токенов, возвращённых AI"
+
+#: apps/applications/models/ai_evaluation.py:68
+msgid "Number of thinking/reasoning tokens used by the AI"
+msgstr "Количество токенов размышления/reasoning, использованных AI"
+
+#: apps/applications/models/ai_evaluation.py:73
+msgid "Reference to the JobQueue entry tracking this evaluation task"
+msgstr "Ссылка на запись JobQueue, отслеживающую эту задачу оценки"
+
+#: apps/applications/models/ai_evaluation.py:78
+msgid "Error details if evaluation failed"
+msgstr "Детали ошибки, если оценка не удалась"
+
+#: apps/applications/models/ai_evaluation.py:83
+msgid "Timestamp when evaluation was completed"
+msgstr "Временная метка завершения оценки"
+
+#: apps/applications/models/ai_evaluation.py:87
+msgid "Application AI Evaluation"
+msgstr "AI-оценка заявки"
+
+#: apps/applications/models/ai_evaluation.py:88
+msgid "Application AI Evaluations"
+msgstr "AI-оценки заявок"
+
+#: apps/applications/models/applications.py:541
+#, python-brace-format
+msgid "Application is already in status '{status}'."
+msgstr "Заявка уже находится в статусе '{status}'."
+
+#: apps/applications/models/applications.py:550
+#, python-brace-format
+msgid ""
+"Candidates can only withdraw an application, not change it to '{target}'."
+msgstr ""
+"Кандидаты могут только отозвать заявку, а не изменить её на '{target}'."
+
+#: apps/applications/models/applications.py:561
+msgid ""
+"Cannot change status of a withdrawn application. Only the candidate can "
+"reapply."
+msgstr ""
+"Нельзя изменить статус отозванной заявки. Только кандидат может подать её "
+"повторно."
+
+#: apps/applications/models/applications.py:568
+#, python-brace-format
+msgid ""
+"Cannot manually move to '{target}' — this status is set only by AI "
+"evaluation."
+msgstr ""
+"Нельзя вручную изменить статус на '{target}' — этот статус устанавливается "
+"только AI-оценкой."
+
+#: apps/applications/models/applications.py:576
+#, python-brace-format
+msgid ""
+"Cannot manually move from '{current}' — revaluation is done via the AI re-"
+"evaluation endpoint."
+msgstr ""
+"Нельзя вручную изменить статус с '{current}' — переоценка выполняется через "
+"AI re-evaluation endpoint."
+
+#: apps/applications/models/applications.py:585
+#, python-brace-format
+msgid "Cannot reject from '{current}' — this is a terminal status."
+msgstr "Невозможно отклонить с '{current}' — это конечный статус."
+
+#: apps/applications/models/applications.py:674
+msgid "None"
+msgstr "Нет"
+
+#: apps/applications/models/applications.py:677
+#, python-brace-format
+msgid ""
+"{user_type} cannot change status from '{current}' to '{new_status}'. Allowed "
+"transitions: {allowed}"
+msgstr ""
+"{user_type} не может изменить статус с '{current}' на '{new_status}'. "
+"Разрешённые переходы: {allowed}"
+
+#: apps/applications/models/status.py:65
+msgid "Applied"
+msgstr "Отклик на вакансию отправлен"
+
+#: apps/applications/models/status.py:66
+msgid "Screening"
+msgstr "Скрининг"
+
+#: apps/applications/models/status.py:67
+msgid "Interviewing"
+msgstr "Интервью"
+
+#: apps/applications/models/status.py:68
+msgid "Assessment"
+msgstr "Тестирование"
+
+#: apps/applications/models/status.py:69
+msgid "Training"
+msgstr "Обучение"
+
+#: apps/applications/models/status.py:70 apps/hr_templates/models.py:19
+msgid "Offered"
+msgstr "Предложено"
+
+#: apps/applications/models/status.py:71
+msgid "Hired"
+msgstr "Нанят"
+
+#: apps/applications/models/status.py:72
+msgid "Offer Rejected"
+msgstr "Предложение отклонено"
+
+#: apps/applications/models/status.py:73 apps/hr_templates/models.py:18
+msgid "Rejected"
+msgstr "Отклонено"
+
+#: apps/applications/models/status.py:74
+msgid "Withdrawn"
+msgstr "Отозвано"
+
+#: apps/applications/models/status.py:75
+msgid "On Hold"
+msgstr "В ожидании"
+
+#: apps/applications/models/status.py:76
+msgid "AI Rejected"
+msgstr "Отклонено ИИ"
+
+#: apps/applications/models/status.py:83
+msgid "Unique identifier for the category (e.g., 'HIRED', 'REJECTED')"
+msgstr "Уникальный идентификатор категории (например, 'HIRED', 'REJECTED')"
+
+#: apps/applications/models/status.py:88
+msgid "Default display name in English"
+msgstr "Стандартное отображаемое имя на английском"
+
+#: apps/applications/models/status.py:93
+msgid "Description of what this category represents"
+msgstr "Описание того, что представляет эта категория"
+
+#: apps/applications/models/status.py:99
+msgid "If true, statuses in this category end the application process"
+msgstr "Если да, статусы в этой категории завершают процесс подачи заявки"
+
+#: apps/applications/models/status.py:104
+msgid "If true, this is a positive outcome (hired, accepted)"
+msgstr "Если да, это положительный результат (нанят, принят)"
+
+#: apps/applications/models/status.py:109
+msgid ""
+"If true, HR cannot create multiple status columns under this category. If "
+"false, HR can create unlimited sub-columns."
+msgstr ""
+"Если да, HR не может создавать несколько столбцов статусов в этой категории. "
+"Если нет, HR может создавать неограниченное количество подстолбцов."
+
+#: apps/applications/models/status.py:116
+msgid "Default order position for display"
+msgstr "Позиция по умолчанию для отображения"
+
+#: apps/applications/models/status.py:120
+msgid "Status Category"
+msgstr "Категория статуса"
+
+#: apps/applications/models/status.py:121
+msgid "Status Categories"
+msgstr "Категории статусов"
+
+#: apps/applications/models/status.py:173
+msgid "Unique identifier for this status"
+msgstr "Уникальный идентификатор этого статуса"
+
+#: apps/applications/models/status.py:178
+msgid "Unique key within the company (e.g., 'APPLIED', 'TECH_SCREEN')"
+msgstr "Уникальный ключ в компании (например, 'APPLIED', 'TECH_SCREEN')"
+
+#: apps/applications/models/status.py:183
+msgid "Display name for this status"
+msgstr "Отображаемое имя для этого статуса"
+
+#: apps/applications/models/status.py:189
+msgid "Translations: {'ru': 'Подано', 'uz': 'Topshirildi'}"
+msgstr "Переводы: {'ru': 'Подано', 'uz': 'Topshirildi'}"
+
+#: apps/applications/models/status.py:196
+msgid "Company that owns this status"
+msgstr "Компания, которой принадлежит этот статус"
+
+#: apps/applications/models/status.py:203
+msgid "Analytics category this status maps to"
+msgstr "Категория аналитики, к которой относится этот статус"
+
+#: apps/applications/models/status.py:209
+msgid "Hex color for Kanban column (e.g., '#3B82F6')"
+msgstr "Hex цвет для колонки Kanban (например, '#3B82F6')"
+
+#: apps/applications/models/status.py:215
+msgid "Order position in Kanban board (lower = first)"
+msgstr "Порядковая позиция на доске Kanban (меньше = раньше)"
+
+#: apps/applications/models/status.py:221
+msgid "If false, status is archived and hidden from selection"
+msgstr "Если нет, статус архивируется и скрывается из выбора"
+
+#: apps/applications/models/status.py:226
+msgid "If true, this status was created from the default template"
+msgstr "Если да, этот статус был создан из шаблона по умолчанию"
+
+#: apps/applications/models/status.py:232
+msgid "If false, status column is hidden from Kanban board"
+msgstr "Если нет, колонка статуса скрывается из доски Kanban"
+
+#: apps/applications/models/status.py:236 apps/hr_templates/models.py:92
+msgid "Application Status"
+msgstr "Статус заявки"
+
+#: apps/applications/models/status.py:237
+msgid "Application Statuses"
+msgstr "Статусы заявок"
+
+#: apps/applications/models/status.py:330
+msgid "Unique identifier for this template"
+msgstr "Уникальный идентификатор этого шаблона"
+
+#: apps/applications/models/status.py:336
+msgid "Template name (e.g., 'Standard Hiring', 'Tech Recruiting')"
+msgstr "Имя шаблона (например, 'Стандартный наём', 'Технический рекрутинг')"
+
+#: apps/applications/models/status.py:341
+msgid "Description of this template's workflow"
+msgstr "Описание рабочего процесса этого шаблона"
+
+#: apps/applications/models/status.py:346
+msgid "If true, this template is used for new companies"
+msgstr "Если да, этот шаблон используется для новых компаний"
+
+#: apps/applications/models/status.py:351
+msgid "If false, this template cannot be selected"
+msgstr "Если нет, этот шаблон не может быть выбран"
+
+#: apps/applications/models/status.py:357
+msgid ""
+"\n"
+"            List of status definitions:\n"
+"            [\n"
+"                {\n"
+"                    \"key\": \"APPLIED\",\n"
+"                    \"label\": \"Applied\",\n"
+"                    \"category\": \"APPLIED\",\n"
+"                    \"color\": \"#3B82F6\",\n"
+"                    \"position\": 1,\n"
+"                    \"show_in_kanban\": true,\n"
+"                    \"translations\": {\"ru\": \"Подано\", \"uz\": "
+"\"Topshirildi\"}\n"
+"                }\n"
+"            ]\n"
+"        "
+msgstr ""
+"\n"
+"            Список определений статусов:\n"
+"            [\n"
+"                {\n"
+"                    \"key\": \"APPLIED\",\n"
+"                    \"label\": \"Подано\",\n"
+"                    \"category\": \"APPLIED\",\n"
+"                    \"color\": \"#3B82F6\",\n"
+"                    \"position\": 1,\n"
+"                    \"show_in_kanban\": true,\n"
+"                    \"translations\": {\"ru\": \"Подано\", \"uz\": "
+"\"Topshirildi\"}\n"
+"                }\n"
+"            ]\n"
+"        "
+
+#: apps/applications/models/status.py:375
+msgid ""
+"\n"
+"            List of transition rules:\n"
+"            [\n"
+"                {\n"
+"                    \"from\": \"APPLIED\",\n"
+"                    \"to\": \"INTERVIEW_SCHEDULED\",\n"
+"                    \"recruiter\": true,\n"
+"                    \"candidate\": false\n"
+"                }\n"
+"            ]\n"
+"        "
+msgstr ""
+"\n"
+"            Список правил переходов:\n"
+"            [\n"
+"                {\n"
+"                    \"from\": \"APPLIED\",\n"
+"                    \"to\": \"INTERVIEW_SCHEDULED\",\n"
+"                    \"recruiter\": true,\n"
+"                    \"candidate\": false\n"
+"                }\n"
+"            ]\n"
+"        "
+
+#: apps/applications/models/status.py:389
+msgid "Status Template"
+msgstr "Шаблон статусов"
+
+#: apps/applications/models/status.py:390
+msgid "Status Templates"
+msgstr "Шаблоны статусов"
+
+#: apps/applications/models/status.py:409
+msgid "Another template is already set as default. Please unset it first."
+msgstr "Другой шаблон уже установлен по умолчанию. Сначала снимите его."
+
+#: apps/applications/serializers/application.py:68
+#: apps/applications/serializers/application.py:118
+#: apps/applications/views/candidate.py:64
+#: apps/conversations/serializers/headhunting.py:211
+#: apps/conversations/views/headhunting.py:193
+#: apps/vacancies/views/favourite.py:138
+msgid "Vacancy not found"
+msgstr "Вакансия не найдена"
+
+#: apps/applications/serializers/application.py:72
+#: apps/applications/views/candidate.py:71
+msgid "This vacancy is no longer accepting applications"
+msgstr "Эта вакансия больше не принимает заявки"
+
+#: apps/applications/serializers/application.py:82
+msgid "Invalid URL scheme"
+msgstr "Недопустимая схема URL"
+
+#: apps/applications/serializers/application.py:87
+msgid "Start date cannot be in the past"
+msgstr "Дата начала не может быть в прошлом"
+
+#: apps/applications/serializers/application.py:104
+#: apps/applications/views/candidate.py:46 apps/resumes/views/resume.py:131
+msgid "Candidate profile not found"
+msgstr "Профиль кандидата не найден"
+
+#: apps/applications/serializers/application.py:734
+msgid "Please provide a reason when rejecting an application."
+msgstr "Пожалуйста, укажите причину при отклонении заявки."
+
+#: apps/applications/serializers/status.py:58
+msgid "Category key for analytics (e.g., 'HIRED', 'SCREENING')"
+msgstr "Ключ категории для аналитики (например, 'HIRED', 'SCREENING')"
+
+#: apps/applications/serializers/status.py:68
+msgid "Whether this status ends the application process"
+msgstr "Завершает ли этот статус процесс рассмотрения заявки"
+
+#: apps/applications/serializers/status.py:111
+msgid "Key must contain only letters, numbers, and underscores."
+msgstr "Ключ должен содержать только буквы, цифры и подчеркивания."
+
+#: apps/applications/serializers/status.py:123
+msgid "Color must be a 6-character hex code (e.g., '#3B82F6')."
+msgstr "Цвет должен быть 6-значным hex кодом (например, '#3B82F6')."
+
+#: apps/applications/serializers/status.py:131
+msgid "Invalid hex color code."
+msgstr "Недопустимый HEX-код цвета."
+
+#: apps/applications/serializers/status.py:143
+#, python-brace-format
+msgid "Invalid category '{value}'. Valid categories: {valid}"
+msgstr "Недопустимая категория '{value}'. Допустимые категории: {valid}"
+
+#: apps/applications/serializers/status.py:155
+msgid "This field is required when creating a status."
+msgstr "Это поле обязательно при создании статуса."
+
+#: apps/applications/serializers/status.py:177
+#: apps/applications/services/status_service.py:181
+#, python-brace-format
+msgid ""
+"Category '{category}' only allows one status column. A status already exists "
+"for this category."
+msgstr ""
+"Категория '{category}' допускает только один столбец статуса. Для этой "
+"категории уже существует статус."
+
+#: apps/applications/serializers/status.py:290
+msgid "List of status IDs in the desired display order"
+msgstr "Список ID статусов в желаемом порядке отображения"
+
+#: apps/applications/serializers/status.py:298
+msgid "Company context is required."
+msgstr "Требуется контекст компании."
+
+#: apps/applications/serializers/status.py:315
+#, python-brace-format
+msgid "Invalid status IDs: {ids}"
+msgstr "Недопустимые ID статусов: {ids}"
+
+#: apps/applications/serializers/v2/application.py:118
+msgid "UUID of the target ApplicationStatusModel."
+msgstr "UUID целевой модели ApplicationStatusModel."
+
+#: apps/applications/serializers/v2/application.py:135
+#: apps/applications/views/v2/recruiter.py:55
+#: apps/applications/views/v2/status.py:218
+msgid "Status not found."
+msgstr "Статус не найден."
+
+#: apps/applications/serializers/v2/application.py:138
+msgid "Status does not belong to your company."
+msgstr "Статус не принадлежит вашей компании."
+
+#: apps/applications/serializers/v2/status.py:68
+msgid ""
+"Optional unique key (e.g. 'TECH_INTERVIEW'). Auto-generated from label when "
+"omitted."
+msgstr ""
+"Необязательный уникальный ключ (например, 'TECH_INTERVIEW'). Если не указан, "
+"генерируется автоматически из названия."
+
+#: apps/applications/serializers/v2/status.py:80
+msgid "Label is required to auto-generate the key."
+msgstr "Название требуется для автоматической генерации ключа."
+
+#: apps/applications/serializers/v2/status.py:102
+msgid ""
+"UUID of the status to move existing applications to before archiving. If "
+"omitted and the status has applications a 409 is returned."
+msgstr ""
+"UUID статуса, в который нужно переместить существующие заявки перед "
+"архивацией. Если не указан и у статуса есть заявки, будет возвращён 409."
+
+#: apps/applications/serializers/v2/status.py:114
+#: apps/applications/views/v2/status.py:236
+msgid "Target status not found."
+msgstr "Целевой статус не найден."
+
+#: apps/applications/serializers/v2/status.py:117
+msgid "Target status does not belong to your company."
+msgstr "Целевой статус не принадлежит вашей компании."
+
+#: apps/applications/services/status_service.py:139
+msgid ""
+"Company already has statuses initialized. Use reset_statuses() first if you "
+"want to reinitialize."
+msgstr ""
+"Для компании статусы уже инициализированы. Если хотите инициализировать "
+"заново, сначала используйте reset_statuses()."
+
+#: apps/applications/services/status_service.py:147
+msgid "No default template found."
+msgstr "Шаблон по умолчанию не найден."
+
+#: apps/applications/services/status_service.py:233
+msgid "Status does not belong to this company."
+msgstr "Статус не принадлежит этой компании."
+
+#: apps/applications/services/status_service.py:237
+#, python-brace-format
+msgid "Cannot archive protected status '{label}'."
+msgstr "Невозможно заархивировать защищенный статус '{label}'."
+
+#: apps/applications/services/status_service.py:253
+#, python-brace-format
+msgid ""
+"Cannot archive status '{label}' — it has {count} active application(s). "
+"Provide move_to_status_id to relocate them."
+msgstr ""
+"Невозможно архивировать статус '{label}' — у него {count} активных заявок. "
+"Укажите move_to_status_id, чтобы переместить их."
+
+#: apps/applications/services/status_service.py:262
+msgid "Target status does not belong to this company."
+msgstr "Целевой статус не принадлежит этой компании."
+
+#: apps/applications/services/status_service.py:266
+msgid "Cannot move applications to the same status being archived."
+msgstr "Невозможно переместить заявки в тот же статус, который архивируется."
+
+#: apps/applications/views/candidate.py:47
+msgid "No candidate profile exists for this user"
+msgstr "Профиль кандидата для этого пользователя не существует"
+
+#: apps/applications/views/candidate.py:53
+msgid "Vacancy ID is required"
+msgstr "Требуется ID вакансии"
+
+#: apps/applications/views/candidate.py:70
+msgid "Vacancy is no longer active"
+msgstr "Вакансия больше не активна"
+
+#: apps/applications/views/candidate.py:81
+msgid "Application already exists"
+msgstr "Заявка уже существует"
+
+#: apps/applications/views/candidate.py:82
+#: apps/authentication/exceptions.py:216
+msgid "You have already applied to this vacancy"
+msgstr "Вы уже подали заявку на эту вакансию"
+
+#: apps/applications/views/candidate.py:175
+msgid "Application submitted successfully"
+msgstr "Заявка успешно подана"
+
+#: apps/applications/views/candidate.py:192
+#: apps/authentication/exceptions.py:92 apps/authentication/exceptions.py:138
+#: apps/authentication/views/reset_password.py:126
+#: apps/authentication/views/reset_password.py:332
+#: apps/authentication/views/reset_password.py:444
+#: apps/authentication/views/reset_password.py:482
+#: apps/profiles/views/registration.py:62
+#: apps/profiles/views/registration.py:125
+#: apps/resumes/views/resume_generation.py:147 core/responses.py:111
+#: utils/middleware/error_handling.py:130
+msgid "Validation failed"
+msgstr "Ошибка валидации"
+
+#: apps/applications/views/candidate.py:207
+msgid "Failed to submit application"
+msgstr "Не удалось подать заявку"
+
+#: apps/applications/views/candidate.py:208
+msgid "An unexpected error occurred while processing your application"
+msgstr "При обработке вашей заявки произошла непредвиденная ошибка"
+
+#: apps/applications/views/candidate.py:404
+#, python-format
+msgid "Cannot withdraw application with status: %(status_display)s"
+msgstr "Невозможно отозвать заявку со статусом: %(status_display)s"
+
+#: apps/applications/views/candidate.py:433
+msgid "Application withdrawn successfully"
+msgstr "Заявка успешно отозвана"
+
+#: apps/applications/views/candidate.py:434
+msgid "Withdrawal failed"
+msgstr "Отзыв заявки не удался"
+
+#: apps/applications/views/candidate.py:461
+#, python-format
+msgid "Cannot reapply to vacancy with status: %(status)s"
+msgstr "Невозможно повторно подать заявку на вакансию со статусом: %(status)s"
+
+#: apps/applications/views/candidate.py:478
+msgid "Reapplication successful"
+msgstr "Повторная подача заявки успешна"
+
+#: apps/applications/views/candidate.py:479
+msgid "Reapplication failed"
+msgstr "Повторная подача заявки не удалась"
+
+#: apps/applications/views/candidate.py:521
+#, python-format
+msgid "Can only accept applications with %(status)s status"
+msgstr "Можно принимать заявки только со статусом: %(status)s"
+
+#: apps/applications/views/candidate.py:552
+msgid "Offer accepted successfully"
+msgstr "Предложение успешно принято"
+
+#: apps/applications/views/candidate.py:553
+msgid "Failed to accept offer"
+msgstr "Не удалось принять предложение"
+
+#: apps/applications/views/candidate.py:603
+msgid "Can only reject applications with OFFERED status"
+msgstr "Можно отклонять заявки только со статусом: OFFERED"
+
+#: apps/applications/views/candidate.py:620
+msgid "Offer rejected successfully"
+msgstr "Предложение успешно отклонено"
+
+#: apps/applications/views/candidate.py:621
+msgid "Failed to reject offer"
+msgstr "Не удалось отклонить предложение"
+
+#: apps/applications/views/recruiter.py:215
+#: apps/applications/views/v2/kanban.py:240
+msgid "Invalid salary_min format. Expected a numeric value."
+msgstr "Неверный формат salary_min. Ожидается числовое значение."
+
+#: apps/applications/views/recruiter.py:221
+#: apps/applications/views/v2/kanban.py:246
+msgid "Invalid salary_max format. Expected a numeric value."
+msgstr "Неверный формат salary_max. Ожидается числовое значение."
+
+#: apps/applications/views/recruiter.py:239
+#: apps/applications/views/v2/kanban.py:258
+msgid "Invalid vacancy_id format. Expected a valid UUID."
+msgstr "Неверный формат vacancy_id. Ожидается корректный UUID."
+
+#: apps/applications/views/recruiter.py:273
+#: apps/applications/views/v2/kanban.py:265
+msgid "Invalid recruiter_id format. Expected a valid UUID."
+msgstr "Неверный формат recruiter_id. Ожидается корректный UUID."
+
+#: apps/applications/views/recruiter.py:281
+#: apps/applications/views/v2/kanban.py:272
+msgid "Invalid applied_from format. Use YYYY-MM-DD."
+msgstr "Неверный формат applied_from. Используйте ГГГГ-ММ-ДД."
+
+#: apps/applications/views/recruiter.py:288
+#: apps/applications/views/v2/kanban.py:279
+msgid "Invalid applied_to format. Use YYYY-MM-DD."
+msgstr "Неверный формат applied_to. Используйте ГГГГ-ММ-ДД."
+
+#: apps/applications/views/v2/ai_revaluation.py:50
+msgid "Invalid UUID format."
+msgstr "Неверный формат UUID."
+
+#: apps/applications/views/v2/ai_revaluation.py:116
+msgid "A non-empty list of application IDs is required."
+msgstr "Необходим непустой список ID заявок."
+
+#: apps/applications/views/v2/ai_revaluation.py:121
+#, python-brace-format
+msgid "A maximum of {max} applications can be revalued at once."
+msgstr "Максимум {max} заявок можно переоценить за один раз."
+
+#: apps/applications/views/v2/ai_revaluation.py:127
+msgid "Must be a boolean value."
+msgstr "Должно быть логическим значением."
+
+#: apps/applications/views/v2/ai_revaluation.py:139
+msgid "AI Failed status is not configured for this company."
+msgstr "Статус AI_FAILED не настроен для этой компании."
+
+#: apps/applications/views/v2/ai_revaluation.py:150
+#, python-brace-format
+msgid "Target status '{status}' is not configured for this company."
+msgstr "Целевой статус '{status}' не настроен для этой компании."
+
+#: apps/applications/views/v2/ai_revaluation.py:168
+msgid "One or more applications were not found or are not in AI_FAILED status."
+msgstr "Одна или несколько заявок не найдены или не имеют статуса AI_FAILED."
+
+#: apps/applications/views/v2/ai_revaluation.py:221
+#, python-brace-format
+msgid "{count} application(s) moved to {status}."
+msgstr "{count} заявок(а) перемещено в {status}."
+
+#: apps/applications/views/v2/status.py:134
+#, python-brace-format
+msgid "Status '{label}' created successfully."
+msgstr "Статус '{label}' успешно создан."
+
+#: apps/applications/views/v2/status.py:180
+msgid "Status updated successfully."
+msgstr "Статус успешно обновлён."
+
+#: apps/applications/views/v2/status.py:244
+#, python-brace-format
+msgid "Status '{label}' archived."
+msgstr "Статус '{label}' архивирован."
+
+#: apps/applications/views/v2/status.py:264
+msgid "An unexpected error occurred while archiving the status."
+msgstr "При архивации статуса произошла непредвиденная ошибка."
+
+#: apps/applications/views/v2/status.py:294
+#, python-brace-format
+msgid "{count} statuses reordered successfully."
+msgstr "{count} статусов успешно переупорядочены."
+
+#: apps/authentication/admin.py:197
+msgid "Companies processed successfully. Confirmation emails have been sent."
+msgstr "Компании успешно обработаны. Письма с подтверждением отправлены."
+
+#: apps/authentication/admin.py:199
+msgid "No response content"
+msgstr "Нет содержимого ответа"
+
+#: apps/authentication/admin.py:207
+#, python-format
+msgid "HTTP status %(status_code)s"
+msgstr "HTTP статус %(status_code)s"
+
+#: apps/authentication/admin.py:211
+#, python-format
+msgid "API error: %(error)s"
+msgstr "Ошибка API: %(error)s"
+
+#: apps/authentication/admin.py:215
+#, python-format
+msgid "Failed to connect to API: %(error)s"
+msgstr "Не удалось подключиться к API: %(error)s"
+
+#: apps/authentication/admin.py:220
+#, python-format
+msgid "Unexpected error: %(error)s"
+msgstr "Непредвиденная ошибка: %(error)s"
+
+#: apps/authentication/admin.py:233
+msgid ""
+"No inactive companies selected. All selected companies are already active."
+msgstr "Не выбраны неактивные компании. Все выбранные компании уже активны."
+
+#: apps/authentication/admin.py:252
+msgid "✓ Activate selected companies and send confirmation emails"
+msgstr "✓ Активировать выбранные компании и отправить письма подтверждения"
+
+#: apps/authentication/exceptions.py:46 apps/authentication/exceptions.py:162
+#: core/responses.py:137
+msgid "Authentication required"
+msgstr "Требуется аутентификация"
+
+#: apps/authentication/exceptions.py:47
+msgid "Authentication credentials were not provided"
+msgstr "Учётные данные для аутентификации не предоставлены"
+
+#: apps/authentication/exceptions.py:56 core/responses.py:150
+#: utils/middleware/error_handling.py:74
+msgid "Access denied"
+msgstr "Доступ запрещён"
+
+#: apps/authentication/exceptions.py:60 core/responses.py:152
+#: utils/middleware/error_handling.py:75
+msgid "You do not have permission to perform this action"
+msgstr "У вас нет разрешения на выполнение этого действия"
+
+#: apps/authentication/exceptions.py:66 core/responses.py:124
+#: utils/middleware/error_handling.py:82
+msgid "Resource not found"
+msgstr "Ресурс не найден"
+
+#: apps/authentication/exceptions.py:66
+msgid "Requested resource"
+msgstr "Запрашиваемый ресурс"
+
+#: apps/authentication/exceptions.py:71
+msgid "Method not allowed"
+msgstr "Метод не разрешён"
+
+#: apps/authentication/exceptions.py:73
+#, python-format
+msgid "Method %(method)s is not allowed for this endpoint"
+msgstr "Метод %(method)s не разрешён для этой конечной точки"
+
+#: apps/authentication/exceptions.py:80
+msgid "Too many requests"
+msgstr "Слишком много запросов"
+
+#: apps/authentication/exceptions.py:82
+#, python-format
+msgid "Rate limit exceeded. Try again in %(seconds)s seconds"
+msgstr "Превышен лимит запросов. Повторите попытку через %(seconds)s секунд"
+
+#: apps/authentication/exceptions.py:107 core/renderers.py:128
+#: core/renderers.py:141 core/responses.py:87
+msgid "An error occurred"
+msgstr "Произошла ошибка"
+
+#: apps/authentication/exceptions.py:115 apps/profiles/views/recruiter.py:249
+#: utils/middleware/error_handling.py:179
+msgid "An unexpected error occurred"
+msgstr "Произошла непредвиденная ошибка"
+
+#: apps/authentication/exceptions.py:116 utils/middleware/error_handling.py:180
+msgid "Please contact support if this issue persists"
+msgstr "Если проблема сохраняется, обратитесь в службу поддержки"
+
+#: apps/authentication/exceptions.py:150 apps/authentication/exceptions.py:181
+msgid "Authentication failed"
+msgstr "Ошибка аутентификации"
+
+#: apps/authentication/exceptions.py:164
+msgid "Please provide valid authentication credentials"
+msgstr "Пожалуйста, предоставьте действительные учётные данные"
+
+#: apps/authentication/exceptions.py:167
+msgid "Invalid authentication token"
+msgstr "Недействительный токен аутентификации"
+
+#: apps/authentication/exceptions.py:169
+msgid "The provided token is invalid or malformed"
+msgstr "Предоставленный токен недействителен или имеет неверный формат"
+
+#: apps/authentication/exceptions.py:172
+msgid "Authentication token expired"
+msgstr "Срок действия токена аутентификации истёк"
+
+#: apps/authentication/exceptions.py:174
+msgid "Your session has expired. Please log in again"
+msgstr "Ваша сессия истекла. Пожалуйста, войдите снова"
+
+#: apps/authentication/exceptions.py:227
+msgid "This vacancy is no longer active"
+msgstr "Эта вакансия больше не активна"
+
+#: apps/authentication/exceptions.py:238
+msgid "A resume is required to apply for this position"
+msgstr "Для подачи заявки на эту позицию требуется резюме"
+
+#: apps/authentication/models/user.py:96
+msgid "user"
+msgstr "пользователь"
+
+#: apps/authentication/models/user.py:97
+msgid "users"
+msgstr "пользователи"
+
+#: apps/authentication/serializers/recruiter.py:47
+msgid "Company with this TIN already exists or TIN length is invalid."
+msgstr "Компания с таким ИНН уже существует или длина ИНН некорректна."
+
+#: apps/authentication/serializers/recruiter.py:58
+msgid "Invalid file format. Only PDF, DOC, DOCX, and ZIP files are allowed."
+msgstr "Неверный формат файла. Разрешены только PDF, DOC, DOCX и ZIP файлы."
+
+#: apps/authentication/serializers/recruiter.py:67
+#, python-format
+msgid "File size should not exceed %(limit)sMB"
+msgstr "Размер файла не должен превышать %(limit)s МБ"
+
+#: apps/authentication/serializers/recruiter.py:81
+msgid "recruiter_emails must be a list."
+msgstr "recruiter_emails должен быть списком."
+
+#: apps/authentication/serializers/recruiter.py:115
+msgid "Each item must be an object with 'email' field."
+msgstr "Каждый элемент должен быть объектом с полем 'email'."
+
+#: apps/authentication/serializers/recruiter.py:140
+msgid "Duplicate emails in recruiter list."
+msgstr "В списке рекрутеров есть повторяющиеся адреса электронной почты."
+
+#: apps/authentication/serializers/recruiter.py:154
+#, python-format
+msgid "'%(email)s' is already taken. Please use a different email."
+msgstr "'%(email)s' уже занят. Пожалуйста, используйте другой email."
+
+#: apps/authentication/serializers/recruiter.py:368
+#: apps/authentication/serializers/recruiter.py:372
+#: apps/authentication/serializers/recruiter.py:373
+msgid "Invalid file format. Only JPG, JPEG, and PNG images are allowed."
+msgstr "Неверный формат файла. Разрешены только JPG, JPEG и PNG изображения."
+
+#: apps/authentication/serializers/recruiter.py:385
+#: apps/profiles/serializers/company.py:77
+#, python-format
+msgid "Photo size should not exceed %(limit)sMB"
+msgstr "Размер фото не должен превышать %(limit)s МБ."
+
+#: apps/authentication/serializers/user.py:91
+#: apps/authentication/serializers/user.py:121
+msgid "Passwords do not match."
+msgstr "Пароли не совпадают."
+
+#: apps/authentication/serializers/user.py:114
+msgid ""
+"Required for recruiters. Must agree to all policies to activate account."
+msgstr ""
+"Обязательно для рекрутеров. Необходимо согласиться со всеми политиками для "
+"активации аккаунта."
+
+#: apps/authentication/transitions.py:13
+msgid "Email registration"
+msgstr "Регистрация по электронной почте"
+
+#: apps/authentication/transitions.py:14
+msgid "Create profile"
+msgstr "Создать профиль"
+
+#: apps/authentication/transitions.py:15
+msgid "Create resume"
+msgstr "Создать резюме"
+
+#: apps/authentication/transitions.py:16
+msgid "Apply for vacancy"
+msgstr "Откликнуться на вакансию"
+
+#: apps/authentication/transitions.py:17
+msgid "Connect LMS"
+msgstr "Подключить LMS"
+
+#: apps/authentication/views/candidate.py:112
+msgid "Only candidates can access this endpoint"
+msgstr "Только кандидаты имеют доступ к этому разделу"
+
+#: apps/authentication/views/candidate.py:124
+msgid "Candidate status retrieved successfully"
+msgstr "Статус кандидата успешно получен"
+
+#: apps/authentication/views/company.py:71
+msgid "A recruiter with this email already exists."
+msgstr "Рекрутер с таким email уже существует."
+
+#: apps/authentication/views/company.py:72
+msgid "Please use a different email address for each recruiter."
+msgstr "Пожалуйста, используйте разные email для каждого рекрутера."
+
+#: apps/authentication/views/company.py:77
+msgid ""
+"Company registered successfully. Activation emails will be sent to all "
+"recruiters."
+msgstr ""
+"Компания успешно зарегистрирована. Письма для активации будут отправлены "
+"всем рекрутерам."
+
+#: apps/authentication/views/company.py:311
+msgid "Authenticated user has no associated company."
+msgstr "У аутентифицированного пользователя нет связанной компании."
+
+#: apps/authentication/views/company.py:312
+msgid "Your account is not linked to any company."
+msgstr "Ваш аккаунт не привязан ни к одной компании."
+
+#: apps/authentication/views/company.py:331
+msgid "Company profile created successfully."
+msgstr "Профиль компании успешно создан."
+
+#: apps/authentication/views/cookie_auth.py:50
+msgid "Invalid credentials"
+msgstr "Неверные учётные данные"
+
+#: apps/authentication/views/cookie_auth.py:64
+msgid "Invalid credentials for student login"
+msgstr "Неверные учётные данные для входа студента"
+
+#: apps/authentication/views/cookie_auth.py:70
+msgid "Invalid credentials for recruiter login"
+msgstr "Неверные учётные данные для входа рекрутера"
+
+#: apps/authentication/views/cookie_auth.py:126
+#: apps/authentication/views/oauth_views.py:155
+msgid "Login successful"
+msgstr "Вход выполнен успешно"
+
+#: apps/authentication/views/cookie_auth.py:206
+msgid "Refresh token not found in cookies"
+msgstr "Токен обновления не найден в cookies"
+
+#: apps/authentication/views/cookie_auth.py:221
+msgid "Token refreshed successfully"
+msgstr "Токен успешно обновлён"
+
+#: apps/authentication/views/cookie_auth.py:231
+msgid "Invalid refresh token"
+msgstr "Недействительный токен обновления"
+
+#: apps/authentication/views/cookie_auth.py:320
+msgid "Access token not found in cookies"
+msgstr "Токен доступа не найден в cookies"
+
+#: apps/authentication/views/cookie_auth.py:327
+msgid "Token is valid"
+msgstr "Токен действителен"
+
+#: apps/authentication/views/cookie_auth.py:330
+msgid "Invalid access token"
+msgstr "Недействительный токен доступа"
+
+#: apps/authentication/views/cookie_auth.py:355
+msgid "Successfully logged out"
+msgstr "Выход выполнен успешно"
+
+#: apps/authentication/views/language.py:44
+msgid "preferred_language is required."
+msgstr "Требуется preferred_language."
+
+#: apps/authentication/views/language.py:49 apps/general/serializers.py:65
+msgid "Unsupported language. Allowed values: uz, ru, en."
+msgstr "Неподдерживаемый язык. Допустимые значения: uz, ru, en."
+
+#: apps/authentication/views/language.py:59
+msgid "Language preference updated successfully."
+msgstr "Языковые настройки успешно обновлены."
+
+#: apps/authentication/views/oauth_views.py:57
+msgid "Google credential is required."
+msgstr "Требуются учётные данные Google."
+
+#: apps/authentication/views/oauth_views.py:72
+msgid "Invalid or expired Google credential."
+msgstr "Недействительные или просроченные учетные данные Google."
+
+#: apps/authentication/views/oauth_views.py:79
+msgid "Google account email is not verified."
+msgstr "Электронная почта Google аккаунта не подтверждена."
+
+#: apps/authentication/views/oauth_views.py:94
+msgid ""
+"This Google account is linked to a non-candidate account. Please log in with "
+"your email and password."
+msgstr ""
+"Этот Google аккаунт связан с аккаунтом, который не является кандидатом. "
+"Пожалуйста, войдите с помощью вашей электронной почты и пароля."
+
+#: apps/authentication/views/oauth_views.py:102
+msgid "This account has been deactivated."
+msgstr "Этот аккаунт был деактивирован."
+
+#: apps/authentication/views/oauth_views.py:138
+msgid "Failed to create account. Please try again later."
+msgstr "Не удалось создать аккаунт. Пожалуйста, попробуйте позже."
+
+#: apps/authentication/views/registration.py:66
+#: apps/authentication/views/registration.py:72
+#: apps/authentication/views/registration.py:79
+#: apps/authentication/views/registration.py:88
+#: apps/authentication/views/registration.py:109
+#: apps/authentication/views/registration.py:180
+#: apps/general/views/campaign.py:29
+msgid "Input validation failed"
+msgstr "Ошибка валидации входных данных"
+
+#: apps/authentication/views/registration.py:67
+#: apps/authentication/views/registration.py:73
+#: apps/authentication/views/registration.py:80
+#: apps/authentication/views/registration.py:89
+msgid "User with this email already exists."
+msgstr "Пользователь с таким email уже существует."
+
+#: apps/authentication/views/registration.py:97
+#: apps/authentication/views/registration.py:121
+msgid ""
+"Candidate registered successfully. Please check your email to set your "
+"password."
+msgstr ""
+"Кандидат успешно зарегистрирован. Пожалуйста, проверьте свою электронную "
+"почту, чтобы установить пароль."
+
+#: apps/authentication/views/registration.py:191
+#: apps/profiles/views/registration.py:69
+msgid "Recruiter registered successfully"
+msgstr "Рекрутер успешно зарегистрирован"
+
+#: apps/authentication/views/registration.py:225
+#: apps/authentication/views/registration.py:256
+#: apps/authentication/views/registration.py:401
+msgid "Admin has no associated company."
+msgstr "У администратора нет связанной компании."
+
+#: apps/authentication/views/registration.py:240
+msgid "Recruiters retrieved successfully"
+msgstr "Рекрутеры успешно получены"
+
+#: apps/authentication/views/registration.py:265
+#: apps/authentication/views/registration.py:410
+msgid "A list of recruiter UUIDs is required."
+msgstr "Требуется список UUID рекрутеров."
+
+#: apps/authentication/views/registration.py:271
+#: apps/authentication/views/registration.py:416
+msgid "approve must be a boolean value."
+msgstr "approve должно быть логическим значением."
+
+#: apps/authentication/views/registration.py:277
+msgid "This API is for approval only. Use rejection API for rejections."
+msgstr "Этот API только для одобрения. Для отклонений используйте API отклонения."
+
+#: apps/authentication/views/registration.py:293
+#: apps/authentication/views/registration.py:438
+msgid "Some IDs are not valid UUIDs."
+msgstr "Некоторые ID не являются корректными UUID."
+
+#: apps/authentication/views/registration.py:309
+msgid "No recruiters found to approve."
+msgstr "Рекрутеры для одобрения не найдены."
+
+#: apps/authentication/views/registration.py:362
+#, python-format
+msgid "%(count)s recruiter(s) approved successfully."
+msgstr "%(count)s рекрутер(ов) успешно одобрен(о)."
+
+#: apps/authentication/views/registration.py:422
+msgid "This API is for rejection only. Use approval API for approvals."
+msgstr "Этот API только для отклонения. Для одобрений используйте API одобрения."
+
+#: apps/authentication/views/registration.py:454
+msgid "No recruiters found to reject."
+msgstr "Рекрутеры для отклонения не найдены."
+
+#: apps/authentication/views/registration.py:513
+#, python-format
+msgid "%(count)s recruiter(s) rejected successfully."
+msgstr "%(count)s рекрутер(ов) успешно отклонен(о)."
+
+#: apps/authentication/views/reset_password.py:89
+msgid "Email is required."
+msgstr "Адрес электронной почты обязателен."
+
+#: apps/authentication/views/reset_password.py:118
+msgid "Password reset link has been sent to your email."
+msgstr "Ссылка для сброса пароля отправлена на вашу электронную почту."
+
+#: apps/authentication/views/reset_password.py:122
+msgid "This user does not exist."
+msgstr "Этот пользователь не существует."
+
+#: apps/authentication/views/reset_password.py:263
+#: apps/authentication/views/reset_password.py:271
+#: apps/authentication/views/reset_password.py:328
+msgid "Invalid reset link."
+msgstr "Недействительная ссылка для сброса."
+
+#: apps/authentication/views/reset_password.py:284
+msgid "Invalid or expired reset link."
+msgstr "Недействительная или просроченная ссылка для сброса."
+
+#: apps/authentication/views/reset_password.py:303
+msgid "Password is required."
+msgstr "Пароль обязателен."
+
+#: apps/authentication/views/reset_password.py:304
+msgid "This field is required."
+msgstr "Это поле обязательно."
+
+#: apps/authentication/views/reset_password.py:318
+msgid "Password has been reset successfully."
+msgstr "Пароль успешно сброшен."
+
+#: apps/authentication/views/reset_password.py:452
+#: apps/authentication/views/reset_password.py:460
+#: apps/authentication/views/reset_password.py:467
+#: apps/authentication/views/reset_password.py:539
+msgid "Invalid set-password link."
+msgstr "Недействительная ссылка для установки пароля."
+
+#: apps/authentication/views/reset_password.py:474
+msgid "Invalid or expired set-password link."
+msgstr "Недействительная или истекшая ссылка для установки пароля."
+
+#: apps/authentication/views/reset_password.py:485
+msgid "You must agree to all required policies to activate your account"
+msgstr ""
+"Вы должны согласиться со всеми обязательными политиками для активации "
+"аккаунта."
+
+#: apps/authentication/views/reset_password.py:532
+msgid "Password has been set successfully."
+msgstr "Пароль успешно установлен."
+
+#: apps/authentication/views/validate_token.py:30
+msgid "Token is required"
+msgstr "Токен обязателен"
+
+#: apps/authentication/views/validate_token.py:38
+msgid "Invalid or expired token"
+msgstr "Недействительный или просроченный токен"
+
+#: apps/authentication/views/validate_token.py:49
+msgid "Token issued for a different environment - please log in again"
+msgstr "Токен выдан для другой среды - пожалуйста, войдите снова"
+
+#: apps/authentication/views/validate_token.py:55
+msgid "Invalid token payload"
+msgstr "Недействительные данные токена"
+
+#: apps/authentication/views/validate_token.py:70
+msgid "User not found"
+msgstr "Пользователь не найден"
+
+#: apps/authentication/views/validate_token.py:75
+#: apps/authentication/views/validate_token.py:105
+msgid "Internal error"
+msgstr "Внутренняя ошибка"
+
+#: apps/authentication/views/validate_token.py:84
+#: apps/profiles/views/recruiter.py:59
+msgid "User is not a recruiter"
+msgstr "Пользователь не является рекрутером"
+
+#: apps/authentication/views/validate_token.py:98
+msgid "Recruiter profile incomplete — contact support"
+msgstr "Профиль рекрутера неполный — свяжитесь с поддержкой"
+
+#: apps/authentication/views/validate_token.py:136
+msgid "Token validated successfully"
+msgstr "Токен успешно проверен"
+
+#: apps/banners/models.py:22 apps/conversations/views/headhunting.py:194
+#: apps/vacancies/views/favourite.py:139
+msgid "Vacancy"
+msgstr "Вакансия"
+
+#: apps/banners/models.py:23
+msgid "News"
+msgstr "Новости"
+
+#: apps/banners/models.py:24
+msgid "Advertisement"
+msgstr "Реклама"
+
+#: apps/banners/models.py:33
+msgid "Position in the carousel among manual slides (lower = first)."
+msgstr "Позиция в карусели среди ручных слайдов (меньше = раньше)."
+
+#: apps/banners/models.py:37
+msgid "How many seconds this slide stays visible before auto-advancing."
+msgstr "Количество секунд отображения слайда до автоматического переключения."
+
+#: apps/banners/models.py:42
+msgid "If set, slide is hidden before this datetime."
+msgstr "Если задано, слайд скрыт до этой даты и времени."
+
+#: apps/banners/models.py:46
+msgid "If set, slide is hidden after this datetime."
+msgstr "Если задано, слайд скрыт после этой даты и времени."
+
+#: apps/banners/models.py:56
+msgid "Required when slide_type=VACANCY."
+msgstr "Обязательно, когда slide_type=VACANCY."
+
+#: apps/banners/models.py:66
+msgid "Inline content image shown inside the slide body."
+msgstr "Встроенное изображение контента внутри слайда."
+
+#: apps/banners/models.py:72
+msgid "Full-cover background image for desktop (≥768 px). NEWS/AD only."
+msgstr "Полноэкранное фоновое изображение для десктопа (≥768 px). Только для NEWS/AD."
+
+#: apps/banners/models.py:78
+msgid ""
+"Full-cover background image for mobile (<768 px). Falls back to desktop "
+"image if not set."
+msgstr "Полноэкранное фоновое изображение для мобильных (<768 px). Если не задано, используется изображение для десктопа."
+
+#: apps/banners/models.py:86
+msgid ""
+"Desktop background image for Uzbek locale. Falls back to image_desktop if "
+"not set."
+msgstr "Фоновое изображение для десктопа на узбекской локали. Если не задано, используется image_desktop."
+
+#: apps/banners/models.py:92
+msgid ""
+"Desktop background image for Russian locale. Falls back to image_desktop if "
+"not set."
+msgstr "Фоновое изображение для десктопа на русской локали. Если не задано, используется image_desktop."
+
+#: apps/banners/models.py:98
+msgid ""
+"Desktop background image for English locale. Falls back to image_desktop if "
+"not set."
+msgstr "Фоновое изображение для десктопа на английской локали. Если не задано, используется image_desktop."
+
+#: apps/banners/models.py:106
+msgid ""
+"Mobile background image for Uzbek locale. Falls back to image_mobile if not "
+"set."
+msgstr "Фоновое изображение для мобильных на узбекской локали. Если не задано, используется image_mobile."
+
+#: apps/banners/models.py:112
+msgid ""
+"Mobile background image for Russian locale. Falls back to image_mobile if "
+"not set."
+msgstr "Фоновое изображение для мобильных на русской локали. Если не задано, используется image_mobile."
+
+#: apps/banners/models.py:118
+msgid ""
+"Mobile background image for English locale. Falls back to image_mobile if "
+"not set."
+msgstr "Фоновое изображение для мобильных на английской локали. Если не задано, используется image_mobile."
+
+#: apps/banners/models.py:136
+msgid ""
+"Upload an .html file. Rendered in a sandboxed iframe. Leave blank to use "
+"image/structured layout."
+msgstr "Загрузите .html файл. Отображается в изолированном iframe. Оставьте пустым для использования изображения/структурированного макета."
+
+#: apps/banners/models.py:138
+msgid "HTML file for Uzbek locale. Falls back to html_file."
+msgstr "HTML-файл для узбекской локали. Если не задан, используется html_file."
+
+#: apps/banners/models.py:139
+msgid "HTML file for Russian locale. Falls back to html_file."
+msgstr "HTML-файл для русской локали. Если не задан, используется html_file."
+
+#: apps/banners/models.py:140
+msgid "HTML file for English locale. Falls back to html_file."
+msgstr "HTML-файл для английской локали. Если не задан, используется html_file."
+
+#: apps/banners/models.py:146
+msgid "Banner Slide"
+msgstr "Баннер-слайд"
+
+#: apps/banners/models.py:147
+msgid "Banner Slides"
+msgstr "Баннер-слайды"
+
+#: apps/banners/models.py:180
+msgid "Banner Click"
+msgstr "Клик по баннеру"
+
+#: apps/banners/models.py:181
+msgid "Banner Clicks"
+msgstr "Клики по баннерам"
+
+#: apps/conversations/models.py:22
+msgid "Unique identifier for this conversation"
+msgstr "Уникальный идентификатор этой беседы"
+
+#: apps/conversations/models.py:31
+msgid "The job application this conversation is about (null for headhunting)"
+msgstr "Заявка на работу, о которой эта беседа (null для хедхантинга)"
+
+#: apps/conversations/models.py:38
+msgid "The candidate participating in this conversation"
+msgstr "Кандидат, участвующий в этой беседе"
+
+#: apps/conversations/models.py:45
+msgid "The recruiter participating in this conversation"
+msgstr "Рекрутер, участвующий в этой беседе"
+
+#: apps/conversations/models.py:54
+msgid ""
+"The vacancy this headhunting invitation is for (null for application "
+"conversations)"
+msgstr ""
+"Вакансия, для которой предназначено приглашение хедхантера (null для бесед "
+"по заявкам)"
+
+#: apps/conversations/models.py:59
+msgid "Whether the recruiter has read the messages"
+msgstr "Прочитал ли рекрутер сообщения"
+
+#: apps/conversations/models.py:64
+msgid "Whether the candidate has read the messages"
+msgstr "Прочитал ли кандидат сообщения"
+
+#: apps/conversations/models.py:68
+msgid "Conversation"
+msgstr "Беседа"
+
+#: apps/conversations/models.py:69
+msgid "Conversations"
+msgstr "Беседы"
+
+#: apps/conversations/models.py:112
+msgid "Cover Letter"
+msgstr "Сопроводительное письмо"
+
+#: apps/conversations/models.py:113
+msgid "Text Message"
+msgstr "Текстовое сообщение"
+
+#: apps/conversations/models.py:114
+msgid "System Message"
+msgstr "Системное сообщение"
+
+#: apps/conversations/models.py:115
+msgid "Status Change"
+msgstr "Изменение статуса"
+
+#: apps/conversations/models.py:116
+msgid "Document"
+msgstr "Документ"
+
+#: apps/conversations/models.py:117
+msgid "Headhunting Invitation"
+msgstr "Приглашение от хедхантера"
+
+#: apps/conversations/models.py:133
+msgid "Unique identifier for this message"
+msgstr "Уникальный идентификатор этого сообщения"
+
+#: apps/conversations/models.py:140
+msgid "The conversation this message belongs to"
+msgstr "Беседа, к которой относится это сообщение"
+
+#: apps/conversations/models.py:146 apps/subscriptions/models/plans.py:28
+#: apps/subscriptions/models/plans.py:167 apps/vacancies/views/favourite.py:129
+msgid "Candidate"
+msgstr "Кандидат"
+
+#: apps/conversations/models.py:147
+#: apps/subscriptions/models/company_subscription.py:143
+#: apps/vacancies/admin.py:36
+msgid "Recruiter"
+msgstr "Рекрутер"
+
+#: apps/conversations/models.py:148
+msgid "System"
+msgstr "Система"
+
+#: apps/conversations/models.py:150
+msgid "Type of the sender"
+msgstr "Тип отправителя"
+
+#: apps/conversations/models.py:157
+msgid "Type of the message"
+msgstr "Тип сообщения"
+
+#: apps/conversations/models.py:161
+msgid "The message content"
+msgstr "Содержание сообщения"
+
+#: apps/conversations/models.py:168
+msgid ""
+"Optional title for the message (e.g., recruiter note title for status "
+"changes)"
+msgstr ""
+"Необязательный заголовок для сообщения (например, заголовок заметки "
+"рекрутера для изменений статуса)"
+
+#: apps/conversations/models.py:175
+msgid ""
+"Additional structured data for special message types. For STATUS_CHANGE: "
+"{old_status, new_status, old_status_display, new_status_display, "
+"recruiter_note}. For DOCUMENT: {title, file_url, file_size, document_type}."
+msgstr ""
+"Дополнительные структурированные данные для специальных типов сообщений. Для "
+"STATUS_CHANGE: {old_status, new_status, old_status_display, "
+"new_status_display, recruiter_note}. Для DOCUMENT: {title, file_url, "
+"file_size, document_type}."
+
+#: apps/conversations/models.py:183
+msgid "Whether the message has been read by the recipient"
+msgstr "Прочитано ли сообщение получателем"
+
+#: apps/conversations/models.py:187
+msgid "Message"
+msgstr "Сообщение"
+
+#: apps/conversations/models.py:188
+msgid "Messages"
+msgstr "Сообщения"
+
+#: apps/conversations/models.py:215
+msgid "Unique identifier for this discussion"
+msgstr "Уникальный идентификатор этого обсуждения"
+
+#: apps/conversations/models.py:222
+msgid "The job application this discussion is about"
+msgstr "Заявка на работу, о которой это обсуждение"
+
+#: apps/conversations/models.py:229
+msgid "The recruiter who wrote this discussion"
+msgstr "Рекрутер, написавший это обсуждение"
+
+#: apps/conversations/models.py:233
+msgid "The discussion message content"
+msgstr "Содержание сообщения обсуждения"
+
+#: apps/conversations/models.py:238
+msgid "Whether this discussion has been edited"
+msgstr "Было ли это обсуждение отредактировано"
+
+#: apps/conversations/models.py:245
+msgid "Application status key at the time this discussion was created"
+msgstr "Ключ статуса заявки на момент создания обсуждения"
+
+#: apps/conversations/models.py:249
+msgid "Application Discussion"
+msgstr "Обсуждение заявки"
+
+#: apps/conversations/models.py:250
+msgid "Application Discussions"
+msgstr "Обсуждения заявок"
+
+#: apps/conversations/serializers/headhunting.py:144
+msgid "List of candidate IDs to send invitation to (max 50)"
+msgstr "Список идентификаторов кандидатов для отправки приглашения (макс. 50)"
+
+#: apps/conversations/serializers/headhunting.py:149
+msgid "The invitation letter content (10-5000 characters)"
+msgstr "Содержание пригласительного письма (10-5000 символов)"
+
+#: apps/conversations/serializers/headhunting.py:153
+msgid "The vacancy to invite candidates for"
+msgstr "Вакансия, для которой нужно пригласить кандидатов"
+
+#: apps/conversations/serializers/headhunting.py:204
+#: apps/conversations/views/headhunting.py:345
+msgid "Authenticated user is not a recruiter"
+msgstr "Аутентифицированный пользователь не является рекрутером"
+
+#: apps/conversations/serializers/headhunting.py:208
+#: apps/conversations/views/headhunting.py:199
+msgid "This vacancy does not belong to your company"
+msgstr "Эта вакансия не принадлежит вашей компании"
+
+#: apps/conversations/services.py:19
+msgid "The candidate has accepted the offer"
+msgstr "Кандидат принял предложение"
+
+#: apps/conversations/services.py:20
+msgid "The candidate has rejected the offer"
+msgstr "Кандидат отклонил предложение"
+
+#: apps/conversations/services.py:21
+msgid "The candidate has withdrawn the application"
+msgstr "Кандидат отозвал заявку"
+
+#: apps/conversations/services.py:29
+#, python-format
+msgid "Candidate has applied to the vacancy: %(vacancy_title)s"
+msgstr "Кандидат откликнулся на вакансию: %(vacancy_title)s"
+
+#: apps/conversations/views/conversations.py:185
+#: apps/conversations/views/conversations.py:354
+msgid "Conversation retrieved"
+msgstr "Беседа получена"
+
+#: apps/conversations/views/discussions.py:48
+#: apps/conversations/views/discussions.py:123
+msgid "You are not authorized to access discussions for this application"
+msgstr "У вас нет прав на доступ к обсуждениям этой заявки"
+
+#: apps/conversations/views/discussions.py:65
+msgid "You are not authorized to discuss this application"
+msgstr "У вас нет прав обсуждать эту заявку"
+
+#: apps/conversations/views/discussions.py:81
+msgid "Discussion created successfully"
+msgstr "Обсуждение успешно создано"
+
+#: apps/conversations/views/discussions.py:136
+msgid "You can only edit your own discussions"
+msgstr "Вы можете редактировать только свои обсуждения"
+
+#: apps/conversations/views/discussions.py:143
+msgid "You can only delete your own discussions"
+msgstr "Вы можете удалять только свои обсуждения"
+
+#: apps/conversations/views/discussions.py:160
+msgid "Discussion updated successfully"
+msgstr "Обсуждение успешно обновлено"
+
+#: apps/conversations/views/discussions.py:167
+msgid "Discussion deleted successfully"
+msgstr "Обсуждение успешно удалено"
+
+#: apps/conversations/views/headhunting.py:88
+msgid ""
+"Optional vacancy UUID to find matching candidates using embedding "
+"similarity. When provided, candidates are filtered and sorted by how well "
+"their resume matches the vacancy requirements. The vacancy must be active "
+"and belong to your company."
+msgstr ""
+"Необязательный UUID вакансии для поиска подходящих кандидатов с "
+"использованием сходства эмбеддингов. При указании кандидаты фильтруются и "
+"сортируются по степени соответствия их резюме требованиям вакансии. Вакансия "
+"должна быть активной и принадлежать вашей компании."
+
+#: apps/conversations/views/headhunting.py:95
+msgid "List candidates for headhunting with various filters."
+msgstr "Получить список кандидатов для хедхантинга с различными фильтрами."
+
+#: apps/conversations/views/headhunting.py:186
+msgid "Invalid vacancy_id format. Expected UUID"
+msgstr "Неверный формат vacancy_id. Ожидается UUID."
+
+#: apps/conversations/views/headhunting.py:204
+msgid "Cannot use inactive vacancy for candidate matching"
+msgstr "Невозможно использовать неактивную вакансию для подбора кандидатов"
+
+#: apps/conversations/views/headhunting.py:255
+#, python-format
+msgid ""
+"Vacancy matching skipped - vacancy %(vacancy_id)s has no embedding: %(error)s"
+msgstr ""
+"Сопоставление вакансии пропущено - вакансия %(vacancy_id)s не имеет "
+"эмбеддинга: %(error)s"
+
+#: apps/conversations/views/headhunting.py:264
+#, python-format
+msgid "Vacancy matching failed for vacancy %(vacancy_id)s: %(error)s"
+msgstr "Ошибка сопоставления для вакансии %(vacancy_id)s: %(error)s"
+
+#: apps/conversations/views/headhunting.py:373
+#: apps/conversations/views/headhunting.py:380
+msgid "Candidates matched and listed successfully"
+msgstr "Кандидаты успешно сопоставлены и выведены списком"
+
+#: apps/conversations/views/headhunting.py:389
+#: apps/conversations/views/headhunting.py:396
+msgid "Candidates listed successfully"
+msgstr "Кандидаты успешно выведены списком"
+
+#: apps/conversations/views/headhunting.py:540
+msgid "Authenticated user is not a recruiter."
+msgstr "Аутентифицированный пользователь не является рекрутером."
+
+#: apps/conversations/views/headhunting.py:638
+#, python-format
+msgid "Invitation sent to %(count)d candidate(s)"
+msgstr "Приглашение отправлено %(count)d кандидату(ам)"
+
+#: apps/domain/models.py:15
+msgid "Name"
+msgstr "Название"
+
+#: apps/domain/models.py:16
+msgid "Domain name (e.g., IT, Healthcare, Finance)"
+msgstr "Название отрасли (например, IT, Здравоохранение, Финансы)"
+
+#: apps/domain/models.py:20 apps/domain/models.py:53
+#: apps/edupartners/models/edupartner.py:70
+#: apps/edupartners/models/edupartner.py:155 apps/hr_templates/models.py:79
+msgid "Description"
+msgstr "Описание"
+
+#: apps/domain/models.py:21
+msgid "Detailed description of the domain"
+msgstr "Подробное описание отрасли"
+
+#: apps/domain/models.py:25 apps/edupartners/models/edupartner.py:86
+msgid "Domain"
+msgstr "Отрасль"
+
+#: apps/domain/models.py:26
+msgid "Domains"
+msgstr "Отрасли"
+
+#: apps/domain/models.py:42 apps/hr_templates/models.py:86
+#: apps/subscriptions/models/plans.py:27 apps/subscriptions/models/plans.py:166
+#: apps/vacancies/admin.py:32
+msgid "Company"
+msgstr "Компания"
+
+#: apps/domain/models.py:43
+msgid "The company that created this profession"
+msgstr "Компания, создавшая эту профессию"
+
+#: apps/domain/models.py:47
+msgid "Profession Name"
+msgstr "Название профессии"
+
+#: apps/domain/models.py:48
+msgid "Name of the profession created by HR"
+msgstr "Название профессии, созданной HR"
+
+#: apps/domain/models.py:54
+msgid "Description of the profession"
+msgstr "Описание профессии"
+
+#: apps/domain/models.py:61
+msgid "Created By"
+msgstr "Создано"
+
+#: apps/domain/models.py:62
+msgid "The recruiter who created this profession"
+msgstr "Рекрутер, создавший эту профессию"
+
+#: apps/domain/models.py:69
+msgid "HR Created Profession"
+msgstr "Профессия, созданная HR"
+
+#: apps/domain/models.py:70
+msgid "HR Created Professions"
+msgstr "Профессии, созданные HR"
+
+#: apps/domain/serializers.py:24
+msgid "Name cannot be empty."
+msgstr "Имя не может быть пустым."
+
+#: apps/domain/serializers.py:65
+msgid "Profession name cannot be empty."
+msgstr "Название профессии не может быть пустым."
+
+#: apps/domain/serializers.py:69
+msgid "Name contains invalid characters or sequences."
+msgstr "Имя содержит недопустимые символы или последовательности."
+
+#: apps/domain/serializers.py:77
+msgid "created_by contains invalid characters or sequences."
+msgstr "Поле created_by содержит недопустимые символы или последовательности."
+
+#: apps/domain/serializers.py:85
+msgid "Description cannot exceed 500 characters."
+msgstr "Описание не может превышать 500 символов."
+
+#: apps/edupartners/models/edupartner.py:41
+msgid "Address"
+msgstr "Адрес"
+
+#: apps/edupartners/models/edupartner.py:42
+msgid "Full address of the educational partner"
+msgstr "Полный адрес образовательного партнера"
+
+#: apps/edupartners/models/edupartner.py:65
+msgid "Faculty Name"
+msgstr "Название факультета"
+
+#: apps/edupartners/models/edupartner.py:66
+msgid "Name of the faculty (e.g., Computer Science, Business)"
+msgstr "Название факультета (например, Информатика, Бизнес)"
+
+#: apps/edupartners/models/edupartner.py:71
+msgid "Detailed description of the faculty"
+msgstr "Подробное описание факультета"
+
+#: apps/edupartners/models/edupartner.py:77
+msgid "Educational Partner"
+msgstr "Образовательный партнёр"
+
+#: apps/edupartners/models/edupartner.py:78
+msgid "The educational partner this faculty belongs to"
+msgstr "Образовательный партнёр, которому принадлежит факультет"
+
+#: apps/edupartners/models/edupartner.py:87
+msgid "The domain associated with this faculty"
+msgstr "Отрасль, связанная с этим факультетом"
+
+#: apps/edupartners/models/edupartner.py:91
+#: apps/edupartners/models/edupartner.py:175
+msgid "Is Active"
+msgstr "Активен"
+
+#: apps/edupartners/models/edupartner.py:92
+msgid "Indicates whether the faculty is active"
+msgstr "Указывает, активен ли факультет"
+
+#: apps/edupartners/models/edupartner.py:99
+#: apps/edupartners/models/edupartner.py:162
+msgid "Faculty"
+msgstr "Факультет"
+
+#: apps/edupartners/models/edupartner.py:100
+msgid "Faculties"
+msgstr "Факультеты"
+
+#: apps/edupartners/models/edupartner.py:113
+#: apps/edupartners/models/edupartner.py:183
+msgid "Subject"
+msgstr "Предмет"
+
+#: apps/edupartners/models/edupartner.py:119
+msgid "Skill"
+msgstr "Навык"
+
+#: apps/edupartners/models/edupartner.py:125
+msgid "Proficiency Level"
+msgstr "Уровень владения"
+
+#: apps/edupartners/models/edupartner.py:126
+msgid "Expected proficiency level acquired after studying this subject"
+msgstr "Ожидаемый уровень владения после изучения предмета"
+
+#: apps/edupartners/models/edupartner.py:135
+msgid "Subject Skill"
+msgstr "Навык предмета"
+
+#: apps/edupartners/models/edupartner.py:136
+msgid "Subject Skills"
+msgstr "Навыки предмета"
+
+#: apps/edupartners/models/edupartner.py:150
+msgid "Subject Name"
+msgstr "Название предмета"
+
+#: apps/edupartners/models/edupartner.py:151
+msgid "Name of the subject (e.g., Data Structures, Marketing)"
+msgstr "Название предмета (например, Структуры данных, Маркетинг)"
+
+#: apps/edupartners/models/edupartner.py:156
+msgid "Detailed description of the subject"
+msgstr "Подробное описание предмета"
+
+#: apps/edupartners/models/edupartner.py:163
+msgid "The faculty this subject belongs to"
+msgstr "Факультет, которому принадлежит этот предмет"
+
+#: apps/edupartners/models/edupartner.py:170
+msgid "Acquired Skills"
+msgstr "Приобретённые навыки"
+
+#: apps/edupartners/models/edupartner.py:171
+msgid "Skills that can be acquired by studying this subject"
+msgstr "Навыки, которые можно приобрести при изучении данного предмета"
+
+#: apps/edupartners/models/edupartner.py:176
+msgid "Indicates whether the subject is active"
+msgstr "Указывает, активен ли предмет"
+
+#: apps/edupartners/models/edupartner.py:184
+msgid "Subjects"
+msgstr "Предметы"
+
+#: apps/edupartners/services/vault.py:151
+msgid "The selected university is not supported for LMS verification."
+msgstr "Выбранный университет не поддерживается для верификации через LMS."
+
+#: apps/edupartners/views/edupartners.py:178
+msgid "This query parameter is required."
+msgstr "Этот параметр запроса обязателен."
+
+#: apps/edupartners/views/edupartners.py:183
+msgid "Must be a valid UUID."
+msgstr "Должен быть корректным UUID."
+
+#: apps/edupartners/views/vault.py:65 apps/vacancies/views/favourite.py:128
+msgid "Candidate not found"
+msgstr "Кандидат не найден"
+
+#: apps/edupartners/views/vault.py:72
+msgid ""
+"You must have an associated educational partner (university) to register "
+"with LMS."
+msgstr ""
+"Для регистрации в LMS у вас должен быть связан образовательный партнёр "
+"(университет)."
+
+#: apps/edupartners/views/vault.py:79
+msgid "You are already verified through LMS."
+msgstr "Вы уже верифицированы через LMS."
+
+#: apps/edupartners/views/vault.py:151
+msgid "Universities retrieved successfully"
+msgstr "Университеты успешно получены"
+
+#: apps/general/models.py:19
+msgid "EduPartner Analytics"
+msgstr "Аналитика EduPartner"
+
+#: apps/general/models.py:20
+msgid "HR Analytics"
+msgstr "HR-аналитика"
+
+#: apps/general/models.py:21
+msgid "Email Notification"
+msgstr "Уведомление по электронной почте"
+
+#: apps/general/models.py:22
+msgid "Resume Generation"
+msgstr "Генерация резюме"
+
+#: apps/general/models.py:23
+msgid "Candidate AI Evaluation"
+msgstr "AI-оценка кандидата"
+
+#: apps/general/models.py:35
+msgid "Unique identifier for the job"
+msgstr "Уникальный идентификатор задачи"
+
+#: apps/general/models.py:40
+msgid "Type of the job (edu_analytics, hr_analytics, etc.)"
+msgstr "Тип задачи (edu_analytics, hr_analytics и т.д.)"
+
+#: apps/general/models.py:43
+msgid "The date the data is for"
+msgstr "Дата, к которой относятся данные"
+
+#: apps/general/models.py:49
+msgid "ID of the target entity (faculty_id, company_id, etc.)"
+msgstr "ID целевого объекта (faculty_id, company_id и т.д.)"
+
+#: apps/general/models.py:55
+msgid "Name of the target entity for easier identification"
+msgstr "Название целевого объекта для удобной идентификации"
+
+#: apps/general/models.py:62
+msgid "Current status of the job"
+msgstr "Текущий статус задания"
+
+#: apps/general/models.py:66
+msgid "Number of retry attempts"
+msgstr "Количество попыток повтора"
+
+#: apps/general/models.py:70
+msgid "Maximum number of retries before alerting"
+msgstr "Максимальное количество попыток перед оповещением"
+
+#: apps/general/models.py:75
+msgid "Timestamp of the last attempt"
+msgstr "Временная метка последней попытки"
+
+#: apps/general/models.py:80
+msgid "Error message from the last failed attempt"
+msgstr "Сообщение об ошибке последней неудачной попытки"
+
+#: apps/general/models.py:86
+msgid "RQ job ID for tracking"
+msgstr "ID задачи RQ для отслеживания"
+
+#: apps/general/models.py:92
+msgid "Hash of the payload to detect duplicates"
+msgstr "Хеш данных для обнаружения дубликатов"
+
+#: apps/general/models.py:96
+msgid "Whether an alert was sent for exceeded retries"
+msgstr "Было ли отправлено оповещение о превышении попыток"
+
+#: apps/general/models.py:100
+msgid "Job Queue"
+msgstr "Очередь задач"
+
+#: apps/general/models.py:101
+msgid "Job Queues"
+msgstr "Очереди задач"
+
+#: apps/general/models.py:165
+msgid "UUID of the vacancy being tracked"
+msgstr "UUID отслеживаемой вакансии"
+
+#: apps/general/models.py:171
+msgid ""
+"Timestamp when is_active=False was successfully sent to HR Analytics. NULL "
+"means the final send has not yet been delivered."
+msgstr ""
+"Временная метка успешной отправки is_active=False в HR Analytics. NULL "
+"означает, что финальная отправка ещё не доставлена."
+
+#: apps/general/models.py:179
+msgid "Vacancy Analytics Sync"
+msgstr "Синхронизация аналитики вакансий"
+
+#: apps/general/models.py:180
+msgid "Vacancy Analytics Syncs"
+msgstr "Синхронизации аналитики вакансий"
+
+#: apps/general/models.py:220
+msgid "Domain Market Skill"
+msgstr "Рыночный навык отрасли"
+
+#: apps/general/models.py:221
+msgid "Domain Market Skills"
+msgstr "Рыночные навыки отрасли"
+
+#: apps/general/models.py:312
+msgid "Unique identifier for this notification record"
+msgstr "Уникальный идентификатор этой записи уведомления"
+
+#: apps/general/models.py:318
+msgid "The job application that was included in a summary email"
+msgstr "Заявка на работу, которая была включена в итоговое письмо"
+
+#: apps/general/models.py:324
+msgid "The recruiter who received the notification"
+msgstr "Рекрутер, получивший уведомление"
+
+#: apps/general/models.py:328
+msgid "When the notification was sent"
+msgstr "Когда было отправлено уведомление"
+
+#: apps/general/models.py:332
+msgid "Application Summary Notification"
+msgstr "Сводное уведомление по заявкам"
+
+#: apps/general/models.py:333
+msgid "Application Summary Notifications"
+msgstr "Сводные уведомления по заявкам"
+
+#: apps/general/models.py:355
+msgid "Target role / search query, e.g. 'Python Developer'"
+msgstr "Целевая роль / поисковый запрос, например 'Python Developer'"
+
+#: apps/general/models.py:360
+msgid "Data source: hh, platform, both"
+msgstr "Источник данных: hh, платформа, оба"
+
+#: apps/general/models.py:365
+msgid "Market median salary in UZS"
+msgstr "Медианная рыночная зарплата в UZS"
+
+#: apps/general/models.py:372
+msgid "Minimum of collected salary_from values"
+msgstr "Минимальное значение собранных salary_from"
+
+#: apps/general/models.py:379
+msgid "Maximum of collected salary_to values"
+msgstr "Максимальное значение собранных salary_to"
+
+#: apps/general/models.py:383
+msgid "Number of salary data points used"
+msgstr "Количество использованных точек данных о зарплате"
+
+#: apps/general/models.py:387
+msgid "Market Salary Cache"
+msgstr "Кеш рыночной зарплаты"
+
+#: apps/general/models.py:388
+msgid "Market Salary Caches"
+msgstr "Кеши рыночной зарплаты"
+
+#: apps/general/serializers.py:50
+msgid "audience must be candidates or recruiters."
+msgstr "audience должен быть candidates или recruiters."
+
+#: apps/general/serializers.py:56
+msgid "EmailTemplate with this template_type does not exist."
+msgstr "EmailTemplate с таким template_type не существует."
+
+#: apps/general/serializers.py:74
+msgid "Provide at least one recipient email."
+msgstr "Укажите как минимум один адрес электронной почты получателя."
+
+#: apps/general/services/campaign_email_service.py:283
+#, python-format
+msgid "No active %(audience_label)s found for this email."
+msgstr "Для этого email не найден активный %(audience_label)s."
+
+#: apps/general/services/campaign_email_service.py:292
+msgid "No active vacancies found for this recruiter's company domain."
+msgstr "Для отрасли компании этого рекрутера не найдено активных вакансий."
+
+#: apps/general/services/campaign_email_service.py:293
+msgid "No active vacancies found for this candidate's domains."
+msgstr "Для отраслей этого кандидата не найдено активных вакансий."
+
+#: apps/general/services/campaign_email_service.py:383
+#, python-format
+msgid "up to %(amount)s %(currency)s"
+msgstr "до %(amount)s %(currency)s"
+
+#: apps/general/views/campaign.py:40
+#, python-format
+msgid "Missing required configuration: %(field)s"
+msgstr "Отсутствует обязательная конфигурация: %(field)s"
+
+#: apps/general/views/campaign.py:46
+msgid "Failed to connect to email service. Please try again later."
+msgstr "Не удалось подключиться к почтовому сервису. Пожалуйста, попробуйте позже."
+
+#: apps/general/views/campaign.py:51
+msgid "Failed to process manual email campaign. Please try again later."
+msgstr "Не удалось обработать ручную email-кампанию. Пожалуйста, попробуйте позже."
+
+#: apps/general/views/campaign.py:56
+msgid "Manual email campaign processed."
+msgstr "Рассылка электронных писем обработана вручную."
+
+#: apps/general/views/company.py:41
+msgid "company_ids must be a list of company id strings."
+msgstr "company_ids должен быть списком строк с ID компаний."
+
+#: apps/general/views/company.py:46
+msgid "is_active field is required and must be boolean."
+msgstr "Поле is_active обязательно и должно быть логическим."
+
+#: apps/general/views/company.py:60 apps/general/views/company.py:66
+msgid "is_active must be a boolean."
+msgstr "is_active должно быть логическим значением."
+
+#: apps/general/views/company.py:77
+msgid "Company confirmation emails processed"
+msgstr "Письма подтверждения компании обработаны"
+
+#: apps/general/views/company.py:83
+msgid "An internal error occurred while processing the request."
+msgstr "При обработке запроса произошла внутренняя ошибка."
+
+#: apps/hr_templates/models.py:20
+msgid "Interview Scheduled"
+msgstr "Собеседование назначено"
+
+#: apps/hr_templates/models.py:73
+msgid "Title"
+msgstr "Заголовок"
+
+#: apps/hr_templates/models.py:74
+msgid "Short title for the reason template"
+msgstr "Краткий заголовок шаблона причины"
+
+#: apps/hr_templates/models.py:80
+msgid "Detailed description or template text for recruiter notes"
+msgstr "Подробное описание или текст шаблона для заметок рекрутера"
+
+#: apps/hr_templates/models.py:87
+msgid "The company this reason template belongs to"
+msgstr "Компания, которой принадлежит этот шаблон причины"
+
+#: apps/hr_templates/models.py:93
+msgid "The application status this reason is associated with"
+msgstr "Статус заявки, с которым связана эта причина"
+
+#: apps/hr_templates/models.py:97
+msgid "Reason"
+msgstr "Причина"
+
+#: apps/hr_templates/models.py:98
+msgid "Reasons"
+msgstr "Причины"
+
+#: apps/hr_templates/serializers.py:22
+msgid "Title cannot be empty."
+msgstr "Заголовок не может быть пустым."
+
+#: apps/hr_templates/views.py:34
+msgid "Reason statuses retrieved successfully"
+msgstr "Статусы причин успешно получены"
+
+#: apps/hr_templates/views.py:90
+msgid "Reason template deleted successfully"
+msgstr "Шаблон причины успешно удалён"
+
+#: apps/matching/views.py:51 apps/matching/views.py:169
+msgid "Invalid top_k parameter"
+msgstr "Неверный параметр top_k"
+
+#: apps/matching/views.py:59 apps/matching/views.py:177
+msgid "Invalid min_similarity parameter"
+msgstr "Неверный параметр min_similarity"
+
+#: apps/matching/views.py:66 apps/matching/views.py:184
+msgid "min_similarity must be between 0 and 1"
+msgstr "min_similarity должен быть между 0 и 1"
+
+#: apps/matching/views.py:76
+msgid "Resume embedding not generated yet"
+msgstr "Embedding резюме ещё не сгенерирован"
+
+#: apps/matching/views.py:77 apps/matching/views.py:197
+msgid "Please wait a moment and try again. Embeddings are being processed."
+msgstr "Пожалуйста, подождите и попробуйте снова. Идёт обработка embedding."
+
+#: apps/matching/views.py:88 apps/matching/views.py:208
+msgid "Matching failed"
+msgstr "Сопоставление не удалось"
+
+#: apps/matching/views.py:89 apps/matching/views.py:209
+msgid "An error occurred while processing the match request."
+msgstr "При обработке запроса на сопоставление произошла ошибка."
+
+#: apps/matching/views.py:112 apps/matching/views.py:233
+msgid "Matching completed successfully"
+msgstr "Сопоставление успешно завершено"
+
+#: apps/matching/views.py:196
+msgid "Vacancy embedding not generated yet"
+msgstr "Embedding вакансии ещё не сгенерирован"
+
+#: apps/notifications/services/application_notification_service.py:180
+msgid "New application"
+msgstr "Новая заявка"
+
+#: apps/notifications/services/application_notification_service.py:181
+#, python-format
+msgid "%(candidate_name)s applied to %(vacancy_title)s."
+msgstr "%(candidate_name)s отправил заявку на %(vacancy_title)s."
+
+#: apps/notifications/services/application_notification_service.py:224
+msgid "Application status updated"
+msgstr "Статус заявки обновлён"
+
+#: apps/notifications/services/application_notification_service.py:225
+#, python-format
+msgid "%(vacancy_title)s status changed to %(status)s."
+msgstr "Статус вакансии %(vacancy_title)s изменён на %(status)s."
+
+#: apps/notifications/services/application_notification_service.py:252
+msgid "Offer accepted"
+msgstr "Предложение принято"
+
+#: apps/notifications/services/application_notification_service.py:253
+#, python-format
+msgid "%(candidate_name)s accepted the offer for %(vacancy_title)s."
+msgstr "%(candidate_name)s принял предложение для %(vacancy_title)s."
+
+#: apps/notifications/services/application_notification_service.py:259
+msgid "Offer rejected"
+msgstr "Предложение отклонено"
+
+#: apps/notifications/services/application_notification_service.py:260
+#, python-format
+msgid "%(candidate_name)s rejected the offer for %(vacancy_title)s."
+msgstr "%(candidate_name)s отклонил предложение для %(vacancy_title)s."
+
+#: apps/notifications/views/admin.py:132
+msgid "Title, message, and sent_to_all are required."
+msgstr "Заголовок, сообщение и sent_to_all обязательны."
+
+#: apps/notifications/views/admin.py:145
+msgid "No active devices found."
+msgstr "Активные устройства не найдены."
+
+#: apps/notifications/views/admin.py:175
+msgid "Notification dispatched to devices."
+msgstr "Уведомление отправлено на устройства."
+
+#: apps/notifications/views/admin.py:279
+msgid "user_ids (array), title, and message are required."
+msgstr "user_ids (массив), заголовок и сообщение обязательны."
+
+#: apps/notifications/views/admin.py:285
+msgid "user_ids must be a non-empty array of UUIDs."
+msgstr "user_ids должен быть непустым массивом UUID."
+
+#: apps/notifications/views/admin.py:323
+msgid "No valid active users found."
+msgstr "Активные пользователи не найдены."
+
+#: apps/notifications/views/admin.py:376
+msgid "Notifications sent successfully."
+msgstr "Уведомления успешно отправлены."
+
+#: apps/notifications/views/admin.py:382
+msgid "Failed to send notifications. Please try again."
+msgstr "Не удалось отправить уведомления. Пожалуйста, попробуйте снова."
+
+#: apps/notifications/views/admin.py:498
+msgid "job_application_id is required"
+msgstr "job_application_id обязателен"
+
+#: apps/notifications/views/admin.py:506
+msgid "Invalid job_application_id format. Must be a valid UUID."
+msgstr "Неверный формат job_application_id. Должен быть корректным UUID."
+
+#: apps/notifications/views/admin.py:525
+msgid "Notification sent successfully to recruiters"
+msgstr "Уведомление успешно отправлено рекрутерам"
+
+#: apps/notifications/views/admin.py:535 core/responses.py:175
+msgid "Internal server error"
+msgstr "Внутренняя ошибка сервера"
+
+#: apps/notifications/views/device.py:107
+msgid "registration_id is required."
+msgstr "registration_id обязателен."
+
+#: apps/notifications/views/user.py:228
+msgid "Failed to fetch notifications"
+msgstr "Не удалось получить уведомления"
+
+#: apps/notifications/views/user.py:319
+msgid "Notification marked as read"
+msgstr "Уведомление отмечено как прочитанное"
+
+#: apps/notifications/views/user.py:322
+msgid "Notification not found"
+msgstr "Уведомление не найдено"
+
+#: apps/notifications/views/user.py:427
+msgid "Failed to mark notifications as read"
+msgstr "Не удалось отметить уведомления как прочитанные"
+
+#: apps/notifications/views/user.py:566
+msgid "user_id, title, and message are required."
+msgstr "user_id, заголовок и сообщение обязательны."
+
+#: apps/notifications/views/user.py:574
+msgid "Invalid user_id format. Must be a valid UUID."
+msgstr "Неверный формат user_id. Должен быть корректным UUID."
+
+#: apps/notifications/views/user.py:601
+msgid "User not found or inactive."
+msgstr "Пользователь не найден или неактивен."
+
+#: apps/notifications/views/user.py:607
+msgid "No active devices found for user."
+msgstr "Активные устройства для пользователя не найдены."
+
+#: apps/notifications/views/user.py:651
+msgid "Notification sent successfully."
+msgstr "Уведомление успешно отправлено."
+
+#: apps/notifications/views/user.py:657
+msgid "Failed to send notification. Please try again."
+msgstr "Не удалось отправить уведомление. Пожалуйста, попробуйте снова."
+
+#: apps/profiles/admin.py:28 apps/profiles/admin.py:71
+msgid "Date Joined"
+msgstr "Дата регистрации"
+
+#: apps/profiles/admin.py:33
+msgid "Today"
+msgstr "Сегодня"
+
+#: apps/profiles/admin.py:34
+msgid "Last 7 days"
+msgstr "Последние 7 дней"
+
+#: apps/profiles/admin.py:35
+msgid "Last 30 days"
+msgstr "Последние 30 дней"
+
+#: apps/profiles/models/candidate_profile.py:60
+msgid "Enter a valid GitHub profile URL (e.g., github.com/username)."
+msgstr "Введите корректный URL профиля GitHub (напр., github.com/username)."
+
+#: apps/profiles/models/candidate_profile.py:64
+msgid "GitHub profile URL (e.g., github.com/username)."
+msgstr "URL профиля GitHub (например, github.com/username)."
+
+#: apps/profiles/models/candidate_profile.py:73
+msgid "Enter a valid LinkedIn profile URL (e.g., linkedin.com/in/username)."
+msgstr "Введите корректный URL профиля LinkedIn (напр., linkedin.com/in/username)."
+
+#: apps/profiles/models/candidate_profile.py:77
+msgid "LinkedIn profile URL (e.g., linkedin.com/in/username)."
+msgstr "URL профиля LinkedIn (например, linkedin.com/in/username)."
+
+#: apps/profiles/models/candidate_profile.py:86
+msgid "Enter a valid portfolio or personal website URL."
+msgstr "Введите действительный URL портфолио или личного сайта."
+
+#: apps/profiles/models/candidate_profile.py:90
+msgid "Portfolio or personal website URL."
+msgstr "URL портфолио или личного сайта."
+
+#: apps/profiles/models/candidate_profile.py:99
+msgid "Enter a valid Telegram URL (e.g., https://t.me/username)."
+msgstr "Введите действительный URL Telegram (например, https://t.me/username)."
+
+#: apps/profiles/models/candidate_profile.py:103
+msgid "Telegram profile URL (e.g., https://t.me/username)."
+msgstr "URL профиля Telegram (например, https://t.me/username)."
+
+#: apps/profiles/models/citizenship.py:17
+msgid "Citizenship name"
+msgstr "Название гражданства"
+
+#: apps/profiles/models/citizenship.py:18
+msgid "Name of the citizenship/country"
+msgstr "Название гражданства/страны"
+
+#: apps/profiles/models/citizenship.py:25
+msgid "Citizenship"
+msgstr "Гражданство"
+
+#: apps/profiles/models/citizenship.py:26
+msgid "Citizenships"
+msgstr "Гражданства"
+
+#: apps/profiles/serializers/candidate.py:110
+msgid "Citizenship with this ID does not exist"
+msgstr "Гражданство с таким ID не существует."
+
+#: apps/profiles/serializers/candidate.py:126
+msgid "Authenticated user is not a candidate"
+msgstr "Аутентифицированный пользователь не является кандидатом"
+
+#: apps/profiles/serializers/candidate.py:134
+msgid "No candidate found with this email"
+msgstr "Кандидат с таким email не найден"
+
+#: apps/profiles/serializers/candidate.py:140
+msgid "Profile already exists for this candidate"
+msgstr "Профиль для этого кандидата уже существует"
+
+#: apps/profiles/serializers/candidate.py:162
+#: apps/profiles/serializers/candidate.py:215
+msgid "EduPartner with this ID does not exist"
+msgstr "EduPartner с таким ID не существует"
+
+#: apps/profiles/serializers/candidate.py:177
+#: apps/profiles/serializers/candidate.py:231
+msgid "Faculty does not belong to selected EduPartner"
+msgstr "Факультет не относится к выбранному EduPartner"
+
+#: apps/profiles/serializers/candidate.py:181
+#: apps/profiles/serializers/candidate.py:235
+msgid "Faculty with this ID does not exist"
+msgstr "Факультет с таким ID не существует"
+
+#: apps/profiles/serializers/recruiter.py:176
+#: apps/profiles/serializers/recruiter.py:179
+msgid "This email is already registered."
+msgstr "Этот адрес электронной почты уже зарегистрирован."
+
+#: apps/profiles/views/company.py:159
+msgid "Get Company Information"
+msgstr "Получить информацию о компании"
+
+#: apps/profiles/views/company.py:160
+msgid ""
+"Retrieve basic company information. Publicly accessible without "
+"authentication."
+msgstr "Получить основную информацию о компании. Публичный доступ без аутентификации."
+
+#: apps/profiles/views/company.py:163
+msgid "Company not found."
+msgstr "Компания не найдена."
+
+#: apps/profiles/views/recruiter.py:65 apps/profiles/views/recruiter.py:241
+#: apps/profiles/views/recruiter.py:352
+msgid "Recruiter not found"
+msgstr "Рекрутер не найден"
+
+#: apps/profiles/views/recruiter.py:69
+msgid "Recruiter does not belong to any company"
+msgstr "Рекрутер не принадлежит ни к одной компании"
+
+#: apps/profiles/views/recruiter.py:217
+msgid "Cannot downgrade the last admin recruiter"
+msgstr "Невозможно понизить последнего администратора-рекрутера"
+
+#: apps/profiles/views/recruiter.py:232
+msgid "Recruiter role successfully updated"
+msgstr "Роль рекрутера успешно обновлена"
+
+#: apps/profiles/views/recruiter.py:237
+msgid "Invalid data"
+msgstr "Неверные данные"
+
+#: apps/profiles/views/recruiter.py:348
+msgid "Recruiter information retrieved successfully"
+msgstr "Информация о рекрутере успешно получена"
+
+#: apps/profiles/views/registration.py:74
+msgid "Failed to register recruiter"
+msgstr "Не удалось зарегистрировать рекрутера"
+
+#: apps/profiles/views/registration.py:99
+msgid "Recruiter ID is required for update"
+msgstr "Для обновления требуется ID рекрутера"
+
+#: apps/profiles/views/registration.py:113
+msgid "Recruiter not found or not in your company"
+msgstr "Рекрутер не найден или не в вашей компании"
+
+#: apps/profiles/views/registration.py:132
+msgid "Recruiter updated successfully"
+msgstr "Рекрутер успешно обновлён"
+
+#: apps/profiles/views/registration.py:137
+msgid "Failed to update recruiter"
+msgstr "Не удалось обновить рекрутера"
+
+#: apps/quiz/views/calculate_quiz.py:127
+#: apps/quiz/views/determine_domain.py:247
+msgid "quiz_id is required"
+msgstr "quiz_id обязателен"
+
+#: apps/quiz/views/calculate_quiz.py:132
+#: apps/quiz/views/determine_domain.py:261
+msgid "Quiz not found"
+msgstr "Тест не найден"
+
+#: apps/quiz/views/calculate_quiz.py:136 apps/quiz/views/calculate_quiz.py:139
+#: apps/quiz/views/calculate_quiz.py:147
+#: apps/quiz/views/determine_domain.py:251
+#: apps/quiz/views/determine_domain.py:253
+msgid "Responses are required"
+msgstr "Ответы обязательны"
+
+#: apps/quiz/views/calculate_quiz.py:148
+#: apps/quiz/views/determine_domain.py:271
+msgid "Each response must be an object."
+msgstr "Каждый ответ должен быть объектом."
+
+#: apps/quiz/views/calculate_quiz.py:154 apps/quiz/views/calculate_quiz.py:162
+#: apps/quiz/views/calculate_quiz.py:171 apps/quiz/views/calculate_quiz.py:184
+#: apps/quiz/views/calculate_quiz.py:269
+#: apps/quiz/views/determine_domain.py:270
+#: apps/quiz/views/determine_domain.py:278
+#: apps/quiz/views/determine_domain.py:294
+msgid "No valid answers provided"
+msgstr "Не предоставлены корректные ответы"
+
+#: apps/quiz/views/calculate_quiz.py:155
+#, python-format
+msgid "question_id must be a valid integer at index %(index)s."
+msgstr "question_id должен быть корректным целым числом по индексу %(index)s."
+
+#: apps/quiz/views/calculate_quiz.py:163
+#, python-format
+msgid "answer must be a non-empty list at index %(index)s."
+msgstr "Поле answer должно быть непустым списком по индексу %(index)s."
+
+#: apps/quiz/views/calculate_quiz.py:172
+msgid "Answer IDs must be valid integers."
+msgstr "Идентификаторы ответов должны быть корректными целыми числами."
+
+#: apps/quiz/views/calculate_quiz.py:209 apps/quiz/views/calculate_quiz.py:240
+msgid "No valid answers provided for this quiz"
+msgstr "Для этого теста не предоставлены корректные ответы"
+
+#: apps/quiz/views/calculate_quiz.py:297
+msgid "domain_id must be a valid integer"
+msgstr "domain_id должен быть корректным целым числом"
+
+#: apps/quiz/views/calculate_quiz.py:301
+msgid "Invalid domain_id"
+msgstr "Неверный domain_id"
+
+#: apps/quiz/views/calculate_quiz.py:339
+msgid "Quiz results calculated successfully"
+msgstr "Результаты теста успешно рассчитаны"
+
+#: apps/quiz/views/calculate_quiz.py:346
+msgid "email is required for anonymous users"
+msgstr "Для анонимных пользователей необходимо указать электронную почту"
+
+#: apps/quiz/views/calculate_quiz.py:353
+msgid "Enter a valid email address."
+msgstr "Введите корректный адрес электронной почты."
+
+#: apps/quiz/views/calculate_quiz.py:379 apps/quiz/views/calculate_quiz.py:398
+msgid "Your quiz results have been sent to your email."
+msgstr "Результаты теста отправлены на вашу электронную почту."
+
+#: apps/quiz/views/calculate_quiz.py:411
+msgid "Quiz completed successfully. Log in to see your quiz result."
+msgstr "Тест успешно завершён. Войдите в аккаунт, чтобы посмотреть результат."
+
+#: apps/quiz/views/determine_domain.py:280
+#, python-format
+msgid "question_id and answer_id must be valid integers at index %(index)s."
+msgstr "question_id и answer_id должны быть целыми числами по индексу %(index)s."
+
+#: apps/quiz/views/determine_domain.py:327
+#: apps/quiz/views/determine_domain.py:341
+msgid "No valid answers with domain mapping found for this quiz"
+msgstr "Для этого теста не найдены корректные ответы с привязкой к отрасли"
+
+#: apps/quiz/views/determine_domain.py:366
+msgid "Could not determine domain from provided answers"
+msgstr "Не удалось определить отрасль по предоставленным ответам"
+
+#: apps/quiz/views/determine_domain.py:456
+msgid "Domain determined successfully"
+msgstr "Отрасль успешно определена"
+
+#: apps/quiz/views/quiz_result_view.py:24
+msgid "No quiz results found"
+msgstr "Результаты теста не найдены"
+
+#: apps/quiz/views/quiz_result_view.py:52
+msgid "Latest quiz result retrieved successfully"
+msgstr "Последний результат теста успешно получен"
+
+#: apps/quiz/views/quiz_views.py:58
+msgid "Quiz types retrieved"
+msgstr "Типы тестов получены"
+
+#: apps/quiz/views/quiz_views.py:103
+msgid "Questions retrieved"
+msgstr "Вопросы получены"
+
+#: apps/resumes/models/resume.py:254
+msgid "AI Generated"
+msgstr "Создано ИИ"
+
+#: apps/resumes/models/resume.py:255
+msgid "Candidate Created"
+msgstr "Создано кандидатом"
+
+#: apps/resumes/models/resume.py:267
+msgid "Whether the resume was created by AI or by the candidate"
+msgstr "Создано ли резюме ИИ или кандидатом"
+
+#: apps/resumes/serializers/resume.py:175
+msgid "Invalid JSON format."
+msgstr "Неверный формат JSON."
+
+#: apps/resumes/serializers/resume.py:177
+msgid "Expected a JSON string or object."
+msgstr "Ожидается JSON-строка или объект."
+
+#: apps/resumes/serializers/resume.py:534
+#: apps/vacancies/serializers/vacancy.py:618
+msgid "Domain with this name does not exist."
+msgstr "Отрасли с таким названием не существует."
+
+#: apps/resumes/serializers/resume.py:562
+msgid "Domain is required."
+msgstr "Отрасль обязательна."
+
+#: apps/resumes/serializers/resume.py:575
+msgid "Expected a list of skill objects."
+msgstr "Ожидается список объектов навыков."
+
+#: apps/resumes/serializers/resume.py:581
+msgid "Each skill must be a dictionary."
+msgstr "Каждый навык должен быть словарём."
+
+#: apps/resumes/serializers/resume.py:585
+msgid "Each skill must have a 'skill_id' field."
+msgstr "Каждый навык должен иметь поле 'skill_id'."
+
+#: apps/resumes/serializers/resume.py:592
+#, python-brace-format
+msgid "Skill with ID {skill_id} does not exist."
+msgstr "Навык с ID {skill_id} не существует."
+
+#: apps/resumes/serializers/resume.py:599
+#, python-brace-format
+msgid "Skill with ID {skill_id} has an empty name."
+msgstr "Навык с ID {skill_id} имеет пустое название."
+
+#: apps/resumes/serializers/resume.py:610
+msgid "Invalid proficiency_level."
+msgstr "Недопустимый proficiency_level."
+
+#: apps/resumes/serializers/resume.py:636
+msgid "Expected a list of experience objects."
+msgstr "Ожидается список объектов опыта."
+
+#: apps/resumes/serializers/resume.py:738
+msgid "Expected a list of language certificate objects."
+msgstr "Ожидается список объектов сертификатов языков."
+
+#: apps/resumes/serializers/resume.py:750
+#, python-format
+msgid "Each language certificate must be a dictionary at index %(idx)s."
+msgstr "Каждый сертификат языка должен быть словарём на индексе %(idx)s."
+
+#: apps/resumes/serializers/resume.py:757
+#, python-format
+msgid "'language_id' is required for language certificate at index %(idx)s."
+msgstr "'language_id' обязателен для сертификата языка на индексе %(idx)s."
+
+#: apps/resumes/serializers/resume.py:767
+#, python-format
+msgid "'language_id' must be a valid integer at index %(idx)s."
+msgstr "'language_id' должен быть корректным целым числом в индексе %(idx)s."
+
+#: apps/resumes/serializers/resume.py:782
+#, python-format
+msgid ""
+"Duplicate language certificate: language_id %(language_id)s appears more "
+"than once."
+msgstr ""
+"Дублирующийся сертификат языка: language_id %(language_id)s встречается "
+"более одного раза."
+
+#: apps/resumes/serializers/resume.py:791
+#, python-format
+msgid "Language with ID %(language_id)s does not exist."
+msgstr "Язык с ID %(language_id)s не существует."
+
+#: apps/resumes/serializers/resume.py:798
+#, python-format
+msgid ""
+"Invalid proficiency level '%(level)s' at index %(idx)s. Valid levels: "
+"%(valid)s"
+msgstr ""
+"Недопустимый уровень владения '%(level)s' на индексе %(idx)s. Допустимые "
+"уровни: %(valid)s"
+
+#: apps/resumes/serializers/resume.py:809
+#, python-format
+msgid "File '%(name)s' exceeds 5MB limit at index %(idx)s."
+msgstr "Файл '%(name)s' превышает лимит в 5 МБ на индексе %(idx)s."
+
+#: apps/resumes/serializers/resume.py:816
+#, python-format
+msgid "File '%(name)s' has invalid type at index %(idx)s. Allowed: %(allowed)s"
+msgstr ""
+"Файл '%(name)s' имеет недопустимый тип по индексу %(idx)s. Разрешено: "
+"%(allowed)s"
+
+#: apps/resumes/serializers/resume.py:827
+#, python-format
+msgid "'id' must be a valid integer at index %(idx)s."
+msgstr "'id' должен быть корректным целым числом в индексе %(idx)s."
+
+#: apps/resumes/serializers/resume_generation.py:20
+msgid "Free-form text description or instructions for resume generation."
+msgstr "Свободное текстовое описание или инструкции для генерации резюме."
+
+#: apps/resumes/serializers/resume_generation.py:25
+msgid "Resume file (PDF or DOCX format)."
+msgstr "Файл резюме (формат PDF или DOCX)."
+
+#: apps/resumes/serializers/resume_generation.py:40
+msgid "At least one of 'prompt' or 'file' must be provided."
+msgstr "Необходимо указать хотя бы один из параметров: 'prompt' или 'file'."
+
+#: apps/resumes/serializers/resume_generation.py:51
+#, python-format
+msgid "File size exceeds 10MB limit. Current size: %(size)s MB"
+msgstr "Размер файла превышает лимит в 10 МБ. Текущий размер: %(size)s МБ"
+
+#: apps/resumes/serializers/resume_generation.py:130
+msgid "Successfully matched skills with confidence scores."
+msgstr "Навыки успешно сопоставлены с оценками достоверности."
+
+#: apps/resumes/serializers/resume_generation.py:134
+msgid "Skills that couldn't be matched to database."
+msgstr "Навыки, которые не удалось сопоставить с базой данных."
+
+#: apps/resumes/serializers/resume_generation.py:138
+msgid "Matched domain information."
+msgstr "Информация об отрасли сопоставлена."
+
+#: apps/resumes/serializers/resume_generation.py:142
+msgid "Successfully matched languages."
+msgstr "Языки успешно сопоставлены."
+
+#: apps/resumes/serializers/resume_generation.py:146
+msgid "Languages that couldn't be matched to database."
+msgstr "Языки, которые не удалось сопоставить с базой данных."
+
+#: apps/resumes/services/certificate_service.py:85
+msgid "Expected a list of certificate objects."
+msgstr "Ожидается список объектов сертификатов."
+
+#: apps/resumes/services/experience.py:99
+#: apps/resumes/services/experience.py:121
+#: apps/resumes/services/experience.py:128
+#, python-format
+msgid "%(count)d month"
+msgid_plural "%(count)d months"
+msgstr[0] "%(count)d месяц"
+msgstr[1] "%(count)d месяца"
+msgstr[2] "%(count)d месяцев"
+
+#: apps/resumes/services/experience.py:111
+#, python-format
+msgid "%(count)d year"
+msgid_plural "%(count)d years"
+msgstr[0] "%(count)d год"
+msgstr[1] "%(count)d года"
+msgstr[2] "%(count)d лет"
+
+#: apps/resumes/tasks.py:173
+msgid "Failed to connect to AI service. Please try again later."
+msgstr "Не удалось подключиться к AI сервису. Пожалуйста, попробуйте позже."
+
+#: apps/resumes/tasks.py:233
+msgid "An unexpected error occurred during resume generation."
+msgstr "При генерации резюме произошла непредвиденная ошибка"
+
+#: apps/resumes/views/resume.py:177
+msgid "Resume created successfully"
+msgstr "Резюме успешно создано"
+
+#: apps/resumes/views/resume.py:344
+msgid "Resume updated successfully"
+msgstr "Резюме успешно обновлено"
+
+#: apps/resumes/views/resume.py:408
+msgid "Resume deleted successfully"
+msgstr "Резюме успешно удалено"
+
+#: apps/resumes/views/resume.py:494
+msgid "Only candidates can set main resumes"
+msgstr "Только кандидаты могут установить основное резюме"
+
+#: apps/resumes/views/resume.py:502
+msgid "Resume not found or you don't have permission"
+msgstr "Резюме не найдено или у вас нет доступа"
+
+#: apps/resumes/views/resume.py:514
+msgid "Resume set as main"
+msgstr "Резюме установлено как основное"
+
+#: apps/resumes/views/resume_generation.py:230
+msgid "Resume generation job queued successfully"
+msgstr "Задача генерации резюме успешно добавлена в очередь"
+
+#: apps/resumes/views/resume_generation.py:237
+msgid "Failed to queue resume generation job"
+msgstr "Не удалось добавить задачу генерации резюме в очередь"
+
+#: apps/resumes/views/resume_generation.py:297
+msgid "Job not found"
+msgstr "Задача не найдена"
+
+#: apps/resumes/views/resume_generation.py:298
+msgid "Resume generation job"
+msgstr "Задача генерации резюме"
+
+#: apps/resumes/views/resume_generation.py:317
+msgid "Unknown error"
+msgstr "Неизвестная ошибка"
+
+#: apps/resumes/views/resume_generation.py:330
+msgid "Failed to retrieve job status"
+msgstr "Не удалось получить статус задачи"
+
+#: apps/resumes/views/resume_generation.py:387
+#: apps/resumes/views/resume_generation.py:390
+msgid "Job failed"
+msgstr "Задача не выполнена"
+
+#: apps/skill_tests/models/tests.py:23
+msgid "Candidate who generated this test"
+msgstr "Кандидат, сгенерировавший этот тест"
+
+#: apps/skill_tests/models/tests.py:28
+msgid "Target proficiency level for this test"
+msgstr "Целевой уровень владения для этого теста"
+
+#: apps/skill_tests/models/tests.py:34
+msgid "AI-generated test title"
+msgstr "Сгенерированное AI название теста"
+
+#: apps/skill_tests/models/tests.py:38
+msgid "Time limit in minutes"
+msgstr "Ограничение по времени в минутах"
+
+#: apps/skill_tests/models/tests.py:42
+msgid "Total number of questions"
+msgstr "Общее количество вопросов"
+
+#: apps/skill_tests/models/tests.py:48
+msgid "Minimum score percentage to pass"
+msgstr "Минимальный процент для прохождения"
+
+#: apps/skill_tests/models/tests.py:53
+msgid "AI model used to generate this test"
+msgstr "AI модель, использованная для генерации теста"
+
+#: apps/skill_tests/models/tests.py:57
+msgid "AI input tokens used for test generation"
+msgstr "Входные AI-токены, использованные для генерации теста"
+
+#: apps/skill_tests/models/tests.py:61
+msgid "AI output tokens used for test generation"
+msgstr "Выходные AI-токены, использованные для генерации теста"
+
+#: apps/skill_tests/models/tests.py:65
+msgid "AI thinking/reasoning tokens used for test generation"
+msgstr "Токены мышления/рассуждения AI, использованные для генерации теста"
+
+#: apps/skill_tests/models/tests.py:70
+msgid "Skill Test"
+msgstr "Тест навыка"
+
+#: apps/skill_tests/models/tests.py:71
+msgid "Skill Tests"
+msgstr "Тесты навыков"
+
+#: apps/skill_tests/models/tests.py:85
+msgid "Multiple Choice"
+msgstr "Множественный выбор"
+
+#: apps/skill_tests/models/tests.py:86
+msgid "Open-ended"
+msgstr "Открытый вопрос"
+
+#: apps/skill_tests/models/tests.py:95
+msgid "Question order within the test"
+msgstr "Порядок вопроса в тесте"
+
+#: apps/skill_tests/models/tests.py:103
+msgid "The question text"
+msgstr "Текст вопроса"
+
+#: apps/skill_tests/models/tests.py:108
+msgid "Array of options for MC questions: [{id, text}, ...]"
+msgstr "Массив вариантов для вопросов MC: [{id, text}, ...]"
+
+#: apps/skill_tests/models/tests.py:112
+msgid ""
+"Correct answer: {option_id} for MC, {keywords, rubric, sample_answer} for "
+"open-ended"
+msgstr "Правильный ответ: {option_id} для MC, {keywords, rubric, sample_answer} для открытых вопросов"
+
+#: apps/skill_tests/models/tests.py:116
+msgid "Points for this question"
+msgstr "Баллы за этот вопрос"
+
+#: apps/skill_tests/models/tests.py:122
+msgid "Sub-competency category"
+msgstr "Подкатегория компетенции"
+
+#: apps/skill_tests/models/tests.py:127
+msgid "Explanation of the correct answer"
+msgstr "Объяснение правильного ответа"
+
+#: apps/skill_tests/models/tests.py:131
+msgid "Test Question"
+msgstr "Вопрос теста"
+
+#: apps/skill_tests/models/tests.py:132
+msgid "Test Questions"
+msgstr "Вопросы теста"
+
+#: apps/skill_tests/models/tests.py:146
+msgid "In Progress"
+msgstr "В процессе"
+
+#: apps/skill_tests/models/tests.py:148
+#: apps/subscriptions/models/candidate_subscription.py:28
+#: apps/subscriptions/models/company_subscription.py:28
+msgid "Expired"
+msgstr "Истёк"
+
+#: apps/skill_tests/models/tests.py:184
+msgid "Final score percentage"
+msgstr "Итоговый процент баллов"
+
+#: apps/skill_tests/models/tests.py:195
+msgid "Total AI input tokens used for this attempt"
+msgstr "Всего входных AI-токенов, использованных для этой попытки"
+
+#: apps/skill_tests/models/tests.py:199
+msgid "Total AI output tokens used for this attempt"
+msgstr "Всего AI выходных токенов, использованных для этой попытки"
+
+#: apps/skill_tests/models/tests.py:203
+msgid "Total AI thinking/reasoning tokens used for this attempt"
+msgstr "Всего AI токенов мышления/рассуждения, использованных для этой попытки"
+
+#: apps/skill_tests/models/tests.py:208
+msgid "AI-generated result message"
+msgstr "Сгенерированное AI сообщение о результате"
+
+#: apps/skill_tests/models/tests.py:213
+msgid "AI-analyzed strengths: [{category, description}]"
+msgstr "AI-анализ сильных сторон: [{category, description}]"
+
+#: apps/skill_tests/models/tests.py:218
+msgid "AI-analyzed weaknesses: [{category, description}]"
+msgstr "AI-анализ слабых сторон: [{category, description}]"
+
+#: apps/skill_tests/models/tests.py:222
+msgid "Test Attempt"
+msgstr "Попытка теста"
+
+#: apps/skill_tests/models/tests.py:223
+msgid "Test Attempts"
+msgstr "Попытки теста"
+
+#: apps/skill_tests/models/tests.py:251
+msgid "Selected option ID for MC questions"
+msgstr "ID выбранного варианта для вопросов MC"
+
+#: apps/skill_tests/models/tests.py:256
+msgid "Candidate's text answer for open-ended questions"
+msgstr "Текстовый ответ кандидата на открытые вопросы"
+
+#: apps/skill_tests/models/tests.py:267
+msgid ""
+"AI evaluation result for open-ended: {score, feedback, matched_keywords, "
+"missing_keywords}"
+msgstr "Результат AI-оценки для открытых вопросов: {score, feedback, matched_keywords, missing_keywords}"
+
+#: apps/skill_tests/models/tests.py:272
+msgid "Test Answer"
+msgstr "Ответ теста"
+
+#: apps/skill_tests/models/tests.py:273
+msgid "Test Answers"
+msgstr "Ответы теста"
+
+#: apps/skill_tests/services/test_evaluator.py:39
+#, python-format
+msgid ""
+"You have reached the maximum of %(max)d attempts in %(hours)d hours. Please "
+"try again later."
+msgstr "Вы достигли максимума в %(max)d попыток за %(hours)d часов. Пожалуйста, повторите позже."
+
+#: apps/skill_tests/views/tests.py:41
+msgid "Only candidates can generate tests."
+msgstr "Только кандидаты могут генерировать тесты."
+
+#: apps/skill_tests/views/tests.py:51
+#: apps/skills/views/learning_materials.py:22
+msgid "Skill not found."
+msgstr "Навык не найден."
+
+#: apps/skill_tests/views/tests.py:55
+#: apps/student_analytics/views/dashboard.py:51
+#: apps/student_analytics/views/roadmap.py:50
+msgid "ai_model must be 'groq'."
+msgstr "ai_model должен быть 'groq'."
+
+#: apps/skill_tests/views/tests.py:72
+msgid "You already generated a test for this skill today."
+msgstr "Вы уже сгенерировали тест по этому навыку сегодня."
+
+#: apps/skill_tests/views/tests.py:84
+msgid "Test generated successfully."
+msgstr "Тест успешно сгенерирован."
+
+#: apps/skill_tests/views/tests.py:95
+msgid "Only candidates can start tests."
+msgstr "Только кандидаты могут начинать тесты."
+
+#: apps/skill_tests/views/tests.py:100
+msgid "Test not found."
+msgstr "Тест не найден."
+
+#: apps/skill_tests/views/tests.py:116
+#: apps/student_analytics/views/dashboard.py:33
+#: apps/student_analytics/views/dashboard.py:62
+#: apps/student_analytics/views/roadmap.py:63
+msgid "Resume not found."
+msgstr "Резюме не найдено."
+
+#: apps/skill_tests/views/tests.py:127
+#: apps/student_analytics/views/roadmap.py:87
+msgid "Roadmap item not found."
+msgstr "Элемент дорожной карты не найден."
+
+#: apps/skill_tests/views/tests.py:129
+msgid "Invalid roadmap_item_id."
+msgstr "Неверный roadmap_item_id."
+
+#: apps/skill_tests/views/tests.py:149
+msgid "Resuming existing attempt."
+msgstr "Возобновление существующей попытки."
+
+#: apps/skill_tests/views/tests.py:158
+msgid "Test attempt started."
+msgstr "Попытка теста начата."
+
+#: apps/skill_tests/views/tests.py:169
+msgid "Only candidates can submit attempts."
+msgstr "Только кандидаты могут отправлять попытки."
+
+#: apps/skill_tests/views/tests.py:177 apps/skill_tests/views/tests.py:224
+msgid "Attempt not found."
+msgstr "Попытка не найдена."
+
+#: apps/skill_tests/views/tests.py:180 apps/skill_tests/views/tests.py:189
+msgid "This attempt has already been submitted."
+msgstr "Эта попытка уже была отправлена."
+
+#: apps/skill_tests/views/tests.py:203
+msgid "Failed to evaluate test."
+msgstr "Не удалось оценить тест."
+
+#: apps/skill_tests/views/tests.py:207
+msgid "Test submitted successfully."
+msgstr "Тест успешно отправлен."
+
+#: apps/skill_tests/views/tests.py:217
+msgid "Only candidates can view results."
+msgstr "Только кандидаты могут просматривать результаты."
+
+#: apps/skill_tests/views/tests.py:236
+msgid "Only candidates can view attempts."
+msgstr "Только кандидаты могут просматривать попытки."
+
+#: apps/skills/models/learning_material.py:12
+msgid "Course"
+msgstr "Курс"
+
+#: apps/skills/models/learning_material.py:13
+msgid "Video"
+msgstr "Видео"
+
+#: apps/skills/models/learning_material.py:14
+msgid "Article"
+msgstr "Статья"
+
+#: apps/skills/models/learning_material.py:15
+msgid "Documentation"
+msgstr "Документация"
+
+#: apps/skills/models/learning_material.py:30
+msgid "Source platform, e.g. Coursera, YouTube"
+msgstr "Исходная платформа, например Coursera, YouTube"
+
+#: apps/skills/models/learning_material.py:41
+msgid "Duration in hours"
+msgstr "Длительность в часах"
+
+#: apps/skills/models/learning_material.py:46
+msgid "Content language"
+msgstr "Язык контента"
+
+#: apps/skills/models/learning_material.py:52
+msgid "Average rating (0-5)"
+msgstr "Средний рейтинг (0-5)"
+
+#: apps/skills/models/learning_material.py:58
+msgid "Learning Material"
+msgstr "Учебный материал"
+
+#: apps/skills/models/learning_material.py:59
+msgid "Learning Materials"
+msgstr "Учебные материалы"
+
+#: apps/skills/models/learning_material.py:93
+msgid "AI-computed relevance score (0-100)"
+msgstr "Вычисленный AI балл релевантности (0-100)"
+
+#: apps/skills/models/learning_material.py:97
+msgid "Whether this is a top match for the skill"
+msgstr "Является ли это лучшим совпадением для навыка"
+
+#: apps/skills/models/learning_material.py:102
+msgid "AI-generated reason for the relevance ranking"
+msgstr "Сгенерированное AI обоснование релевантности"
+
+#: apps/skills/models/learning_material.py:108
+msgid "Percentage of vacancies this material covers"
+msgstr "Процент вакансий, покрываемых этим материалом"
+
+#: apps/skills/models/learning_material.py:112
+msgid "Skill Learning Material"
+msgstr "Учебный материал по навыку"
+
+#: apps/skills/models/learning_material.py:113
+msgid "Skill Learning Materials"
+msgstr "Учебные материалы по навыку"
+
+#: apps/skills/models/skills.py:29 apps/skills/serializers/skill.py:35
+msgid "This category already exists (case-insensitive check)."
+msgstr "Эта категория уже существует (регистронезависимая проверка)."
+
+#: apps/skills/serializers/skill.py:25
+msgid "Category name must be at least 3 characters long."
+msgstr "Название категории должно содержать не менее 3 символов."
+
+#: apps/skills/serializers/skill.py:47
+msgid "Description is required for generic categories like 'Other'."
+msgstr "Описание обязательно для общих категорий, таких как 'Другое'."
+
+#: apps/skills/serializers/skill.py:66
+#, python-brace-format
+msgid "'{synonym}' already exists for this skill"
+msgstr "'{synonym}' уже существует для этого навыка"
+
+#: apps/skills/serializers/skill.py:126 apps/skills/serializers/skill.py:160
+msgid "A skill with this name already exists."
+msgstr "Навык с таким именем уже существует."
+
+#: apps/skills/serializers/skill.py:153
+msgid "Skill name must not be empty."
+msgstr "Название навыка не может быть пустым."
+
+#: apps/skills/templates/admin/skills/skill_changelist.html:7
+msgid "Import Multi-Sheet XLSX"
+msgstr "Импорт многостраничного XLSX"
+
+#: apps/skills/views/learning_materials.py:17
+msgid "Only candidates can access learning materials."
+msgstr "Только кандидаты имеют доступ к учебным материалам."
+
+#: apps/skills/views/skills.py:131
+msgid "Invalid category_id format. Expected an integer."
+msgstr "Неверный формат category_id. Ожидается целое число."
+
+#: apps/skills/views/skills.py:154
+msgid "Skill created successfully and is pending approval."
+msgstr "Навык успешно создан и ожидает одобрения."
+
+#: apps/student_analytics/models/analytics.py:25
+msgid "Target role for analytics, e.g. 'Product Designer'"
+msgstr "Целевая роль для аналитики, например 'Product Designer'"
+
+#: apps/student_analytics/models/analytics.py:31
+msgid "Percentage match against market requirements"
+msgstr "Процент соответствия рыночным требованиям"
+
+#: apps/student_analytics/models/analytics.py:36
+msgid "AI-generated insight text explaining the match percentage"
+msgstr "Сгенерированный AI текст, объясняющий процент соответствия"
+
+#: apps/student_analytics/models/analytics.py:42
+msgid "Overall roadmap completion percentage"
+msgstr "Общий процент завершения дорожной карты"
+
+#: apps/student_analytics/models/analytics.py:46
+msgid "Number of skills verified via tests"
+msgstr "Количество навыков, подтверждённых тестами"
+
+#: apps/student_analytics/models/analytics.py:50
+msgid "Total skills in the roadmap"
+msgstr "Всего навыков в дорожной карте"
+
+#: apps/student_analytics/models/analytics.py:55
+msgid "Skills the candidate already has that match market demand"
+msgstr "Навыки кандидата, уже соответствующие рыночному спросу"
+
+#: apps/student_analytics/models/analytics.py:60
+msgid "Skills the candidate needs to learn or improve"
+msgstr "Навыки, которые кандидату нужно изучить или улучшить"
+
+#: apps/student_analytics/models/analytics.py:64
+msgid "AI input tokens used for market match insight"
+msgstr "AI входные токены для анализа рыночного соответствия"
+
+#: apps/student_analytics/models/analytics.py:68
+msgid "AI output tokens used for market match insight"
+msgstr "AI выходные токены для анализа рыночного соответствия"
+
+#: apps/student_analytics/models/analytics.py:72
+msgid "AI thinking/reasoning tokens used for market match insight"
+msgstr "AI токены мышления/рассуждения для анализа рыночного соответствия"
+
+#: apps/student_analytics/models/analytics.py:77
+msgid "When analytics were last recomputed"
+msgstr "Когда аналитика была последний раз пересчитана"
+
+#: apps/student_analytics/models/analytics.py:81
+#: apps/student_analytics/models/analytics.py:82
+msgid "Student Analytics"
+msgstr "Аналитика студента"
+
+#: apps/student_analytics/models/analytics.py:104
+msgid "AI model used to generate this roadmap"
+msgstr "AI модель, использованная для генерации дорожной карты"
+
+#: apps/student_analytics/models/analytics.py:108
+msgid "AI input tokens used for roadmap generation"
+msgstr "AI входные токены для генерации дорожной карты"
+
+#: apps/student_analytics/models/analytics.py:112
+msgid "AI output tokens used for roadmap generation"
+msgstr "AI выходные токены для генерации дорожной карты"
+
+#: apps/student_analytics/models/analytics.py:116
+msgid "AI thinking/reasoning tokens used for roadmap generation"
+msgstr "AI токены мышления/рассуждения для генерации дорожной карты"
+
+#: apps/student_analytics/models/analytics.py:120
+msgid "When the roadmap was generated"
+msgstr "Когда была сгенерирована дорожная карта"
+
+#: apps/student_analytics/models/analytics.py:124
+msgid "Skill Roadmap"
+msgstr "Дорожная карта навыков"
+
+#: apps/student_analytics/models/analytics.py:125
+msgid "Skill Roadmaps"
+msgstr "Дорожные карты навыков"
+
+#: apps/student_analytics/models/analytics.py:136
+msgid "Not started"
+msgstr "Не начато"
+
+#: apps/student_analytics/models/analytics.py:137
+msgid "In progress"
+msgstr "В процессе"
+
+#: apps/student_analytics/models/analytics.py:138
+msgid "Verified"
+msgstr "Подтверждено"
+
+#: apps/student_analytics/models/analytics.py:155
+msgid "Position in the roadmap sequence"
+msgstr "Позиция в последовательности дорожной карты"
+
+#: apps/student_analytics/models/analytics.py:160
+msgid "Target proficiency level"
+msgstr "Целевой уровень владения"
+
+#: apps/student_analytics/models/analytics.py:165
+msgid "Candidate's current proficiency level"
+msgstr "Текущий уровень владения кандидата"
+
+#: apps/student_analytics/models/analytics.py:175
+msgid "Whether this skill is critical for the target role"
+msgstr "Является ли этот навык критически важным для целевой роли"
+
+#: apps/student_analytics/models/analytics.py:181
+msgid "AI-estimated impact on hire chances"
+msgstr "Оценка AI влияния на шансы найма"
+
+#: apps/student_analytics/models/analytics.py:185
+msgid "Number of vacancies requiring this skill"
+msgstr "Количество вакансий, требующих этот навык"
+
+#: apps/student_analytics/models/analytics.py:191
+msgid "Estimated salary impact percentage"
+msgstr "Оценка влияния на зарплату в процентах"
+
+#: apps/student_analytics/models/analytics.py:195
+msgid "AI-estimated hours to learn this skill"
+msgstr "Оценка AI часов для изучения этого навыка"
+
+#: apps/student_analytics/models/analytics.py:199
+msgid "AI-estimated weeks to learn this skill"
+msgstr "Оценка AI недель для изучения этого навыка"
+
+#: apps/student_analytics/models/analytics.py:204
+msgid "AI-generated context message for the skill detail page"
+msgstr "Сгенерированное AI сообщение для страницы деталей навыка"
+
+#: apps/student_analytics/models/analytics.py:208
+msgid "Roadmap Item"
+msgstr "Элемент дорожной карты"
+
+#: apps/student_analytics/models/analytics.py:209
+msgid "Roadmap Items"
+msgstr "Элементы дорожной карты"
+
+#: apps/student_analytics/views/dashboard.py:24
+msgid "Only candidates can access analytics."
+msgstr "Только кандидаты имеют доступ к аналитике."
+
+#: apps/student_analytics/views/dashboard.py:47
+msgid "Only candidates can regenerate analytics."
+msgstr "Только кандидаты могут перегенерировать аналитику."
+
+#: apps/student_analytics/views/dashboard.py:59
+msgid "Failed to compute analytics."
+msgstr "Не удалось рассчитать аналитику."
+
+#: apps/student_analytics/views/dashboard.py:68
+msgid "Analytics regenerated successfully."
+msgstr "Аналитика успешно перегенерирована."
+
+#: apps/student_analytics/views/dashboard.py:78
+msgid "Only candidates can update target role."
+msgstr "Только кандидаты могут обновлять целевую роль."
+
+#: apps/student_analytics/views/dashboard.py:86
+msgid "target_role is required."
+msgstr "Поле target_role обязательно."
+
+#: apps/student_analytics/views/dashboard.py:91
+#: apps/student_analytics/views/dashboard.py:118
+msgid "Analytics not found. Generate analytics first."
+msgstr "Аналитика не найдена. Сначала сгенерируйте аналитику."
+
+#: apps/student_analytics/views/dashboard.py:100
+msgid "Target role updated successfully."
+msgstr "Целевая роль успешно обновлена."
+
+#: apps/student_analytics/views/dashboard.py:111
+msgid "Only candidates can access salary calculator."
+msgstr "Только кандидаты имеют доступ к калькулятору зарплаты."
+
+#: apps/student_analytics/views/dashboard.py:122
+msgid "Target role is required. Set it first."
+msgstr "Требуется целевая роль. Сначала задайте её."
+
+#: apps/student_analytics/views/dashboard.py:126
+msgid "Insufficient data to calculate salary for this role."
+msgstr "Недостаточно информации для расчета зарплаты по этой роли."
+
+#: apps/student_analytics/views/roadmap.py:23
+msgid "Only candidates can access roadmaps."
+msgstr "Только кандидаты имеют доступ к дорожным картам."
+
+#: apps/student_analytics/views/roadmap.py:32
+msgid "No roadmap found. Generate one first."
+msgstr "Дорожная карта не найдена. Сначала сгенерируйте её."
+
+#: apps/student_analytics/views/roadmap.py:46
+msgid "Only candidates can generate roadmaps."
+msgstr "Только кандидаты могут генерировать дорожные карты."
+
+#: apps/student_analytics/views/roadmap.py:57
+msgid "Failed to generate roadmap via AI. Please try again."
+msgstr ""
+"Не удалось сгенерировать дорожную карту через AI. Пожалуйста, попробуйте "
+"снова."
+
+#: apps/student_analytics/views/roadmap.py:60
+msgid "Failed to generate roadmap."
+msgstr "Не удалось сгенерировать дорожную карту."
+
+#: apps/student_analytics/views/roadmap.py:69
+msgid "Roadmap generated successfully."
+msgstr "Дорожная карта успешно сгенерирована."
+
+#: apps/student_analytics/views/roadmap.py:79
+msgid "Only candidates can access roadmap items."
+msgstr "Только кандидаты имеют доступ к элементам дорожной карты."
+
+#: apps/subscriptions/models/candidate_subscription.py:27
+#: apps/subscriptions/models/company_subscription.py:27
+msgid "Active"
+msgstr "Активный"
+
+#: apps/subscriptions/models/candidate_subscription.py:29
+#: apps/subscriptions/models/company_subscription.py:29
+msgid "Cancelled"
+msgstr "Отменён"
+
+#: apps/subscriptions/models/candidate_subscription.py:30
+#: apps/subscriptions/models/company_subscription.py:30
+msgid "Pending Payment"
+msgstr "Ожидание оплаты"
+
+#: apps/subscriptions/models/candidate_subscription.py:36
+#: apps/subscriptions/models/company_subscription.py:36
+msgid "Unique identifier for this subscription"
+msgstr "Уникальный идентификатор подписки"
+
+#: apps/subscriptions/models/candidate_subscription.py:42
+msgid "The candidate this subscription belongs to"
+msgstr "Кандидат, которому принадлежит эта подписка"
+
+#: apps/subscriptions/models/candidate_subscription.py:48
+#: apps/subscriptions/models/company_subscription.py:48
+#: apps/subscriptions/models/plans.py:238
+msgid "The subscription plan"
+msgstr "Тарифный план подписки"
+
+#: apps/subscriptions/models/candidate_subscription.py:54
+#: apps/subscriptions/models/company_subscription.py:54
+msgid "Current status of the subscription"
+msgstr "Текущий статус подписки"
+
+#: apps/subscriptions/models/candidate_subscription.py:58
+#: apps/subscriptions/models/company_subscription.py:58
+msgid "When the subscription period starts"
+msgstr "Когда начинается период подписки"
+
+#: apps/subscriptions/models/candidate_subscription.py:63
+#: apps/subscriptions/models/company_subscription.py:63
+msgid "When the subscription expires. Null = no expiry (free plans)."
+msgstr "Когда истекает подписка. Null = без срока (бесплатные планы)."
+
+#: apps/subscriptions/models/candidate_subscription.py:71
+#: apps/subscriptions/models/company_subscription.py:75
+msgid "Reference to payment transaction (for future payment integration)"
+msgstr "Ссылка на платёжную транзакцию (для будущей интеграции оплаты)"
+
+#: apps/subscriptions/models/candidate_subscription.py:75
+msgid "Candidate Subscription"
+msgstr "Подписка кандидата"
+
+#: apps/subscriptions/models/candidate_subscription.py:76
+msgid "Candidate Subscriptions"
+msgstr "Подписки кандидатов"
+
+#: apps/subscriptions/models/company_subscription.py:42
+msgid "The company this subscription belongs to"
+msgstr "Компания, которой принадлежит эта подписка"
+
+#: apps/subscriptions/models/company_subscription.py:67
+msgid ""
+"Enable branded design for this company's vacancies (banner + styled cards)."
+msgstr "Включить брендированный дизайн для вакансий этой компании (баннер + стилизованные карточки)."
+
+#: apps/subscriptions/models/company_subscription.py:79
+msgid "Company Subscription"
+msgstr "Подписка компании"
+
+#: apps/subscriptions/models/company_subscription.py:80
+msgid "Company Subscriptions"
+msgstr "Подписки компаний"
+
+#: apps/subscriptions/models/company_subscription.py:142
+msgid "Admin"
+msgstr "Администратор"
+
+#: apps/subscriptions/models/company_subscription.py:149
+msgid "Unique identifier for this seat assignment"
+msgstr "Уникальный идентификатор назначения места"
+
+#: apps/subscriptions/models/company_subscription.py:155
+msgid "The subscription this seat belongs to"
+msgstr "Подписка, к которой относится это место"
+
+#: apps/subscriptions/models/company_subscription.py:161
+msgid "The recruiter assigned to this seat"
+msgstr "Рекрутер, назначенный на это место"
+
+#: apps/subscriptions/models/company_subscription.py:166
+msgid "Whether this is an admin or recruiter seat"
+msgstr "Является ли это местом администратора или рекрутера"
+
+#: apps/subscriptions/models/company_subscription.py:170
+msgid "Whether this seat assignment is currently active"
+msgstr "Активно ли в данный момент назначение этого места"
+
+#: apps/subscriptions/models/company_subscription.py:174
+msgid "Seat Assignment"
+msgstr "Назначение места"
+
+#: apps/subscriptions/models/company_subscription.py:175
+msgid "Seat Assignments"
+msgstr "Назначения мест"
+
+#: apps/subscriptions/models/feature_usage.py:22
+msgid "Unique identifier for this usage record"
+msgstr "Уникальный идентификатор этой записи использования"
+
+#: apps/subscriptions/models/feature_usage.py:28
+msgid "The candidate whose usage is being tracked"
+msgstr "Кандидат, использование которого отслеживается"
+
+#: apps/subscriptions/models/feature_usage.py:34
+msgid "The feature being tracked (e.g. ai_resume_generation)"
+msgstr "Отслеживаемая функция (напр. ai_resume_generation)"
+
+#: apps/subscriptions/models/feature_usage.py:37
+msgid "First day of the calendar month this usage belongs to"
+msgstr "Первый день календарного месяца использования"
+
+#: apps/subscriptions/models/feature_usage.py:41
+msgid "Number of times this feature was used in this month"
+msgstr "Количество использований этой функции в этом месяце"
+
+#: apps/subscriptions/models/feature_usage.py:45
+#: apps/subscriptions/models/feature_usage.py:46
+msgid "Candidate Feature Usage"
+msgstr "Использование функций кандидатом"
+
+#: apps/subscriptions/models/plans.py:31
+msgid "Monthly"
+msgstr "Ежемесячно"
+
+#: apps/subscriptions/models/plans.py:32
+msgid "Yearly"
+msgstr "Ежегодно"
+
+#: apps/subscriptions/models/plans.py:33
+msgid "Lifetime"
+msgstr "Пожизненно"
+
+#: apps/subscriptions/models/plans.py:39
+msgid "Unique identifier for this plan"
+msgstr "Уникальный идентификатор плана"
+
+#: apps/subscriptions/models/plans.py:43
+msgid "Display name of the plan (e.g., 'Free', 'Basic', 'Pro')"
+msgstr "Отображаемое название плана (напр., 'Бесплатный', 'Базовый', 'Про')"
+
+#: apps/subscriptions/models/plans.py:49
+msgid ""
+"URL-friendly identifier (e.g., 'company-free', 'company-basic'). Used in "
+"code to reference specific plans."
+msgstr ""
+"URL-совместимый идентификатор (напр., 'company-free', 'company-basic'). "
+"Используется в коде для ссылки на конкретные планы."
+
+#: apps/subscriptions/models/plans.py:56
+msgid "Whether this plan is for companies or candidates"
+msgstr "Предназначен ли этот план для компаний или кандидатов"
+
+#: apps/subscriptions/models/plans.py:61
+msgid "Detailed description of what this plan offers"
+msgstr "Подробное описание того, что предлагает этот план"
+
+#: apps/subscriptions/models/plans.py:65
+msgid "Whether this plan is currently available for purchase/assignment"
+msgstr "Доступен ли этот план для покупки/назначения в данный момент"
+
+#: apps/subscriptions/models/plans.py:72
+msgid ""
+"Maximum number of admin-level recruiters allowed. Only relevant for company "
+"plans."
+msgstr ""
+"Максимальное количество рекрутеров уровня администратора. Актуально только "
+"для планов компаний."
+
+#: apps/subscriptions/models/plans.py:79
+msgid ""
+"Maximum number of recruiter-level users allowed. Only relevant for company "
+"plans."
+msgstr ""
+"Максимальное количество пользователей уровня рекрутера. Актуально только для "
+"планов компаний."
+
+#: apps/subscriptions/models/plans.py:89
+msgid "Price of this plan (0 for free plans)"
+msgstr "Цена этого плана (0 для бесплатных планов)"
+
+#: apps/subscriptions/models/plans.py:96
+msgid "Billing cycle for paid plans. Null for free plans."
+msgstr "Платёжный цикл для платных планов. Null для бесплатных."
+
+#: apps/subscriptions/models/plans.py:105
+msgid "Features included in this plan"
+msgstr "Функции, включённые в этот план"
+
+#: apps/subscriptions/models/plans.py:111
+msgid "Order in which plans are displayed (lower = first)"
+msgstr "Порядок отображения планов (меньше = первый)"
+
+#: apps/subscriptions/models/plans.py:115
+msgid "Subscription Plan"
+msgstr "Тарифный план"
+
+#: apps/subscriptions/models/plans.py:116
+msgid "Subscription Plans"
+msgstr "Тарифные планы"
+
+#: apps/subscriptions/models/plans.py:173
+msgid "Unique identifier for this feature"
+msgstr "Уникальный идентификатор функции"
+
+#: apps/subscriptions/models/plans.py:179
+msgid ""
+"Unique code identifier used in permission checks (e.g., "
+"'headhunting_access', 'company_analytics')"
+msgstr ""
+"Уникальный код, используемый в проверках прав (напр., 'headhunting_access', "
+"'company_analytics')"
+
+#: apps/subscriptions/models/plans.py:185
+msgid "Human-readable name of the feature"
+msgstr "Читаемое название функции"
+
+#: apps/subscriptions/models/plans.py:190
+msgid "Description of what this feature provides"
+msgstr "Описание того, что предоставляет эта функция"
+
+#: apps/subscriptions/models/plans.py:195
+msgid "Whether this feature applies to company or candidate plans"
+msgstr "Применяется ли эта функция к планам компаний или кандидатов"
+
+#: apps/subscriptions/models/plans.py:199
+msgid "Whether this feature is currently in use"
+msgstr "Используется ли эта функция в данный момент"
+
+#: apps/subscriptions/models/plans.py:203
+msgid "Subscription Feature"
+msgstr "Функция подписки"
+
+#: apps/subscriptions/models/plans.py:204
+msgid "Subscription Features"
+msgstr "Функции подписки"
+
+#: apps/subscriptions/models/plans.py:232
+msgid "Unique identifier for this plan-feature link"
+msgstr "Уникальный идентификатор связи план-функция"
+
+#: apps/subscriptions/models/plans.py:244
+msgid "The feature included in this plan"
+msgstr "Функция, включённая в этот план"
+
+#: apps/subscriptions/models/plans.py:248
+msgid "Whether this feature is enabled for this plan"
+msgstr "Включена ли эта функция для данного плана"
+
+#: apps/subscriptions/models/plans.py:254
+msgid ""
+"Optional JSON configuration for this feature within the plan. e.g., "
+"{'max_invitations_per_day': 50}"
+msgstr ""
+"Необязательная JSON-конфигурация функции в рамках плана. Напр., "
+"{'max_invitations_per_day': 50}"
+
+#: apps/subscriptions/models/plans.py:260
+msgid "Plan Feature"
+msgstr "Функция плана"
+
+#: apps/subscriptions/models/plans.py:261
+msgid "Plan Features"
+msgstr "Функции плана"
+
+#: apps/subscriptions/permissions.py:170
+msgid "Your current subscription plan does not include this feature."
+msgstr "Ваш текущий план подписки не включает эту функцию."
+
+#: apps/subscriptions/permissions.py:204
+msgid ""
+"Your subscription plan does not include access to unresponded candidates. "
+"Upgrade to Basic or Pro to send offers and invitations."
+msgstr ""
+"Ваш план подписки не включает доступ к неотвеченным кандидатам. Перейдите на "
+"тариф Basic или Pro для отправки предложений и приглашений."
+
+#: apps/subscriptions/permissions.py:246
+#, python-format
+msgid ""
+"Active vacancy limit reached (%(max)d). Your current plan is '%(plan)s'. "
+"Upgrade your subscription to create more vacancies."
+msgstr ""
+"Достигнут лимит активных вакансий (%(max)d). Ваш текущий план — «%(plan)s». "
+"Обновите подписку, чтобы создать больше вакансий."
+
+#: apps/subscriptions/permissions.py:290
+#, python-format
+msgid ""
+"Vacancy expiration cannot exceed %(max)d days on the '%(plan)s' plan. "
+"Upgrade your subscription for a longer expiration period."
+msgstr ""
+"Срок действия вакансии не может превышать %(max)d дней на плане «%(plan)s». "
+"Обновите подписку для увеличения срока."
+
+#: apps/subscriptions/permissions.py:325
+#, python-format
+msgid ""
+"Reason template limit reached (%(max)d). Your current plan is '%(plan)s'. "
+"Upgrade your subscription to create more templates."
+msgstr ""
+"Достигнут лимит шаблонов причин (%(max)d). Ваш текущий план — «%(plan)s». "
+"Обновите подписку, чтобы создать больше шаблонов."
+
+#: apps/subscriptions/serializers/subscriptions.py:176
+#: apps/subscriptions/serializers/subscriptions.py:200
+msgid "This recruiter does not belong to your company."
+msgstr "Этот рекрутер не принадлежит вашей компании."
+
+#: apps/subscriptions/services.py:326
+msgid ""
+"Default company subscription plan is not configured. Please contact support."
+msgstr ""
+"План подписки компании по умолчанию не настроен. Пожалуйста, свяжитесь с "
+"поддержкой."
+
+#: apps/subscriptions/services.py:336
+#, python-format
+msgid ""
+"The %(plan)s plan allows a maximum of %(max)d admin(s). You requested "
+"%(requested)d."
+msgstr ""
+"Тариф %(plan)s допускает максимум %(max)d администратор(ов). Вы запросили "
+"%(requested)d."
+
+#: apps/subscriptions/services.py:347
+#, python-format
+msgid ""
+"The %(plan)s plan allows a maximum of %(max)d recruiter(s). You requested "
+"%(requested)d."
+msgstr ""
+"Тариф %(plan)s допускает максимум %(max)d рекрутер(ов). Вы запросили "
+"%(requested)d."
+
+#: apps/subscriptions/services.py:528
+#, python-format
+msgid ""
+"AI resume generation limit reached (%(current)d/%(max)d). Upgrade your plan "
+"for more generations."
+msgstr ""
+"Достигнут лимит генерации резюме ИИ (%(current)d/%(max)d). Обновите тариф "
+"для увеличения количества генераций."
+
+#: apps/subscriptions/services.py:642
+#, python-format
+msgid ""
+"Analytics regeneration limit reached (%(current)d/%(max)d). Upgrade your "
+"plan for more regenerations."
+msgstr ""
+"Достигнут лимит перегенерации аналитики (%(current)d/%(max)d). Обновите "
+"тариф для увеличения количества перегенераций."
+
+#: apps/subscriptions/services.py:828
+#, python-format
+msgid ""
+"Active vacancy limit reached (%(max)d). Upgrade your plan to create more "
+"vacancies."
+msgstr ""
+"Достигнут лимит активных вакансий (%(max)d). Обновите тариф для создания "
+"дополнительных вакансий."
+
+#: apps/subscriptions/services.py:872
+#, python-format
+msgid "Vacancy expire cannot exceed %(max)d days on the %(plan)s plan."
+msgstr "Срок вакансии не может превышать %(max)d дней на тарифе %(plan)s."
+
+#: apps/subscriptions/services.py:942
+#, python-format
+msgid ""
+"Reason template limit reached (%(max)d). Upgrade your plan to create more "
+"templates."
+msgstr ""
+"Достигнут лимит шаблонов причин (%(max)d). Обновите тариф для создания "
+"дополнительных шаблонов."
+
+#: apps/subscriptions/services.py:1034 apps/subscriptions/services.py:1061
+msgid "This recruiter already has an active seat assignment."
+msgstr "Этот рекрутер уже имеет активное место."
+
+#: apps/subscriptions/services.py:1041
+#, python-format
+msgid ""
+"Admin seat limit reached (%(max)d). Upgrade your plan to add more admins."
+msgstr ""
+"Достигнут лимит мест для администраторов (%(max)d). Обновите тариф для "
+"добавления дополнительных администраторов."
+
+#: apps/subscriptions/services.py:1047
+#, python-format
+msgid ""
+"Recruiter seat limit reached (%(max)d). Upgrade your plan to add more "
+"recruiters."
+msgstr ""
+"Достигнут лимит мест для рекрутеров (%(max)d). Обновите тариф для добавления "
+"дополнительных рекрутеров."
+
+#: apps/subscriptions/services.py:1051
+#, python-format
+msgid "Invalid seat type: %(type)s"
+msgstr "Недопустимый тип места: %(type)s"
+
+#: apps/subscriptions/services.py:1093
+msgid "This recruiter does not have an active seat assignment."
+msgstr "Этот рекрутер не имеет активного места."
+
+#: apps/subscriptions/views/subscriptions.py:113
+msgid "Unable to determine user type."
+msgstr "Не удалось определить тип пользователя."
+
+#: apps/subscriptions/views/subscriptions.py:120
+#: apps/subscriptions/views/subscriptions.py:236
+#: apps/subscriptions/views/subscriptions.py:289
+msgid "No company associated with this recruiter."
+msgstr "С этим рекрутером не связана компания."
+
+#: apps/subscriptions/views/subscriptions.py:135
+#: apps/subscriptions/views/subscriptions.py:240
+#: apps/subscriptions/views/subscriptions.py:293
+msgid "No active subscription found for your company."
+msgstr "Для вашей компании не найдена активная подписка."
+
+#: apps/subscriptions/views/subscriptions.py:150
+msgid "Candidate profile not found."
+msgstr "Профиль кандидата не найден."
+
+#: apps/subscriptions/views/subscriptions.py:163
+msgid "No active subscription found."
+msgstr "Активная подписка не найдена."
+
+#: apps/subscriptions/views/subscriptions.py:261
+msgid "Seat assigned successfully."
+msgstr "Место успешно назначено."
+
+#: apps/subscriptions/views/subscriptions.py:308
+msgid "Seat revoked successfully."
+msgstr "Место успешно отозвано."
+
+#: apps/vacancies/admin.py:39
+msgid "Vacancies file"
+msgstr "Файл вакансий"
+
+#: apps/vacancies/admin.py:41
+msgid ""
+"Upload a .txt file containing a JSON object or a JSON array of vacancy "
+"objects."
+msgstr ""
+"Загрузите файл .txt, содержащий JSON-объект или JSON-массив объектов "
+"вакансий."
+
+#: apps/vacancies/admin.py:61
+msgid "Only .txt files are supported."
+msgstr "Поддерживаются только файлы .txt."
+
+#: apps/vacancies/admin.py:71
+msgid "The selected recruiter is not associated with the selected company."
+msgstr "Выбранный рекрутер не связан с выбранной компанией."
+
+#: apps/vacancies/admin.py:194
+#, python-format
+msgid "Vacancy import failed: %(error)s"
+msgstr "Не удалось импортировать вакансии: %(error)s"
+
+#: apps/vacancies/admin.py:201
+#, python-format
+msgid "Successfully imported %(count)s vacancies."
+msgstr "Успешно импортировано вакансий: %(count)s."
+
+#: apps/vacancies/admin.py:209
+#, python-format
+msgid ""
+"Imported vacancies, but failed to enqueue embedding generation for %(count)s "
+"vacancies."
+msgstr ""
+"Вакансии импортированы, но не удалось поставить в очередь генерацию "
+"эмбеддингов для %(count)s вакансий."
+
+#: apps/vacancies/admin.py:221
+msgid "Import vacancies from TXT"
+msgstr "Импорт вакансий из TXT"
+
+#: apps/vacancies/admin.py:235
+msgid "The uploaded file must be UTF-8 encoded text."
+msgstr "Загруженный файл должен быть текстом в кодировке UTF-8."
+
+#: apps/vacancies/admin.py:242
+#, python-format
+msgid "Invalid JSON in uploaded file: %(error)s"
+msgstr "Недопустимый JSON в загруженном файле: %(error)s"
+
+#: apps/vacancies/admin.py:251
+msgid "The uploaded file must contain a JSON object or an array of objects."
+msgstr "Загруженный файл должен содержать JSON-объект или массив объектов."
+
+#: apps/vacancies/admin.py:255
+msgid "The uploaded file does not contain any vacancies."
+msgstr "Загруженный файл не содержит вакансий."
+
+#: apps/vacancies/admin.py:260
+#, python-format
+msgid "Vacancy entry %(index)s must be a JSON object."
+msgstr "Элемент вакансии %(index)s должен быть JSON-объектом."
+
+#: apps/vacancies/admin.py:279
+#, python-format
+msgid "Vacancy %(index)s could not be saved: %(error)s"
+msgstr "Вакансия %(index)s не может быть сохранена: %(error)s"
+
+#: apps/vacancies/admin.py:283
+msgid "Untitled vacancy"
+msgstr "Вакансия без названия"
+
+#: apps/vacancies/admin.py:285
+#, python-format
+msgid "Vacancy %(index)s (%(title)s) is invalid: %(error)s"
+msgstr "Вакансия %(index)s (%(title)s) недействительна: %(error)s"
+
+#: apps/vacancies/admin.py:297
+#, python-format
+msgid "Vacancy %(index)s contains duplicate skill IDs: %(ids)s"
+msgstr "Вакансия %(index)s содержит дублирующиеся ID навыков: %(ids)s"
+
+#: apps/vacancies/admin.py:307
+#, python-format
+msgid "Vacancy %(index)s contains duplicate language IDs: %(ids)s"
+msgstr "Вакансия %(index)s содержит дублирующиеся ID языков: %(ids)s"
+
+#: apps/vacancies/serializers/vacancy.py:623
+msgid "Minimum AI score must be between 0 and 100."
+msgstr "Минимальная оценка AI должна быть от 0 до 100."
+
+#: apps/vacancies/serializers/vacancy.py:683
+#, python-format
+msgid "Skill with ID %(skill_id)s has an empty name"
+msgstr "Навык с ID %(skill_id)s имеет пустое название"
+
+#: apps/vacancies/serializers/vacancy.py:702
+msgid "minimum_years cannot be negative"
+msgstr "minimum_years не может быть отрицательным"
+
+#: apps/vacancies/serializers/vacancy.py:774
+msgid "Each language entry must have a 'language_id' field."
+msgstr "Каждая запись языка должна иметь поле 'language_id'."
+
+#: apps/vacancies/serializers/vacancy.py:781
+#, python-format
+msgid "Language with ID %(id)s does not exist."
+msgstr "Язык с ID %(id)s не существует."
+
+#: apps/vacancies/serializers/vacancy.py:787
+msgid "Each language entry must have a 'level' field."
+msgstr "Каждая запись языка должна иметь поле 'level'."
+
+#: apps/vacancies/serializers/vacancy.py:791
+#, python-format
+msgid "Invalid proficiency level '%(level)s'. Valid levels: %(valid)s."
+msgstr "Недопустимый уровень владения '%(level)s'. Допустимые уровни: %(valid)s."
+
+#: apps/vacancies/templates/admin/vacancies/import_txt.html:8
+msgid "Home"
+msgstr "Главная"
+
+#: apps/vacancies/templates/admin/vacancies/import_txt.html:27
+msgid "Import"
+msgstr "Импорт"
+
+#: apps/vacancies/templates/admin/vacancies/import_txt.html:28
+msgid "Cancel"
+msgstr "Отмена"
+
+#: apps/vacancies/templates/admin/vacancies/vacancy_changelist.html:7
+msgid "Import Vacancies TXT"
+msgstr "Импорт вакансий TXT"
+
+#: apps/vacancies/views/crud.py:96
+msgid ""
+"Vacancy created successfully. Embedding generation started in background."
+msgstr ""
+"Вакансия успешно создана. Генерация embedding запущена в фоновом режиме."
+
+#: apps/vacancies/views/crud.py:108
+msgid "Failed to create vacancy"
+msgstr "Не удалось создать вакансию"
+
+#: apps/vacancies/views/crud.py:109
+msgid "An unexpected error occurred while creating your vacancy."
+msgstr "При создании вашей вакансии произошла непредвиденная ошибка."
+
+#: apps/vacancies/views/crud.py:180
+msgid "Vacancy updated successfully"
+msgstr "Вакансия успешно обновлена"
+
+#: apps/vacancies/views/crud.py:212
+msgid "No fields provided"
+msgstr "Поля не предоставлены"
+
+#: apps/vacancies/views/crud.py:218
+msgid "Only `is_active` may be updated"
+msgstr "Можно обновить только `is_active`"
+
+#: apps/vacancies/views/crud.py:224
+msgid "`is_active` is required"
+msgstr "`is_active` обязателен"
+
+#: apps/vacancies/views/crud.py:238
+msgid "Invalid boolean value for `is_active`"
+msgstr "Неверное логическое значение для `is_active`"
+
+#: apps/vacancies/views/crud.py:249
+msgid "Recruiter is not associated with a company"
+msgstr "Рекрутер не связан с компанией"
+
+#: apps/vacancies/views/crud.py:269
+msgid "Vacancy `is_active` updated successfully"
+msgstr "Статус активности вакансии успешно обновлён"
+
+#: apps/vacancies/views/crud.py:296
+msgid "Vacancy deleted successfully"
+msgstr "Вакансия успешно удалена"
+
+#: apps/vacancies/views/detail.py:131
+msgid "Vacancy retrieved successfully"
+msgstr "Вакансия успешно получена."
+
+#: apps/vacancies/views/favourite.py:109
+msgid "Favourite vacancies listed successfully"
+msgstr "Избранные вакансии успешно получены."
+
+#: apps/vacancies/views/favourite.py:156
+msgid "Vacancy added to favourites"
+msgstr "Вакансия добавлена в избранное."
+
+#: apps/vacancies/views/favourite.py:161
+msgid "Vacancy removed from favourites"
+msgstr "Вакансия удалена из избранного."
+
+#: apps/vacancies/views/list.py:174
+msgid "Vacancies matched and listed successfully."
+msgstr "Вакансии успешно сопоставлены и выведены списком."
+
+#: apps/vacancies/views/list.py:196
+msgid "Vacancies listed successfully"
+msgstr "Вакансии успешно выведены списком."
+
+#: apps/vacancies/views/list.py:281
+msgid "Only recruiters can access this view"
+msgstr "Только рекрутеры имеют доступ к этому разделу"
+
+#: apps/vacancies/views/session.py:33
+msgid "Session ended successfully"
+msgstr "Сессия успешно завершена"
+
+#: apps/vacancies/views/session.py:36
+msgid "Session already ended"
+msgstr "Сессия уже завершена"
+
+#: core/renderers.py:88 core/responses.py:236
+msgid "Data retrieved successfully"
+msgstr "Данные успешно получены"
+
+#: core/renderers.py:95 core/renderers.py:110 core/responses.py:57
+#: core/responses.py:209
+msgid "Operation completed successfully"
+msgstr "Операция выполнена успешно"
+
+#: core/renderers.py:113 core/responses.py:202
+msgid "Resource created successfully"
+msgstr "Ресурс успешно создан"
+
+#: core/renderers.py:114
+msgid "Request accepted"
+msgstr "Запрос принят"
+
+#: core/responses.py:126
+#, python-format
+msgid "%(resource)s does not exist or has been deleted"
+msgstr "%(resource)s не существует или был удалён"
+
+#: core/responses.py:126
+msgid "Resource"
+msgstr "Ресурс"
+
+#: core/responses.py:139
+msgid "Valid authentication credentials must be provided"
+msgstr "Необходимо предоставить действительные учётные данные"
+
+#: core/responses.py:162
+msgid "Resource conflict"
+msgstr "Конфликт ресурсов"
+
+#: core/responses.py:165
+msgid "The resource already exists or conflicts with existing data"
+msgstr "Ресурс уже существует или конфликтует с существующими данными"
+
+#: core/responses.py:177
+msgid "An unexpected error occurred on the server"
+msgstr "На сервере произошла непредвиденная ошибка"
+
+#: core/responses.py:189
+msgid "Bad request"
+msgstr "Неверный запрос"
+
+#: utils/abstract_model.py:11
+msgid "Created at"
+msgstr "Дата создания"
+
+#: utils/abstract_model.py:12
+msgid "Updated at"
+msgstr "Дата обновления"
+
+#: utils/fields/certificate.py:26 utils/upload_validation.py:48
+msgid "Malicious content was detected in the uploaded file"
+msgstr "В загруженном файле обнаружено вредоносное содержимое"
+
+#: utils/fields/certificate.py:27
+#, python-brace-format
+msgid "Virus detected: {threat}"
+msgstr "Обнаружен вирус: {threat}"
+
+#: utils/fields/certificate.py:28
+msgid "The file failed the security check."
+msgstr "Файл не прошел проверку безопасности."
+
+#: utils/fields/certificate.py:34
+msgid "The file security scan could not be completed"
+msgstr "Не удалось завершить проверку безопасности файла"
+
+#: utils/fields/certificate.py:35 utils/upload_validation.py:53
+msgid ""
+"The antivirus service is temporarily unavailable. Please try again later."
+msgstr ""
+"Антивирусная проверка временно недоступна. Пожалуйста, попробуйте позже."
+
+#: utils/fields/certificate.py:36
+msgid "The file did not pass the antivirus check."
+msgstr "Файл не прошел антивирусную проверку."
+
+#: utils/fields/certificate.py:42
+msgid "The file size exceeds the allowed limit"
+msgstr "Размер файла превышает допустимый лимит"
+
+#: utils/fields/certificate.py:43
+msgid "The file size must not exceed 5MB."
+msgstr "Размер файла не должен превышать 5MB."
+
+#: utils/fields/certificate.py:44
+msgid "The uploaded file is too large."
+msgstr "Загруженный файл слишком большой."
+
+#: utils/fields/certificate.py:50
+msgid "The file type is not supported"
+msgstr "Тип файла не поддерживается"
+
+#: utils/fields/certificate.py:51
+#, python-brace-format
+msgid "Allowed formats: {allowed}."
+msgstr "Разрешенные форматы: {allowed}."
+
+#: utils/fields/certificate.py:54
+msgid "The uploaded file type is invalid."
+msgstr "Неверный тип загруженного файла."
+
+#: utils/fields/certificate.py:59
+msgid "An error occurred while validating the certificate file"
+msgstr "Ошибка при проверке файла сертификата"
+
+#: utils/fields/certificate.py:60
+msgid "Please verify the uploaded file and try again."
+msgstr "Проверьте файл и попробуйте снова."
+
+#: utils/fields/certificate.py:61
+msgid "The certificate file is invalid."
+msgstr "Файл сертификата недействителен."
+
+#: utils/middleware/error_handling.py:83
+msgid "The requested resource does not exist or has been deleted"
+msgstr "Запрашиваемый ресурс не существует или был удалён"
+
+#: utils/middleware/error_handling.py:90
+msgid "Invalid value provided"
+msgstr "Указано неверное значение"
+
+#: utils/middleware/error_handling.py:98
+msgid "Required field missing"
+msgstr "Отсутствует обязательное поле"
+
+#: utils/middleware/error_handling.py:99
+#, python-format
+msgid "Missing field: %(field)s"
+msgstr "Отсутствует поле: %(field)s"
+
+#: utils/middleware/error_handling.py:110
+msgid "Database operation failed"
+msgstr "Ошибка операции с базой данных"
+
+#: utils/upload_validation.py:40
+msgid "String values are not allowed for this field."
+msgstr "Строковые значения не допускаются для этого поля."
+
+#: utils/upload_validation.py:58
+msgid "Malicious content was detected in the uploaded file."
+msgstr "В загруженном файле обнаружено вредоносное содержимое."
+
+#: utils/company_permission.py:19
+msgid ""
+"Your company is pending approval. This action will be available once your "
+"company is approved by the platform admin."
+msgstr ""
+"Ваша компания ожидает подтверждения. Это действие будет доступно после "
+"одобрения вашей компании администратором платформы."
+
+#: apps/applications/serializers/application.py:76
+msgid "This vacancy is not accepting applications"
+msgstr "Эта вакансия не принимает заявки"
+#~ msgid "No companies to process"
+#~ msgstr "Нет компаний для обработки"
+
+#: apps/conversations/services.py:32
+#, python-format
+msgid "Attached document: %(title)s"
+msgstr "Прикреплённый документ: %(title)s"

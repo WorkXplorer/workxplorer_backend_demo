@@ -1,0 +1,30 @@
+# Development Requirements
+# Includes all production requirements plus development tools
+# Use: pip install -r requirements-dev.txt
+
+-r requirements.txt
+
+# Development Tools
+# Code Quality
+black==26.3.1
+flake8==7.3.0
+isort==6.0.1
+pylint==3.3.8
+ruff==0.13.2
+
+# Testing
+freezegun==1.5.5
+
+# Other Development Tools
+astroid==3.3.11
+django-debug-toolbar==6.0.0
+mccabe==0.7.0
+mypy-extensions==1.0.0
+pathspec==1.1.0
+pipdeptree==3.1.1
+platformdirs==4.3.6
+pycodestyle==2.14.0
+tomlkit==0.13.3
+
+# Development-only dependencies (brought in by tools above)
+# astroid, dill (when pylint is used), mccabe, tomlkit, etc.

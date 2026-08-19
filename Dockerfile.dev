@@ -1,0 +1,48 @@
+# Development Dockerfile for WorkXplorer DRF Backend
+FROM python:3.11-slim
+
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    DJANGO_ENVIRONMENT=development \
+    PORT=8000
+
+# Set work directory
+WORKDIR /app
+
+# Install system dependencies (this layer will be cached)
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+    postgresql-client \
+    gcc \
+    python3-dev \
+    libpq-dev \
+    curl \
+    netcat-openbsd \
+    gettext \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy ONLY requirements first (better caching)
+COPY requirements.txt requirements-dev.txt /app/
+
+# Install Python dependencies (this layer will be cached if requirements don't change)
+RUN pip install --no-cache-dir -r requirements-dev.txt
+
+# Copy project files LAST (changes frequently, won't invalidate above layers)
+COPY . /app/
+
+# Create directories for logs
+RUN mkdir -p /app/logs
+
+# Copy development entrypoint script
+COPY docker/entrypoint-development.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# Expose port
+EXPOSE 8000
+
+# Set entrypoint
+ENTRYPOINT ["/entrypoint.sh"]
+
+# Default command for development (RQ worker/scheduler)
+CMD ["python", "manage.py", "rqworker", "default"]

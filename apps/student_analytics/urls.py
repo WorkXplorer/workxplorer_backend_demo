@@ -1,0 +1,67 @@
+from django.urls import path
+
+from .views import (
+    DashboardAPIView,
+    RegenerateAnalyticsAPIView,
+    UpdateTargetRoleAPIView,
+    SalaryCalculatorAPIView,
+    RoadmapAPIView,
+    GenerateRoadmapAPIView,
+    RoadmapItemDetailAPIView,
+    RecommendedCompaniesAPIView,
+    VacancyRoadmapAPIView,
+    VacancyRoadmapItemDetailAPIView,
+)
+
+urlpatterns = [
+    path(
+        "dashboard/",
+        DashboardAPIView.as_view(),
+        name="student-analytics-dashboard",
+    ),
+    path(
+        "dashboard/regenerate/",
+        RegenerateAnalyticsAPIView.as_view(),
+        name="student-analytics-regenerate",
+    ),
+    path(
+        "dashboard/target-role/",
+        UpdateTargetRoleAPIView.as_view(),
+        name="student-analytics-target-role",
+    ),
+    path(
+        "salary-calculator/",
+        SalaryCalculatorAPIView.as_view(),
+        name="student-analytics-salary-calculator",
+    ),
+    path(
+        "roadmap/",
+        RoadmapAPIView.as_view(),
+        name="student-analytics-roadmap",
+    ),
+    path(
+        "roadmap/generate/",
+        GenerateRoadmapAPIView.as_view(),
+        name="student-analytics-roadmap-generate",
+    ),
+    path(
+        "roadmap/items/<uuid:item_id>/",
+        RoadmapItemDetailAPIView.as_view(),
+        name="student-analytics-roadmap-item-detail",
+    ),
+    path(
+        "recommended-companies/",
+        RecommendedCompaniesAPIView.as_view(),
+        name="student-analytics-recommended-companies",
+    ),
+    path(
+        "vacancy-roadmap/",
+        VacancyRoadmapAPIView.as_view(),
+        name="student-analytics-vacancy-roadmap",
+    ),
+    path(
+        "vacancy-roadmap/items/<uuid:item_id>/",
+        VacancyRoadmapItemDetailAPIView.as_view(),
+        name="student-analytics-vacancy-roadmap-item-detail",
+    ),
+]

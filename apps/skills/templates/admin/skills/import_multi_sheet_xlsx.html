@@ -1,0 +1,37 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block breadcrumbs %}
+  <div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">Home</a>
+    &rsaquo; <a href="{% url 'admin:app_list' opts.app_label %}">{{ opts.app_label|capfirst }}</a>
+    &rsaquo; <a href="{% url 'admin:skills_skill_changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a>
+    &rsaquo; {{ title }}
+  </div>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+  <h2>{{ title }}</h2>
+  <p>Upload an <code>.xlsx</code> file with multiple sheets:</p>
+  <ul>
+    <li><strong>Categories</strong> sheet: columns <code>#</code>, <code>name_en</code>, <code>name_uz</code>, <code>name_ru</code></li>
+    <li><strong>Skills</strong> sheet: columns <code>#</code>, <code>name_en</code>, <code>name_uz</code>, <code>name_ru</code>, <code>category (EN)</code></li>
+    <li><strong>Summary</strong> sheet (optional): informational only, will be skipped</li>
+  </ul>
+  <p>Categories will be imported first, then skills will be linked to their categories.</p>
+
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <fieldset class="module aligned">
+      {{ form.as_p }}
+    </fieldset>
+    <div class="submit-row">
+      <input type="submit" value="Import" class="default" />
+      <a href=".." class="button cancel-link">Cancel</a>
+    </div>
+  </form>
+</div>
+{% endblock %}

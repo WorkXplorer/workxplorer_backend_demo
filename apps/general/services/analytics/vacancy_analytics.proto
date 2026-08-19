@@ -1,0 +1,161 @@
+syntax = "proto3";
+
+package hr.vacancy_analytics;
+
+// Main vacancy analytics data message sent to the vacancy webhook
+message VacancyAnalyticsData {
+    // Source and metadata
+    string source = 1;
+    string timestamp = 2;
+    VacancyMeta meta = 3;
+
+    // Vacancy information with analytics
+    VacancyAnalytics vacancy = 4;
+
+    // Final timestamp
+    string analytics_timestamp = 5;
+}
+
+// Metadata about the request
+message VacancyMeta {
+    string env = 1;
+    string company_id = 2;
+    string vacancy_id = 3;
+}
+
+// Vacancy analytics data - contains vacancy info and its metrics
+message VacancyAnalytics {
+    // Vacancy basic info
+    string id = 1;
+    string title = 2;
+    string domain = 3;
+    string created_at = 4;
+    string updated_at = 5;
+    string created_by_email = 6;
+
+    // Additional vacancy fields
+    string employment_type = 7;
+    string employment_format = 8;
+    string company_address = 9;  // Company address (replaces old location field)
+    bool is_active = 10;
+    int32 number_of_positions = 11;
+    string salary_min = 12;
+    string salary_max = 13;
+    string salary_currency = 14;
+    string domain_id = 16;  // Domain UUID for reference
+
+    // Vacancy metrics (cards)
+    VacancyCards cards = 15;
+}
+
+// Cards/metrics for a specific vacancy
+message VacancyCards {
+    // 1. Time to hire - raw data for calculation
+    VacancyTimeToHire time_to_hire = 1;
+
+    // 2. Overall conversion - raw numbers
+    VacancyConversion conversion = 2;
+
+    // 3. Number of vacancy views
+    VacancyViewsMetric views = 3;
+
+    // 4. Number of applications
+    VacancyApplicationsMetric applications = 4;
+
+    // 5. Average age of applicants
+    VacancyAverageAge average_age = 5;
+
+    // 6. Response funnel - raw counts for each stage
+    VacancyResponseFunnel response_funnel = 6;
+
+    // 7. Top candidate skills
+    VacancyTopSkills top_skills = 7;
+
+    // 8. Candidates by region - distribution across Uzbekistan regions
+    VacancyCandidatesByRegion candidates_by_region = 8;
+}
+
+// Response funnel data for a vacancy
+// Contains raw counts for each stage: views -> applications -> invitations -> interviews -> offers
+message VacancyResponseFunnel {
+    int32 views_count = 1;
+    int32 applications_count = 2;
+    int32 invitations_count = 3;
+    int32 interviews_count = 4;
+    int32 offers_count = 5;
+}
+
+// Top candidate skills for a vacancy
+message VacancyTopSkills {
+    int32 total_candidates = 1;
+    int32 total_candidates_with_skills = 2;
+    repeated SkillOccurrence skills = 3;
+}
+
+// Individual skill occurrence data
+message SkillOccurrence {
+    string skill_id = 1;
+    string skill_name = 2;
+    int32 candidates_count = 3;
+}
+
+// Candidates by region for a vacancy
+message VacancyCandidatesByRegion {
+    int32 total_candidates = 1;
+    int32 candidates_with_region = 2;
+    double average_age = 3;
+    repeated RegionCandidateCount regions = 4;
+}
+
+// Individual region candidate count with edupartner breakdown
+message RegionCandidateCount {
+    string region_code = 1;
+    string region_name = 2;
+    int32 candidates_count = 3;
+    double average_age = 4;
+    repeated EdupartnerCount edupartners = 5;
+}
+
+// Edupartner candidate count for a region
+message EdupartnerCount {
+    string edupartner_name = 1;
+    int32 count = 2;
+}
+
+// Time to hire data for a vacancy
+message VacancyTimeToHire {
+    int32 hired_count = 1;
+    int32 total_days_to_hire = 2;
+    repeated HireRecord hire_records = 3;
+}
+
+// Individual hire record with timing details
+message HireRecord {
+    string application_id = 1;
+    string applied_at = 2;
+    string hired_at = 3;
+    int32 days_to_hire = 4;
+}
+
+// Conversion data for a vacancy
+message VacancyConversion {
+    int32 total_applications = 1;
+    int32 total_hired = 2;
+}
+
+// Views data for a vacancy
+message VacancyViewsMetric {
+    int32 total_views = 1;
+    int32 unique_viewers = 2;
+}
+
+// Applications data for a vacancy
+message VacancyApplicationsMetric {
+    int32 count = 1;
+}
+
+// Average age of applicants for a vacancy
+message VacancyAverageAge {
+    int32 applicants_with_age = 1;
+    int32 total_age_sum = 2;
+}
