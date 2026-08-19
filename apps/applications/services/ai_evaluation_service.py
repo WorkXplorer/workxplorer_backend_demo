@@ -13,7 +13,7 @@ from typing import Optional
 import requests
 from django.conf import settings
 
-from apps.ai.services.groq_client import GroqClient
+from apps.ai.services.ai_provider_client import AIProviderClient
 from utils.prompt_sanitizer import sanitize_prompt_value
 
 logger = logging.getLogger(__name__)
@@ -585,7 +585,7 @@ Scoring guidance:
     ]
 
     # 5. Call the AI provider
-    client = GroqClient()
+    client = AIProviderClient()
     response = client.chat_completion(
         messages=messages,
         temperature=0.1,

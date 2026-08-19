@@ -21,7 +21,7 @@ from defusedxml import ElementTree
 
 from django.db.models import Q
 
-from apps.ai.services.groq_client import GroqClient
+from apps.ai.services.ai_provider_client import AIProviderClient
 from apps.resumes.services.skill_resolution import (
     MIN_TOKEN_SIMILARITY,
     SkillResolver,
@@ -39,7 +39,7 @@ logger = logging.getLogger(__name__)
 # question for as long as AI_RESPONSE_CACHE_TIMEOUT (24h by default).
 AI_CACHE_KEY_PREFIX = "ai_resume_gen_v7_mentions"
 
-ai_client = GroqClient()
+ai_client = AIProviderClient()
 
 # A resume carries a shortlist, not an inventory. The serializer accepts 25
 # (MAX_RESUME_SKILLS); generation stops short of that so a candidate keeps room

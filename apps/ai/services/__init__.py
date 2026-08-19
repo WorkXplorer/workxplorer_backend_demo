@@ -1,4 +1,4 @@
-from .groq_client import GroqClient
+from .ai_provider_client import AIProviderClient
 from .skill_validator import validate_passive_skills
 from .vacancy_creator import (
     create_vacancy_from_text,
@@ -8,7 +8,7 @@ from .vacancy_creator import (
 )
 
 __all__ = [
-    "GroqClient",
+    "AIProviderClient",
     "validate_passive_skills",
     "create_vacancy_from_text",
     "create_vacancy_from_data",

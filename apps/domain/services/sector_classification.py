@@ -24,7 +24,7 @@ import logging
 
 from django.core.cache import cache
 
-from apps.ai.services.groq_client import GroqClient
+from apps.ai.services.ai_provider_client import AIProviderClient
 from apps.general.services.stat_uz_client import fetch_sector_salary_table
 from utils.prompt_sanitizer import sanitize_prompt_value
 
@@ -34,7 +34,7 @@ LOCK_KEY = "domain_sector_classification_lock"
 LOCK_TIMEOUT = 15 * 60
 DEFAULT_BATCH_SIZE = 25
 
-ai_client = GroqClient()
+ai_client = AIProviderClient()
 
 
 def _acquire_lock():

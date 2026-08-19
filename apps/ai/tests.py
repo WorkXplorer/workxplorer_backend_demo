@@ -28,6 +28,6 @@ class AIActionAPITests(APITestCase):
         mock_validate.return_value = {"validated": 0}
         self.client.force_authenticate(user=self.staff)
         response = self.client.post(
-            self.url, {"status": "passive_skills", "ai_model": "groq"}, format="json"
+            self.url, {"status": "passive_skills", "ai_model": "default"}, format="json"
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)

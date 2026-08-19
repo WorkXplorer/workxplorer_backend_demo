@@ -1,8 +1,9 @@
 """
-Generic Groq Cloud API client.
+Generic AI chat-completion client.
 
-Provides a reusable client for chat completions via the Groq API,
-decoupled from any specific business domain (resumes, skill validation, etc.).
+Provides a reusable client for chat completions via a configurable AI
+provider API, decoupled from any specific business domain (resumes, skill
+validation, etc.).
 """
 
 import logging
@@ -17,28 +18,37 @@ from apps.ai.services.ai_utils import build_cache_key, parse_json_response, stri
 logger = logging.getLogger(__name__)
 
 
-class GroqClient:
-    """Generic client for Groq Cloud chat completions."""
-
-    API_URL = "https://api.groq.com/openai/v1/chat/completions"
+class AIProviderClient:
+    """Generic client for chat completions against the configured AI provider."""
 
     def __init__(self):
         self._api_key = None
         self._model = None
+        self._api_url = None
 
     @property
     def api_key(self) -> str:
         if self._api_key is None:
-            self._api_key = getattr(settings, "GROQ_API_KEY", None)
+            self._api_key = getattr(settings, "AI_API_KEY", None)
             if not self._api_key:
-                raise ValueError("GROQ_API_KEY is not configured in settings.")
+                raise ValueError("AI_API_KEY is not configured in settings.")
         return self._api_key
 
     @property
     def model(self) -> str:
         if self._model is None:
-            self._model = getattr(settings, "GROQ_MODEL", "qwen/qwen3-32b")
+            self._model = getattr(settings, "AI_MODEL", None)
+            if not self._model:
+                raise ValueError("AI_MODEL is not configured in settings.")
         return self._model
+
+    @property
+    def api_url(self) -> str:
+        if self._api_url is None:
+            self._api_url = getattr(settings, "AI_API_BASE_URL", None)
+            if not self._api_url:
+                raise ValueError("AI_API_BASE_URL is not configured in settings.")
+        return self._api_url
 
     def chat_completion(
         self,
@@ -48,7 +58,7 @@ class GroqClient:
         timeout: int = 120,
     ) -> dict[str, Any]:
         """
-        Send a chat completion request to Groq API.
+        Send a chat completion request to the AI provider.
 
         Args:
             messages: List of message dicts with "role" and "content".
@@ -76,7 +86,7 @@ class GroqClient:
 
         try:
             response = requests.post(
-                self.API_URL,
+                self.api_url,
                 headers={
                     "Authorization": f"Bearer {self.api_key}",
                     "Content-Type": "application/json",
@@ -87,7 +97,7 @@ class GroqClient:
             response.raise_for_status()
         except requests.RequestException as e:
             sanitized_msg = str(e).replace(self.api_key, "***REDACTED***")
-            logger.error("Groq API request failed: %s", sanitized_msg)
+            logger.error("AI provider request failed: %s", sanitized_msg)
             raise requests.RequestException(sanitized_msg) from e
         response_json = response.json()
 
@@ -112,17 +122,17 @@ class GroqClient:
         cache_key = self._build_cache_key(cache_key_prefix, *cache_params)
         cached = django_cache.get(cache_key)
         if cached is not None:
-            logger.info("Groq cache HIT: %s", cache_key)
+            logger.info("AI provider cache HIT: %s", cache_key)
             return cached
 
-        logger.info("Groq cache MISS: %s", cache_key)
+        logger.info("AI provider cache MISS: %s", cache_key)
         result = self.chat_completion(
             messages, temperature=temperature, json_mode=json_mode, timeout=timeout
         )
 
         ttl = getattr(settings, "AI_RESPONSE_CACHE_TIMEOUT", 60 * 60 * 24)
         django_cache.set(cache_key, result, timeout=ttl)
-        logger.info("Groq response cached: %s", cache_key)
+        logger.info("AI provider response cached: %s", cache_key)
         return result
 
     _build_cache_key = staticmethod(build_cache_key)
@@ -139,7 +149,7 @@ class GroqClient:
             usage.get("prompt_tokens_details", {}).get("cached_tokens", 0)
         )
         logger.info(
-            "Groq API usage: prompt=%d, completion=%d, total=%d, cached=%d",
+            "AI provider usage: prompt=%d, completion=%d, total=%d, cached=%d",
             prompt_tokens,
             completion_tokens,
             total_tokens,

@@ -18,7 +18,7 @@ class VacancySkillRoadmap(AbstractBaseModel):
     )
     ai_model = models.CharField(
         max_length=30,
-        default="groq",
+        default="default",
     )
     input_tokens = models.PositiveIntegerField(default=0)
     output_tokens = models.PositiveIntegerField(default=0)

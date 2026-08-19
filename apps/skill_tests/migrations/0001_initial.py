@@ -218,7 +218,7 @@ class Migration(migrations.Migration):
                 (
                     "ai_model",
                     models.CharField(
-                        default="groq",
+                        default="default",
                         help_text="AI model used to generate this test",
                         max_length=30,
                     ),

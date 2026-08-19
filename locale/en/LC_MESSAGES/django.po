@@ -3143,8 +3143,8 @@ msgstr "Skill not found."
 #: apps/skill_tests/views/tests.py:55
 #: apps/student_analytics/views/dashboard.py:51
 #: apps/student_analytics/views/roadmap.py:50
-msgid "ai_model must be 'groq'."
-msgstr "ai_model must be 'groq'."
+msgid "ai_model must be 'default'."
+msgstr "ai_model must be 'default'."
 
 #: apps/skill_tests/views/tests.py:72
 msgid "You already generated a test for this skill today."

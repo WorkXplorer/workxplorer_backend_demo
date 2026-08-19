@@ -51,9 +51,9 @@ class GenerateTestAPIView(APIView):
         except Skill.DoesNotExist:
             return APIResponse.not_found(message=_("Skill not found."))
 
-        ai_model = data.get("ai_model", "groq")
-        if ai_model not in ("groq",):
-            return APIResponse.bad_request(message=_("ai_model must be 'groq'."))
+        ai_model = data.get("ai_model", "default")
+        if ai_model not in ("default",):
+            return APIResponse.bad_request(message=_("ai_model must be 'default'."))
 
         today_start_utc = datetime.now(dt_timezone.utc).replace(
             hour=0, minute=0, second=0, microsecond=0
@@ -215,7 +215,7 @@ class SubmitAttemptAPIView(APIView):
             return APIResponse.validation_error(field_errors=serializer.errors)
 
         answers_data = serializer.validated_data.get("answers", [])
-        ai_model = serializer.validated_data.get("ai_model", "groq")
+        ai_model = serializer.validated_data.get("ai_model", "default")
 
         try:
             attempt = submit_attempt(attempt, answers_data, ai_model=ai_model)

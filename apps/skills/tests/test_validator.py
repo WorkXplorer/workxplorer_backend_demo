@@ -10,7 +10,7 @@ from apps.ai.services.skill_validator import validate_passive_skills
 
 
 class FakeAIClient:
-    """Minimal stand-in for GroqClient used by the validator."""
+    """Minimal stand-in for AIProviderClient used by the validator."""
 
     def __init__(self, skills_result):
         self._skills_result = skills_result
@@ -215,7 +215,7 @@ class SkillValidatorTests(TestCase):
 
 class ValidatePassiveSkillsTaskTests(TestCase):
     @patch("apps.ai.services.skill_validator.validate_passive_skills")
-    def test_succeeds_via_groq(self, mock_validate):
+    def test_succeeds_via_ai_provider(self, mock_validate):
         from apps.skills.tasks import validate_passive_skills_task
 
         mock_validate.side_effect = [

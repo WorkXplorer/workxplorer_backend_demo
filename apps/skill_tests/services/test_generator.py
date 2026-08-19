@@ -2,7 +2,7 @@ import logging
 
 from django.db import transaction
 
-from apps.ai.services import GroqClient
+from apps.ai.services import AIProviderClient
 from apps.ai.services.ai_utils import parse_json_response
 from apps.general.services.skill_recommendation import get_candidate_resume
 from apps.skills.localization import LANGUAGE_DISPLAY_NAMES, user_preferred_language
@@ -13,7 +13,7 @@ from apps.skill_tests.models import SkillTest, TestQuestion
 logger = logging.getLogger(__name__)
 
 
-def generate_test(skill, target_level="INTERMEDIATE", candidate=None, ai_model="groq"):
+def generate_test(skill, target_level="INTERMEDIATE", candidate=None, ai_model="default"):
     language = user_preferred_language(candidate) if candidate else "en"
     lang_name = LANGUAGE_DISPLAY_NAMES.get(language, "English")
 
@@ -34,7 +34,7 @@ def generate_test(skill, target_level="INTERMEDIATE", candidate=None, ai_model="
     existing_skills_context = sanitize_prompt_value(existing_skills_context, max_length=1000)
     # target_level is an internal enum value, not user input — no sanitization needed
 
-    ai_client = GroqClient()
+    ai_client = AIProviderClient()
 
     messages = [
         {

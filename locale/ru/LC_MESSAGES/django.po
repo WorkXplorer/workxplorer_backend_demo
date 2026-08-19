@@ -3156,8 +3156,8 @@ msgstr "Навык не найден."
 #: apps/skill_tests/views/tests.py:55
 #: apps/student_analytics/views/dashboard.py:51
 #: apps/student_analytics/views/roadmap.py:50
-msgid "ai_model must be 'groq'."
-msgstr "ai_model должен быть 'groq'."
+msgid "ai_model must be 'default'."
+msgstr "ai_model должен быть 'default'."
 
 #: apps/skill_tests/views/tests.py:72
 msgid "You already generated a test for this skill today."

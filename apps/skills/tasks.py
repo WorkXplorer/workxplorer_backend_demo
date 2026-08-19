@@ -15,10 +15,10 @@ def validate_passive_skills_task():
     Scheduled to run once a day at 03:00 Asia/Tashkent — see
     ``apps.skills.services.scheduler``.
     """
-    from apps.ai.services.groq_client import GroqClient
+    from apps.ai.services.ai_provider_client import AIProviderClient
     from apps.ai.services.skill_validator import validate_passive_skills
 
-    providers = (("groq", GroqClient),)
+    providers = (("default", AIProviderClient),)
     last_error = None
     for name, client_cls in providers:
         try:
@@ -41,7 +41,7 @@ def validate_passive_skills_task():
     )
 
 
-def generate_learning_materials_task(roadmap_id, ai_model="groq", language="en"):
+def generate_learning_materials_task(roadmap_id, ai_model="default", language="en"):
     from apps.skills.services.learning_materials import generate_learning_materials_for_roadmap
     from apps.student_analytics.models import SkillRoadmap
     from apps.skills.localization import user_preferred_language
@@ -72,7 +72,7 @@ def generate_learning_materials_task(roadmap_id, ai_model="groq", language="en")
         logger.exception("Failed to generate learning materials for roadmap %s", roadmap_id)
 
 
-def enqueue_learning_materials_generation(roadmap_id, ai_model="groq", language="en"):
+def enqueue_learning_materials_generation(roadmap_id, ai_model="default", language="en"):
     try:
         django_rq.get_queue("high").enqueue(
             generate_learning_materials_task,
@@ -84,7 +84,7 @@ def enqueue_learning_materials_generation(roadmap_id, ai_model="groq", language=
         logger.exception("Failed to enqueue learning materials generation for roadmap %s", roadmap_id)
 
 
-def generate_vacancy_learning_materials_task(vacancy_roadmap_id, ai_model="groq", language="en"):
+def generate_vacancy_learning_materials_task(vacancy_roadmap_id, ai_model="default", language="en"):
     from apps.skills.services.learning_materials import generate_learning_materials_for_roadmap
     from apps.student_analytics.models import VacancySkillRoadmap
     from apps.skills.localization import user_preferred_language
@@ -125,7 +125,7 @@ def generate_vacancy_learning_materials_task(vacancy_roadmap_id, ai_model="groq"
         )
 
 
-def enqueue_vacancy_learning_materials_generation(vacancy_roadmap_id, ai_model="groq", language="en"):
+def enqueue_vacancy_learning_materials_generation(vacancy_roadmap_id, ai_model="default", language="en"):
     try:
         django_rq.get_queue("high").enqueue(
             generate_vacancy_learning_materials_task,

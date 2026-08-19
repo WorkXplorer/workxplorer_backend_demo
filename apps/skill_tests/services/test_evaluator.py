@@ -7,7 +7,7 @@ from django.db import transaction
 from django.utils import timezone
 from django.utils.translation import gettext as _
 
-from apps.ai.services import GroqClient
+from apps.ai.services import AIProviderClient
 from apps.ai.services.ai_utils import parse_json_response
 from apps.resumes.models import ResumeSkill
 from apps.skills.localization import LANGUAGE_DISPLAY_NAMES, user_preferred_language
@@ -126,7 +126,7 @@ def _score_mc(question, selected_option_id):
     return is_correct, Decimal(str(question.points if is_correct else 0))
 
 
-def submit_attempt(attempt, answers_data, ai_model="groq"):
+def submit_attempt(attempt, answers_data, ai_model="default"):
     time_limit = attempt.test.time_limit_minutes
     elapsed = timezone.now() - attempt.started_at
     if elapsed > timedelta(minutes=time_limit):
@@ -136,7 +136,7 @@ def submit_attempt(attempt, answers_data, ai_model="groq"):
         return attempt
 
     language = user_preferred_language(attempt.candidate)
-    ai_client = GroqClient()
+    ai_client = AIProviderClient()
 
     total_input_tokens = 0
     total_output_tokens = 0

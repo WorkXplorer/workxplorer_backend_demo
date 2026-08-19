@@ -6,7 +6,7 @@ from django.db import DataError, IntegrityError, transaction
 from django.utils import timezone
 from django.utils.html import strip_tags
 
-from apps.ai.services import GroqClient
+from apps.ai.services import AIProviderClient
 from apps.ai.services.ai_utils import parse_json_response
 from apps.general.services.skill_recommendation import get_candidate_resume
 from apps.general.services.market_skill_cache import collect_hh_market_skills_with_cache
@@ -65,7 +65,7 @@ def _translate_skill_name(skill_name: str) -> dict[str, str]:
         return cached
 
     try:
-        client = GroqClient()
+        client = AIProviderClient()
         messages = [
             {
                 "role": "system",
@@ -193,7 +193,7 @@ def _build_market_demand_payload(market_skills):
     return demand
 
 
-def generate_roadmap(candidate, resume_id=None, ai_model="groq"):
+def generate_roadmap(candidate, resume_id=None, ai_model="default"):
     resume = get_candidate_resume(candidate, resume_id)
     if not resume:
         return None
@@ -235,7 +235,7 @@ def generate_roadmap(candidate, resume_id=None, ai_model="groq"):
         skill["level"] = sanitize_prompt_value(skill.get("level", ""))
         skill["status"] = sanitize_prompt_value(skill.get("status", ""))
 
-    ai_client = GroqClient()
+    ai_client = AIProviderClient()
 
     lang_name = LANGUAGE_DISPLAY_NAMES.get(language, "English")
 

@@ -23,7 +23,7 @@ class AIActionRequestSerializer(serializers.Serializer):
     """Validates the POST request body for AI actions (skill validation / vacancy creation)."""
 
     STATUS_CHOICES = ("passive_skills", "create_vacancy", "draft_template")
-    AI_MODEL_CHOICES = ("groq",)
+    AI_MODEL_CHOICES = ("default",)
     TEMPLATE_SECTION_CHOICES = ("invitation", "interview", "rejection")
 
     status = serializers.ChoiceField(

@@ -8,7 +8,7 @@ from django.core.cache import cache as django_cache
 from django.core.exceptions import ValidationError as DjangoValidationError
 from django.core.validators import URLValidator
 
-from apps.ai.services import GroqClient
+from apps.ai.services import AIProviderClient
 from apps.ai.services.ai_utils import parse_json_response
 from apps.skills.localization import LANGUAGE_DISPLAY_NAMES
 from apps.skills.models import LearningMaterial, SkillLearningMaterial
@@ -37,7 +37,7 @@ def _translate_material_title(title: str) -> dict[str, str]:
         return cached
 
     try:
-        client = GroqClient()
+        client = AIProviderClient()
         messages = [
             {
                 "role": "system",
@@ -306,7 +306,7 @@ def _format_search_results_for_prompt(results: list[dict]) -> str:
 
 def _generate_without_grounding(skill, ai_client, language: str, country: str = "") -> list:
     """
-    Generate learning materials without grounding (Groq path).
+    Generate learning materials via the AI provider.
 
     Searches SearXNG first to get real URLs, then asks the AI to curate
     from those results. Falls back to pure hallucination-based generation
@@ -606,10 +606,10 @@ def _process_roadmap_item(item, ai_client, language, country):
         )
 
 
-def generate_learning_materials_for_roadmap(roadmap, ai_model="groq", language="en", country=""):
+def generate_learning_materials_for_roadmap(roadmap, ai_model="default", language="en", country=""):
     from concurrent.futures import ThreadPoolExecutor, as_completed
 
-    ai_client = GroqClient()
+    ai_client = AIProviderClient()
     items = [item for item in roadmap.items.select_related("skill").all() if item.skill]
 
     with ThreadPoolExecutor(max_workers=2) as executor:

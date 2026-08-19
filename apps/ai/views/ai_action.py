@@ -18,7 +18,7 @@ from apps.ai.serializers import (
     AIActionRequestSerializer,
     PassiveSkillListSerializer,
 )
-from apps.ai.services.groq_client import GroqClient
+from apps.ai.services.ai_provider_client import AIProviderClient
 from apps.ai.services.skill_validator import validate_passive_skills
 from apps.ai.services.vacancy_creator import (
     create_vacancy_from_text,
@@ -297,7 +297,7 @@ class AIActionAPIView(APIView):
 
         text = None
         last_error = None
-        for model in ("groq",):
+        for model in ("default",):
             try:
                 model_client = self._get_ai_client(model)
                 text = draft_template_text(
@@ -367,8 +367,8 @@ class AIActionAPIView(APIView):
 
     @staticmethod
     def _get_ai_client(ai_model: str):
-        if ai_model == "groq":
-            return GroqClient()
+        if ai_model == "default":
+            return AIProviderClient()
         raise ValueError(_("Unknown AI model: %s") % ai_model)
 
 

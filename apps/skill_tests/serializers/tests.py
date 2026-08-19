@@ -103,7 +103,7 @@ class TestAttemptSummarySerializer(serializers.ModelSerializer):
 class GenerateTestSerializer(serializers.Serializer):
     skill_id = serializers.IntegerField()
     target_level = serializers.CharField(max_length=20, default="INTERMEDIATE")
-    ai_model = serializers.CharField(max_length=30, default="groq")
+    ai_model = serializers.CharField(max_length=30, default="default")
 
 
 class StartTestSerializer(serializers.Serializer):
@@ -127,4 +127,4 @@ class SubmitAnswerItemSerializer(serializers.Serializer):
 
 class SubmitAttemptSerializer(serializers.Serializer):
     answers = SubmitAnswerItemSerializer(many=True, write_only=True, min_length=1)
-    ai_model = serializers.CharField(max_length=30, default="groq")
+    ai_model = serializers.CharField(max_length=30, default="default")

@@ -3,7 +3,7 @@ import logging
 from django.db import transaction
 from django.utils.html import strip_tags
 
-from apps.ai.services import GroqClient
+from apps.ai.services import AIProviderClient
 from apps.ai.services.ai_utils import parse_json_response
 from apps.skills.localization import LANGUAGE_DISPLAY_NAMES, user_preferred_language
 from apps.student_analytics.models import VacancySkillRoadmap, VacancyRoadmapItem
@@ -31,7 +31,7 @@ def _build_resume_skills_payload(resume):
     return skills
 
 
-def generate_vacancy_roadmap(application, ai_model="groq"):
+def generate_vacancy_roadmap(application, ai_model="default"):
     vacancy = application.vacancy
     candidate = application.candidate
     evaluation = getattr(application, "ai_evaluation", None)
@@ -111,7 +111,7 @@ def generate_vacancy_roadmap(application, ai_model="groq"):
             )
             return None
 
-    ai_client = GroqClient()
+    ai_client = AIProviderClient()
     lang_name = LANGUAGE_DISPLAY_NAMES.get(language, "English")
 
     messages = [

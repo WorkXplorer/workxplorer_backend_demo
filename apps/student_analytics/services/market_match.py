@@ -2,7 +2,7 @@ import logging
 
 from django.utils import timezone
 
-from apps.ai.services import GroqClient
+from apps.ai.services import AIProviderClient
 from apps.general.services.skill_recommendation import (
     build_candidate_domain_skills_payload,
     get_candidate_resume,
@@ -68,7 +68,7 @@ def generate_market_match_insight(ai_client, match_percentage, target_role, stro
     return content.strip(), response
 
 
-def compute_or_refresh_analytics(candidate, resume_id=None, ai_model="groq"):
+def compute_or_refresh_analytics(candidate, resume_id=None, ai_model="default"):
     resume = get_candidate_resume(candidate, resume_id)
     if not resume:
         return None
@@ -117,7 +117,7 @@ def compute_or_refresh_analytics(candidate, resume_id=None, ai_model="groq"):
         for s in missing_skills[:5]
     ]
 
-    ai_client = GroqClient()
+    ai_client = AIProviderClient()
     insight_text = ""
     input_tok = 0
     output_tok = 0

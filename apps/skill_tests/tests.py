@@ -33,7 +33,7 @@ class SkillTestAPITests(APITestCase):
         self.client.force_authenticate(user=self.candidate)
         response = self.client.post(
             self.generate_url,
-            {"skill_id": 99999, "ai_model": "groq"},
+            {"skill_id": 99999, "ai_model": "default"},
             format="json",
         )
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
@@ -45,7 +45,7 @@ class SkillTestAPITests(APITestCase):
         self.client.force_authenticate(user=self.candidate)
         response = self.client.post(
             self.generate_url,
-            {"skill_id": skill.id, "ai_model": "groq"},
+            {"skill_id": skill.id, "ai_model": "default"},
             format="json",
         )
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)

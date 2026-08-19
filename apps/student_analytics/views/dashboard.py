@@ -74,8 +74,8 @@ class RegenerateAnalyticsAPIView(APIView):
             "RegenerateAnalyticsRequest",
             fields={
                 "ai_model": serializers.ChoiceField(
-                    choices=[("groq", "Groq")],
-                    default="groq",
+                    choices=[("default", "Default")],
+                    default="default",
                     help_text="AI model to use for generation",
                 ),
                 "resume_id": serializers.UUIDField(
@@ -107,9 +107,9 @@ class RegenerateAnalyticsAPIView(APIView):
         if not getattr(user, "is_candidate", False):
             return APIResponse.forbidden(message=_("Only candidates can regenerate analytics."))
 
-        ai_model = request.data.get("ai_model", "groq")
-        if ai_model not in ("groq",):
-            return APIResponse.bad_request(message=_("ai_model must be 'groq'."))
+        ai_model = request.data.get("ai_model", "default")
+        if ai_model not in ("default",):
+            return APIResponse.bad_request(message=_("ai_model must be 'default'."))
 
         resume_id = request.data.get("resume_id")
 

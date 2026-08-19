@@ -48,7 +48,7 @@ def draft_template_text(
 
     Args:
         client: An AI client exposing ``chat_completion`` and
-            ``parse_json_response`` (Groq).
+            ``parse_json_response``.
         section: One of "invitation", "interview", "rejection".
         company_name: Recruiter's company, woven into the message.
         locale: Target language ("ru" / "en" / "uz").

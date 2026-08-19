@@ -41,7 +41,7 @@ def validate_passive_skills(ai_client: Any) -> dict[str, Any]:
 
     Args:
         ai_client: An object with cached_completion() and parse_json_response()
-                   methods (GroqClient).
+                   methods (AIProviderClient).
 
     Returns:
         Dict with summary: {approved, rejected, duplicates, details}.

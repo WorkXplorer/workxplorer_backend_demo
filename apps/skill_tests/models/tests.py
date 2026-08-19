@@ -49,7 +49,7 @@ class SkillTest(AbstractBaseModel):
     )
     ai_model = models.CharField(
         max_length=30,
-        default="groq",
+        default="default",
         help_text=_("AI model used to generate this test"),
     )
     input_tokens = models.PositiveIntegerField(

@@ -41,7 +41,7 @@ class Migration(migrations.Migration):
                         help_text="AI-generated rejection summary in uz/ru/en",
                     ),
                 ),
-                ("ai_model", models.CharField(default="groq", max_length=30)),
+                ("ai_model", models.CharField(default="default", max_length=30)),
                 ("input_tokens", models.PositiveIntegerField(default=0)),
                 ("output_tokens", models.PositiveIntegerField(default=0)),
                 ("thinking_tokens", models.PositiveIntegerField(default=0)),

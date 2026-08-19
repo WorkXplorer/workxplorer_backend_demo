@@ -114,7 +114,7 @@ The `chat` service in the compose file talks to a separate private repository (W
    python manage.py rqworker default high low --with-scheduler
    ```
 
-AI-powered features (resume generation, skill validation, evaluation) use Groq as the AI provider and require a `GROQ_API_KEY`; without one they simply no-op. Firebase push notifications are optional and degrade gracefully without credentials.
+AI-powered features (resume generation, skill validation, evaluation) call out to a configurable AI provider and require the corresponding API credentials (see `.env.example`); without them they simply no-op. Firebase push notifications are optional and degrade gracefully without credentials.
 
 ## 🔒 What's different from the production codebase
 

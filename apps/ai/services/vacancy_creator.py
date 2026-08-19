@@ -402,7 +402,7 @@ def create_vacancy_from_text(
     and domains, then creates the vacancy with all relations.
 
     Args:
-        ai_client: GroqClient instance.
+        ai_client: AIProviderClient instance.
         source_text: Raw text describing the vacancy (from URL fetch or direct input).
         recruiter: The authenticated Recruiter instance.
         company: The recruiter's Company instance.
